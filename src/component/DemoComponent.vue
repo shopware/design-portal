@@ -1,0 +1,1 @@
+<template><div class="form-control">This is demo component.</div></template>

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "lib": ["ESNext", "DOM"],
+    "types": [
+      "jest",
+      "@playwright/test"
+    ],
+    "include": [
+      "./src/**/*.ts",
+      "node_modules/@shopware-docs/**/*.ts"
+    ]
+  }
+}
