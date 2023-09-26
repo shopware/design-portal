@@ -1,0 +1,219 @@
+name: Build and deploy
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: 'Source of event'
+        required: false
+        default: 'No source specified'
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+
+  embed-docs:
+    name: Embed docs
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Prepare
+        uses: ./.github/actions/checkout-install
+
+      - name: Zip folder
+        run: |
+          zip -r embed.zip ./src/ -x \*/node_modules/\* -x \*/.vitepress/\*
+          cd src && zip -r db-index.zip * -i '*.md' -x '*/node_modules/*' -x '*/_source/*'
+
+      - name: Upload build
+        uses: actions/upload-artifact@v3
+        with:
+          if-no-files-found: error
+          name: embed-${{ github.sha }}
+          path: embed.zip
+
+      - name: Upload DB index
+        uses: actions/upload-artifact@v3
+        with:
+          if-no-files-found: error
+          name: db-index-${{ github.sha }}
+          path: src/db-index.zip
+
+  test-dev:
+    name: Test dev
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: embed-docs
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Prepare
+        uses: ./.github/actions/checkout-install
+        with:
+          apt: true
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: embed-${{ github.sha }}
+
+      - name: Unzip artifact
+        run: |
+          unzip -o embed.zip
+
+      - name: Test
+        run: |
+          export NODE_OPTIONS="--max-old-space-size=8096"
+          pnpm run test
+
+  test-build:
+    name: Test build
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    needs: embed-docs
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Prepare
+        uses: ./.github/actions/checkout-install
+        with:
+          apt: true
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: embed-${{ github.sha }}
+
+      - name: Unzip artifact
+        run: |
+          unzip -o embed.zip
+
+      - name: Test
+        run: |
+          export NODE_OPTIONS="--max-old-space-size=8096"
+          pnpm run test:build
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    needs: embed-docs
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Prepare
+        uses: ./.github/actions/checkout-install
+        with:
+          apt: true
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: embed-${{ github.sha }}
+
+      - name: Unzip artifact
+        run: |
+          unzip -o embed.zip
+
+      - name: Build project
+        run: |
+          export NODE_OPTIONS="--max-old-space-size=8096"
+          export USERCENTRICS="65ynhGFvE"
+          pnpm run build
+
+      #- name: Zip externals
+      #  run: |
+      #    cd external && zip -r db-external.zip * -i '*.md'
+
+      - name: Zip folder
+        run: zip -r full-build.zip .vitepress/dist/ vercel.json
+
+      - name: Upload build
+        uses: actions/upload-artifact@v3
+        with:
+          if-no-files-found: error
+          name: full-build-${{ github.sha }}
+          path: full-build.zip
+
+      #- name: Upload external
+      #  uses: actions/upload-artifact@v3
+      #  with:
+      #    if-no-files-found: error
+      #    name: db-external-${{ github.sha }}
+      #    path: external/db-external.zip
+
+#  chromatic:
+#    name: Deploy Storybook to Chromatic
+#    runs-on: ubuntu-latest
+#    timeout-minutes: 10
+#    needs:
+#      - test-cli
+#      - test-dev
+#      - test-build
+#      - build
+#    if: ${{ github.ref == 'refs/heads/main' || contains(github.event.head_commit.message, 'chromatic') }}
+#    steps:
+#      - name: Checkout repository
+#        uses: actions/checkout@v3
+#        with:
+#          fetch-depth: 0
+#
+#      - name: Prepare
+#        uses: ./.github/actions/checkout-install
+#
+#      - name: Deploy Storybook to Chromatic
+#        env:
+#          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+#        run: pnpm chromatic
+
+  deploy-vercel:
+    name: Deploy to Vercel
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    needs:
+      - test-dev
+      - test-build
+      - build
+    env:
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: full-build-${{ github.sha }}
+
+      - name: Unzip artifact
+        run: |
+          mkdir -p .vitepress/dist
+          unzip -o full-build.zip
+          ls -la .vitepress/dist
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel@latest
+
+      - name: Pull Vercel Environment Information
+        run: |
+          VERCEL_ENV="preview"
+          VERCEL_ENV_FLAG=""
+          if [[ "${{github.ref}}" == "refs/heads/main" ]]; then
+            VERCEL_ENV="production"
+            VERCEL_ENV_FLAG="--prod"
+          fi
+          
+          vercel pull --yes --environment=$VERCEL_ENV --token=${{ secrets.VERCEL_TOKEN }} --scope=${{ secrets.VERCEL_ORG_ID }}
+          vercel build ./.vitepress/dist --token=${{ secrets.VERCEL_TOKEN }} $VERCEL_ENV_FLAG
+          vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} $VERCEL_ENV_FLAG > ./vercel.env
