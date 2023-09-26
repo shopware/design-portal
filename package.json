@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "vitest run -r __tests__/e2e",
     "test:regression": "VITE_TEST_BUILD=1 REGRESSION=1 vitest run regression -r __tests__/e2e",
