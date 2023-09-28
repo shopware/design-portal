@@ -5,7 +5,7 @@ import ViteRequireContext from '@originjs/vite-plugin-require-context'
 import {resolve} from "path";
 import Inspect from "vite-plugin-inspect";
 
-import {createSitemap, storeRedirects} from "./helpers";
+import {createSitemap, storeRedirects} from "../node_modules/@shopware-docs/vitepress/src/helpers";
 import navigation from "./navigation";
 
 import {

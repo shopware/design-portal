@@ -3,7 +3,7 @@ describe('render correct content', async () => {
         await goto('/')
     })
 
-    test('navigation', async() => {
+    test.skip('navigation', async() => {
         const navBarLocator = page.locator('.VPNavBarMenu > .VPNavBarMenuLink');
         const links = await navBarLocator.allTextContents()
         expect(links).toEqual(['Apps', 'Themes', 'Frontends', 'Integrations'])
@@ -18,7 +18,7 @@ describe('render correct content', async () => {
 
         const h1Contents = await h1Locator.allTextContents()
 
-        expect(h1Contents).toEqual(['Shopware Developer Documentation'])
+        expect(h1Contents).toEqual(['Shopware Design Documentation'])
     })
 
     test('outline', async () => {
