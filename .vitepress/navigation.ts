@@ -3,14 +3,26 @@ import {resourcesMenu} from "../node_modules/vitepress-shopware-docs/src/shopwar
 
 const navigation = buildSidebarNav('./src/', [
     {
-        link: 'https://shopware.design/',
-        text: 'shopware.design',
+        link: '/foundations.html',
+        text: 'Foundations',
     },
     {
-        link: 'https://brand.shopware.com/',
-        text: 'Brand',
+        link: '/product-experience.html',
+        text: 'Product Experience',
+    },
+    {
+        link: '/content-experience.html',
+        text: 'Content Experience',
+    },
+    {
+        link: '/components.html',
+        text: 'Components',
     },
     resourcesMenu,
+    {
+        link: '/what-is-new.html',
+        text: 'What\' New',
+    },
 ], [
     '/', // always have root sidebar
 ]);

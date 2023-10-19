@@ -3,6 +3,8 @@ import type { Config as ThemeConfig } from "vitepress-shopware-docs";
 import baseConfig from "vitepress-shopware-docs/config";
 import ViteRequireContext from '@originjs/vite-plugin-require-context'
 import {resolve} from "path";
+
+import { CssCleanup } from "../node_modules/@shopware-docs/vitepress/src/plugins/cssCleanup";
 import Inspect from "vite-plugin-inspect";
 
 import {createSitemap, storeRedirects} from "../node_modules/@shopware-docs/vitepress/src/helpers";
@@ -79,6 +81,18 @@ export default defineConfigWithTheme<ThemeConfig>({
       Inspect(),
       ViteRequireContext.default({
         projectBasePath: `${process.cwd()}/src`
+      }),
+      CssCleanup({
+        cleanup: [
+          '.vp-doc h2',
+          '.vp-doc hr',
+          '.vp-doc a',
+          '.vp-doc h1 .header-anchor',
+          '.vp-doc h2 .header-anchor',
+          '.vp-doc h3 .header-anchor',
+          '.vp-doc h4 .header-anchor',
+          '.vp-doc h5 .header-anchor',
+        ]
       }),
     ],
     build: {
