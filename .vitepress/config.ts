@@ -6,6 +6,7 @@ import {resolve} from "path";
 
 import { CssCleanup, baseCleanup } from "../node_modules/@shopware-docs/vitepress/src/plugins/cssCleanup";
 import Inspect from "vite-plugin-inspect";
+import liveReload from 'vite-plugin-live-reload'
 
 import {copyAdditionalAssets, createSitemap, storeRedirects} from "../node_modules/@shopware-docs/vitepress/src/helpers";
 import navigation from "./navigation";
@@ -76,7 +77,6 @@ export default defineConfigWithTheme<ThemeConfig>({
   },
 
   vite: {
-    mode: 'development',
     plugins: [
       Inspect(),
       ViteRequireContext.default({
@@ -87,6 +87,10 @@ export default defineConfigWithTheme<ThemeConfig>({
             ...baseCleanup,
         ]
       }),
+      liveReload([
+          '../node_modules/@shopware-docs/**/*.*',
+        '../node_modules/vitepress-shopware-docs/**/*.*',
+      ]),
     ],
     build: {
       rollupOptions: {
