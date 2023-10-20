@@ -41,8 +41,9 @@
 <style lang="scss">
 .SwagExposed {
   @apply grid gap-24;
+  grid-template-columns: 100%;
   ul.SwagExposed_links {
-    @apply flex p-0 m-0 mt-6 gap-12;
+    @apply flex p-0 m-0 mt-6 gap-12 gap-y-4 flex-wrap;
     list-style-type: none;
 
     li {
@@ -50,6 +51,14 @@
       & + li {
         @apply mt-0;
       }
+    }
+    a {
+      font-feature-settings: 'ss02' on;
+      font-family: Inter;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
     }
   }
 

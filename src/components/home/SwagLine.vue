@@ -16,10 +16,10 @@
 <style lang="scss">
 .SwagLine {
   border: 1px solid var(--sw-c-gray-200);
-  border-width: 1px 0 1px 0;
+  border-width: 1px 0;
 
   ul {
-    @apply flex gap-5 m-0 p-0 py-4 items-center;
+    @apply flex flex-wrap gap-5 gap-y-4 m-0 p-0 py-4 items-center;
     list-style-type: none;
   }
   li {
