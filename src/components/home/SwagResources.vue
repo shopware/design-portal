@@ -5,8 +5,8 @@
     <div class="SwagResources_grid">
 
       <a href="/themes.html" class="HomepageCard_item">
-        <span class="HomepageCard_icon">
-          <SwagIcon icon="image" type="solid" />
+        <span class="HomepageCard_icon --is-orange">
+          <SwagIcon icon="figma" type="solid" />
         </span>
         <span class="HomepageCard_heading">
           Figma libraries
@@ -17,7 +17,7 @@
 
       <a href="/themes.html" class="HomepageCard_item --has-double-height">
         <span class="HomepageCard_icon">
-          <SwagIcon icon="image" type="solid" />
+          <SwagIcon icon="bold" type="solid" />
         </span>
         <span class="HomepageCard_heading">
           Fonts
@@ -28,7 +28,7 @@
 
       <a href="/themes.html" class="HomepageCard_item --has-double-height">
         <span class="HomepageCard_icon">
-          <SwagIcon icon="image" type="solid" />
+          <SwagIcon icon="comments" type="solid" />
         </span>
         <span class="HomepageCard_heading">
           Language and grammar
@@ -38,8 +38,8 @@
       </a>
 
       <a href="/themes.html" class="HomepageCard_item">
-        <span class="HomepageCard_icon">
-          <SwagIcon icon="image" type="solid" />
+        <span class="HomepageCard_icon --is-blue">
+          <SwagIcon icon="shopware" type="solid" />
         </span>
         <span class="HomepageCard_heading">
           Logo library
@@ -64,6 +64,14 @@
     @media (min-width: 960px) {
       @apply row-span-2;
     }
+  }
+}
+.HomepageCard_icon {
+  &.--is-orange {
+    background: #E89069;
+  }
+  &.--is-blue {
+    background: #189EFF;
   }
 }
 </style>

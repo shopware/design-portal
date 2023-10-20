@@ -13,7 +13,7 @@
     </div>
     <div>
       <div class="h-label">Product Experience</div>
-      <h2 class="h-homepage md:max-w-1/2">We empower you to build the exceptional - Our Design System makes UX and UI
+      <h2 class="h-homepage md:max-w-7/12">We empower you to build the exceptional - Our Design System makes UX and UI
         easily accessible</h2>
       <ul class="SwagExposed_links">
         <li><a href="#">Shopware Design Principles</a></li>
@@ -43,7 +43,7 @@
   @apply grid gap-24;
   grid-template-columns: 100%;
   ul.SwagExposed_links {
-    @apply flex p-0 m-0 mt-6 gap-12 gap-y-4 flex-wrap;
+    @apply flex p-0 m-0 mt-5 gap-12 gap-y-4 flex-wrap;
     list-style-type: none;
 
     li {

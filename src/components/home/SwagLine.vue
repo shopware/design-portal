@@ -19,11 +19,11 @@
   border-width: 1px 0;
 
   ul {
-    @apply flex flex-wrap gap-5 gap-y-4 m-0 p-0 py-4 items-center;
+    @apply flex flex-wrap gap-3 gap-y-4 m-0 p-0 py-4 items-center;
     list-style-type: none;
   }
   li {
-    @apply m-0 p-0 flex gap-5 items-center flex-row;
+    @apply m-0 p-0 flex gap-3 items-center flex-row;
     font-family: Inter;
     font-size: 0.75rem;
     font-style: normal;

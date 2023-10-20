@@ -7,7 +7,7 @@ import {resolve} from "path";
 import { CssCleanup, baseCleanup } from "../node_modules/@shopware-docs/vitepress/src/plugins/cssCleanup";
 import Inspect from "vite-plugin-inspect";
 
-import {createSitemap, storeRedirects} from "../node_modules/@shopware-docs/vitepress/src/helpers";
+import {copyAdditionalAssets, createSitemap, storeRedirects} from "../node_modules/@shopware-docs/vitepress/src/helpers";
 import navigation from "./navigation";
 
 import {
@@ -104,6 +104,20 @@ export default defineConfigWithTheme<ThemeConfig>({
   },
 
   async buildEnd() {
+    /**
+     * Copy additional assets not present in the assets or public dir.
+     */
+    await copyAdditionalAssets([
+      {
+        src: './resources/meteor-icon-kit/public/icons/regular',
+        dst: 'icons/regular',
+      },
+      {
+        src: './resources/meteor-icon-kit/public/icons/solid',
+        dst: 'icons/solid',
+      },
+    ]);
+
     /**
      * Copy redirects.
      */
