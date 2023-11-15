@@ -80,7 +80,7 @@
     "storybook-addon-pseudo-states": "^2.0.1",
     "typedoc": "^0.24.7",
     "typescript": "^5.0.4",
-    "unocss": "^0.51.12",
+    "unocss": "^0.57.4",
     "uuid": "^9.0.0",
     "vite-plugin-inspect": "^0.7.26",
     "vite-plugin-live-reload": "^3.0.2",
