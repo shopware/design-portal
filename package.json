@@ -78,7 +78,7 @@
     "storybook": "^7.0.10",
     "storybook-addon-fetch-mock": "^1.0.1",
     "storybook-addon-pseudo-states": "^2.0.1",
-    "typedoc": "^0.24.7",
+    "typedoc": "^0.25.3",
     "typescript": "^5.0.4",
     "unocss": "^0.51.12",
     "uuid": "^9.0.0",
