@@ -30,7 +30,7 @@
     "@docsearch/css": "^3.3.4",
     "@docsearch/js": "^3.3.4",
     "@originjs/vite-plugin-require-context": "^1.0.9",
-    "@playwright/test": "^1.33.0",
+    "@playwright/test": "^1.40.0",
     "@shopware-docs/cli": "^1.0.17",
     "@shopware-docs/storybook": "^1.0.17",
     "@shopware-docs/vitepress": "^1.0.17",
