@@ -34,7 +34,7 @@
     "@shopware-docs/cli": "^1.0.17",
     "@shopware-docs/storybook": "^1.0.17",
     "@shopware-docs/vitepress": "^1.0.17",
-    "@shopware-docs/vitest": "^1.0.17",
+    "@shopware-docs/vitest": "^1.0.20",
     "@storybook/addon-essentials": "^7.0.10",
     "@storybook/addon-interactions": "^7.0.10",
     "@storybook/addon-links": "^7.0.10",
