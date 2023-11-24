@@ -1,4 +1,4 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
 
 settings:
   autoInstallPeers: true
@@ -43,8 +43,8 @@ devDependencies:
     specifier: ^1.33.0
     version: 1.39.0
   '@shopware-docs/cli':
-    specifier: ^1.0.17
-    version: 1.0.17
+    specifier: ^1.0.20
+    version: 1.0.20
   '@shopware-docs/storybook':
     specifier: ^1.0.17
     version: 1.0.17(@storybook/addon-essentials@7.5.3)(@storybook/addon-interactions@7.5.3)(@storybook/addon-links@7.5.3)(@storybook/addon-styling@1.3.7)(@storybook/blocks@7.5.3)(@storybook/testing-library@0.1.0)(@storybook/vue3-vite@7.5.3)(@storybook/vue3@7.5.3)(chromatic@6.24.1)(postcss@8.4.31)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)(seedrandom@3.0.5)(storybook-addon-fetch-mock@1.0.1)(storybook-addon-pseudo-states@2.1.2)(storybook@7.5.3)(vitepress@1.0.0-rc.25)
@@ -3065,8 +3065,8 @@ packages:
       js-md5: 0.7.3
     dev: false
 
-  /@shopware-docs/cli@1.0.17:
-    resolution: {integrity: sha512-wC+IyuiHFJ+2bs3YjK+uieVO6xzfvnPX1ltxRlHks6tPswhrh3jfIj+Ua4Fd1NJm+lxg2GlEPNBZHh/fUkX3eQ==}
+  /@shopware-docs/cli@1.0.20:
+    resolution: {integrity: sha512-DRHycEKy4qcnutaL4RelGIzQgk3L8Hy+5shCPc44TL+f1fdA/qKFmw7rNFW5fRCIHqtpd1Tqg1YVl2sPq9FQLA==}
     hasBin: true
     dev: true
 
