@@ -23,7 +23,7 @@
     "cross-env": "^7.0.3",
     "terser": "^5.17.3",
     "vitepress": "1.0.0-rc.25",
-    "vitepress-shopware-docs": "^1.0.17",
+    "vitepress-shopware-docs": "^1.0.20",
     "vue": "^3.3.1"
   },
   "devDependencies": {
