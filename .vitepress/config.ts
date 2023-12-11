@@ -113,11 +113,11 @@ export default defineConfigWithTheme<ThemeConfig>({
      */
     await copyAdditionalAssets([
       {
-        src: './resources/meteor-icon-kit/public/icons/regular',
+        src: '../node_modules/@shopware-ag/meteor-icon-kit/icons/regular',
         dst: 'icons/regular',
       },
       {
-        src: './resources/meteor-icon-kit/public/icons/solid',
+        src: '../node_modules/@shopware-ag/meteor-icon-kit/icons/solid',
         dst: 'icons/solid',
       },
     ]);
