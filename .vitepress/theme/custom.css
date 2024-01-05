@@ -1,0 +1,21 @@
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+.main img {
+    border-radius: 8px;
+}
+
+h1.styled {
+    font-size: 36px;
+    margin-top: 0 !important;
+    padding-top: 0;
+    font-family: Inter;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+.mb-80 {
+    margin-bottom: 80px;
+}

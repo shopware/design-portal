@@ -3,35 +3,34 @@
     <div>
       <div class="h-label">Guides</div>
       <h2 class="h-homepage md:max-w-1/2">Check out these practical guides to help you understand how to design for
-        Shopware</h2>
+        Shopware.</h2>
       <ul class="SwagExposed_links">
-        <li><a href="#">Shopware Design Principles</a></li>
-        <li><a href="#">Designing extensions for Shopware</a></li>
-        <li><a href="#">Accessibility</a></li>
-        <li><a href="#">Human-AI interactions</a></li>
+        <li><a href="/foundations/">Shopware Design Principles -></a></li>
+        <!--<li><a href="#">Designing extensions for Shopware -></a></li>-->
+        <li><a href="/foundations/accessibility">Accessibility -></a></li>
+        <li><a href="/foundations/human-ai-interaction">Human-AI interactions -></a></li>
       </ul>
     </div>
     <div>
       <div class="h-label">Product Experience</div>
-      <h2 class="h-homepage md:max-w-7/12">We empower you to build the exceptional - Our Design System makes UX and UI
-        easily accessible</h2>
+      <h2 class="h-homepage md:max-w-7/12">Crafting seamless experiences — Explore how we approach cohesive and user-centric solutions.</h2>
       <ul class="SwagExposed_links">
-        <li><a href="#">Shopware Design Principles</a></li>
+        <li><a href="#">Shopware Design Principles -></a></li>
       </ul>
     </div>
     <div class="SwagExposed_subgrid">
       <div>
         <div class="h-label">Brand</div>
-        <h2 class="h-homepage">Learn how to apply and adhere to Shopware's visual identity</h2>
+        <h2 class="h-homepage">Learn how to apply and adhere to Shopware's visual identity.</h2>
         <ul class="SwagExposed_links">
-          <li><a href="#">Explore our brand</a></li>
+          <li><a href="#">Explore our brand -></a></li>
         </ul>
       </div>
       <div>
         <div class="h-label">Content</div>
-        <h2 class="h-homepage">Explore our tone of voice and the mechanics of our grammar and style</h2>
+        <h2 class="h-homepage">Explore our tone of voice and the mechanics of our grammar and style.</h2>
         <ul class="SwagExposed_links">
-          <li><a href="#">Explore content guideance</a></li>
+          <li><a href="#">Explore content guideance -></a></li>
         </ul>
       </div>
     </div>
@@ -66,6 +65,9 @@
     @apply grid gap-20 md:grid-cols-2;
   }
 }
+h2 {
+      border-top: 0px;
+    }
 </style>
 
 <script setup lang="ts">

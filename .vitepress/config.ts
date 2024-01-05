@@ -51,6 +51,50 @@ export default defineConfigWithTheme<ThemeConfig>({
 
   themeConfig: {
     ...navigation, // add sidebar and nav config
+    sidebar: {
+      // This sidebar gets displayed when a user
+      // is on `foundations` directory.
+      '/foundations/': [
+        {
+          text: 'Foundations',
+          items: [
+            { 
+              text: 'Design Principles', 
+              link: '/foundations/' 
+            },
+            {
+              text: 'Accessibility',
+              link: '/foundations/accessibility'
+            },
+            {
+              text: 'Human-AI-Interaction',
+              link: '/foundations/human-ai-interation'
+            },
+            {
+              text: 'Design',
+              items: [
+                { text: 'Typography', link: '/foundations/design/typography' },
+                { text: 'Colors', link: '/foundations/design/colors' },
+                { text: 'Elevation', link: '/foundations/design/elevation' }
+              ]
+            }
+          ]
+        }
+      ],
+
+      // This sidebar gets displayed when a user
+      // is on `product-experience` directory.
+      '/product-experience/': [
+        {
+          text: 'Product-experience',
+          items: [
+            { text: 'Index', link: '/product-experience/' },
+            { text: 'Three', link: '/product-experience/three' },
+            { text: 'Four', link: '/product-experience/four' }
+          ]
+        }
+      ]
+    },
 
     algolia: {
       indexName: "beta-developer-shopware",

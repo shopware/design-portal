@@ -10,16 +10,13 @@ next: false
 ---
 
 <script setup>
-import SwagLine from "./components/home/SwagLine.vue";
-import SwagExposed from "./components/home/SwagExposed.vue";
-import SwagResources from "./components/home/SwagResources.vue";
-import LearnMore from "./components/banner/LearnMore.vue";
+import SwagTeam from "../components/team/SwagTeam.vue";
 </script>
 
 <!-- HERO -->
 <SwagHero class="my-30">
-    <template #label>Meteor Design System</template>
-    <template #title>Build the exceptional. Open Source. Ecommerce.</template>
+    <template #label>Our crew</template>
+    <template #title>Driven by empathy, guided by innovation.</template>
     <template #content><p>Meteor is Shopware’s open source design system – The Shopware Design Language builds it’s foundation, the system helps us create elegant, delightful, and accessible personal experiences that empower and inspire all of Shopware's merchants and shoppers.</p></template>
     <template #links>
     <SwagBtn href="#GetToKnow" class="--primary --sm" icon="long-arrow-right" icon-at="end">Get started</SwagBtn>
@@ -28,16 +25,9 @@ import LearnMore from "./components/banner/LearnMore.vue";
     <template #image><img src="/home/hub-hero-min.png" /></template>
 </SwagHero>
 
-<SwagLine />
+<SwagTeam />
 
-<SwagExposed class="my-30" />
 
-<LearnMore
-    title="Accessibility made simple"
-    copy="Everything you need to know to eliminate barriers for your users and meet new regulatory requirements."
-    btnlabel="Learn more"
-    page="/foundations/accessibility"
-/>
 
-<SwagResources class="my-30" />
+
 
