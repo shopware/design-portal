@@ -1,4 +1,5 @@
 ---
+title: Human-AI Interaction Principles
 sidebar: true
 layout: doc
 aside: true
@@ -6,8 +7,8 @@ page: true
 #footer: false
 editLink: false
 stackOverflowLink: false
-prev: false
-next: false
+prev: true
+next: true
 swag:
   related: false
 ---
@@ -31,7 +32,7 @@ The count is: {{ count }}
 }
 </style>-->
 
-## Human-AI Interaction Principles
+## {{ $frontmatter.title }}
 Designing for Human-AI interaction requires a user-centric approach that prioritizes ease of use, clear communication, and continuous improvement. By following these guidelines, you can create an AI feature that seamlessly integrates with the merchants workflow and enhances their productivity and efficiency.
 
 <picture>

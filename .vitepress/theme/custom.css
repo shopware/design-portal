@@ -19,3 +19,14 @@ h1.styled {
 .mb-80 {
     margin-bottom: 80px;
 }
+
+.m-40 {
+    margin: 60px 0px;
+}
+
+.landing-768 {
+    .VPDoc:not(.has-sidebar) .container {
+        max-width: 768px !important;
+    }
+    
+}

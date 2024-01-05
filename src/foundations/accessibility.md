@@ -1,17 +1,38 @@
 ---
+title: Accessibility
 sidebar: true
 aside: true
 page: true
 editLink: false
 stackOverflowLink: false
-prev: false
-next: false
+prev: true
+next: true
 swag:
   related: false
 ---
 
-# Accessibility
+# {{ $frontmatter.title }} 
 At Shopware, we are committed to creating inclusive and barrier-free shopping experiences for our valued merchants and their customers.
+
+::: info
+This is an info box.
+:::
+
+::: tip
+This is a tip.
+:::
+
+::: warning
+This is a warning.
+:::
+
+::: danger
+This is a dangerous warning.
+:::
+
+::: details
+This is a details block.
+:::
 
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="../foundations/accessibility/foundations-accessibility-intro@dark.png 4x">
@@ -19,7 +40,7 @@ At Shopware, we are committed to creating inclusive and barrier-free shopping ex
 <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../foundations/accessibility/foundations-accessibility-intro.png 4x" src="../foundations/accessibility/foundations-accessibility-intro.png" width="100%" height="auto">
 </picture>
 
-## Shopware is for everyone
+## Shopware is for everyone 
 Accessibility is not just a goal; it's a fundamental value that drives us to continuously enhance our products and services. By prioritizing accessibility, we are not only ensuring compliance with legal requirements but also extending our reach to untapped audiences for our merchants.
 
 ## Our Approach
@@ -85,7 +106,3 @@ For more information, see the following resources:
 **Accessibility Cheatsheet**
 
 ➡ [https://bitsofco.de/the-accessibility-cheatsheet/](https://bitsofco.de/the-accessibility-cheatsheet/)
-
-
-
-

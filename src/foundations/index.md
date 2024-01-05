@@ -1,4 +1,5 @@
 ---
+title: Design Principles
 sidebar: true
 aside: true
 page: true
@@ -6,7 +7,7 @@ page: true
 editLink: false
 stackOverflowLink: false
 prev: false
-next: false
+next: true
 swag:
   related: false
 ---
@@ -17,7 +18,7 @@ import SwagTeam from "../components/team/SwagTeam.vue";
 
 <SwagTeam />-->
 
-# Design Principles
+# {{ $frontmatter.title }}
 
 ## Our philosphy
 Our Product Design Principles reflect how we think about design. They provide a way for us to look at the work we create and how we create it: **Building the right thing; building the thing right – distinctively Shopware.**

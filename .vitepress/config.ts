@@ -22,8 +22,8 @@ import {
 export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig,
 
-  title: "Shopware Design",
-  description: "Documentation for Shopware designers",
+  title: "Shopware – Meteor Design System",
+  description: "Dive into the heart of Shopware's Design System – a comprehensive guide to our unified approach in crafting seamless commerce experiences.",
   srcDir: "src",
   srcExclude: [],
 
