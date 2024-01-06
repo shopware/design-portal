@@ -85,8 +85,9 @@
     "vite-plugin-inspect": "^0.8.1",
     "vite-plugin-live-reload": "^3.0.3",
     "vitest": "^1.1.1",
-    "vue-instantsearch": "^4.13.2"
-  },
+    "vue-instantsearch": "^4.13.2",
+    "vue3-carousel": "^0.3.1"
+    },
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [

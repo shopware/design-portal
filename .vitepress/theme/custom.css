@@ -10,7 +10,6 @@ h1.styled {
     font-size: 36px;
     margin-top: 0 !important;
     padding-top: 0;
-    font-family: Inter;
 }
 
 .mt-80 {
@@ -28,5 +27,15 @@ h1.styled {
     .VPDoc:not(.has-sidebar) .container {
         max-width: 768px !important;
     }
-    
+}
+
+.careers {
+    background-image: url(../careers/background.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    h2.h-homepage {
+        margin-top: 0 !important;
+        padding-top: 0;
+        border: 0;
+    }
 }
