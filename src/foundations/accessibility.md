@@ -14,26 +14,6 @@ swag:
 # {{ $frontmatter.title }} 
 At Shopware, we are committed to creating inclusive and barrier-free shopping experiences for our valued merchants and their customers.
 
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="../foundations/accessibility/foundations-accessibility-intro@dark.png 4x">
 

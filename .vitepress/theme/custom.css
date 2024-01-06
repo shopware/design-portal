@@ -25,6 +25,7 @@ h1.styled {
 }
 
 .landing-768 {
+    .VPDoc:not(.has-aside, .has-sidebar) > .container > .content, 
     .VPDoc:not(.has-sidebar) .container {
         max-width: 768px !important;
     }

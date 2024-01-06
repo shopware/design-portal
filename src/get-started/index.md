@@ -22,7 +22,7 @@ import HowToIntegrateResources from "../components/getstarted/HowToIntegrateReso
 # {{ $frontmatter.title }}
 
 <div class="m-40">
-<h2 class="h-homepage">Get started with the Meteor Design System ☄️</h2>
+<h2 class="h-homepage">Get started with Meteor ☄️</h2>
     <p>
     Meteor is Shopware’s open source design system – It is the basis of the Shopware Design Language, manifested in a unified system of components, styles, visuals and guidelines. It is therefore, the foundation for all of Shopware’s products. It helps us work together more efficiently and provides a unified process across teams to build empowering and delightful experiences for everyone.
     </p>
@@ -35,7 +35,7 @@ import HowToIntegrateResources from "../components/getstarted/HowToIntegrateReso
 
 
   <div class="m-40">
-    <h2 class="h-homepage md:max-w-7/12">Learn about our Guidelines</h2>
+    <h2 class="h-homepage md:max-w-7/12">Learn about Meteor</h2>
     <p>
     Discover our comprehensive guidelines designed to foster user-centricity and innovation. Our guidelines encapsulate best practices, ensuring seamless collaboration and empowering our team to create inclusive, accessible, and impactful design solutions.
     </p>
