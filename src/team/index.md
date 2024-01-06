@@ -1,4 +1,5 @@
 ---
+pageClass: careers
 sidebar: false
 aside: false
 page: true
@@ -24,7 +25,7 @@ import SwagTeam from "../components/team/SwagTeam.vue";
     </template>
     <template #image><img src="/home/hub-hero-min.png" /></template>
 </SwagHero>
-
+<div style="margin-top:450px;"></div>
 <SwagTeam />
 
 
