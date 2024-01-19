@@ -27,6 +27,7 @@ h1.styled {
     .VPDoc:not(.has-aside, .has-sidebar) > .container > .content, 
     .VPDoc:not(.has-sidebar) .container {
         max-width: 768px !important;
+        padding: 0px !important;
     }
 }
 

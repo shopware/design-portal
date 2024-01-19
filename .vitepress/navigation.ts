@@ -24,7 +24,7 @@ const navigation = buildSidebarNav('./src/', [
     },
     {
         link: '/team/',
-        text: 'Careers',
+        text: 'Design at Shopware',
     },
     resourcesMenu,
 ], [

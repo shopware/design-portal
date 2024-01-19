@@ -16,6 +16,7 @@ swag:
 <script setup>
 import SwagResourcesGetStarted from "../components/home/SwagResourcesGetStarted.vue";
 import HowToIntegrateResources from "../components/getstarted/HowToIntegrateResources.vue";
+import Contribute from "../components/banner/Contribute.vue";
 </script>
 
 <!-- HERO -->
@@ -52,6 +53,13 @@ import HowToIntegrateResources from "../components/getstarted/HowToIntegrateReso
     Meteor serves as the bedrock for all of Shopware's products, a unified system encompassing components, styles, visuals, and guidelines. It helps us work together more efficiently and provides a unified process across teams. This collective approach ensures the creation of empowering and delightful experiences for all merchants within the Shopware ecosystem.
   </p>
 </div>
+
+<Contribute
+    title="Be part of Meteor"
+    copy="We believe in Open-Source software – we listen to our Community and build Meteor in collaboration with merchants. The best and brightest ideas come from you. If you wish to contribute to the Meteor Design System, please read our contributing guidelines for a smooth start."
+    btn="true"
+    page="/foundations/contibutions"
+/>
 </div>
   
 

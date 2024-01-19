@@ -22,7 +22,7 @@ import LearnMore from "./components/banner/LearnMore.vue";
     <template #title>Build the exceptional. Open Source. Ecommerce.</template>
     <template #content><p>Meteor is Shopware’s open source design system – The Shopware Design Language builds it’s foundation, the system helps us create elegant, delightful, and accessible personal experiences that empower and inspire all of Shopware's merchants and shoppers.</p></template>
     <template #links>
-    <SwagBtn href="#GetToKnow" class="--primary --sm" icon="long-arrow-right" icon-at="end">Get started</SwagBtn>
+    <SwagBtn href="/get-started/" class="--primary --sm" icon="long-arrow-right" icon-at="end">Get started</SwagBtn>
     <SwagBtn href="/what-is-new.html" class="--primary --subtle --with-border --sm --transparent">See what's new</SwagBtn>
     </template>
     <template #image><img src="/home/hub-hero-min.png" /></template>

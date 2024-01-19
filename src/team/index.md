@@ -12,6 +12,7 @@ next: false
 
 <script setup>
 import SwagTeam from "../components/team/SwagTeam.vue";
+import SwagTeamValuesMarquee from "../components/team/SwagTeamValuesMarquee.vue";
 </script>
 
 <!-- HERO -->
@@ -26,7 +27,37 @@ import SwagTeam from "../components/team/SwagTeam.vue";
     <template #image><img src="/home/hub-hero-min.png" /></template>
 </SwagHero>
 <div style="margin-top:450px;"></div>
+
 <SwagTeam />
+
+
+<div class="m-40 md:max-w-6/12">
+  <div class="h-label">Design. Slay. Repeat.</div>
+  <h2 class="h-homepage md:max-w-7/12">What we do.</h2>
+  <p>
+  At Shopware, our team values form the cornerstone of our approach. We prioritize collaboration, innovation, and user-centricity in everything we do. Integrity, inclusivity, and continuous improvement drive us to create exceptional designs that deliver value and inspire meaningful connections with our users.
+  </p>
+
+  COMPONENT
+</div>
+
+<div class="m-40 md:max-w-6/12">
+<div class="h-label">Our values</div>
+<h2 class="h-homepage md:max-w-7/12">Delivering our values through design.</h2>
+<p>
+At Shopware, our team values form the cornerstone of our approach. We prioritize collaboration, innovation, and user-centricity in everything we do. Integrity, inclusivity, and continuous improvement drive us to create exceptional designs that deliver value and inspire meaningful connections with our users.
+</p>
+
+<SwagTeamValuesMarquee
+    title="Be part of Meteor"
+    copy="We believe in Open-Source software – we listen to our Community and build Meteor in collaboration with merchants. The best and brightest ideas come from you. If you wish to contribute to the Meteor Design System, please read our contributing guidelines for a smooth start."
+    btn="true"
+    page="/foundations/contibutions"
+/>
+</div>
+
+
+
 
 
 
