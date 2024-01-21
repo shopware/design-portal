@@ -46,9 +46,7 @@ const breakpoints = {
   <div class="h-label">Shopware Design</div>
     <h2 class="h-homepage">Who we are</h2>
     <p class="md:max-w-5/12">We are Shopware design, a dedicated remote team committed to crafting exceptional user experiences and brand identity across our product suite and services. Our mission is to drive innovation and excellence through collaborative, user-centric design principles. Embracing diversity and inclusivity, we ensure our solutions are elegant, accessible, and empowering for everyone.</p>
-  <div class="carousel__fade--left"></div>
-  <div class="carousel__fade--right"></div>
-  <div class="m-40">
+  <div class="m-40 carousel--container">
     <Carousel :wrap-around="true" :breakpoints="breakpoints" :autoplay="2800" pauseAutoplayOnHover="true">
       <Slide v-for="slide in slides" :key="slide.id">
         <div class="carousel__item">
@@ -76,6 +74,9 @@ const breakpoints = {
 </template>
 
 <style scoped>
+.carousel--container {
+  position: relative;
+}
 .carousel__item {
   display: flex;
   flex-direction: row;
@@ -170,27 +171,24 @@ const breakpoints = {
   transform: rotateY(0);
 }
 
-.carousel__fade--left {
-  width: 100px;
-  height: 375px;
-  position: absolute;
-  background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
-  z-index: 10;
+.carousel--container:before {
+        background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        width: 100px;
+        height: 280px;
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        z-index: 10;
 }
-@media (prefers-color-scheme: dark) { 
-    .carousel__fade--left {
-    background: linear-gradient(90deg, #1a1f26 0%, rgba(26, 31, 38, 0) 100%);
-    }
-  }
-.carousel__fade--right {
-  width: 180px;
-  height: 375px;
-  position: absolute;
-  background: linear-gradient(-90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
-  z-index: 10;
-  right: 0;
-  @media (prefers-color-scheme: dark) { 
-    background: linear-gradient(-90deg, #1a1f26 0%, rgba(26, 31, 38, 0) 100%);
-  }
+.carousel--container:after {
+        background: linear-gradient(-90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        width: 100px;
+        height: 280px;
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        z-index: 10;
 }
 </style>

@@ -1,4 +1,5 @@
 ---
+pageClass: home--design
 sidebar: false
 aside: false
 page: true
@@ -11,22 +12,34 @@ next: false
 
 <script setup>
 import SwagLine from "./components/home/SwagLine.vue";
+import SwagDesignHero from "./components/home/SwagDesignHero.vue";
 import SwagExposed from "./components/home/SwagExposed.vue";
 import SwagResources from "./components/home/SwagResources.vue";
 import LearnMore from "./components/banner/LearnMore.vue";
+import TargetGroup from "./components/banner/TargetGroup.vue";
 </script>
 
 <!-- HERO -->
-<SwagHero class="my-30">
-    <template #label>Meteor Design System</template>
-    <template #title>Build the exceptional. Open Source. Ecommerce.</template>
-    <template #content><p>Meteor is Shopware’s open source design system – The Shopware Design Language builds it’s foundation, the system helps us create elegant, delightful, and accessible personal experiences that empower and inspire all of Shopware's merchants and shoppers.</p></template>
+<SwagDesignHero class="my-30">
+    <template #label>Open-Source</template>
+    <template #title>Meteor design system.</template>
+    <template #subtitle>Build the extraordinary.</template>
+    <template #content><p>Meteor is Shopware’s open-source design system that drives our commerce solutions. Extend and customise every aspect of Shopware – create elegant, delightful, and accessible experiences. There are no limits to your imagination.</p></template>
     <template #links>
-    <SwagBtn href="/get-started/" class="--primary --sm" icon="long-arrow-right" icon-at="end">Get started</SwagBtn>
-    <SwagBtn href="/what-is-new.html" class="--primary --subtle --with-border --sm --transparent">See what's new</SwagBtn>
+    <TargetGroup
+    btnlabelleft="For designers."
+    pageleft="/getstarted/#designers"
+    btnlabelright="For developers."
+    pageright="/getstarted/#developers"
+    />
     </template>
-    <template #image><img src="/home/hub-hero-min.png" /></template>
-</SwagHero>
+    <template #image>
+    <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./home/design-hero@dark.png 4x">
+    <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="./home/design-hero.png 4x" src="./home/design-hero.png" width="100%" height="auto">
+    </picture>
+    </template>
+</SwagDesignHero>
 
 <SwagLine />
 

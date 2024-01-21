@@ -15,10 +15,6 @@ const navigation = buildSidebarNav('./src/', [
         text: 'Product Experience',
     },
     {
-        link: '/components.html',
-        text: 'Components',
-    },
-    {
         link: 'https://brand.shopware.com',
         text: 'Brand',
     },

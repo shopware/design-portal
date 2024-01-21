@@ -12,13 +12,20 @@ h1.styled {
     padding-top: 0;
 }
 
+.h-label {
+    text-transform: uppercase !important;
+    font-size: 13px;
+}
+
 .mt-80 {
     margin-top: 80px;
 }
 .mb-80 {
     margin-bottom: 80px;
 }
-
+.m-20 {
+    margin: 20px 0px;
+}
 .m-40 {
     margin: 60px 0px;
 }
@@ -40,4 +47,47 @@ h1.styled {
         padding-top: 0;
         border: 0;
     }
+}
+
+.home--design {
+    background-image: url(../home/background.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.Tabs_Design--custom {
+    .Tabs_button {
+        background: #fff;
+        border-radius: 8px;
+        --un-border-opacity: 0;
+        color: #3D3E42;
+        padding: 12px 16px;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 16.8px */
+    }
+    .Tabs_button.--active {
+        background-color: #F2F3F8;
+        --un-border-opacity: 0;
+        border-color: rgb(209 213 219 / var(--un-border-opacity));
+        --un-text-opacity: 1;
+        color: #474A57;
+    }
+    .Tabs_buttons {
+        display: flex;
+        gap: 4px;
+        border: 1px solid #CDCED4;
+        width: fit-content;
+        padding: 4px;
+        border-radius: 12px;
+        }
+        .Tab_slot,.Tabs_slot {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0px;
+        padding-bottom: 0.25rem;
+        background-color: #fff!important;
+        }
 }

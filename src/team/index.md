@@ -18,7 +18,7 @@ import SwagTeamValuesMarquee from "../components/team/SwagTeamValuesMarquee.vue"
 <!-- HERO -->
 <SwagHero class="my-30">
     <template #label>Our crew</template>
-    <template #title>Driven by empathy, guided by innovation.</template>
+    <template #title>Innovators. Rebels. Thinkers. Creators.</template>
     <template #content><p>Meteor is Shopware’s open source design system – The Shopware Design Language builds it’s foundation, the system helps us create elegant, delightful, and accessible personal experiences that empower and inspire all of Shopware's merchants and shoppers.</p></template>
     <template #links>
     <SwagBtn href="#GetToKnow" class="--primary --sm" icon="long-arrow-right" icon-at="end">Get started</SwagBtn>
@@ -37,8 +37,9 @@ import SwagTeamValuesMarquee from "../components/team/SwagTeamValuesMarquee.vue"
   <p>
   At Shopware, our team values form the cornerstone of our approach. We prioritize collaboration, innovation, and user-centricity in everything we do. Integrity, inclusivity, and continuous improvement drive us to create exceptional designs that deliver value and inspire meaningful connections with our users.
   </p>
-
-  COMPONENT
+</div>
+<div class="my-30">
+  <SwagTeamValuesMarquee/>
 </div>
 
 <div class="m-40 md:max-w-6/12">
@@ -47,14 +48,9 @@ import SwagTeamValuesMarquee from "../components/team/SwagTeamValuesMarquee.vue"
 <p>
 At Shopware, our team values form the cornerstone of our approach. We prioritize collaboration, innovation, and user-centricity in everything we do. Integrity, inclusivity, and continuous improvement drive us to create exceptional designs that deliver value and inspire meaningful connections with our users.
 </p>
-
-<SwagTeamValuesMarquee
-    title="Be part of Meteor"
-    copy="We believe in Open-Source software – we listen to our Community and build Meteor in collaboration with merchants. The best and brightest ideas come from you. If you wish to contribute to the Meteor Design System, please read our contributing guidelines for a smooth start."
-    btn="true"
-    page="/foundations/contibutions"
-/>
 </div>
+
+
 
 
 

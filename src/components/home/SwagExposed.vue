@@ -11,13 +11,13 @@
         <li><a href="/foundations/human-ai-interaction">Human-AI interactions -></a></li>
       </ul>
     </div>
-    <div>
+    <!--<div>
       <div class="h-label">Product Experience</div>
       <h2 class="h-homepage md:max-w-7/12">Crafting seamless experiences — Explore how we approach cohesive and user-centric solutions.</h2>
       <ul class="SwagExposed_links">
         <li><a href="#">Shopware Design Principles -></a></li>
       </ul>
-    </div>
+    </div>-->
     <div class="SwagExposed_subgrid">
       <div>
         <div class="h-label">Brand</div>

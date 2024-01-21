@@ -17,10 +17,11 @@
 .SwagLine {
   border: 1px solid var(--sw-c-gray-200);
   border-width: 1px 0;
-
+  display: flex;
   ul {
     @apply flex flex-wrap gap-3 gap-y-4 m-0 p-0 py-4 items-center;
     list-style-type: none;
+    margin: 0 auto
   }
   li {
     @apply m-0 p-0 flex gap-3 items-center flex-row;
