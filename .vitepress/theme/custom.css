@@ -33,15 +33,16 @@ h1.styled {
 .landing-768 {
     .VPDoc:not(.has-aside, .has-sidebar) > .container > .content, 
     .VPDoc:not(.has-sidebar) .container {
-        max-width: 768px !important;
+        max-width: 1024px !important;
         padding: 0px !important;
     }
 }
 
 .careers {
-    background-image: url(../careers/background.png);
+    background-image: url(../home/background.png);
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top left;
+    background-size: contain;
     h2.h-homepage {
         margin-top: 0 !important;
         padding-top: 0;
@@ -53,6 +54,7 @@ h1.styled {
     background-image: url(../home/background.png);
     background-repeat: no-repeat;
     background-position: top left;
+    background-size: contain;
 }
 
 .Tabs_Design--custom {
@@ -90,4 +92,11 @@ h1.styled {
         padding-bottom: 0.25rem;
         background-color: #fff!important;
         }
+}
+
+.w-fill-flex {
+    width: -webkit-fill-available;
+}
+.h-fit-flex {
+    height: -webkit-fit-content;
 }

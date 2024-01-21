@@ -1,3 +1,4 @@
+<!-- @todo move to global hub components -->
 <template>
     <div class="cutdown">
         <div class="cutdown_content">
@@ -11,7 +12,7 @@
                 <p><slot name="copy">{{ title }}</slot></p>
             </div>
             <div class="right">
-                <SwagBtn :href="videoURL" class="--secondary --sm"><slot name="btnlabel">{{ btnlabel }}</slot></SwagBtn>
+                <SwagBtn :href="videoURL" class="--secondary --sm"><slot name="btnlabel"><!--<SwagIcon type="solid" icon="play"/>--> {{ btnlabel }}</slot></SwagBtn>
             </div>
         </div>        
     </div>

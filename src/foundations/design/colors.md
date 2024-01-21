@@ -16,6 +16,8 @@ import SwagLine from "../../components/home/SwagLine.vue";
 import SwagExposed from "../../components/home/SwagExposed.vue";
 import SwagResources from "../../components/home/SwagResources.vue";
 import LearnMore from "../../components/banner/LearnMore.vue";
+import Cutdown from "../../components/banner/Cutdown.vue";
+import Contribute from "../../components/banner/Contribute.vue";
 </script>
 
 ## Colors
@@ -45,6 +47,20 @@ This is a details block.
     copy="Everything you need to know to eliminate barriers for your users and meet new regulatory requirements."
     btnlabel="Learn more"
     page="/foundations/accessibility"
+/>
+
+<Cutdown
+    eyebrow="Related course"
+    title="Accessibility commitment"
+    btnlabel="Watch lesson"
+    videoURL="/foundations/accessibility"
+/>
+
+<Contribute
+title="Be part of Meteor"
+copy="We believe in Open-Source software – we listen to our Community and build Meteor in collaboration with merchants. The best and brightest ideas come from you. If you wish to contribute to the Meteor Design System, please read our contributing guidelines for a smooth start."
+btn="true"
+page="/foundations/contibutions"
 />
 
 <Tabs>

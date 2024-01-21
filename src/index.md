@@ -17,6 +17,7 @@ import SwagExposed from "./components/home/SwagExposed.vue";
 import SwagResources from "./components/home/SwagResources.vue";
 import LearnMore from "./components/banner/LearnMore.vue";
 import TargetGroup from "./components/banner/TargetGroup.vue";
+import NPM from "./components/interaction/NPM.vue";
 </script>
 
 <!-- HERO -->
@@ -45,12 +46,12 @@ import TargetGroup from "./components/banner/TargetGroup.vue";
 
 <SwagExposed class="my-30" />
 
-<LearnMore
-    title="Accessibility made simple"
-    copy="Everything you need to know to eliminate barriers for your users and meet new regulatory requirements."
-    btnlabel="Learn more"
-    page="/foundations/accessibility"
-/>
-
 <SwagResources class="my-30" />
 
+
+<!-- TEST @todo move to icon overview, add copy to clipboard function -->
+<div class="flex p-0 m-0 mt-5 gap-12 gap-y-4 my-30">
+ <SwagBtn href="#" class="--primary developers w-fill-flex h-fit-flex" icon="long-arrow-right" icon-at="end"><SwagIcon icon="figma"/>Open in Figma</SwagBtn> 
+
+  <NPM package="npm i @shopware/meteor-icon-kit"/>
+</div>

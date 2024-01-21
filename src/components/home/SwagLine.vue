@@ -16,7 +16,8 @@
 <style lang="scss">
 .SwagLine {
   border: 1px solid var(--sw-c-gray-200);
-  border-width: 1px 0;
+  border-image-slice: 1;
+  border-width: 1px 0px;
   display: flex;
   ul {
     @apply flex flex-wrap gap-3 gap-y-4 m-0 p-0 py-4 items-center;

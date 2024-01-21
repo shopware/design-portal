@@ -16,7 +16,6 @@ swag:
 import SwagResourcesGetStarted from "../components/home/SwagResourcesGetStarted.vue";
 import HowToIntegrateResources from "../components/getstarted/HowToIntegrateResources.vue";
 import Contribute from "../components/banner/Contribute.vue";
-import Cutdown from "../components/banner/Cutdown.vue";
 </script>
 
 <!-- HERO -->
@@ -48,12 +47,7 @@ import Cutdown from "../components/banner/Cutdown.vue";
   <SwagResourcesGetStarted class="m-40" />
 
   <HowToIntegrateResources class="m-40" />
-  <Cutdown
-    eyebrow="Related course"
-    title="Accessibility commitment"
-    btnlabel="Watch lesson"
-    videoURL="/foundations/accessibility"
-/>
+  
   </div>
   </Tab>
   <Tab title="For developers" id="developers">
@@ -75,3 +69,4 @@ copy="We believe in Open-Source software – we listen to our Community and buil
 btn="true"
 page="/foundations/contibutions"
 />
+

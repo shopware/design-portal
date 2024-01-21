@@ -11,6 +11,10 @@ swag:
   related: false
 ---
 
+<script setup>
+import Cutdown from "../components/banner/Cutdown.vue";
+</script>
+
 # {{ $frontmatter.title }} 
 At Shopware, we are committed to creating inclusive and barrier-free shopping experiences for our valued merchants and their customers.
 
@@ -23,15 +27,22 @@ At Shopware, we are committed to creating inclusive and barrier-free shopping ex
 ## Shopware is for everyone 
 Accessibility is not just a goal; it's a fundamental value that drives us to continuously enhance our products and services. By prioritizing accessibility, we are not only ensuring compliance with legal requirements but also extending our reach to untapped audiences for our merchants.
 
+<Cutdown
+    eyebrow="Related course"
+    title="Our commitment to accessibility"
+    btnlabel="Watch lesson"
+    videoURL="/foundations/accessibility"
+  />
+
 ## Our Approach
-To achieve true accessibility, we adhere to the industry-leading guidelines set forth by the Web Content Accessibility Guidelines (WCAG) 2.1 AA and Barrier-Free Information Technology Regulation 2.0 (BITV). These guidelines are paramount in shaping web accessibility standards and will serve as the foundation for the upcoming accessibility law, the "Barrierefreiheitsstärkungsgesetz," which will be effective for all webshops in Germany in 2024.
+To achieve true accessibility, we adhere to the industry-leading guidelines set forth by the Web Content Accessibility Guidelines <code>(WCAG) 2.1 AA</code> and Barrier-Free Information Technology Regulation <code>(BITV 2.0)</code>. These guidelines are paramount in shaping web accessibility standards and will serve as the foundation for the upcoming accessibility law, the "Barrierefreiheitsstärkungsgesetz," which will be effective for all webshops in Germany in 2024.
 
 ## Our Commitment
-Our commitment extends beyond compliance. We are determined to be fully prepared well before the accessibility law takes effect. While we may not currently conform to all aspects of WCAG 2.1 AA, we are working diligently to bridge the gap. Our target is to achieve full conformance by the end of the year, ensuring our merchants' online shops are accessible to all.
+Our commitment extends beyond compliance. We are determined to be fully prepared well before the accessibility law takes effect. While we may not currently conform to all aspects of <code>WCAG 2.1 AA</code>, we are working diligently to bridge the gap. Our target is to achieve full conformance by the end of the year, ensuring our merchants' online shops are accessible to all.
 
 ## Roadmap
 **Understanding WCAG Guidelines**
-- Familiarizing the entire company with the WCAG guidelines, particularly WCAG 2.1, which provides a comprehensive framework for web accessibility at Shopware.
+- Familiarizing the entire company with the WCAG guidelines, particularly <code>WCAG 2.1</code>, which provides a comprehensive framework for web accessibility at Shopware.
 - Studying how the principles of Perceivable, Operable, Understandable, and Robust affect our product.
 
 **Setting Accessibility Goals**

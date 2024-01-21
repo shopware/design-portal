@@ -1,3 +1,4 @@
+<!-- @todo move to global hub components -->
 <template>
     <div class="LearnMore">
         <div class="content">

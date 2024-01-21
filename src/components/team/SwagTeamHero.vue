@@ -4,10 +4,7 @@
         <div class="grid gap-4">
           <div class="SwagDesignHero_label h-label"><slot name="label">Label</slot></div>
           <div class="SwagDesignHero_title"><slot name="title">Title</slot></div>
-          <div class="SwagDesignHero_subtitle"><slot name="subtitle">Subtitle</slot></div>
           <div class="SwagDesignHero_content"><slot name="content">Content</slot></div>
-          <div class="SwagDesignHero_links"><slot name="links">Links</slot>
-          </div>
         </div>
         <div>
           <div class="SwagDesignHero_image"><slot name="image">Image</slot></div>

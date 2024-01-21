@@ -12,21 +12,23 @@ next: false
 
 <script setup>
 import SwagTeam from "../components/team/SwagTeam.vue";
+import SwagTeamHero from "../components/team/SwagTeamHero.vue";
 import SwagTeamValuesMarquee from "../components/team/SwagTeamValuesMarquee.vue";
 </script>
 
 <!-- HERO -->
-<SwagHero class="my-30">
-    <template #label>Our crew</template>
+<SwagTeamHero class="my-30">
+    <template #label>Our Crew</template>
     <template #title>Innovators. Rebels. Thinkers. Creators.</template>
-    <template #content><p>Meteor is Shopware’s open source design system – The Shopware Design Language builds it’s foundation, the system helps us create elegant, delightful, and accessible personal experiences that empower and inspire all of Shopware's merchants and shoppers.</p></template>
-    <template #links>
-    <SwagBtn href="#GetToKnow" class="--primary --sm" icon="long-arrow-right" icon-at="end">Get started</SwagBtn>
-    <SwagBtn href="/what-is-new.html" class="--primary --subtle --with-border --sm --transparent">See what's new</SwagBtn>
+    <template #content><p>At Shopware, we're not just a design team – we're a crew of passionate individuals driven by innovation, rebellion, deep thinking, and creativity. We are united by a common passion for pushing boundaries and redefining the norm of commerce.</p></template>
+    <template #image>
+    <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../home/design-hero@dark.png 4x">
+    <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../home/design-hero.png 4x" src="../home/design-hero.png" width="100%" height="auto">
+    </picture>
     </template>
-    <template #image><img src="/home/hub-hero-min.png" /></template>
-</SwagHero>
-<div style="margin-top:450px;"></div>
+</SwagTeamHero>
+<div style="margin-top:238px;"></div>
 
 <SwagTeam />
 
@@ -49,13 +51,4 @@ import SwagTeamValuesMarquee from "../components/team/SwagTeamValuesMarquee.vue"
 At Shopware, our team values form the cornerstone of our approach. We prioritize collaboration, innovation, and user-centricity in everything we do. Integrity, inclusivity, and continuous improvement drive us to create exceptional designs that deliver value and inspire meaningful connections with our users.
 </p>
 </div>
-
-
-
-
-
-
-
-
-
 
