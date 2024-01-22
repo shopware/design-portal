@@ -5,7 +5,10 @@
                 <input class="package-copy font-mono" v-on:focus="$event.target.select()" ref="clone" readonly :value="package"/>
             </div>
             <div class="right">
-                <SwagBtn :href="videoURL" class="--secondary --sm"><SwagIcon type="solid" icon="copy-s"/></SwagBtn>
+                <SwagBtn class="--secondary --sm" @click.prevent="copyToClipboard" href="#!">
+                    <SwagIcon type="solid" icon="copy-s" />
+
+                    </SwagBtn>
             </div>      
     </div>
   </template>
@@ -16,6 +19,11 @@ const props = defineProps({
       type: String
     },
   });
+
+const copyToClipboard = function(event) {
+    event.preventDefault();
+    navigator.clipboard.writeText(props.package)
+}
 </script>
 
   
