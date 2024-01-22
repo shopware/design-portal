@@ -1,5 +1,11 @@
 * {
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "calt";
+}
+
+span.font-setting-ss02 {
+    font-feature-settings: "ss02", "cv08";
 }
 
 .main img {
@@ -100,3 +106,28 @@ h1.styled {
 .h-fit-flex {
     height: -webkit-fit-content;
 }
+
+/* @todo move to global hub components */
+.btn.--contrast, .vp-doc .btn.--contrast {
+    --btn-bg: #2D2E32;
+    height: 40px;
+    padding: 16px;
+    color: #FFF;
+
+    /* Inter/Desktop/Text/xs/Semibold */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 19.6px */
+    }
+    .btn.--contrast:hover, .vp-doc .btn.--contrast:hover {
+        background-color: #3D3E42!important;
+    }
+
+    .cursor-dog { 
+        cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAMAAAD63NUrAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAFZJREFUeNqdzksKwDAIAFHH+x+6lIYOVPOhs5OHJnES/5UkYKEkU7xjijSIm50iFh4fAXgYDd/yumVVRSwsqq/nRA3xVK0oo06d5U6DpQZ7PV7lMxH7LkaQAbYFwryzAAAAAElFTkSuQmCC),auto;
+    }
+    .cursor-you { 
+        cursor:url(../careers/cursor-you.png) 1 1, auto;
+    }

@@ -18,14 +18,10 @@ const slides = [
   { id: '12', name: 'Jessica Robering', pronouns: 'she/her', role: 'UI Designer', portrait: '../../careers/team/jessica--robering.png 2x' },
   { id: '13', name: 'Leonie Osterhaus', pronouns: 'she/her', role: 'Brand Designer', portrait: '../../careers/team/leonie--osterhaus.png 2x' },
   { id: '14', name: 'Niklas Kortüm', pronouns: 'he/him', role: 'Brand Architect', portrait: '../../careers/team/niklas--kortuem.png 2x' },
-  { id: '15', name: 'Oskar', role: '-> Dennis', portrait: '../../careers/team/oskar.png 2x' },  
-  { id: '16', name: 'Archie', role: '-> Anna-Lena', portrait: '../../careers/team/archie.png 2x' }, 
-  { id: '17', name: 'Beau Beau', role: '-> Julian', portrait: '../../careers/team/beaubeau.png 2x' },
-  { id: '18', name: 'Ella', role: '-> Peter', portrait: '../../careers/team/ella.png 2x' },
-  
- 
-  
-
+  { id: '15', name: 'Oskar', role: '-> Dennis', portrait: '../../careers/team/oskar.png 2x', dog: '1' },  
+  { id: '16', name: 'Archie', role: '-> Anna-Lena', portrait: '../../careers/team/archie.png 2x', dog: '1' }, 
+  { id: '17', name: 'Beau Beau', role: '-> Julian', portrait: '../../careers/team/beaubeau.png 2x', dog: '1' },
+  { id: '18', name: 'Ella', role: '-> Peter', portrait: '../../careers/team/ella.png 2x', dog: '1' }
 ]
 
 const breakpoints = {
@@ -416,7 +412,25 @@ const breakpoints = {
     <div class="mt-80 carousel--container">
     <Carousel :wrap-around="true" :breakpoints="breakpoints" :autoplay="2800" pauseAutoplayOnHover="true">
       <Slide v-for="slide in slides" :key="slide.id">
-        <div class="carousel__item">
+        <div v-if="slide.dog > 0" class="carousel__item cursor-dog">
+          <div class="carousel__item">
+          <div class="carousel__item-left">
+            <picture>
+              <source media="(prefers-color-scheme: dark)" :srcset="slide.portrait" type="image/png">
+
+              <img decoding="async" :alt="slide.name" :src="slide.portrait" :srcset="slide.portrait" width="100%" height="auto">
+            </picture>
+          </div>
+          <div class="carousel__item-right">
+            <p>
+              <h3>{{ slide.name }}</h3>
+              {{ slide.role }}
+          </p>
+          <span class="pronouns">{{ slide.pronouns }}</span>
+          </div>
+        </div>
+        </div>
+        <div v-else class="carousel__item">
           <div class="carousel__item-left">
             <picture>
               <source media="(prefers-color-scheme: dark)" :srcset="slide.portrait" type="image/png">
