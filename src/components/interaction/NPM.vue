@@ -5,7 +5,7 @@
                 <input class="package-copy font-mono" v-on:focus="$event.target.select()" ref="clone" readonly :value="package"/>
             </div>
             <div class="right">
-                <SwagBtn class="--secondary --sm" @click.prevent="copyToClipboard" href="#!">
+                <SwagBtn class="--secondary --sm" @click.prevent="copyToClipboard" href="#!" data-tooltip="Copy to clipboard">
                     <SwagIcon type="solid" icon="copy-s" />
 
                     </SwagBtn>
@@ -44,7 +44,7 @@ const copyToClipboard = function(event) {
 
     .package-copy {
         color: #2D2E32;
-        font-size: 20px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;

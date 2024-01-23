@@ -16,6 +16,8 @@ swag:
 import SwagResourcesGetStarted from "../components/home/SwagResourcesGetStarted.vue";
 import HowToIntegrateResources from "../components/getstarted/HowToIntegrateResources.vue";
 import Contribute from "../components/banner/Contribute.vue";
+import Cutdown from "../components/banner/Cutdown.vue";
+import NPM from "../components/interaction/NPM.vue";
 </script>
 
 <!-- HERO -->
@@ -24,7 +26,7 @@ import Contribute from "../components/banner/Contribute.vue";
 <Tabs>
   <Tab title="For designers" id="designers">
   <div class="m-20">
-  <h2 class="h-homepage">Get started with Meteor ☄️</h2>
+  <h2 class="h-homepage">Get started with Meteor for Figma</h2>
   <p>
   Meteor is Shopware’s open source design system – It is the basis of the Shopware Design Language, manifested in a unified system of components, styles, visuals and guidelines. It is therefore, the foundation for all of Shopware’s products. It helps us work together more efficiently and provides a unified process across teams to build empowering and delightful experiences for everyone.
   </p>
@@ -51,7 +53,27 @@ import Contribute from "../components/banner/Contribute.vue";
   </div>
   </Tab>
   <Tab title="For developers" id="developers">
-    For developers
+  <div class="m-20">
+  <h2 class="h-homepage">Get started with Meteor components</h2>
+  <p>
+  Add the Meteor component package to your project.
+  </p>
+    <div class="flex p-0 m-0 gap-12 gap-y-4">
+      <NPM package="npm i @shopware-ag/meteor-component-library"/>
+    </div>
+  <p>Import the <code>style.css</code> for general styling like fonts, etc. in the root file of your application or in your root styling file.</p>
+  <div class="flex p-0 m-0 gap-12 gap-y-4">
+      <NPM package="import '@shopware-ag/meteor-component-library/dist/style.css';"/>
+    </div>
+
+  <h2 class="h-homepage m-20">Meteor Icon Kit</h2>
+  <p>
+  To also use the Icon Kit, add thr package to your project.
+  </p>
+    <div class="flex p-0 m-0 gap-12 gap-y-4">
+      <NPM package="npm i @shopware-ag/meteor-icon-kit"/>
+    </div>
+  </div>
   </Tab>
 
 </Tabs>
