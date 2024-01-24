@@ -1,6 +1,6 @@
 <!-- @todo move to global hub components -->
 <template>
-    <div class="cutdown">
+    <div class="banner--cutdown">
         <div class="cutdown_content">
             <picture>
             <source media="(prefers-color-scheme: dark)" srcset="../../foundations/accessibility/foundations-accessibility-intro@dark.png 4x">
@@ -37,7 +37,7 @@ const props = defineProps({
 
   
 <style lang="scss">
-.cutdown {
+.banner--cutdown {
     align-items: center;
     background-color: #F2F3F8;
     border-radius: 12px;

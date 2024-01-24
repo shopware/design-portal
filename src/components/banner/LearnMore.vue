@@ -1,6 +1,6 @@
 <!-- @todo move to global hub components -->
 <template>
-    <div class="LearnMore">
+    <div class="banner--learn-more">
         <div class="content">
             <div class="left">
                 <h2><slot name="title">{{ title }}</slot></h2>
@@ -32,7 +32,7 @@ const props = defineProps({
 
   
 <style lang="scss">
-.LearnMore {
+.banner--learn-more {
     width: 100%;
     display: flex;
     background: #12141E;
