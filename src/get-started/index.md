@@ -25,7 +25,7 @@ import NPM from "../components/interaction/NPM.vue";
 <div class="Tabs_Design--custom">
 <Tabs>
   <Tab title="For designers" id="designers">
-  <div class="m-20">
+  <div class="mt-[20px] mb-[20px]">
   <h2 class="h-homepage">Get started with Meteor for Figma</h2>
   <p>
   Meteor is Shopware’s open source design system – It is the basis of the Shopware Design Language, manifested in a unified system of components, styles, visuals and guidelines. It is therefore, the foundation for all of Shopware’s products. It helps us work together more efficiently and provides a unified process across teams to build empowering and delightful experiences for everyone.
@@ -38,7 +38,7 @@ import NPM from "../components/interaction/NPM.vue";
 
 
 
-  <div class="m-40">
+  <div class="mt-[40px] mb-[40px]">
   <h2 class="h-homepage md:max-w-7/12">Learn about Meteor</h2>
   <p>
   Discover our comprehensive guidelines designed to foster user-centricity and innovation. Our guidelines encapsulate best practices, ensuring seamless collaboration and empowering our team to create inclusive, accessible, and impactful design solutions.
@@ -46,14 +46,14 @@ import NPM from "../components/interaction/NPM.vue";
   <SwagBtn href="/foundations/" class="--primary --sm" icon="long-arrow-right" icon-at="end">Learn more</SwagBtn>
   </div>
 
-  <SwagResourcesGetStarted class="m-40" />
+  <SwagResourcesGetStarted class="mt-[40px] mb-[40px]" />
 
-  <HowToIntegrateResources class="m-40" />
+  <HowToIntegrateResources class="mt-[40px] mb-[40px]" />
   
   </div>
   </Tab>
   <Tab title="For developers" id="developers">
-  <div class="m-20">
+  <div class="mt-[20px] mb-[20px]">
   <h2 class="h-homepage">Get started with Meteor components</h2>
   <p>
   Add the Meteor component package to your project.
@@ -66,7 +66,7 @@ import NPM from "../components/interaction/NPM.vue";
       <NPM package="import '@shopware-ag/meteor-component-library/dist/style.css';"/>
     </div>
 
-  <h2 class="h-homepage m-20">Meteor Icon Kit</h2>
+  <h2 class="h-homepage mt-[20px] mb-[20px]">Meteor Icon Kit</h2>
   <p>
   To also use the Icon Kit, add thr package to your project.
   </p>
@@ -78,7 +78,7 @@ import NPM from "../components/interaction/NPM.vue";
 
 </Tabs>
 </div>
-<div class="m-20">
+<div class="mt-[20px]">
   <h2 class="h-homepage md:max-w-7/12">Meteor’s mission</h2>
   <p>
   Meteor serves as the bedrock for all of Shopware's products, a unified system encompassing components, styles, visuals, and guidelines. It helps us work together more efficiently and provides a unified process across teams. This collective approach ensures the creation of empowering and delightful experiences for all merchants within the Shopware ecosystem.

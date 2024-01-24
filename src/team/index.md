@@ -34,7 +34,7 @@ import SwagTeamValuesMarquee from "../components/team/SwagTeamValuesMarquee.vue"
 <SwagTeam />
 
 
-<!--<div class="m-40 md:max-w-6/12">
+<!--<div class="mt-[40px] mb-[40px] md:max-w-6/12">
   <div class="h-label">Design. Slay. Repeat.</div>
   <h2 class="h-homepage md:max-w-7/12">What we do.</h2>
   <p>
@@ -47,7 +47,7 @@ import SwagTeamValuesMarquee from "../components/team/SwagTeamValuesMarquee.vue"
 
 
 
-<div class="m-40 md:max-w-6/12">
+<div class="mt-[40px] mb-[40px] md:max-w-6/12">
 <div class="h-label">Our values</div>
 <h2 class="h-homepage md:max-w-7/12">Delivering our values through design.</h2>
 <p>
@@ -55,7 +55,7 @@ At Shopware, our team values form the cornerstone of our approach. We prioritize
 </p>
 </div>-->
 
-<section class="join-us m-40 md:max-w-12/12 cursor-you">
+<section class="join-us mt-[40px] mb-[40px] md:max-w-12/12 cursor-you">
   <div class="left-join md:max-w-6/12">
     <h2>Designed in Schöppingen.<br> <span>And Frankfurt. Münster. <br>New York. Da Nang. <br>Cologne.</span></h2>
     <p>As a remote team, we embrace the idea that creativity knows no boundaries and flourishes in the diverse landscapes of inspiration. <span>Here, distance is not a limitation, but a canvas for innovation.</span></p>

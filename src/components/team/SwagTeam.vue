@@ -409,7 +409,7 @@ const breakpoints = {
   </div>
 </div>
     <h2 class="h-homepage md:max-w-4/12">Creation is our craft. <br>Deep thinking is the foundation of our success.</h2>
-    <div class="mt-80 carousel--container">
+    <div class="mt-[80px] carousel--container">
     <Carousel :wrap-around="true" :breakpoints="breakpoints" :autoplay="2800" pauseAutoplayOnHover="true">
       <Slide v-for="slide in slides" :key="slide.id">
         <div v-if="slide.dog > 0" class="carousel__item cursor-dog">
