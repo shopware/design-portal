@@ -1,5 +1,5 @@
 ---
-pageClass: landing-768
+pageClass: p-landing-768
 sidebar: false
 aside: false
 page: true

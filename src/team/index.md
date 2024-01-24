@@ -1,5 +1,5 @@
 ---
-pageClass: careers
+pageClass: p-careers
 sidebar: false
 aside: false
 page: true

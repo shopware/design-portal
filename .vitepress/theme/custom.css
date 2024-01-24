@@ -18,6 +18,7 @@ h1.styled {
     padding-top: 0;
 }
 
+/* @todo move to global theme */
 .h-label {
     text-transform: uppercase !important;
     font-size: 13px;
@@ -36,7 +37,8 @@ h1.styled {
     margin: 60px 0px;
 }
 
-.landing-768 {
+/* Custom page classes */
+.p-landing-768 {
     .VPDoc:not(.has-aside, .has-sidebar) > .container > .content, 
     .VPDoc:not(.has-sidebar) .container {
         max-width: 768px !important;
@@ -44,7 +46,7 @@ h1.styled {
     }
 }
 
-.careers {
+.p-careers {
     background-image: url(../home/background.png);
     background-repeat: no-repeat;
     background-position: top left;
@@ -56,12 +58,14 @@ h1.styled {
     }
 }
 
-.home--design {
+.p-home--design {
     background-image: url(../home/background.png);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: contain;
 }
+
+/* Custom tabs -> Pill style */
 
 .Tabs_Design--custom {
     .Tabs_button {
@@ -134,7 +138,7 @@ h1.styled {
 
 
 
-/* tooltip */
+/* Tooltip */
 [data-tooltip] {
     position: relative;
     z-index: 2;

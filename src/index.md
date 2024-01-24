@@ -1,5 +1,5 @@
 ---
-pageClass: home--design
+pageClass: p-home--design
 sidebar: false
 aside: false
 page: true
