@@ -1,13 +1,13 @@
 <template>
     <a :href="page">
-        <div class="Contribute">
+        <div class="banner--contribute">
             <div class="content">
                 <div class="left">
                     <h2><slot name="title">{{ title }}</slot></h2>
                     <p><slot name="copy">{{ copy }}</slot></p>
                 </div>
                 <div class="right">
-                    <a class="arrow" v-if="btn === 'true'" :href="page">-></a>
+                    <div class="arrow" v-if="btn === 'true'" :href="page">-></div>
                 </div>
             </div>        
         </div>
@@ -33,7 +33,7 @@ const props = defineProps({
 
   
 <style lang="scss">
-.Contribute {
+.banner--contribute {
     width: 100%;
     display: flex;
     background: url(../../components/banner/contributing/background.png);
@@ -65,7 +65,7 @@ const props = defineProps({
         line-height: 140%; /* 19.6px */
     }
 
-    a.arrow {
+    .arrow {
         color: #00296A;
         font-family: Inter;
         font-size: 48px;
