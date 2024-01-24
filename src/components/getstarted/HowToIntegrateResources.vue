@@ -44,6 +44,9 @@
     @apply grid gap-12;
     gap: 12px;
     grid-template-columns: 100%;
+    h2 {
+        border-top: 0px;
+    }
     ul.HowToIntegrateResources_links {
       @apply flex p-0 m-0 mt-5 gap-12 gap-y-4 flex-wrap;
       list-style-type: none;
@@ -69,9 +72,6 @@
       gap: 12px;
     }
   }
-  h2 {
-        border-top: 0px;
-      }
   </style>
   
   <script setup lang="ts">
