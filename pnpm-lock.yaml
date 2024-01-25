@@ -18,8 +18,8 @@ dependencies:
     specifier: 1.0.0-rc.39
     version: 1.0.0-rc.39(@types/node@20.11.5)(axios@1.6.5)(fuse.js@7.0.0)(less@4.2.0)(postcss@8.4.33)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.7)(search-insights@2.13.0)(terser@5.26.0)(typescript@5.3.3)
   vitepress-shopware-docs:
-    specifier: ^1.1.11
-    version: 1.1.11(@babel/core@7.23.7)(@docsearch/css@3.5.2)(@docsearch/js@3.5.2)(algoliasearch@4.22.1)(instantsearch.css@8.1.0)(instantsearch.js@4.64.0)(postcss@8.4.33)(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)(vue-instantsearch@4.13.4)(vue@3.4.14)
+    specifier: ^1.1.13
+    version: 1.1.13(@babel/core@7.23.7)(@docsearch/css@3.5.2)(@docsearch/js@3.5.2)(algoliasearch@4.22.1)(instantsearch.css@8.1.0)(instantsearch.js@4.64.0)(postcss@8.4.33)(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)(vue-instantsearch@4.13.4)(vue@3.4.14)
   vue:
     specifier: ^3.4.14
     version: 3.4.14(typescript@5.3.3)
@@ -38,17 +38,17 @@ devDependencies:
     specifier: ^1.41.0
     version: 1.41.0
   '@shopware-docs/cli':
-    specifier: ^1.1.11
-    version: 1.1.11
+    specifier: ^1.1.13
+    version: 1.1.13
   '@shopware-docs/storybook':
-    specifier: ^1.1.11
-    version: 1.1.11(@storybook/addon-essentials@7.6.8)(@storybook/addon-interactions@7.6.8)(@storybook/addon-links@7.6.8)(@storybook/addon-styling@1.3.7)(@storybook/blocks@7.6.8)(@storybook/testing-library@0.2.2)(@storybook/vue3-vite@7.6.8)(@storybook/vue3@7.6.8)(chromatic@10.3.0)(postcss@8.4.33)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.7)(seedrandom@3.0.5)(storybook-addon-fetch-mock@1.0.1)(storybook-addon-pseudo-states@2.1.2)(storybook@7.6.8)(vitepress@1.0.0-rc.39)
+    specifier: ^1.1.13
+    version: 1.1.13(@storybook/addon-essentials@7.6.8)(@storybook/addon-interactions@7.6.8)(@storybook/addon-links@7.6.8)(@storybook/addon-styling@1.3.7)(@storybook/blocks@7.6.8)(@storybook/testing-library@0.2.2)(@storybook/vue3-vite@7.6.8)(@storybook/vue3@7.6.8)(chromatic@10.3.0)(postcss@8.4.33)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.7)(seedrandom@3.0.5)(storybook-addon-fetch-mock@1.0.1)(storybook-addon-pseudo-states@2.1.2)(storybook@7.6.8)(vitepress@1.0.0-rc.39)
   '@shopware-docs/vitepress':
-    specifier: ^1.1.11
-    version: 1.1.11(postcss@8.4.33)(vitepress@1.0.0-rc.39)
+    specifier: ^1.1.13
+    version: 1.1.13(postcss@8.4.33)(vitepress@1.0.0-rc.39)
   '@shopware-docs/vitest':
-    specifier: ^1.1.11
-    version: 1.1.11(@playwright/test@1.41.0)(@vitest/coverage-c8@0.33.0)(get-port@7.0.0)(playwright-chromium@1.41.0)(postcss@8.4.33)(slugify@1.6.6)(vite-plugin-inspect@0.8.1)(vitepress@1.0.0-rc.39)(vitest@1.2.0)
+    specifier: ^1.1.13
+    version: 1.1.13(@playwright/test@1.41.0)(@vitest/coverage-c8@0.33.0)(get-port@7.0.0)(playwright-chromium@1.41.0)(postcss@8.4.33)(slugify@1.6.6)(vite-plugin-inspect@0.8.1)(vitepress@1.0.0-rc.39)(vitest@1.2.0)
   '@storybook/addon-essentials':
     specifier: ^7.6.8
     version: 7.6.8(react-dom@18.2.0)(react@18.2.0)
@@ -202,6 +202,9 @@ devDependencies:
   vue-instantsearch:
     specifier: ^4.13.4
     version: 4.13.4(algoliasearch@4.22.1)(vue@3.4.14)
+  vue3-carousel:
+    specifier: ^0.3.1
+    version: 0.3.1(vue@3.4.14)
 
 packages:
 
@@ -3056,7 +3059,7 @@ packages:
       react:
         optional: true
     dependencies:
-      '@react-types/shared': 3.9.0(react@18.2.0)
+      '@react-types/shared': 3.22.0(react@18.2.0)
       react: 18.2.0
     dev: false
 
@@ -3080,7 +3083,7 @@ packages:
       react:
         optional: true
     dependencies:
-      '@react-types/shared': 3.9.0(react@18.2.0)
+      '@react-types/shared': 3.22.0(react@18.2.0)
       react: 18.2.0
     dev: false
 
@@ -3115,7 +3118,7 @@ packages:
         optional: true
     dependencies:
       '@react-types/checkbox': 3.6.0(react@18.2.0)
-      '@react-types/shared': 3.9.0(react@18.2.0)
+      '@react-types/shared': 3.22.0(react@18.2.0)
       react: 18.2.0
     dev: false
 
@@ -3127,7 +3130,7 @@ packages:
       react:
         optional: true
     dependencies:
-      '@react-types/shared': 3.9.0(react@18.2.0)
+      '@react-types/shared': 3.22.0(react@18.2.0)
       react: 18.2.0
     dev: false
 
@@ -3322,13 +3325,13 @@ packages:
       js-md5: 0.7.3
     dev: false
 
-  /@shopware-docs/cli@1.1.11:
-    resolution: {integrity: sha512-0Ynp3mDA5WZ14qo7n5Cki25bSXdE2YhFoIjczz0f1lHGtYyJGbiD6P2DpfmtvFxQQy5Wv4akWBz2PnMr3adzJg==}
+  /@shopware-docs/cli@1.1.13:
+    resolution: {integrity: sha512-ojNkdxQTiL+DtL6ENH22JeKOuyqmSgP+2VRFoRugdGJXtm3aiBbaNkxuFi8X022Gmc5mnCJsk5p+PK59JnXzRg==}
     hasBin: true
     dev: true
 
-  /@shopware-docs/storybook@1.1.11(@storybook/addon-essentials@7.6.8)(@storybook/addon-interactions@7.6.8)(@storybook/addon-links@7.6.8)(@storybook/addon-styling@1.3.7)(@storybook/blocks@7.6.8)(@storybook/testing-library@0.2.2)(@storybook/vue3-vite@7.6.8)(@storybook/vue3@7.6.8)(chromatic@10.3.0)(postcss@8.4.33)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.7)(seedrandom@3.0.5)(storybook-addon-fetch-mock@1.0.1)(storybook-addon-pseudo-states@2.1.2)(storybook@7.6.8)(vitepress@1.0.0-rc.39):
-    resolution: {integrity: sha512-4o3ZuwQ4qCQYNV84z8DHG2iAFaNkQmvFeZ68LJfqKumVaRra29JTVhyXyX7Toxyy10gzDNdpTxCd3XDHS8A9eg==}
+  /@shopware-docs/storybook@1.1.13(@storybook/addon-essentials@7.6.8)(@storybook/addon-interactions@7.6.8)(@storybook/addon-links@7.6.8)(@storybook/addon-styling@1.3.7)(@storybook/blocks@7.6.8)(@storybook/testing-library@0.2.2)(@storybook/vue3-vite@7.6.8)(@storybook/vue3@7.6.8)(chromatic@10.3.0)(postcss@8.4.33)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.7)(seedrandom@3.0.5)(storybook-addon-fetch-mock@1.0.1)(storybook-addon-pseudo-states@2.1.2)(storybook@7.6.8)(vitepress@1.0.0-rc.39):
+    resolution: {integrity: sha512-XXGZK6CrsWjdt30SAAVydWQ/2mQimFrYsIZSo5+cf9c4i5hyiksW12TsnY/OqBurPm8aTXCIPsh1l45tlz6t3g==}
     peerDependencies:
       '@storybook/addon-essentials': ^7.6.3
       '@storybook/addon-interactions': ^7.6.3
@@ -3382,8 +3385,8 @@ packages:
       - vite
     dev: true
 
-  /@shopware-docs/vitepress@1.1.11(postcss@8.4.33)(vitepress@1.0.0-rc.39):
-    resolution: {integrity: sha512-nK8I5urbuFsiHROvxZD/1gU4HHpAxbOQP63GSMBwqZU3KLgHb9h2fNF9WeHfSweZIw2Qks6pr3M31mJCUptBfQ==}
+  /@shopware-docs/vitepress@1.1.13(postcss@8.4.33)(vitepress@1.0.0-rc.39):
+    resolution: {integrity: sha512-2agSyeWpZzfrfAwLZOpCYVeKI/t0+cFMm21Jmul4DXIfsOfUgaqqJLNtI7M6aVGY9BRii2ib4826OHp3dgWBng==}
     peerDependencies:
       vitepress: ^1.0.0-rc.31
     dependencies:
@@ -3402,8 +3405,8 @@ packages:
       - vite
     dev: true
 
-  /@shopware-docs/vitest@1.1.11(@playwright/test@1.41.0)(@vitest/coverage-c8@0.33.0)(get-port@7.0.0)(playwright-chromium@1.41.0)(postcss@8.4.33)(slugify@1.6.6)(vite-plugin-inspect@0.8.1)(vitepress@1.0.0-rc.39)(vitest@1.2.0):
-    resolution: {integrity: sha512-C5aoU7+3b9LhtB81BAp0lbcEerHdWbi8JAINpui2FpzW5gHsym3dR447nvIXxVU0E7Qh8SEOBjDUIvcipXq+jw==}
+  /@shopware-docs/vitest@1.1.13(@playwright/test@1.41.0)(@vitest/coverage-c8@0.33.0)(get-port@7.0.0)(playwright-chromium@1.41.0)(postcss@8.4.33)(slugify@1.6.6)(vite-plugin-inspect@0.8.1)(vitepress@1.0.0-rc.39)(vitest@1.2.0):
+    resolution: {integrity: sha512-eFeYvw/8NgaM59b8IAovYlJ0iN5p/6pQT4r83tLCe5IjGE9+SLvVm9QR8dMCH8ED6Z16XAqA91YMC0WwKGzukw==}
     peerDependencies:
       '@playwright/test': ^1.40.1
       '@vitest/coverage-c8': ^0.33.0
@@ -3438,8 +3441,8 @@ packages:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
 
-  /@stoplight/elements-core@7.16.3(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ib/CQKC+bcshuWhapjJISh8fC0XJnSTkswnFnDtmkWD6RsGu9FUa0wgMrp9N4upQQhNPZ2Uib/L/M43wjHq15w==}
+  /@stoplight/elements-core@8.0.0(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-KkzGAWEQqutHDnACgBqV1AcsL7xCl3cLLaBkP/H6nY7FwX5brG4R/rPYZa+XRmFmeV7FUvN2Nr1A7/5EKsAggA==}
     engines: {node: '>=14.13'}
     peerDependencies:
       react: '>=16.8'
@@ -3450,19 +3453,19 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      '@stoplight/http-spec': 6.0.3
+      '@stoplight/http-spec': 7.0.1
       '@stoplight/json': 3.21.0
       '@stoplight/json-schema-ref-parser': 9.2.7
       '@stoplight/json-schema-sampler': 0.2.3
       '@stoplight/json-schema-tree': 3.0.0
-      '@stoplight/json-schema-viewer': 4.14.1(@babel/core@7.23.7)(@stoplight/markdown-viewer@5.6.0)(@stoplight/mosaic-code-viewer@1.48.4)(@stoplight/mosaic@1.48.4)(react-dom@18.2.0)(react@18.2.0)
+      '@stoplight/json-schema-viewer': 4.15.0(@babel/core@7.23.7)(@stoplight/markdown-viewer@5.6.0)(@stoplight/mosaic-code-viewer@1.48.4)(@stoplight/mosaic@1.48.4)(react-dom@18.2.0)(react@18.2.0)
       '@stoplight/markdown-viewer': 5.6.0(@stoplight/mosaic-code-viewer@1.48.4)(@stoplight/mosaic@1.48.4)(react-dom@18.2.0)(react@18.2.0)
       '@stoplight/mosaic': 1.48.4(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
       '@stoplight/mosaic-code-editor': 1.48.4(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
       '@stoplight/mosaic-code-viewer': 1.48.4(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
       '@stoplight/path': 1.3.2
       '@stoplight/react-error-boundary': 3.0.0(react@18.2.0)
-      '@stoplight/types': 14.1.0
+      '@stoplight/types': 14.1.1
       '@stoplight/yaml': 4.2.3
       classnames: 2.5.1
       httpsnippet-lite: 3.0.5
@@ -3503,8 +3506,8 @@ packages:
       - xstate
     dev: false
 
-  /@stoplight/elements-dev-portal@1.19.3(@babel/core@7.23.7)(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-2DVuTa1reddAM6HkNH+rZqkePLJQd/bhQ+ytnZBD1lq5pKwFoKdrn2Ro9+H66rLQmX1M9VxKamK4nE2O3EHUEQ==}
+  /@stoplight/elements-dev-portal@2.0.0(@babel/core@7.23.7)(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-JFWnVH8CHBPHInKmXsYY91epNIR61oHgy6k5Z7w4HJOhXGMCkQARwLlpKWQNrXpokSNJRW4yzhzok4J5y2EVgQ==}
     engines: {node: '>=14.13'}
     peerDependencies:
       react: '>=16.8'
@@ -3515,7 +3518,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      '@stoplight/elements-core': 7.16.3(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
+      '@stoplight/elements-core': 8.0.0(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
       '@stoplight/markdown-viewer': 5.6.0(@stoplight/mosaic-code-viewer@1.48.4)(@stoplight/mosaic@1.48.4)(react-dom@18.2.0)(react@18.2.0)
       '@stoplight/mosaic': 1.48.4(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
       '@stoplight/path': 1.3.2
@@ -3552,13 +3555,13 @@ packages:
       - xstate
     dev: false
 
-  /@stoplight/http-spec@6.0.3:
-    resolution: {integrity: sha512-ED5kELP/5QH/SdKsFVx4EYUcE8FRjnDeiAx7ipHOk97t1pKgPhxH1wsvrQG3wL9TlNm0YQLLniE9Y3I6ZARJzA==}
+  /@stoplight/http-spec@7.0.1:
+    resolution: {integrity: sha512-9O34o331tDMwHEHEc0N5Mh39cvVtioono46SyMy/BWQwAhuVyVfzHZxlBHepe0grIDcTrJxsb8iARGi86luwoQ==}
     engines: {node: '>=14.13'}
     dependencies:
       '@stoplight/json': 3.21.0
       '@stoplight/json-schema-generator': 1.0.2
-      '@stoplight/types': 14.0.0
+      '@stoplight/types': 14.1.0
       '@types/json-schema': 7.0.11
       '@types/swagger-schema-official': 2.0.25
       '@types/type-is': 1.6.6
@@ -3627,8 +3630,19 @@ packages:
       magic-error: 0.0.1
     dev: false
 
-  /@stoplight/json-schema-viewer@4.14.1(@babel/core@7.23.7)(@stoplight/markdown-viewer@5.6.0)(@stoplight/mosaic-code-viewer@1.48.4)(@stoplight/mosaic@1.48.4)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Igjdf4n5JaPRKVbPL+UKgw6hwwjskEwCDzi/ch47nNBFKFyX3TSshB5PfyJQZ72mpYZFbt1rF1Y0vtk24oFoew==}
+  /@stoplight/json-schema-tree@4.0.0:
+    resolution: {integrity: sha512-SAGtof+ihIdPqETR+7XXOaqZJcrbSih/xEahaw5t1nXk5sVW6ss2l5A1WCIuvtvnQiUKnBfanmZU4eoM1ZvItg==}
+    engines: {node: '>=10.18'}
+    dependencies:
+      '@stoplight/json': 3.21.0
+      '@stoplight/json-schema-merge-allof': 0.8.0
+      '@stoplight/lifecycle': 2.3.3
+      '@types/json-schema': 7.0.15
+      magic-error: 0.0.1
+    dev: false
+
+  /@stoplight/json-schema-viewer@4.15.0(@babel/core@7.23.7)(@stoplight/markdown-viewer@5.6.0)(@stoplight/mosaic-code-viewer@1.48.4)(@stoplight/mosaic@1.48.4)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-ugbkSA+WrFLC0MMVt9fBWPf1b0+CPinHcep4Djb49ERG2KL6lGinHRrYT4iBJRzX12mbyEn3HBsjwUjirA13RA==}
     engines: {node: '>=16'}
     peerDependencies:
       '@stoplight/markdown-viewer': ^5
@@ -3645,7 +3659,7 @@ packages:
         optional: true
     dependencies:
       '@stoplight/json': 3.21.0
-      '@stoplight/json-schema-tree': 3.0.0
+      '@stoplight/json-schema-tree': 4.0.0
       '@stoplight/markdown-viewer': 5.6.0(@stoplight/mosaic-code-viewer@1.48.4)(@stoplight/mosaic@1.48.4)(react-dom@18.2.0)(react@18.2.0)
       '@stoplight/mosaic': 1.48.4(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
       '@stoplight/mosaic-code-viewer': 1.48.4(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
@@ -3922,16 +3936,16 @@ packages:
       utility-types: 3.10.0
     dev: false
 
-  /@stoplight/types@14.0.0:
-    resolution: {integrity: sha512-w7Ejau6TaB7RqR0vWzGJSdmgLEYD2frjgbHPZoxgGQwAq/R8Qh/D9p9Bl9JFdii+YTL5xoDjyX0c1WDRlbMV8g==}
+  /@stoplight/types@14.1.0:
+    resolution: {integrity: sha512-fL8Nzw03+diALw91xHEHA5Q0WCGeW9WpPgZQjodNUWogAgJ56aJs03P9YzsQ1J6fT7/XjDqHMgn7/RlsBzB/SQ==}
     engines: {node: ^12.20 || >=14.13}
     dependencies:
-      '@types/json-schema': 7.0.11
+      '@types/json-schema': 7.0.15
       utility-types: 3.10.0
     dev: false
 
-  /@stoplight/types@14.1.0:
-    resolution: {integrity: sha512-fL8Nzw03+diALw91xHEHA5Q0WCGeW9WpPgZQjodNUWogAgJ56aJs03P9YzsQ1J6fT7/XjDqHMgn7/RlsBzB/SQ==}
+  /@stoplight/types@14.1.1:
+    resolution: {integrity: sha512-/kjtr+0t0tjKr+heVfviO9FrU/uGLc+QNX3fHJc19xsCNYqU7lVhaXxDmEID9BZTjG+/r9pK9xP/xU02XGg65g==}
     engines: {node: ^12.20 || >=14.13}
     dependencies:
       '@types/json-schema': 7.0.15
@@ -5680,18 +5694,6 @@ packages:
       vue-component-type-helpers: 1.8.25
     dev: true
 
-  /@vueuse/core@10.7.1(vue@3.4.14):
-    resolution: {integrity: sha512-74mWHlaesJSWGp1ihg76vAnfVq9NTv1YT0SYhAQ6zwFNdBkkP+CKKJmVOEHcdSnLXCXYiL5e7MaewblfiYLP7g==}
-    dependencies:
-      '@types/web-bluetooth': 0.0.20
-      '@vueuse/metadata': 10.7.1
-      '@vueuse/shared': 10.7.1(vue@3.4.14)
-      vue-demi: 0.14.6(vue@3.4.14)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-    dev: false
-
   /@vueuse/core@10.7.2(vue@3.4.14):
     resolution: {integrity: sha512-AOyAL2rK0By62Hm+iqQn6Rbu8bfmbgaIMXcE3TSr7BdQ42wnSFlwIdPjInO62onYsEMK/yDMU8C6oGfDAtZ2qQ==}
     dependencies:
@@ -5754,21 +5756,8 @@ packages:
       - '@vue/composition-api'
       - vue
 
-  /@vueuse/metadata@10.7.1:
-    resolution: {integrity: sha512-jX8MbX5UX067DYVsbtrmKn6eG6KMcXxLRLlurGkZku5ZYT3vxgBjui2zajvUZ18QLIjrgBkFRsu7CqTAg18QFw==}
-    dev: false
-
   /@vueuse/metadata@10.7.2:
     resolution: {integrity: sha512-kCWPb4J2KGrwLtn1eJwaJD742u1k5h6v/St5wFe8Quih90+k2a0JP8BS4Zp34XUuJqS2AxFYMb1wjUL8HfhWsQ==}
-
-  /@vueuse/shared@10.7.1(vue@3.4.14):
-    resolution: {integrity: sha512-v0jbRR31LSgRY/C5i5X279A/WQjD6/JsMzGa+eqt658oJ75IvQXAeONmwvEMrvJQKnRElq/frzBR7fhmWY5uLw==}
-    dependencies:
-      vue-demi: 0.14.6(vue@3.4.14)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-    dev: false
 
   /@vueuse/shared@10.7.2(vue@3.4.14):
     resolution: {integrity: sha512-qFbXoxS44pi2FkgFjPvF4h7c9oMDutpyBdcJdMYIMg9XyXli2meFMuaKn+UMgsClo//Th6+beeCgqweT/79BVA==}
@@ -13261,8 +13250,8 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
-  /vitepress-shopware-docs@1.1.11(@babel/core@7.23.7)(@docsearch/css@3.5.2)(@docsearch/js@3.5.2)(algoliasearch@4.22.1)(instantsearch.css@8.1.0)(instantsearch.js@4.64.0)(postcss@8.4.33)(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)(vue-instantsearch@4.13.4)(vue@3.4.14):
-    resolution: {integrity: sha512-5ne2x3DOX1OowDvEk/UhsU1+VpwfRscMqfJlDwCJMvTG9Eq6NSJP7jk5mwIjRXcIM0/lfebk7CHqXCt3LNA6QQ==}
+  /vitepress-shopware-docs@1.1.13(@babel/core@7.23.7)(@docsearch/css@3.5.2)(@docsearch/js@3.5.2)(algoliasearch@4.22.1)(instantsearch.css@8.1.0)(instantsearch.js@4.64.0)(postcss@8.4.33)(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)(vue-instantsearch@4.13.4)(vue@3.4.14):
+    resolution: {integrity: sha512-TvpQ6JRU+1hmkQtsN0Zn9sRj0IAIXk8RsozXEoF6wcF4vCxTIhd6eXq8/oNMArVCxk+2Nui3HLVQfHUZZZ6chQ==}
     peerDependencies:
       '@docsearch/css': ^3.5.2
       '@docsearch/js': ^3.5.2
@@ -13275,9 +13264,9 @@ packages:
       '@docsearch/js': 3.5.2(react-dom@18.2.0)(react@18.2.0)(search-insights@2.13.0)
       '@iconify-json/carbon': 1.1.27
       '@shopware-ag/meteor-icon-kit': 5.2.0
-      '@stoplight/elements-dev-portal': 1.19.3(@babel/core@7.23.7)(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
+      '@stoplight/elements-dev-portal': 2.0.0(@babel/core@7.23.7)(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
       '@stoplight/json-schema-generator': 1.0.2
-      '@vueuse/core': 10.7.1(vue@3.4.14)
+      '@vueuse/core': 10.7.2(vue@3.4.14)
       algoliasearch: 4.22.1
       axios: 1.6.5
       body-scroll-lock: 3.1.5
@@ -13514,6 +13503,14 @@ packages:
       instantsearch.js: 4.64.0(algoliasearch@4.22.1)
       mitt: 2.1.0
       vue: 3.4.14(typescript@5.3.3)
+
+  /vue3-carousel@0.3.1(vue@3.4.14):
+    resolution: {integrity: sha512-86vUkNPBzL2PVuR9w6hUsI90ccFjLp+K8cSFpRTISf+SjUQY3fMHc5CFF5MUL62v1xYYm27zEBmQupO9VQx9Kw==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.4.14(typescript@5.3.3)
+    dev: true
 
   /vue@3.4.14(typescript@5.3.3):
     resolution: {integrity: sha512-Rop5Al/ZcBbBz+KjPZaZDgHDX0kUP4duEzDbm+1o91uxYUNmJrZSBuegsNIJvUGy+epLevNRNhLjm08VKTgGyw==}

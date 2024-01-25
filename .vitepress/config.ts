@@ -131,10 +131,10 @@ export default defineConfigWithTheme<ThemeConfig>({
             ...baseCleanup,
         ]
       }),
-      liveReload([
-          '../node_modules/@shopware-docs/**/*.*',
-        '../node_modules/vitepress-shopware-docs/**/*.*',
-      ]),
+      //liveReload([
+      //    '../node_modules/@shopware-docs/**/*.*',
+      //  '../node_modules/vitepress-shopware-docs/**/*.*',
+      //]),
     ],
     build: {
       rollupOptions: {
