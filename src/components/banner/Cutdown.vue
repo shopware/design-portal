@@ -3,9 +3,9 @@
     <div class="banner--cutdown">
         <div class="cutdown_content">
             <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="/foundations/accessibility/foundations-accessibility-intro@dark.png 4x">
+            <source media="(prefers-color-scheme: dark)" :srcset="thumbnailIMG + '@dark.png 4x'">
 
-            <img class="cutdown__thumbnail" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/accessibility/foundations-accessibility-intro.png 4x" src="/foundations/accessibility/foundations-accessibility-intro.png" width="100%" height="auto">
+            <img class="cutdown__thumbnail" decoding="async" loading="lazy" :alt="alt" :srcset="thumbnailIMG + '.png 4x'" :src="thumbnailIMG + '.png'" width="100%" height="auto">
             </picture>
             <div class="left">
                 <div class="h-label"><slot name="eyebrow">{{ eyebrow }}</slot></div>
@@ -30,6 +30,12 @@ const props = defineProps({
       type: String
     },
     videoURL: {
+    type: String
+    },
+    thumbnailIMG: {
+    type: String
+    },
+    alt: {
     type: String
     }
   });
@@ -58,10 +64,6 @@ const props = defineProps({
         position: relative;
     }
 
-    .h-label {
-        color: #696A6E;
-    }
-
     p {
         color: var(--zinc-50, #2D2E32);
 
@@ -88,6 +90,10 @@ const props = defineProps({
         align-items: flex-start;
         gap: 8px;
         flex: 1 0 0;
+
+        .h-label {
+            color: #696A6E;
+        }
     }
 
     .right {

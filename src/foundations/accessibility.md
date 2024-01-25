@@ -16,7 +16,9 @@ import Cutdown from "../components/banner/Cutdown.vue";
 </script>
 
 # {{ $frontmatter.title }} 
-At Shopware, we are committed to creating inclusive and barrier-free shopping experiences for our valued merchants and their customers.
+
+## Commerce for everyone
+At Shopware, we are committed to creating inclusive and barrier-free shopping experiences for our merchants and their customers.
 
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="/foundations/accessibility/foundations-accessibility-intro@dark.png 4x">
@@ -32,6 +34,8 @@ Accessibility is not just a goal; it's a fundamental value that drives us to con
     title="Our commitment to accessibility"
     btnlabel="Watch lesson"
     videoURL="/foundations/accessibility"
+    thumbnailIMG="/foundations/accessibility/foundations-accessibility-intro"
+    alt="Video thumbnail showing abstract art – Our commitment to accessibility"
   />
 
 ## Our Approach

@@ -67,8 +67,11 @@ export default defineConfigWithTheme<ThemeConfig>({
               link: '/foundations/accessibility'
             },
             {
-              text: 'Human-AI-Interaction',
-              link: '/foundations/human-ai-interation'
+              text: 'Artifical Intelligence',
+              items: [
+                { text: 'Human-AI-Interaction', link: '/foundations/human-ai-interation' },
+                { text: 'UX-Writing', link: '/foundations/human-ai-ux-writing' }
+              ]
             },
             {
               text: 'Design',
@@ -86,11 +89,15 @@ export default defineConfigWithTheme<ThemeConfig>({
       // is on `product-experience` directory.
       '/product-experience/': [
         {
-          text: 'Product-experience',
+          text: 'Product Experience',
+          link: '/product-experience/'
+        },
+        {
+          text: 'Content',
           items: [
-            { text: 'Index', link: '/product-experience/' },
-            { text: 'Three', link: '/product-experience/three' },
-            { text: 'Four', link: '/product-experience/four' }
+            { text: 'Content Experience', link: '/product-experience/content/' },
+            { text: 'Inclusive Language', link: '/product-experience/content/inclusive-language' },
+            { text: 'Abbreviations and acronyms', link: '/product-experience/content/abbreviations-and-acronyms' }
           ]
         }
       ]
