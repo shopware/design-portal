@@ -7,17 +7,17 @@
       You can access and download the kit directly from our Figma account. Make sure you're signed in to Figma to download the file.
       </p>
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="../../foundations/getstarted/foundations-getstarted-figma--download@dark.png 4x">
+        <source media="(prefers-color-scheme: dark)" srcset="/foundations/getstarted/foundations-getstarted-figma--download@dark.png 4x">
 
-        <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../../foundations/getstarted/foundations-getstarted-figma--download.png 4x" src="../../foundations/getstarted/foundations-getstarted-figma--download.png" width="100%" height="auto">
+        <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/getstarted/foundations-getstarted-figma--download.png 4x" src="/foundations/getstarted/foundations-getstarted-figma--download.png" width="100%" height="auto">
       </picture>
     </div>
       <div class="HowToIntegrateResources_subgrid">
         <div>
         <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="../../foundations/getstarted/foundations-getstarted-figma--integrate@dark.png 2x">
+          <source media="(prefers-color-scheme: dark)" srcset="/foundations/getstarted/foundations-getstarted-figma--integrate@dark.png 2x">
 
-          <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../../foundations/getstarted/foundations-getstarted-figma--integrate.png 2x" src="../../foundations/getstarted/foundations-getstarted-figma--integrate.png" width="100%" height="auto">
+          <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/getstarted/foundations-getstarted-figma--integrate.png 2x" src="/foundations/getstarted/foundations-getstarted-figma--integrate.png" width="100%" height="auto">
         </picture>
         <p>
           <h3>Publish library to your workspace</h3> 
@@ -26,9 +26,9 @@
         </div>
         <div>
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="../../foundations/getstarted/foundations-getstarted-figma--customize@dark.png 2x">
+            <source media="(prefers-color-scheme: dark)" srcset="/foundations/getstarted/foundations-getstarted-figma--customize@dark.png 2x">
 
-            <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../../foundations/getstarted/foundations-getstarted-figma--customize.png 2x" src="../../foundations/getstarted/foundations-getstarted-figma--customize.png" width="100%" height="auto">
+            <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/getstarted/foundations-getstarted-figma--customize.png 2x" src="/foundations/getstarted/foundations-getstarted-figma--customize.png" width="100%" height="auto">
           </picture>
           <p>
           <h3>Add library to your design files</h3> 

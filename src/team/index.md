@@ -24,8 +24,8 @@ import SwagTeamValuesMarquee from "../components/team/SwagTeamValuesMarquee.vue"
     <template #content><p>At Shopware, we're not just a design team – we're a crew of passionate individuals driven by innovation, rebellion, deep thinking, and creativity. We are united by a common passion for pushing boundaries and redefining the norm of commerce.</p></template>
     <template #image>
     <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="../home/design-hero@dark.png 4x">
-    <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../home/design-hero.png 4x" src="../home/design-hero.png" width="100%" height="auto">
+    <source media="(prefers-color-scheme: dark)" srcset="/home/design-hero@dark.png 4x">
+    <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/home/design-hero.png 4x" src="/home/design-hero.png" width="100%" height="auto">
     </picture>
     </template>
 </SwagTeamHero>

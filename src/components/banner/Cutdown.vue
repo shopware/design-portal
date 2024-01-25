@@ -3,9 +3,9 @@
     <div class="banner--cutdown">
         <div class="cutdown_content">
             <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="../../foundations/accessibility/foundations-accessibility-intro@dark.png 4x">
+            <source media="(prefers-color-scheme: dark)" srcset="/foundations/accessibility/foundations-accessibility-intro@dark.png 4x">
 
-            <img class="cutdown__thumbnail" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../../foundations/accessibility/foundations-accessibility-intro.png 4x" src="../../foundations/accessibility/foundations-accessibility-intro.png" width="100%" height="auto">
+            <img class="cutdown__thumbnail" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/accessibility/foundations-accessibility-intro.png 4x" src="/foundations/accessibility/foundations-accessibility-intro.png" width="100%" height="auto">
             </picture>
             <div class="left">
                 <div class="h-label"><slot name="eyebrow">{{ eyebrow }}</slot></div>

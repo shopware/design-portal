@@ -31,9 +31,9 @@ import NPM from "../components/interaction/NPM.vue";
   Meteor is Shopware’s open source design system – It is the basis of the Shopware Design Language, manifested in a unified system of components, styles, visuals and guidelines. It is therefore, the foundation for all of Shopware’s products. It helps us work together more efficiently and provides a unified process across teams to build empowering and delightful experiences for everyone.
   </p>
   <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../foundations/getstarted/foundations-getstarted-intro@dark.png 4x">
+  <source media="(prefers-color-scheme: dark)" srcset="/foundations/getstarted/foundations-getstarted-intro@dark.png 4x">
 
-  <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../foundations/getstarted/foundations-getstarted-intro.png 4x" src="../foundations/getstarted/foundations-getstarted-intro.png" width="100%" height="auto">
+  <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/getstarted/foundations-getstarted-intro.png 4x" src="/foundations/getstarted/foundations-getstarted-intro.png" width="100%" height="auto">
   </picture>
 
 

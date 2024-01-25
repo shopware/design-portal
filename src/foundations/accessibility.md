@@ -19,9 +19,9 @@ import Cutdown from "../components/banner/Cutdown.vue";
 At Shopware, we are committed to creating inclusive and barrier-free shopping experiences for our valued merchants and their customers.
 
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="../foundations/accessibility/foundations-accessibility-intro@dark.png 4x">
+<source media="(prefers-color-scheme: dark)" srcset="/foundations/accessibility/foundations-accessibility-intro@dark.png 4x">
 
-<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../foundations/accessibility/foundations-accessibility-intro.png 4x" src="../foundations/accessibility/foundations-accessibility-intro.png" width="100%" height="auto">
+<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/accessibility/foundations-accessibility-intro.png 4x" src="/foundations/accessibility/foundations-accessibility-intro.png" width="100%" height="auto">
 </picture>
 
 ## Shopware is for everyone 

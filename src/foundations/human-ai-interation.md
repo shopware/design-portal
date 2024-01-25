@@ -36,9 +36,9 @@ The count is: {{ count }}
 Designing for Human-AI interaction requires a user-centric approach that prioritizes ease of use, clear communication, and continuous improvement. By following these guidelines, you can create an AI feature that seamlessly integrates with the merchants workflow and enhances their productivity and efficiency.
 
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="../foundations/principles/human-ai-interactions/foundations-human--ai--interactions-intro@dark.png 4x">
+<source media="(prefers-color-scheme: dark)" srcset="/foundations/principles/human-ai-interactions/foundations-human--ai--interactions-intro@dark.png 4x">
 
-<img decoding="async" loading="lazy" alt="A sketch of three circles overlaying each other. The image is tinted in shades of blue." srcset="../foundations/principles/human-ai-interactions/foundations-human--ai--interactions-intro.png 4x" src="../foundations/principles/human-ai-interactions/foundations-human--ai--interactions-intro.png" width="100%" height="auto">
+<img decoding="async" loading="lazy" alt="A sketch of three circles overlaying each other. The image is tinted in shades of blue." srcset="/foundations/principles/human-ai-interactions/foundations-human--ai--interactions-intro.png 4x" src="/foundations/principles/human-ai-interactions/foundations-human--ai--interactions-intro.png" width="100%" height="auto">
 </picture>
 
 ### Initially
@@ -74,6 +74,6 @@ Therefore, merchants must be able to review or preview AI-generated content befo
 
 ---
 
-[Learn more about UX Writing for Human-AI Interactions](/Product/Guides/Design/DesignSystem/HumanAIInteraction/UXWriting/)
+<!--[Learn more about UX Writing for Human-AI Interactions](/Product/Guides/Design/DesignSystem/HumanAIInteraction/UXWriting/)-->
 
 ---

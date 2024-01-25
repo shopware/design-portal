@@ -24,9 +24,9 @@ import SwagTeam from "../components/team/SwagTeam.vue";
 Our Product Design Principles reflect how we think about design. They provide a way for us to look at the work we create and how we create it: **Building the right thing; building the thing right – distinctively Shopware.**
 
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="../foundations/principles/foundations-design--principles-intro@dark.png 4x">
+<source media="(prefers-color-scheme: dark)" srcset="/foundations/principles/foundations-design--principles-intro@dark.png 4x">
 
-<img decoding="async" loading="lazy" alt="A sketch of three circles overlaying each other. The image is tinted in shades of blue." srcset="../foundations/principles/foundations-design--principles-intro.png 4x" src="../foundations/principles/foundations-design--principles-intro.png" width="100%" height="auto">
+<img decoding="async" loading="lazy" alt="A sketch of three circles overlaying each other. The image is tinted in shades of blue." srcset="/foundations/principles/foundations-design--principles-intro.png 4x" src="/foundations/principles/foundations-design--principles-intro.png" width="100%" height="auto">
 </picture>
 
 >These Principles are the foundation of Shopware's products and services, they're important whether you work at Shopware or you're developing apps or other solutions for Shopware's eco-system. 
