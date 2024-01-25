@@ -1,7 +1,7 @@
 <template>
   <div class="SwagResources">
-    <div class="h-label">Resources</div>
-    <h2 class="h-homepage">Browse our resources to get started designing with Shopware.</h2>
+    <h2 class="h-homepage">Access our assets</h2>
+    <p>At Shopware, Figma is our go-to platform for crafting a seamless design experience. Our Figma libraries and files for administration and storefront, including icon kits and tools, are easily accessible via our Figma community page. Each component is carefully documented with regular updates, ensuring alignment with our evolving platform.</p>
     <div class="SwagResources_grid">
 
       <a href="/themes.html" class="HomepageCard_item">
