@@ -14,8 +14,7 @@ swag:
 ---
 
 <script setup>
-import Cutdown from "../../components/banner/Cutdown.vue";
-import UsageBlock from "../../components/interaction/UsageBlock.vue";
+import LearnMore from "../../components/banner/LearnMore.vue";
 </script>
 
 # {{ $frontmatter.title }} 
@@ -49,6 +48,15 @@ Shopware's Content Experience guide goes into depth on many subjects. It may be 
 
 We have a sense of humor, but we value clarity over entertainment.
 Our priorities are to educate our users about our products without patronizing or confusing them, so they can get their work done and get on with their lives.
+
+<LearnMore
+    title="Tone of voice"
+    copy="Everything you need to know to about Shopware's tone of voice."
+    btnlabel="Learn more"
+    page="https://brand.shopware.com/d/4sqe4JPrMHUU/tone-of-voice-basic#/intro/introduction"
+    target="_blank"
+/>
+
 
 ## Grammar and mechanics
 

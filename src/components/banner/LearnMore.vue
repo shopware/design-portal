@@ -7,7 +7,7 @@
                 <p><slot name="copy">{{ copy }}</slot></p>
             </div>
             <div class="right">
-                <SwagBtn :href="page" class="--primary --sm" icon="long-arrow-right" icon-at="end"><slot name="btnlabel">{{ btnlabel }}</slot></SwagBtn>
+                <SwagBtn :href="page" :target="target" class="--primary --sm" icon="long-arrow-right" icon-at="end"><slot name="btnlabel">{{ btnlabel }}</slot></SwagBtn>
             </div>
         </div>        
     </div>
@@ -25,6 +25,9 @@ const props = defineProps({
       type: String
     },
     page: {
+    type: String
+    },
+    target: {
     type: String
     }
   });

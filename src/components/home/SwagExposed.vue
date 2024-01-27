@@ -8,7 +8,7 @@
         <li><a href="/foundations/">Shopware Design Principles -></a></li>
         <!--<li><a href="#">Designing extensions for Shopware -></a></li>-->
         <li><a href="/foundations/accessibility">Accessibility -></a></li>
-        <li><a href="/foundations/human-ai-interaction">Human-AI interactions -></a></li>
+        <li><a href="/foundations/human-ai-interation">Human-AI interactions -></a></li>
       </ul>
     </div>
     <!--<div>
@@ -23,14 +23,14 @@
         <div class="h-label">Brand</div>
         <h2 class="h-homepage">Learn how to apply and adhere to Shopware's visual identity.</h2>
         <ul class="SwagExposed_links">
-          <li><a href="#">Explore our brand -></a></li>
+          <li><a href="https://brand.shopware.com/">Explore our brand -></a></li>
         </ul>
       </div>
       <div>
         <div class="h-label">Content</div>
         <h2 class="h-homepage">Explore our tone of voice and the mechanics of our grammar and style.</h2>
         <ul class="SwagExposed_links">
-          <li><a href="#">Explore content guideance -></a></li>
+          <li><a href="product-experience/content/">Explore content guideance -></a></li>
         </ul>
       </div>
     </div>

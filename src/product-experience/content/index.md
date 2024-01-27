@@ -16,6 +16,7 @@ swag:
 <script setup>
 import Cutdown from "../../components/banner/Cutdown.vue";
 import UsageBlock from "../../components/interaction/UsageBlock.vue";
+import LearnMore from "../../components/banner/LearnMore.vue";
 </script>
 
 # {{ $frontmatter.title }} 
@@ -114,6 +115,14 @@ In order to achieve these goals, we make sure our content adheres to these value
         <p>Write in a way that suits the situation. Just like you do in face-to-face conversations, adapt your tone depending on who you’re writing to and what you’re writing about.</p>
 </div>
 </div>
+
+<LearnMore
+    title="Tone of voice"
+    copy="Everything you need to know to about Shopware's tone of voice."
+    btnlabel="Learn more"
+    page="https://brand.shopware.com/d/4sqe4JPrMHUU/tone-of-voice-basic#/intro/introduction"
+    target="_blank"
+/>
 
 <style lang="scss">
 /* Card Thumbnail */
