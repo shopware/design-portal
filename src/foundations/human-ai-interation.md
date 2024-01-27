@@ -53,8 +53,3 @@ Therefore, merchants must be able to review or preview AI-generated content befo
 - To differentiate human-generated content from AI-generated content, the AI Copilot icon or a light blue background behind generated text should be used to indicate AI-generated content visually.
 - Merchants should be able to remove, edit or update AI-generated content at any time.
 
----
-
-<!--[Learn more about UX Writing for Human-AI Interactions](/Product/Guides/Design/DesignSystem/HumanAIInteraction/UXWriting/)-->
-
----
