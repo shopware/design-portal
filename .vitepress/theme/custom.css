@@ -21,6 +21,11 @@ span.font-setting-ss02 {
     border: 0px;
 }
 
+.custom-block.info {
+    background: #FAFBFE;
+    border: 1px solid #F0F3FF;
+}
+
 /* @todo move to global theme */
 .h-label {
     text-transform: uppercase !important;
@@ -184,3 +189,6 @@ span.font-setting-ss02 {
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }
+
+
+

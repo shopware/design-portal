@@ -12,7 +12,7 @@
           Figma libraries
           <SwagIcon icon="long-arrow-right" type="solid" />
         </span>
-        <p>Our Figma libraries contains the latest foundations, components, and patterns. You’ll find all of them in our Figma community profile.</p>
+        <p>Our Figma libraries contain the latest foundations, components, and patterns. You’ll find all of them in our Figma community profile.</p>
       </a>
 
       <a href="/themes.html" class="HomepageCard_item --has-double-height">
@@ -26,7 +26,7 @@
         <p>To use our admin and storefront libraries you’ll also need the Inter font designed by Rasmus Andersson. Get your copy over at Google fonts.</p>
       </a>
 
-      <a href="/themes.html" class="HomepageCard_item --has-double-height">
+      <a href="product-experience/content/basics" class="HomepageCard_item --has-double-height">
         <span class="HomepageCard_icon">
           <SwagIcon icon="comments" type="solid" />
         </span>

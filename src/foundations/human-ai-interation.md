@@ -13,25 +13,6 @@ swag:
   related: false
 ---
 
-<!--<script setup>
-import { ref } from 'vue'
-
-const count = ref(0)
-</script>
-
-## Markdown Content
-
-The count is: {{ count }}
-
-<button :class="$style.button" @click="count++">Increment</button>
-
-<style module>
-.button {
-  color: red;
-  font-weight: bold;
-}
-</style>-->
-
 ## {{ $frontmatter.title }}
 Designing for Human-AI interaction requires a user-centric approach that prioritizes ease of use, clear communication, and continuous improvement. By following these guidelines, you can create an AI feature that seamlessly integrates with the merchants workflow and enhances their productivity and efficiency.
 

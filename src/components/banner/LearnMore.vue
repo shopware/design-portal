@@ -7,7 +7,7 @@
                 <p><slot name="copy">{{ copy }}</slot></p>
             </div>
             <div class="right">
-                <SwagBtn :href="page" class="--primary --sm" icon="long-arrow-right" icon-at="end"><slot name="btnlabel">{{ btnlabel }}</slot></SwagBtn>
+                <SwagBtn :href="page" :target="target" class="--primary --sm" icon="long-arrow-right" icon-at="end"><slot name="btnlabel">{{ btnlabel }}</slot></SwagBtn>
             </div>
         </div>        
     </div>
@@ -25,6 +25,9 @@ const props = defineProps({
       type: String
     },
     page: {
+    type: String
+    },
+    target: {
     type: String
     }
   });
@@ -45,13 +48,13 @@ const props = defineProps({
     margin: 24px 0px;
 
     h2 {
-        color: #FFF;
+        color: #FFF !important;
 
         /* Inter/Desktop/Text/l/Semibold */
         font-family: Poppins;
         font-size: 24px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 600 !important;
         line-height: 140%; /* 28px */
     }
 

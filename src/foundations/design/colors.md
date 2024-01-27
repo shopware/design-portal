@@ -18,6 +18,7 @@ import SwagResources from "../../components/home/SwagResources.vue";
 import LearnMore from "../../components/banner/LearnMore.vue";
 import Cutdown from "../../components/banner/Cutdown.vue";
 import Contribute from "../../components/banner/Contribute.vue";
+import NPM from "../../components/interaction/NPM.vue";
 </script>
 
 ## Colors
@@ -84,3 +85,11 @@ page="/foundations/contibutions"
 <code>Test</code>
 
 <p>Lorem <code>code</code></p>
+
+
+<!-- TEST @todo move to icon overview, add copy to clipboard function -->
+<div class="flex p-0 m-0 mt-5 gap-12 gap-y-4 my-30">
+ <SwagBtn href="#" class="--primary developers w-fill-flex h-fit-flex" icon="long-arrow-right" icon-at="end"><SwagIcon icon="figma"/>Open in Figma</SwagBtn> 
+
+  <NPM package="npm i @shopware/meteor-icon-kit"/>
+</div>

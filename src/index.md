@@ -47,11 +47,3 @@ import NPM from "./components/interaction/NPM.vue";
 <SwagExposed class="my-30" />
 
 <SwagResources class="my-30" />
-
-
-<!-- TEST @todo move to icon overview, add copy to clipboard function -->
-<div class="flex p-0 m-0 mt-5 gap-12 gap-y-4 my-30">
- <SwagBtn href="#" class="--primary developers w-fill-flex h-fit-flex" icon="long-arrow-right" icon-at="end"><SwagIcon icon="figma"/>Open in Figma</SwagBtn> 
-
-  <NPM package="npm i @shopware/meteor-icon-kit"/>
-</div>

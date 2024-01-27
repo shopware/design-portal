@@ -68,7 +68,7 @@ import NPM from "../components/interaction/NPM.vue";
 
   <h2 class="h-homepage mt-[20px] mb-[20px]">Meteor Icon Kit</h2>
   <p>
-  To also use the Icon Kit, add thr package to your project.
+  To also use the Icon Kit, add the package to your project.
   </p>
     <div class="flex p-0 m-0 gap-12 gap-y-4">
       <NPM package="npm i @shopware-ag/meteor-icon-kit"/>
