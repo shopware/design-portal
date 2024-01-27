@@ -48,11 +48,11 @@ const props = defineProps({
     margin: 24px 0px;
 
     h2 {
-        color: #00296A;
+        color: #00296A !important;
         font-family: Poppins;
         font-size: 24px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 600 !important;
         line-height: 140%; /* 28px */
     }
 

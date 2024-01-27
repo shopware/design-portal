@@ -48,13 +48,13 @@ const props = defineProps({
     margin: 24px 0px;
 
     h2 {
-        color: #FFF;
+        color: #FFF !important;
 
         /* Inter/Desktop/Text/l/Semibold */
         font-family: Poppins;
         font-size: 24px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 600 !important;
         line-height: 140%; /* 28px */
     }
 
