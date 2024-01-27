@@ -457,6 +457,7 @@ const breakpoints = {
 <style scoped>
 .carousel--container {
   position: relative;
+  user-select: none;
 }
 .carousel__item {
   display: flex;
