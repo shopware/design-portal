@@ -45,13 +45,14 @@ const props = defineProps({
 <style lang="scss">
 .banner--cutdown {
     align-items: center;
-    background-color: #F2F3F8;
+    background-color: #FAFBFE;
     border-radius: 12px;
     display: flex;
     font-weight: 400;
     gap: 8px;
     margin: 2rem 0;
     padding: 20px;
+    border: 1px solid #F0F3FF;
 
     .cutdown__thumbnail {
         background-clip: padding-box;

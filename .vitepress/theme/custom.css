@@ -21,6 +21,11 @@ span.font-setting-ss02 {
     border: 0px;
 }
 
+.custom-block.info {
+    background: #FAFBFE;
+    border: 1px solid #F0F3FF;
+}
+
 /* @todo move to global theme */
 .h-label {
     text-transform: uppercase !important;

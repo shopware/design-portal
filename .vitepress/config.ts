@@ -96,8 +96,10 @@ export default defineConfigWithTheme<ThemeConfig>({
           text: 'Content',
           items: [
             { text: 'Content Experience', link: '/product-experience/content/' },
+            { text: 'Basics', link: '/product-experience/content/basics' },
             { text: 'Inclusive Language', link: '/product-experience/content/inclusive-language' },
-            { text: 'Abbreviations and acronyms', link: '/product-experience/content/abbreviations-and-acronyms' }
+            { text: 'Abbreviations and acronyms', link: '/product-experience/content/abbreviations-and-acronyms' },
+            { text: 'TL;DR', link: '/product-experience/content/tldr' }
           ]
         }
       ]

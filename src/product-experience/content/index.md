@@ -14,6 +14,8 @@ swag:
 ---
 
 <script setup>
+import Cutdown from "../../components/banner/Cutdown.vue";
+import UsageBlock from "../../components/interaction/UsageBlock.vue";
 </script>
 
 # {{ $frontmatter.title }} 
