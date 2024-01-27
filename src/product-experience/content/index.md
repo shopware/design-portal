@@ -31,7 +31,7 @@ At Shopware, the tone of voice that fosters meaningful connections with our audi
 </picture>
 
 ## 🎯 Writing Goals and Principles
-<div class="grid gap-8 section-thumbnails mb-[12px]">
+<div class="flex gap-8 section-thumbnails mb-[12px]">
     <div class="section-thumbnails--card  md:max-w-1/2">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/product-experience/section-thumbnails-empower@dark.png 4x">
@@ -51,7 +51,7 @@ At Shopware, the tone of voice that fosters meaningful connections with our audi
         <p>Treat readers with the respect they deserve. Put yourself in their shoes, and don’t patronise them. Remember that they have other things to do. Be considerate and inclusive.</p>
 </div>
 </div>
-<div class="grid gap-8 section-thumbnails mb-[12px]">
+<div class="flex gap-8 section-thumbnails mb-[12px]">
         <div class="section-thumbnails--card md:max-w-1/2">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/product-experience/section-thumbnails-educate@dark.png 4x">
@@ -75,7 +75,7 @@ At Shopware, the tone of voice that fosters meaningful connections with our audi
 ## 💬 Our Approach
 In order to achieve these goals, we make sure our content adheres to these values.
 
-<div class="grid gap-8 section-thumbnails mb-[12px]">
+<div class="flex gap-8 section-thumbnails mb-[12px]">
     <div class="section-thumbnails--card  md:max-w-1/2">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/product-experience/section-thumbnails-clear@dark.png 4x">
@@ -95,7 +95,7 @@ In order to achieve these goals, we make sure our content adheres to these value
         <p>Before you start writing, ask yourself: What purpose does this serve? Who is going to read it? What do they need to know?</p>
 </div>
 </div>
-<div class="grid gap-8 section-thumbnails mb-[42px]">
+<div class="flex gap-8 section-thumbnails mb-[42px]">
         <div class="section-thumbnails--card md:max-w-1/2">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/product-experience/section-thumbnails-friendly@dark.png 4x">

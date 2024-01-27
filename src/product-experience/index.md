@@ -15,7 +15,7 @@ swag:
 
 ## Content Guideance
 
-<div class="grid gap-8 section-thumbnails mb-[42px] md:max-w-12/12">
+<div class="flex gap-8 section-thumbnails mb-[42px] md:max-w-12/12">
     <div class="section-thumbnails--card md:max-w-1/3">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/product-experience/content-experience-intro@dark.png 4x">
