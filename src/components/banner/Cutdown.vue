@@ -73,8 +73,8 @@ const props = defineProps({
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
-        line-height: 140%; /* 19.6px */
-        margin: 0;
+        line-height: 140% !important; /* 19.6px */
+        margin: 0 !important;
     }
 
     .cutdown_content {
