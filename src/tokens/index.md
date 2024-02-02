@@ -15,7 +15,7 @@ import SwagTokensHero from "../components/tokens/SwagTokensHero.vue";
 import Label from "../components/interaction/Label.vue";
 </script>
 
-<SwagTokensHero class="mb-[40px]">
+<SwagTokensHero class="mb-[40px] mt-[40px]">
     <template #label>Design Tokens</template>
     <template #title>Refining our design language.</template>
     <template #content><p>Design Tokens are the heartbeat of our design system. They encapsulate the essential elements of your design language – colors, typography, spacing, and beyond – into a unified, flexible format that speaks directly to both designers and developers. Stay tuned for the unveiling of Design Tokens in Meteor.</p></template>
@@ -24,14 +24,14 @@ import Label from "../components/interaction/Label.vue";
 
 <section class="tokens--container md:max-w-12/12 mb-[72px]">
     <div class="design-tokens--container md:max-w-6/12">
-        <div class="content">
+        <div class="tokens-content">
         <Label />
             <h2>Design Tokens</h2>
-            <div class="copy">
+            <div class="tokens-copy">
                 <p>Design Tokens are landing in Meteor soon! These tiny pieces of design DNA encode design decisions like colors, typography, spacing, and more, making them reusable and scalable. <span>Available soon.</span></p>
             </div>
         </div>
-        <div class="image">
+        <div class="tokens-image">
         <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/tokens/design-tokens-pills@dark.png 2x">
     <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/tokens/design-tokens-pills.png 2x" src="/tokens/design-tokens-pills.png" width="100%" height="auto">
@@ -39,14 +39,14 @@ import Label from "../components/interaction/Label.vue";
         </div>
     </div>
     <div class="tokens-pipeline--container md:max-w-6/12">
-        <div class="content">
+        <div class="tokens-content">
         <Label />
             <h2>Token Pipeline</h2>
-            <div class="copy">
-                <p>We're going to open-source our token pipeline! Soon, sync Design Tokens from Figma to GitHub effortlessly, making your design decisions available across your Shopware projects. Available soon. <span>Available soon.</span></p>
+            <div class="tokens-copy">
+                <p>We're going to open-source our token pipeline! Soon, sync Design Tokens from Figma to GitHub effortlessly, making your design decisions available across your Shopware projects. <span>Available soon.</span></p>
             </div>
             </div>
-            <div class="image">
+            <div class="tokens-image">
         <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/tokens/design-sync-tools@dark.png 2x">
     <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/tokens/design-sync-tools.png 2x" src="/tokens/design-sync-tools.png" width="100%" height="auto">
@@ -77,7 +77,7 @@ import Label from "../components/interaction/Label.vue";
             border: 1px solid #E4E1FF;
             background: linear-gradient(155deg, #FFF 15.93%, rgba(250, 252, 250, 0.00) 84.78%);
 
-            .content {
+            .tokens-content {
                 padding-bottom: 55px;
             }
         }
@@ -94,7 +94,7 @@ import Label from "../components/interaction/Label.vue";
             background: linear-gradient(155deg, #FFF 15.93%, rgba(250, 252, 250, 0.00) 84.78%);
         }
 
-        .content {
+        .tokens-content {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -113,7 +113,7 @@ import Label from "../components/interaction/Label.vue";
                 line-height: normal;
                 letter-spacing: -0.8px;
                 }
-                .copy {
+                .tokens-copy {
                     display: flex;
                     padding-top: 32px;
                     justify-content: center;
