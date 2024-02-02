@@ -77,6 +77,9 @@ At Shopware, our team values form the cornerstone of our approach. We prioritize
       border: 1px solid var(--slate-100, #F0F3FF);
       background: linear-gradient(155deg, #FAFBFE 15.93%, rgba(250, 252, 250, 0.00) 84.78%);
       position: relative;
+      .dark & {
+        filter: invert(1) hue-rotate(-180deg);
+    }
     }
     .left-join {
         padding: 64px 72px;
@@ -84,7 +87,7 @@ At Shopware, our team values form the cornerstone of our approach. We prioritize
         gap: 93px;
         
         h2 {
-        color: #1E293B;
+        color: var(--c-text);
         font-family: Poppins;
         font-size: 28px;
         font-style: normal;

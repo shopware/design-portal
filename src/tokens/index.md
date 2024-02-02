@@ -76,6 +76,10 @@ import Label from "../components/interaction/Label.vue";
             border-radius: 32px;
             border: 1px solid #E4E1FF;
             background: linear-gradient(155deg, #FFF 15.93%, rgba(250, 252, 250, 0.00) 84.78%);
+            .dark & {
+            background: linear-gradient(155deg, #1A1F26 15.93%, #1A1F26 84.78%);
+            border: 1px solid #12141E;
+         }
 
             .tokens-content {
                 padding-bottom: 55px;
@@ -92,6 +96,10 @@ import Label from "../components/interaction/Label.vue";
             border-radius: 32px;
             border: 1px solid #E4E1FF;
             background: linear-gradient(155deg, #FFF 15.93%, rgba(250, 252, 250, 0.00) 84.78%);
+            .dark & {
+            background: linear-gradient(155deg, #1A1F26 15.93%, #1A1F26 84.78%);
+            border: 1px solid #12141E;
+         }
         }
 
         .tokens-content {
@@ -102,6 +110,9 @@ import Label from "../components/interaction/Label.vue";
                 gap: 4px;
                 align-self: stretch;
                 padding: 0px 32px 8px;
+                .dark & {
+                    filter: invert(1) hue-rotate(-180deg);
+                }
 
                 h2 {
                 color: #1E293B;
@@ -119,6 +130,7 @@ import Label from "../components/interaction/Label.vue";
                     justify-content: center;
                     align-items: center;
                     gap: 10px;
+                    
 
                     p {
                     color: #2D2E32;
@@ -128,6 +140,7 @@ import Label from "../components/interaction/Label.vue";
                     font-style: normal;
                     font-weight: 500;
                     line-height: 140%; /* 28px */
+                    
 
                         span {
                             color: #808392;

@@ -9,7 +9,7 @@ span.font-setting-ss02 {
 }
 
 .main img {
-    border-radius: 8px;
+    @apply rounded-l;
 }
 
 .vp-doc > div > h1, h1.styled {
@@ -103,7 +103,10 @@ span.font-setting-ss02 {
         padding-right: 0;
         padding-top: 0px;
         padding-bottom: 0.25rem;
-        background-color: #fff!important;
+        background-color: #fff;
+        .dark & {
+            background: var(--vp-c-bg);
+        }
         }
 }
 

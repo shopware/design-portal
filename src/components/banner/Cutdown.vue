@@ -54,6 +54,7 @@ const props = defineProps({
     padding: 20px;
     border: 1px solid #F0F3FF;
 
+
     .cutdown__thumbnail {
         background-clip: padding-box;
         border: 1px solid #00000014;
@@ -63,6 +64,7 @@ const props = defineProps({
         overflow: hidden;
         padding: 0;
         position: relative;
+
     }
 
     p {

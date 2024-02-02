@@ -8,7 +8,7 @@
           </div>
           <h3 class="correct">Do</h3>
         </div>
-        <slot name="correct"></slot>
+        <p><slot name="correct"></slot></p>
       </div>
   
       <div class="incorrect-block incorrect md:max-w-6/12" v-if="hasIncorrectSlot">
@@ -18,7 +18,7 @@
           </div>
           <h3 class="incorrect">Don't</h3>
         </div>
-        <slot name="incorrect"></slot>
+        <p><slot name="incorrect"></slot></p>
       </div>
     </div>
     </div>
@@ -120,6 +120,7 @@
       align-items: flex-start;
       gap: 16px;
   
+  
       &.correct {
         display: flex;
         padding: 24px;
@@ -127,6 +128,9 @@
         align-items: flex-start;
         gap: 16px;
         flex: 1 0 0;
+        .dark & {
+        color: #fff;
+         }
       }
       &.incorrect {
         display: flex;
@@ -135,7 +139,6 @@
         align-items: flex-start;
         gap: 16px;
         flex: 1 0 0;
-
       }
     }
   }

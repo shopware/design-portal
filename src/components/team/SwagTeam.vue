@@ -473,7 +473,7 @@ const breakpoints = {
   }
   p {
     text-align: left;
-    color: #1E293B;
+    color: var(--c-text);
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
@@ -482,7 +482,7 @@ const breakpoints = {
     letter-spacing: 0.6px;
     margin: 0;
     h3 {
-      color: #1E293B;
+      color: var(--c-text);
       font-family: Poppins;
       font-size: 38px;
       font-style: normal;
@@ -554,7 +554,7 @@ const breakpoints = {
 }
 
 .carousel--container:before {
-        background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        background: linear-gradient(90deg, var(--vp-c-bg) 0%, rgba(255, 255, 255, 0.00) 100%);
         width: 100px;
         height: 280px;
         position: absolute;
@@ -564,7 +564,7 @@ const breakpoints = {
         z-index: 10;
 }
 .carousel--container:after {
-        background: linear-gradient(-90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        background: linear-gradient(-90deg, var(--vp-c-bg) 0%, rgba(255, 255, 255, 0.00) 100%);
         width: 100px;
         height: 280px;
         position: absolute;
