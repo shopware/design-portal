@@ -11,4 +11,26 @@ swag:
   related: false
 ---
 
-## Typography
+## Card
+
+
+### Component Preview
+ <iframe
+  src="https://shopware.github.io/meteor-component-library/iframe.html?id=components-layout-sw-card--minimal-story&viewMode=story&shortcuts=false&singleStory=true"
+  width="800"
+  height="400"
+></iframe>
+
+### Props
+<iframe
+  src="https://shopware.github.io/meteor-component-library/?path=/story/components-layout-sw-card--minimal-story&full=1&shortcuts=false&singleStory=true"
+  width="800"
+  height="970"
+></iframe>
+
+### Docs
+ <iframe
+  src="https://shopware.github.io/meteor-component-library/iframe.html?id=components-layout-sw-card--minimal-story&viewMode=docs&shortcuts=false&singleStory=true"
+  width="800"
+  height="400"
+></iframe>
