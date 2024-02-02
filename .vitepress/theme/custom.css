@@ -53,6 +53,14 @@ span.font-setting-ss02 {
     }
 }
 
+.p-tokens {
+    h2.h-homepage {
+        margin-top: 0 !important;
+        padding-top: 0;
+        border: 0;
+    }
+}
+
 .p-home--design {
     background-image: url(../home/background.png);
     background-repeat: no-repeat;
