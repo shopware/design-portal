@@ -34,7 +34,7 @@ import Label from "../components/interaction/Label.vue";
         <div class="tokens-image">
         <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/tokens/design-tokens-pills@dark.png 2x">
-    <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/tokens/design-tokens-pills.png 2x" src="/tokens/design-tokens-pills.png" width="100%" height="auto">
+    <img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/tokens/design-tokens-pills.png 2x" src="/tokens/design-tokens-pills.png" width="100%" height="auto">
     </picture>
         </div>
     </div>
@@ -49,7 +49,7 @@ import Label from "../components/interaction/Label.vue";
             <div class="tokens-image">
         <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/tokens/design-sync-tools@dark.png 2x">
-    <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/tokens/design-sync-tools.png 2x" src="/tokens/design-sync-tools.png" width="100%" height="auto">
+    <img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/tokens/design-sync-tools.png 2x" src="/tokens/design-sync-tools.png" width="100%" height="auto">
     </picture>
         </div>
     </div>

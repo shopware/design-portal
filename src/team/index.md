@@ -116,6 +116,9 @@ At Shopware, our team values form the cornerstone of our approach. We prioritize
         letter-spacing: -0.8px;
         width: 100%;
         text-wrap: pretty;
+        .dark & {
+        filter: invert(1) hue-rotate(-180deg);
+    }
         
         span {
           color: var(--slate-600, #808392);
