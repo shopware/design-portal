@@ -1,11 +1,16 @@
 <!-- @todo move to global hub components -->
 <template>
     <div class="label">
-        <span>Soon</span>     
+        <span><slot name="label">Soon</slot></span>     
     </div>
   </template>
 
 <script setup>
+const props = defineProps({
+    label: {
+      type: String
+    }
+  });
 
 </script>
 

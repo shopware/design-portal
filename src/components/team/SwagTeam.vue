@@ -39,7 +39,7 @@ const breakpoints = {
 }
  </script>
 <template>
-<div class="sticker">
+<!--<div class="sticker">
   <div draggable="true" class="icr-sticker">
     <svg width="173" height="107" viewBox="0 0 173 107" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_3144_24478)">
@@ -407,8 +407,8 @@ const breakpoints = {
 </svg>
 
   </div>
-</div>
-    <h2 class="h-homepage md:max-w-4/12">Creation is our craft. <br>Deep thinking is the foundation of our success.</h2>
+</div>-->
+    <h2 class="h-homepage md:max-w-4/12">Meet the team</h2>
     <div class="mt-[80px] carousel--container">
     <Carousel :wrap-around="true" :breakpoints="breakpoints" :autoplay="2800" pauseAutoplayOnHover="true">
       <Slide v-for="slide in slides" :key="slide.id">

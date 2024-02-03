@@ -15,6 +15,7 @@ swag:
 <script setup>
 import SwagResourcesGetStarted from "../components/home/SwagResourcesGetStarted.vue";
 import HowToIntegrateResources from "../components/getstarted/HowToIntegrateResources.vue";
+import HowToIntegrateInter from "../components/getstarted/HowToIntegrateInter.vue";
 import Contribute from "../components/banner/Contribute.vue";
 import Cutdown from "../components/banner/Cutdown.vue";
 import NPM from "../components/interaction/NPM.vue";
@@ -49,6 +50,7 @@ import NPM from "../components/interaction/NPM.vue";
   <SwagResourcesGetStarted class="mt-[40px] mb-[40px]" />
 
   <HowToIntegrateResources class="mt-[40px] mb-[40px]" />
+  <HowToIntegrateInter class="mt-[40px] mb-[40px]" />
   
   </div>
   </Tab>

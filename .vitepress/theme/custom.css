@@ -120,7 +120,7 @@ span.font-setting-ss02 {
 /* @todo move to global hub components */
 .btn.--contrast, .vp-doc .btn.--contrast {
     --btn-bg: #2D2E32;
-    height: 40px;
+    height: 42px;
     padding: 16px;
     color: #FFF;
 
@@ -199,6 +199,37 @@ span.font-setting-ss02 {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
+  }
+
+
+  .component-preview {
+    width: 100%;
+    @apply mt-[24px];
+    iframe {
+        border-radius: 12px 12px 0px 0px;
+        border: 1px solid #F0F3FF;
+        border-bottom: 0px;
+    }
+    .component-preview_edit {
+        background-color: #FAFBFE;
+        border-radius: 0px 0px 12px 12px;
+        padding: 6px 16px;
+        align-content: end;
+        @apply flex;
+        justify-content: flex-end;
+        border: 1px solid #F0F3FF;
+        border-top: 0px;
+        font-size: 14px;
+    }
+  }
+
+  .props-preview {
+    width: 100%;
+    @apply mt-[24px];
+    iframe {
+        border-radius: 12px;
+        border: 1px solid #F0F3FF;
+    }
   }
 
 

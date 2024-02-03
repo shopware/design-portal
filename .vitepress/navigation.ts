@@ -19,12 +19,16 @@ const navigation = buildSidebarNav('./src/', [
         text: 'Tokens',
     },
     {
-        link: 'https://brand.shopware.com',
-        text: 'Brand',
+        link: '/meteor-components/',
+        text: 'Components',
     },
     {
         link: '/team/',
         text: 'Design at Shopware',
+    },
+    {
+        link: 'https://brand.shopware.com',
+        text: 'Brand',
     },
     resourcesMenu,
 ], [
