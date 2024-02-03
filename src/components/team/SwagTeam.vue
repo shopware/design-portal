@@ -418,7 +418,7 @@ const breakpoints = {
             <picture>
               <source media="(prefers-color-scheme: dark)" :srcset="slide.portrait" type="image/png">
 
-              <img decoding="async" :alt="slide.name" :src="slide.portrait" :srcset="slide.portrait" width="100%" height="auto">
+              <img class="class" decoding="async" :alt="slide.name" :src="slide.portrait" :srcset="slide.portrait" width="100%" height="auto">
             </picture>
           </div>
           <div class="carousel__item-right">
@@ -435,7 +435,7 @@ const breakpoints = {
             <picture>
               <source media="(prefers-color-scheme: dark)" :srcset="slide.portrait" type="image/png">
 
-              <img decoding="async" :alt="slide.name" :src="slide.portrait" :srcset="slide.portrait" width="100%" height="auto">
+              <img class="class" decoding="async" :alt="slide.name" :src="slide.portrait" :srcset="slide.portrait" width="100%" height="auto">
             </picture>
           </div>
           <div class="carousel__item-right">

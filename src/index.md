@@ -37,7 +37,7 @@ import NPM from "./components/interaction/NPM.vue";
     <template #image>
     <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/home/design-hero@dark.png 4x">
-    <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/home/design-hero.png 4x" src="/home/design-hero.png" width="100%" height="auto">
+    <img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/home/design-hero.png 4x" src="/home/design-hero.png" width="100%" height="auto">
     </picture>
     </template>
 </SwagDesignHero>

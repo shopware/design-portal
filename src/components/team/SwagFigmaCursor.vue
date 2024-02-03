@@ -65,6 +65,10 @@ font-weight: 600;
 .join-us-cursor-3,
 .join-us-cursor-4 {
     position: absolute;
+    z-index: 10;
+    .dark & {
+        filter: invert(1) hue-rotate(-180deg);
+    }
 }
 
 .join-us-cursor-1 .join-us-name,
