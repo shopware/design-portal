@@ -51,7 +51,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .SwagResources {
   &_grid {
     @apply grid gap-7 md:grid-cols-2 lg:grid-cols-3;

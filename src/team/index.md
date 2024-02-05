@@ -71,7 +71,7 @@ At Shopware, our team values form the cornerstone of our approach. We prioritize
     </div>
 </section>
 
-  <style lang="scss">
+  <style scoped lang="scss">
     .figma--interface {
       position: absolute;
       right: 0px;

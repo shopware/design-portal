@@ -16,7 +16,7 @@
     </div>
   </template>
   
-  <style lang="scss">
+  <style scoped lang="scss">
   .HowToIntegrateInter {
     @apply grid gap-12;
     gap: 12px;

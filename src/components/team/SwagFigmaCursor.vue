@@ -45,7 +45,7 @@ const cursors = ([
 ])
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 /* FIGMA CURSOR STYLES */
 
 .join-us-name {

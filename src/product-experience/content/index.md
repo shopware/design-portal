@@ -124,7 +124,7 @@ In order to achieve these goals, we make sure our content adheres to these value
     target="_blank"
 />
 
-<style lang="scss">
+<style scoped lang="scss">
 /* Card Thumbnail */
   .section-thumbnails {
     display: flex;

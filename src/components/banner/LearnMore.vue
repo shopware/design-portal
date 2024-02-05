@@ -34,7 +34,7 @@ const props = defineProps({
 </script>
 
   
-<style lang="scss">
+<style scoped lang="scss">
 .banner--learn-more {
     width: 100%;
     display: flex;

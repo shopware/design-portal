@@ -15,7 +15,7 @@ const props = defineProps({
 </script>
 
   
-<style lang="scss">
+<style scoped lang="scss">
 .label {
     display: inline-flex;
     padding: 1px 7px;
