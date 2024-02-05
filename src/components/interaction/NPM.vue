@@ -27,7 +27,7 @@ const copyToClipboard = function(event) {
 </script>
 
   
-<style lang="scss">
+<style scoped lang="scss">
 .package {
     align-items: center;
     background-color: #F2F3F8;

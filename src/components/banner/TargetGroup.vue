@@ -22,7 +22,7 @@
     });
   </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .TargetGroup {
     display: flex;
     padding-top: 8px;

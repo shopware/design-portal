@@ -39,7 +39,7 @@
     </div>
   </template>
   
-  <style lang="scss">
+  <style scoped lang="scss">
   .HowToIntegrateResources {
     @apply grid gap-12;
     gap: 12px;

@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .SwagLine {
   border: 1px solid var(--sw-c-gray-200);
   border-image-slice: 1;

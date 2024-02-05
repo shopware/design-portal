@@ -58,7 +58,7 @@ import Label from "../components/interaction/Label.vue";
 
 
 
-<style lang="scss">
+<style scoped lang="scss">
     .tokens--container {
         display: flex;
         align-items: flex-start;

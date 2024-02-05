@@ -47,7 +47,7 @@ swag:
 </div>
 
 
-<style lang="scss">
+<style scoped lang="scss">
 /* Card Thumbnail */
 a.section-thumbnails {
     display: flex;

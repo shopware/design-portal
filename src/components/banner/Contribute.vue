@@ -32,7 +32,7 @@ const props = defineProps({
 </script>
 
   
-<style lang="scss">
+<style scoped lang="scss">
 .banner--contribute {
     width: 100%;
     display: flex;

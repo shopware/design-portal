@@ -37,7 +37,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .SwagExposed {
   @apply grid gap-24;
   grid-template-columns: 100%;
