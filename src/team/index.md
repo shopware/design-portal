@@ -25,7 +25,7 @@ import SwagTeamValuesMarquee from "../components/team/SwagTeamValuesMarquee.vue"
     <template #image>
     <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/home/design-hero@dark.png 4x">
-    <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/home/design-hero.png 4x" src="/home/design-hero.png" width="100%" height="auto">
+    <img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/home/design-hero.png 4x" src="/home/design-hero.png" width="100%" height="auto">
     </picture>
     </template>
 </SwagTeamHero>
@@ -63,9 +63,29 @@ At Shopware, our team values form the cornerstone of our approach. We prioritize
     <SwagBtn href="https://www.shopware.com/de/jobs/#open-positions" class="--contrast" icon="long-arrow-right" icon-at="end">See open positions</SwagBtn>
   </div>
   <SwagFigmaCursor/>
+  <div class="figma--interface md:max-w-6/12">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="/careers/figma@dark.png">
+    <img class="class" decoding="async" loading="lazy" alt="The image shows a sketch of Figma's UI." srcset="/careers/figma.png" src="/careers/figma.png" width="100%" height="auto">
+    </picture>
+    </div>
 </section>
 
   <style lang="scss">
+    .figma--interface {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      z-index: 2;
+      max-width: 610px;
+      max-height: 563px;
+      img {
+        border-radius: 0px 0px 32px 0px;
+        .dark & {
+        filter: invert(1) hue-rotate(-180deg);
+    }
+      }
+    }
     .join-us {
       display: flex;
       padding: 16px 0px;
@@ -77,6 +97,9 @@ At Shopware, our team values form the cornerstone of our approach. We prioritize
       border: 1px solid var(--slate-100, #F0F3FF);
       background: linear-gradient(155deg, #FAFBFE 15.93%, rgba(250, 252, 250, 0.00) 84.78%);
       position: relative;
+      .dark & {
+        filter: invert(1) hue-rotate(-180deg);
+    }
     }
     .left-join {
         padding: 64px 72px;
@@ -84,7 +107,7 @@ At Shopware, our team values form the cornerstone of our approach. We prioritize
         gap: 93px;
         
         h2 {
-        color: #1E293B;
+        color: var(--c-text);
         font-family: Poppins;
         font-size: 28px;
         font-style: normal;
@@ -93,6 +116,9 @@ At Shopware, our team values form the cornerstone of our approach. We prioritize
         letter-spacing: -0.8px;
         width: 100%;
         text-wrap: pretty;
+        .dark & {
+        filter: invert(1) hue-rotate(-180deg);
+    }
         
         span {
           color: var(--slate-600, #808392);

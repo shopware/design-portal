@@ -78,7 +78,7 @@ export default defineConfigWithTheme<ThemeConfig>({
               items: [
                 { text: 'Typography', link: '/foundations/design/typography' },
                 { text: 'Colors', link: '/foundations/design/colors' },
-                { text: 'Elevation', link: '/foundations/design/elevation' }
+                { text: 'Images', link: '/foundations/design/images' }
               ]
             }
           ]

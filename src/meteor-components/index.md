@@ -16,42 +16,34 @@ import Label from "../components/interaction/Label.vue";
 </script>
 
 <SwagTokensHero class="mb-[40px] mt-[40px]">
-    <template #label>Design Tokens</template>
-    <template #title>Refining our design language.</template>
-    <template #content><p>Design Tokens are the heartbeat of our design system. They encapsulate the essential elements of your design language – colors, typography, spacing, and beyond – into a unified, flexible format that speaks directly to both designers and developers. Stay tuned for the unveiling of Design Tokens in Meteor.</p></template>
+    <template #label>All Components</template>
+    <template #title>Meteor UI Components</template>
+    <template #content><p>Explore our library of UI components — everything you need to kickstart development for your next project. <span class="soon-a">Available soon.</span></p></template>
     
 </SwagTokensHero>
+<div class="flex p-0 m-0 mt-5 gap-12 gap-y-4 my-30 md:max-w-3/6">
+<SwagBtn href="https://www.figma.com/community/file/1032569283566168066/meteor-admin-foundations-shopware" class="--contrast" icon="long-arrow-right" icon-at="end"><SwagIcon icon="figma" type="solid"/>Preview in Figma</SwagBtn>
+<SwagBtn href="https://github.com/shopware/meteor-component-library" class="--contrast" icon="long-arrow-right" icon-at="end"><SwagIcon icon="github" type="solid"/>Preview on GitHub</SwagBtn>
+</div>
 
 <section class="tokens--container md:max-w-12/12 mb-[72px]">
     <div class="design-tokens--container md:max-w-6/12">
         <div class="tokens-content">
-        <Label />
-            <h2>Design Tokens</h2>
+        <Label><template #label>Soon</template></Label />
+            <h2>Component Documentation</h2>
             <div class="tokens-copy">
-                <p>Design Tokens are landing in Meteor soon! These tiny pieces of design DNA encode design decisions like colors, typography, spacing, and more, making them reusable and scalable. <span>Available soon.</span></p>
+                <p>Dive into comprehensive documentation for each of our ready-to-use UI components. Get ready to boost your projects with our straightforward UI guides covering everything from accessibility to dos and don'ts, and property definitions. <span>Available soon.</span></p>
             </div>
-        </div>
-        <div class="tokens-image">
-        <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="/tokens/design-tokens-pills@dark.png 2x">
-    <img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/tokens/design-tokens-pills.png 2x" src="/tokens/design-tokens-pills.png" width="100%" height="auto">
-    </picture>
         </div>
     </div>
     <div class="tokens-pipeline--container md:max-w-6/12">
         <div class="tokens-content">
-        <Label />
-            <h2>Token Pipeline</h2>
+        <Label><template #label>Soon</template></Label />
+            <h2>Copy. Paste. Commit.</h2>
             <div class="tokens-copy">
-                <p>We're going to open-source our token pipeline! Soon, sync Design Tokens from Figma to GitHub effortlessly, making your design decisions available across your Shopware projects. <span>Available soon.</span></p>
+                <p>Meteor offers ready-to-use code snippets for <strong>60+</strong> UI components, designed for easy integration into your projects. From buttons to switches, get everything you need to enhance your extension's interface with a simple copy and paste. <span>Available soon.</span></p>
             </div>
             </div>
-            <div class="tokens-image">
-        <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="/tokens/design-sync-tools@dark.png 2x">
-    <img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/tokens/design-sync-tools.png 2x" src="/tokens/design-sync-tools.png" width="100%" height="auto">
-    </picture>
-        </div>
     </div>
 </section>
 
@@ -59,6 +51,16 @@ import Label from "../components/interaction/Label.vue";
 
 
 <style lang="scss">
+    span.soon-a {
+        color: #808392;
+
+        /* Inter/Desktop/Text/l/Medium */
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+    }
     .tokens--container {
         display: flex;
         align-items: flex-start;

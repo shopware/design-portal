@@ -9,7 +9,7 @@ span.font-setting-ss02 {
 }
 
 .main img {
-    border-radius: 8px;
+    @apply rounded-l;
 }
 
 .vp-doc > div > h1, h1.styled {
@@ -103,7 +103,10 @@ span.font-setting-ss02 {
         padding-right: 0;
         padding-top: 0px;
         padding-bottom: 0.25rem;
-        background-color: #fff!important;
+        background-color: #fff;
+        .dark & {
+            background: var(--vp-c-bg);
+        }
         }
 }
 
@@ -117,7 +120,7 @@ span.font-setting-ss02 {
 /* @todo move to global hub components */
 .btn.--contrast, .vp-doc .btn.--contrast {
     --btn-bg: #2D2E32;
-    height: 40px;
+    height: 42px;
     padding: 16px;
     color: #FFF;
 
@@ -197,6 +200,88 @@ span.font-setting-ss02 {
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }
+
+
+  .component-preview {
+    width: 100%;
+    @apply mt-[24px];
+    iframe {
+        border-radius: 12px 12px 0px 0px;
+        border: 1px solid #F0F3FF;
+        border-bottom: 0px;
+    }
+    .component-preview_edit {
+        background-color: #FAFBFE;
+        border-radius: 0px 0px 12px 12px;
+        padding: 6px 16px;
+        align-content: end;
+        @apply flex;
+        justify-content: flex-end;
+        border: 1px solid #F0F3FF;
+        border-top: 0px;
+        font-size: 14px;
+    }
+  }
+
+  .props-preview {
+    width: 100%;
+    @apply mt-[24px];
+    iframe {
+        border-radius: 12px;
+        border: 1px solid #F0F3FF;
+    }
+  }
+
+  /* Card Thumbnail */
+  .section-thumbnails {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    
+    &--card {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        flex: 1 0 0;
+        align-self: stretch;
+        border-radius: 12px;
+        border: 1px solid #F0F3FF;
+        background: #FAFBFE;
+
+        h3 {
+            color: #0A0D0F;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        p {
+            color: #64748B;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 162.5% */
+            letter-spacing: 0.08px;
+            margin: 0px;
+        }
+        
+        &--image {
+            align-self: stretch;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 16px;
+            z-index: 2;
+        }
+    }
+}
 
 
 

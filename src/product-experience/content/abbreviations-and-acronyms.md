@@ -20,14 +20,6 @@ import UsageBlock from "../../components/interaction/UsageBlock.vue";
 
 # {{ $frontmatter.title }} 
 
-## Be clear and direct
-
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="/product-experience/inclusive-language-intro@dark.png 4x">
-
-<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/product-experience/inclusive-language-intro.png 4x" src="/product-experience/inclusive-language-intro.png" width="100%" height="auto">
-</picture>
-
 ## Abbreviations
   Abbreviations are any shortened or contracted word or phrase. Abbreviations can be convenient: they can also cause confusion if used incorrectly.
 

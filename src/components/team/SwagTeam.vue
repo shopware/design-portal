@@ -39,7 +39,7 @@ const breakpoints = {
 }
  </script>
 <template>
-<div class="sticker">
+<!--<div class="sticker">
   <div draggable="true" class="icr-sticker">
     <svg width="173" height="107" viewBox="0 0 173 107" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_3144_24478)">
@@ -407,8 +407,8 @@ const breakpoints = {
 </svg>
 
   </div>
-</div>
-    <h2 class="h-homepage md:max-w-4/12">Creation is our craft. <br>Deep thinking is the foundation of our success.</h2>
+</div>-->
+    <h2 class="h-homepage md:max-w-4/12">Meet the team</h2>
     <div class="mt-[80px] carousel--container">
     <Carousel :wrap-around="true" :breakpoints="breakpoints" :autoplay="2800" pauseAutoplayOnHover="true">
       <Slide v-for="slide in slides" :key="slide.id">
@@ -418,7 +418,7 @@ const breakpoints = {
             <picture>
               <source media="(prefers-color-scheme: dark)" :srcset="slide.portrait" type="image/png">
 
-              <img decoding="async" :alt="slide.name" :src="slide.portrait" :srcset="slide.portrait" width="100%" height="auto">
+              <img class="class" decoding="async" :alt="slide.name" :src="slide.portrait" :srcset="slide.portrait" width="100%" height="auto">
             </picture>
           </div>
           <div class="carousel__item-right">
@@ -435,7 +435,7 @@ const breakpoints = {
             <picture>
               <source media="(prefers-color-scheme: dark)" :srcset="slide.portrait" type="image/png">
 
-              <img decoding="async" :alt="slide.name" :src="slide.portrait" :srcset="slide.portrait" width="100%" height="auto">
+              <img class="class" decoding="async" :alt="slide.name" :src="slide.portrait" :srcset="slide.portrait" width="100%" height="auto">
             </picture>
           </div>
           <div class="carousel__item-right">
@@ -473,7 +473,7 @@ const breakpoints = {
   }
   p {
     text-align: left;
-    color: #1E293B;
+    color: var(--c-text);
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
@@ -482,7 +482,7 @@ const breakpoints = {
     letter-spacing: 0.6px;
     margin: 0;
     h3 {
-      color: #1E293B;
+      color: var(--c-text);
       font-family: Poppins;
       font-size: 38px;
       font-style: normal;
@@ -554,7 +554,7 @@ const breakpoints = {
 }
 
 .carousel--container:before {
-        background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        background: linear-gradient(90deg, var(--vp-c-bg) 0%, rgba(255, 255, 255, 0.00) 100%);
         width: 100px;
         height: 280px;
         position: absolute;
@@ -564,7 +564,7 @@ const breakpoints = {
         z-index: 10;
 }
 .carousel--container:after {
-        background: linear-gradient(-90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        background: linear-gradient(-90deg, var(--vp-c-bg) 0%, rgba(255, 255, 255, 0.00) 100%);
         width: 100px;
         height: 280px;
         position: absolute;

@@ -46,6 +46,9 @@ const props = defineProps({
     align-items: flex-start;
     gap: 8px;
     margin: 24px 0px;
+    .dark & {
+        filter: invert(1) hue-rotate(-180deg);
+    }
 
     h2 {
         color: #00296A !important;
