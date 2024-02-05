@@ -454,7 +454,7 @@ const breakpoints = {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .carousel--container {
   position: relative;
   user-select: none;
