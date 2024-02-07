@@ -36,14 +36,14 @@ jobs:
           cd src && zip -r db-index.zip * -i '*.md' -x '*/node_modules/*' -x '*/_source/*'
 
       - name: Upload build
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           if-no-files-found: error
           name: embed-${{ github.sha }}
           path: embed.zip
 
       - name: Upload DB index
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           if-no-files-found: error
           name: db-index-${{ github.sha }}
@@ -63,7 +63,7 @@ jobs:
         with:
           apt: true
 
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: embed-${{ github.sha }}
 
@@ -90,7 +90,7 @@ jobs:
         with:
           apt: true
 
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: embed-${{ github.sha }}
 
@@ -115,14 +115,14 @@ jobs:
         run: zip -r full-build.zip .vitepress/dist/ vercel.json
 
       - name: Upload build
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           if-no-files-found: error
           name: full-build-${{ github.sha }}
           path: full-build.zip
 
       #- name: Upload external
-      #  uses: actions/upload-artifact@v3
+      #  uses: actions/upload-artifact@v4
       #  with:
       #    if-no-files-found: error
       #    name: db-external-${{ github.sha }}
@@ -144,11 +144,11 @@ jobs:
         with:
           apt: true
 
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: embed-${{ github.sha }}
 
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: full-build-${{ github.sha }}
 
@@ -207,7 +207,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: full-build-${{ github.sha }}
 
