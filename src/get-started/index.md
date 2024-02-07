@@ -25,7 +25,7 @@ import NPM from "../components/interaction/NPM.vue";
 # Get started
 <div class="Tabs_Design--custom">
 <Tabs>
-  <Tab title="For designers" id="designers">
+  <Tab title="For designers" id="designers" icon="image">
   <div class="mt-[20px] mb-[20px]">
   <h2 class="h-homepage">Get started with Meteor for Figma</h2>
   <p>
@@ -54,7 +54,7 @@ import NPM from "../components/interaction/NPM.vue";
   
   </div>
   </Tab>
-  <Tab title="For developers" id="developers">
+  <Tab title="For developers" id="developers" icon="code">
   <div class="mt-[20px] mb-[20px]">
   <h2 class="h-homepage">Get started with Meteor components</h2>
   <p>
