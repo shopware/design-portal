@@ -29,14 +29,14 @@ At Shopware, we are committed to creating inclusive and barrier-free shopping ex
 ## Shopware is for everyone 
 Accessibility is not just a goal; it's a fundamental value that drives us to continuously enhance our products and services. By prioritizing accessibility, we are not only ensuring compliance with legal requirements but also extending our reach to untapped audiences for our merchants.
 
-<Cutdown
+<!--<Cutdown
     eyebrow="Related course"
     title="Our commitment to accessibility"
     btnlabel="Watch lesson"
     videoURL="/foundations/accessibility"
     thumbnailIMG="/foundations/accessibility/foundations-accessibility-intro"
     alt="Video thumbnail showing abstract art – Our commitment to accessibility"
-  />
+  />-->
 
 ## Our Approach
 To achieve true accessibility, we adhere to the industry-leading guidelines set forth by the Web Content Accessibility Guidelines <code>(WCAG) 2.1 AA</code> and Barrier-Free Information Technology Regulation <code>(BITV 2.0)</code>. These guidelines are paramount in shaping web accessibility standards and will serve as the foundation for the upcoming accessibility law, the "Barrierefreiheitsstärkungsgesetz," which will be effective for all webshops in Germany in 2024.

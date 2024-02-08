@@ -24,8 +24,8 @@ import SwagTeamValuesMarquee from "../components/team/SwagTeamValuesMarquee.vue"
     <template #content><p>At Shopware, we're not just a design team – we're a crew of passionate individuals driven by innovation, rebellion, deep thinking, and creativity. We are united by a common passion for pushing boundaries and redefining the norm of commerce.</p></template>
     <template #image>
     <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="/home/design-hero@dark.png 4x">
-    <img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/home/design-hero.png 4x" src="/home/design-hero.png" width="100%" height="auto">
+    <source media="(prefers-color-scheme: dark)" srcset="/careers/sticker.png 4x">
+    <img class="class sticker" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/careers/sticker.png 4x" src="/careers/sticker.png" width="100%" height="auto">
     </picture>
     </template>
 </SwagTeamHero>
@@ -72,6 +72,10 @@ At Shopware, our team values form the cornerstone of our approach. We prioritize
 </section>
 
   <style scoped lang="scss">
+    .sticker {
+      width: 410px;
+      margin-left: 12%;
+    }
     .figma--interface {
       position: absolute;
       right: 0px;

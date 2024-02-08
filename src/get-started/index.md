@@ -87,10 +87,10 @@ import NPM from "../components/interaction/NPM.vue";
   </p>
 </div>
 
-<Contribute
+<!--<Contribute
 title="Be part of Meteor"
 copy="We believe in Open-Source software – we listen to our Community and build Meteor in collaboration with merchants. The best and brightest ideas come from you. If you wish to contribute to the Meteor Design System, please read our contributing guidelines for a smooth start."
 btn="true"
 page="/foundations/contibutions"
-/>
+/>-->
 
