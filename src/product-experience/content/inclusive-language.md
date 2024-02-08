@@ -33,14 +33,14 @@ This means that we keep the individual as the most important part of the sentime
 <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/product-experience/inclusive-language-intro.png 4x" src="/product-experience/inclusive-language-intro.png" width="100%" height="auto">
 </picture>
 
-<Cutdown
+<!--<Cutdown
     eyebrow="Related course"
     title="Inclusive Language"
     btnlabel="Watch lesson"
     videoURL="/foundations/accessibility"
     thumbnailIMG="/product-experience/inclusive-language-intro"
     alt="Video thumbnail showing the universal icon for accessibility"
-  />
+  />-->
 
   ## Race and ethnicity
 

@@ -20,10 +20,10 @@
           <SwagIcon icon="bold" type="solid" />
         </span>
         <span class="HomepageCard_heading">
-          Fonts
+          Inter font
           <SwagIcon icon="long-arrow-right" type="solid" />
         </span>
-        <p>To use our admin and storefront libraries you’ll also need the Inter font designed by Rasmus Andersson. Get your copy over at Google fonts.</p>
+        <p>To use our admin and storefront libraries you’ll also need the Inter font designed by Rasmus Andersson.</p>
       </a>
 
       <a href="/themes.html" class="HomepageCard_item --has-double-height">
@@ -45,7 +45,7 @@
           Logo library
           <SwagIcon icon="long-arrow-right" type="solid" />
         </span>
-        <p>Some text about our logo library.</p>
+        <p>Learn how to use our logo correctly.</p>
       </a>
     </div>
   </div>
@@ -56,7 +56,7 @@
   &_grid {
     @apply grid gap-7 md:grid-cols-2 lg:grid-cols-3;
     @media (min-width: 960px) {
-      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr;
       gap: 12px;
     }
   }

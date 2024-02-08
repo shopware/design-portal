@@ -15,7 +15,7 @@ import SwagLine from "./components/home/SwagLine.vue";
 import SwagDesignHero from "./components/home/SwagDesignHero.vue";
 import SwagExposed from "./components/home/SwagExposed.vue";
 import SwagResources from "./components/home/SwagResources.vue";
-import LearnMore from "./components/banner/LearnMore.vue";
+import Announcement from "./components/banner/Announcement.vue";
 import TargetGroup from "./components/banner/TargetGroup.vue";
 import NPM from "./components/interaction/NPM.vue";
 </script>
@@ -29,9 +29,9 @@ import NPM from "./components/interaction/NPM.vue";
     <template #links>
     <TargetGroup
     btnlabelleft="For designers."
-    pageleft="/getstarted/#designers"
+    pageleft="/get-started/#designers"
     btnlabelright="For developers."
-    pageright="/getstarted/#developers"
+    pageright="/get-started/#developers"
     />
     </template>
     <template #image>
@@ -43,6 +43,14 @@ import NPM from "./components/interaction/NPM.vue";
 </SwagDesignHero>
 
 <SwagLine />
+
+<Announcement
+    title="Meteor in 2024 and beyond – Design Tokens, Vue 3 and more – our road to the future of commerce."
+    label="New"
+    btnlabel="Read what’s next"
+    page="/changelog/meteor-in-2024"
+    target=""
+/>
 
 <SwagExposed class="my-30" />
 

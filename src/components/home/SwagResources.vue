@@ -15,23 +15,23 @@
         <p>Our Figma libraries contain the latest foundations, components, and patterns. You’ll find all of them in our Figma community profile.</p>
       </a>
 
-      <a href="/themes.html" class="HomepageCard_item --has-double-height">
+      <a href="/themes.html" class="HomepageCard_item --has-double-height special">
         <span class="HomepageCard_icon">
           <SwagIcon icon="bold" type="solid" />
         </span>
         <span class="HomepageCard_heading">
-          Fonts
+          Inter font
           <SwagIcon icon="long-arrow-right" type="solid" />
         </span>
-        <p>To use our admin and storefront libraries you’ll also need the Inter font designed by Rasmus Andersson. Get your copy over at Google fonts.</p>
+        <p>Meteor requires you to install Inter font designed by Rasmus Andersson.</p>
       </a>
 
-      <a href="product-experience/content/basics" class="HomepageCard_item --has-double-height">
+      <a href="product-experience/content/basics" class="HomepageCard_item --has-double-height special">
         <span class="HomepageCard_icon">
           <SwagIcon icon="comments" type="solid" />
         </span>
         <span class="HomepageCard_heading">
-          Language and grammar
+          Content Guides
           <SwagIcon icon="long-arrow-right" type="solid" />
         </span>
         <p>Learn the tone of voice and the common grammar of our software.</p>
@@ -45,13 +45,23 @@
           Logo library
           <SwagIcon icon="long-arrow-right" type="solid" />
         </span>
-        <p>Some text about our logo library.</p>
+        <p>Learn how to use our logo correctly.</p>
       </a>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+
+.special {
+  display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 12px;
+}
 .SwagResources {
   &_grid {
     @apply grid gap-7 md:grid-cols-2 lg:grid-cols-3;
