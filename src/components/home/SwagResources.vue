@@ -1,10 +1,10 @@
 <template>
   <div class="SwagResources">
-    <div class="h-label">Resources</div>
-    <h2 class="h-homepage">Browse our resources to get started designing with Shopware.</h2>
+    <h2 class="h-homepage">Access our assets</h2>
+    <p>At Shopware, Figma is our go-to platform for crafting a seamless design experience. Our Figma libraries and files for administration and storefront, including icon kits and tools, are easily accessible via our Figma community page. Each component is carefully documented with regular updates, ensuring alignment with our evolving platform.</p>
     <div class="SwagResources_grid">
 
-      <a href="/themes.html" class="HomepageCard_item">
+      <a href="https://www.figma.com/@shopware" class="HomepageCard_item">
         <span class="HomepageCard_icon --is-orange">
           <SwagIcon icon="figma" type="solid" />
         </span>
@@ -12,10 +12,10 @@
           Figma libraries
           <SwagIcon icon="long-arrow-right" type="solid" />
         </span>
-        <p>Our Figma libraries contain the latest foundations, components, and patterns. You’ll find all of them in our Figma community profile.</p>
+        <p>Our Figma libraries contains the latest foundations, components, and patterns. You’ll find all of them in our Figma community profile.</p>
       </a>
 
-      <a href="/themes.html" class="HomepageCard_item --has-double-height special">
+      <a href="/get-started/" class="HomepageCard_item --has-double-height special">
         <span class="HomepageCard_icon">
           <SwagIcon icon="bold" type="solid" />
         </span>
@@ -23,21 +23,21 @@
           Inter font
           <SwagIcon icon="long-arrow-right" type="solid" />
         </span>
-        <p>Meteor requires you to install Inter font designed by Rasmus Andersson.</p>
+        <p>Meteor requires you to use the Inter font designed by Rasmus Andersson.</p>
       </a>
 
-      <a href="product-experience/content/basics" class="HomepageCard_item --has-double-height special">
+      <a href="/product-experience/content/basics" class="HomepageCard_item --has-double-height special">
         <span class="HomepageCard_icon">
           <SwagIcon icon="comments" type="solid" />
         </span>
         <span class="HomepageCard_heading">
-          Content Guides
+          Content guide
           <SwagIcon icon="long-arrow-right" type="solid" />
         </span>
         <p>Learn the tone of voice and the common grammar of our software.</p>
       </a>
 
-      <a href="/themes.html" class="HomepageCard_item">
+      <a href="https://brand.shopware.com/d/4sqe4JPrMHUU/design-guidelines#/basics/logo" class="HomepageCard_item">
         <span class="HomepageCard_icon --is-blue">
           <SwagIcon icon="shopware" type="solid" />
         </span>
