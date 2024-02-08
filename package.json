@@ -24,7 +24,7 @@
     "terser": "^5.27.0",
     "vitepress": "1.0.0-rc.42",
     "vitepress-shopware-docs": "^1.1.16",
-    "vue": "^3.4.15"
+    "vue": "^3.4.16"
   },
   "devDependencies": {
     "@docsearch/css": "^3.5.2",
