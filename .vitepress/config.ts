@@ -73,12 +73,12 @@ export default defineConfigWithTheme<ThemeConfig>({
     // GA4 - G-9JLJ6GGB76
     [
       'script',
-      { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-9JLJ6GGB76', ...usercentrics('Google Tag Manager') }
+      { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-9JLJ6GGB76' }
     ],
 
     [
       'script',
-      { ...usercentrics('Google Tag Manager') },
+      {},
       "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-9JLJ6GGB76');"
     ],
   ],
