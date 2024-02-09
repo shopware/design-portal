@@ -237,6 +237,6 @@ export default defineConfigWithTheme<ThemeConfig>({
     /**
      * Create public sitemap.xml.
      */
-    await createSitemap();
+    await createSitemap([], 'shopware.design');
   }
 });
