@@ -1,4 +1,5 @@
 import { defineConfigWithTheme } from "vitepress";
+import type { HeadConfig, TransformContext } from 'vitepress'
 import type { Config as ThemeConfig } from "vitepress-shopware-docs";
 import baseConfig from "vitepress-shopware-docs/config";
 import ViteRequireContext from '@originjs/vite-plugin-require-context'
@@ -8,7 +9,7 @@ import { CssCleanup, baseCleanup } from "../node_modules/@shopware-docs/vitepres
 import Inspect from "vite-plugin-inspect";
 import liveReload from 'vite-plugin-live-reload'
 
-import {copyAdditionalAssets, createSitemap, storeRedirects} from "../node_modules/@shopware-docs/vitepress/src/helpers";
+import {copyAdditionalAssets, createSitemap, storeRedirects, addOGImage} from "../node_modules/@shopware-docs/vitepress/src/helpers";
 import navigation from "./navigation";
 
 import {
@@ -192,6 +193,10 @@ export default defineConfigWithTheme<ThemeConfig>({
     reactivityTransform: resolve(__dirname, 'src'), // true
   },
 
+  async transformHead(context: TransformContext): Promise<HeadConfig[]> {
+    return addOGImage([], context);
+  },
+
   async buildEnd() {
     /**
      * Copy additional assets not present in the assets or public dir.
@@ -232,6 +237,6 @@ export default defineConfigWithTheme<ThemeConfig>({
     /**
      * Create public sitemap.xml.
      */
-    await createSitemap();
+    await createSitemap([], 'shopware.design');
   }
 });
