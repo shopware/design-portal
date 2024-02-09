@@ -35,18 +35,52 @@ export default defineConfigWithTheme<ThemeConfig>({
     ['link', {rel: "shortcut icon", href: "/favicon.webp"}],
 
     // disallow indexing
-    ['meta', {name: 'robots', content: 'noindex'}],
+    //  ['meta', {name: 'robots', content: 'noindex'}],
 
+    // usercentrics
+    [
+      'link',
+      {
+        rel: 'preconnect',
+        href: '//app.usercentrics.eu',
+      }
+    ],
+    [
+      'link',
+      {
+        rel: 'preconnect',
+        href: '//api.usercentrics.eu',
+      }
+    ],
+    [
+      'link',
+      {
+        rel: 'preload',
+        href: '//app.usercentrics.eu/browser-ui/latest/loader.js',
+        as: 'script',
+      }
+    ],
     [
       'script',
-      { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=UA-64631238-1' }
+      {
+        async: true,
+        src: "https://app.usercentrics.eu/browser-ui/latest/loader.js",
+        'data-settings-id': process.env.USERCENTRICS || '',
+        id: 'usercentrics-cmp'
+      }
+    ],
+
+    // GA4 - G-9JLJ6GGB76
+    [
+      'script',
+      { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-9JLJ6GGB76', ...usercentrics('Google Tag Manager') }
     ],
 
     [
       'script',
-      {},
-      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'UA-64631238-1');"
-    ]
+      { ...usercentrics('Google Tag Manager') },
+      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-9JLJ6GGB76');"
+    ],
   ],
 
   themeConfig: {
@@ -163,6 +197,23 @@ export default defineConfigWithTheme<ThemeConfig>({
      * Copy additional assets not present in the assets or public dir.
      */
     await copyAdditionalAssets([
+      // shiki
+      {
+        src: '../node_modules/shiki/languages',
+        dst: 'shiki/languages',
+      },
+      {
+        src: '../node_modules/shiki/themes',
+        dst: 'shiki/themes',
+      },
+      {
+        src: '../node_modules/shiki/dist',
+        dst: 'shiki/dist',
+        ext: [
+          '.wasm'
+        ],
+      },
+      // meteor-icon-kit
       {
         src: '../node_modules/@shopware-ag/meteor-icon-kit/icons/regular',
         dst: 'icons/regular',
