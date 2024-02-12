@@ -39,7 +39,9 @@ Accessibility is not just a goal; it's a fundamental value that drives us to con
   />-->
 
 ## Our Approach
-To achieve true accessibility, we adhere to the industry-leading guidelines set forth by the Web Content Accessibility Guidelines <code>(WCAG) 2.1 AA</code> and Barrier-Free Information Technology Regulation <code>(BITV 2.0)</code>. These guidelines are paramount in shaping web accessibility standards and will serve as the foundation for the upcoming accessibility law, the "Barrierefreiheitsstärkungsgesetz," which will be effective for all webshops in Germany in 2024.
+To achieve true accessibility, we adhere to the industry-leading guidelines set forth by the Web Content Accessibility Guidelines <code>(WCAG) 2.1 AA</code> and Barrier-Free Information Technology Regulation <code>(BITV 2.0)</code>. These guidelines are paramount in shaping web accessibility standards and will serve as the foundation for the upcoming accessibility law, the "Barrierefreiheitsstärkungsgesetz," which will be effective for online stores in Germany in 2025.
+
+[Learn more about the Barrierefreiheitsstärkungsgesetz](https://www.bmas.de/SharedDocs/Downloads/DE/Teilhabe/leitlinien-barrierefreiheit.pdf;jsessionid=1B302D9D42BC7B770886B484C4E6391A.delivery2-master?__blob=publicationFile&v=2) (only available in German)
 
 ## Our Commitment
 Our commitment extends beyond compliance. We are determined to be fully prepared well before the accessibility law takes effect. While we may not currently conform to all aspects of <code>WCAG 2.1 AA</code>, we are working diligently to bridge the gap. Our target is to achieve full conformance by the end of the year, ensuring our merchants' online shops are accessible to all.
