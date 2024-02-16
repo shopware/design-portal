@@ -4,24 +4,24 @@ import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
 const slides = [
-  { id: '1', name: 'Dennis Mader', pronouns: 'he/him', role: 'Head of UX', portrait: '../../careers/team/dennis--mader.png 2x' },
-  { id: '2', name: 'Anna-Lena Rauch', pronouns: 'she/her', role: 'Head of Brand Design', portrait: '../../careers/team/anna-lena--rauch.png 2x' },
-  { id: '3', name: 'Ramona Samson', pronouns: 'she/her', role: 'UX Designer', portrait: '../../careers/team/ramona--samson.png 2x' },
-  { id: '4', name: 'Fabian Hüske', pronouns: 'he/him', role: 'Principal UX Designer', portrait: '../../careers/team/fabian--hueske.png 2x' },
-  { id: '5', name: 'Julian Preissinger', pronouns: 'he/him', role: 'UX Architect', portrait: '../../careers/team/julian--preissinger.png 2x' },
-  { id: '6', name: 'Annika Pantring', pronouns: 'she/her', role: 'UX Designer', portrait: '../../careers/team/annika--pantring.png 2x' },
-  { id: '7', name: 'Jessica Homan', pronouns: 'she/her', role: 'Videography & Photography', portrait: '../../careers/team/jessica--homan.png 2x' },
-  { id: '8', name: 'Sỹ Thông Nguyễn', pronouns: 'he/him', role: 'UX Designer', portrait: '../../careers/team/sy-thong--nguyen.png 2x' },
-  { id: '9', name: 'Pauline Feldhaus', pronouns: 'she/her', role: 'Brand Designer', portrait: '../../careers/team/pauline--feldhaus.png 2x' },
-  { id: '10', name: 'Anton Toews', pronouns: 'he/him', role: 'Brand Designer', portrait: '../../careers/team/anton--toews.png 2x' },
-  { id: '11', name: 'Peter Noorlander', pronouns: 'he/him', role: 'Principal UX Designer', portrait: '../../careers/team/peter--noorlander.png 2x' },
-  { id: '12', name: 'Jessica Robering', pronouns: 'she/her', role: 'UI Designer', portrait: '../../careers/team/jessica--robering.png 2x' },
-  { id: '13', name: 'Leonie Osterhaus', pronouns: 'she/her', role: 'Brand Designer', portrait: '../../careers/team/leonie--osterhaus.png 2x' },
-  { id: '14', name: 'Niklas Kortüm', pronouns: 'he/him', role: 'Brand Architect', portrait: '../../careers/team/niklas--kortuem.png 2x' },
-  { id: '15', name: 'Oskar', role: '-> Dennis', portrait: '../../careers/team/oskar.png 2x', dog: '1' },  
-  { id: '16', name: 'Archie', role: '-> Anna-Lena', portrait: '../../careers/team/archie.png 2x', dog: '1' }, 
-  { id: '17', name: 'Beau Beau', role: '-> Julian', portrait: '../../careers/team/beaubeau.png 2x', dog: '1' },
-  { id: '18', name: 'Ella', role: '-> Peter', portrait: '../../careers/team/ella.png 2x', dog: '1' }
+  { id: '1', name: 'Dennis Mader', pronouns: 'he/him', role: 'Head of UX', portrait: '../../careers/team/dennis--mader.png' },
+  { id: '2', name: 'Anna-Lena Rauch', pronouns: 'she/her', role: 'Head of Brand Design', portrait: '../../careers/team/anna-lena--rauch.png' },
+  { id: '3', name: 'Ramona Samson', pronouns: 'she/her', role: 'UX Designer', portrait: '../../careers/team/ramona--samson.png' },
+  { id: '4', name: 'Fabian Hüske', pronouns: 'he/him', role: 'Principal UX Designer', portrait: '../../careers/team/fabian--hueske.png' },
+  { id: '5', name: 'Julian Preissinger', pronouns: 'he/him', role: 'UX Architect', portrait: '../../careers/team/julian--preissinger.png' },
+  { id: '6', name: 'Annika Pantring', pronouns: 'she/her', role: 'UX Designer', portrait: '../../careers/team/annika--pantring.png' },
+  { id: '7', name: 'Jessica Homan', pronouns: 'she/her', role: 'Videography & Photography', portrait: '../../careers/team/jessica--homan.png' },
+  { id: '8', name: 'Sỹ Thông Nguyễn', pronouns: 'he/him', role: 'UX Designer', portrait: '../../careers/team/sy-thong--nguyen.png' },
+  { id: '9', name: 'Pauline Feldhaus', pronouns: 'she/her', role: 'Brand Designer', portrait: '../../careers/team/pauline--feldhaus.png' },
+  { id: '10', name: 'Anton Toews', pronouns: 'he/him', role: 'Brand Designer', portrait: '../../careers/team/anton--toews.png' },
+  { id: '11', name: 'Peter Noorlander', pronouns: 'he/him', role: 'Principal UX Designer', portrait: '../../careers/team/peter--noorlander.png' },
+  { id: '12', name: 'Jessica Robering', pronouns: 'she/her', role: 'UI Designer', portrait: '../../careers/team/jessica--robering.png' },
+  { id: '13', name: 'Leonie Osterhaus', pronouns: 'she/her', role: 'Brand Designer', portrait: '../../careers/team/leonie--osterhaus.png' },
+  { id: '14', name: 'Niklas Kortüm', pronouns: 'he/him', role: 'Brand Architect', portrait: '../../careers/team/niklas--kortuem.png' },
+  { id: '15', name: 'Oskar', role: '-> Dennis', portrait: '../../careers/team/oskar.png', dog: '1' },  
+  { id: '16', name: 'Archie', role: '-> Anna-Lena', portrait: '../../careers/team/archie.png', dog: '1' }, 
+  { id: '17', name: 'Beau Beau', role: '-> Julian', portrait: '../../careers/team/beaubeau.png', dog: '1' },
+  { id: '18', name: 'Ella', role: '-> Peter', portrait: '../../careers/team/ella.png', dog: '1' }
 ]
 
 const breakpoints = {
