@@ -114,7 +114,13 @@ export default defineConfigWithTheme<ThemeConfig>({
                 { text: 'Colors', link: '/foundations/design/colors' },
                 { text: 'Images', link: '/foundations/design/images' }
               ]
-            }
+            },
+            {
+              text: 'Get involved',
+              items: [
+                { text: 'Contributions', link: '/foundations/contributions' }
+              ]
+            },
           ]
         }
       ],

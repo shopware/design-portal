@@ -12,9 +12,15 @@ swag:
   related: false
 ---
 
+<script setup>
+import UsageBlock from "../components/interaction/UsageBlock.vue";
+</script>
+
 # Shopware Meteor Design System License
 
->Shopware – Meteor Design System is released under the MIT license and is copyright 2024 Shopware AG.
+::: info
+Shopware – Meteor Design System is released under the <code>MIT license</code> and is copyright 2024 Shopware AG.
+:::
 
 ## MIT License
 
@@ -31,18 +37,26 @@ THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRI
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## You are allowed to
-- Download and utilize Meteor, entirely or partially, for any purposes including personal, private, or commercial.
-- Incorporate Meteor in your own packages or distributions.
-- Provide a sublicense to others, allowing them to modify and distribute Meteor, even if they are not covered by the original license.
-- Alter the source code of Meteor.
 
-## You are not allowed to
-- Holding the authors or license owners responsible for any damages, as Meteor is supplied without any warranty.
-- Holding the creators or copyright holders of Meteor accountable for any liabilities.
-- Redistributing any segment of Meteor without proper acknowledgment.
-- Using any trademarks owned by Shopware AG in a manner that suggests or implies endorsement of your distribution by Shopware AG.
-- Using any trademarks owned by Shopware AG in a manner that suggests or implies you are the creator of the Shopware AG software.
+<UsageBlock>
+  <template #correct>
+    <ul>
+        <li>Download and utilize Meteor, entirely or partially, for any purposes including personal, private, or commercial.</li>
+        <li>Incorporate Meteor in your own packages or distributions.</li>
+        <li>Provide a sublicense to others, allowing them to modify and distribute Meteor, even if they are not covered by the original license.</li>
+        <li>Alter the source code of Meteor.</li>
+    </ul>
+  </template>
+  <template #incorrect>
+    <ul>
+        <li>Holding the authors or license owners responsible for any damages, as Meteor is supplied without any warranty.</li>
+        <li>Holding the creators or copyright holders of Meteor accountable for any liabilities.</li>
+        <li>Redistributing any segment of Meteor without proper acknowledgment.</li>
+        <li>Using any trademarks owned by Shopware AG in a manner that suggests or implies endorsement of your distribution by Shopware AG.</li>
+        <li>Using any trademarks owned by Shopware AG in a manner that suggests or implies you are the creator of the Shopware AG software.</li>
+    </ul>
+  </template>
+</UsageBlock>
 
 ## TL;DR
 

@@ -27,7 +27,7 @@ import Contribute from "../components/banner/Contribute.vue";
 title="Be part of Meteor"
 copy="We believe in Open-Source software – we listen to our Community and build Meteor in collaboration with merchants, developers and designers. The best and brightest ideas come from you. If you wish to contribute to the Meteor Design System, please read our contributing guidelines for a smooth start."
 btn="true"
-page="/foundations/contibutions"
+page="/foundations/contributions"
 />
 
 ## Meteor in numbers
