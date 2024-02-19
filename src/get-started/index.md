@@ -1,7 +1,7 @@
 ---
 pageClass: p-landing-768
-sidebar: false
-aside: false
+sidebar: true
+aside: true
 page: true
 #footer: false
 editLink: false
@@ -25,7 +25,7 @@ import NPM from "../components/interaction/NPM.vue";
 # Get started
 <div class="Tabs_Design--custom">
 <Tabs>
-  <Tab title="For designers" id="designers" icon="image">
+  <Tab title="For designers" id="designers" icon="figma">
   <div class="mt-[20px] mb-[20px]">
   <h2 class="h-homepage">Get started with Meteor for Figma</h2>
   <p>
@@ -54,28 +54,41 @@ import NPM from "../components/interaction/NPM.vue";
   
   </div>
   </Tab>
-  <Tab title="For developers" id="developers" icon="code">
+  <Tab title="For developers" id="developers" icon="github">
   <div class="mt-[20px] mb-[20px]">
+
+::: warning 🚀 Attention
+We're excited to announce that we have streamlined Meteor Design System's development process. It's now housed in a single, unified mono repository on GitHub! [Meteor on GitHub ->](https://github.com/shopware/meteor/tree/main)
+:::
+
   <h2 class="h-homepage">Get started with Meteor components</h2>
   <p>
   Add the Meteor component package to your project.
   </p>
-    <div class="flex p-0 m-0 gap-12 gap-y-4">
-      <NPM package="npm i @shopware-ag/meteor-component-library"/>
-    </div>
-  <p>Import the <code>style.css</code> for general styling like fonts, etc. in the root file of your application or in your root styling file.</p>
-  <div class="flex p-0 m-0 gap-12 gap-y-4">
-      <NPM package="import '@shopware-ag/meteor-component-library/dist/style.css';"/>
-    </div>
 
-  <h2 class="h-homepage mt-[20px] mb-[20px]">Meteor Icon Kit</h2>
+```sh
+npm i @shopware-ag/meteor-component-library
+```
+
+  <p>Import the <code>style.css</code> for general styling like fonts, etc. in the root file of your application or in your root styling file.</p>
+
+```sh
+import '@shopware-ag/meteor-component-library/dist/style.css';
+```
+
+<div class="mt-[24px]">
+  <h2 class="h-homepage">Meteor Icon Kit</h2>
   <p>
   To also use the Icon Kit, add the package to your project.
   </p>
-    <div class="flex p-0 m-0 gap-12 gap-y-4">
-      <NPM package="npm i @shopware-ag/meteor-icon-kit"/>
-    </div>
+
+```sh
+npm i @shopware-ag/meteor-icon-kit
+```
+
   </div>
+  </div>
+  <SwagBtn href="https://github.com/shopware/meteor" target="_blank" class="--primary" icon="long-arrow-right" icon-at="end"><SwagIcon icon="github" type="solid"/>Learn more</SwagBtn>
   </Tab>
 
 </Tabs>
@@ -93,4 +106,10 @@ copy="We believe in Open-Source software – we listen to our Community and buil
 btn="true"
 page="/foundations/contibutions"
 />-->
+
+<style scoped lang="scss">
+  .custom-block .custom-block-title::before {
+    display: none;
+  }
+</style>
 

@@ -111,9 +111,16 @@ export default defineConfigWithTheme<ThemeConfig>({
             {
               text: 'Design',
               items: [
+                { text: 'Colors', link: '/foundations/design/colors' },
                 { text: 'Images', link: '/foundations/design/images' }
               ]
-            }
+            },
+            {
+              text: 'Get involved',
+              items: [
+                { text: 'Contributions', link: '/foundations/contributions' }
+              ]
+            },
           ]
         }
       ],
@@ -133,6 +140,19 @@ export default defineConfigWithTheme<ThemeConfig>({
             { text: 'Inclusive Language', link: '/product-experience/content/inclusive-language' },
             { text: 'Abbreviations and acronyms', link: '/product-experience/content/abbreviations-and-acronyms' },
             { text: 'TL;DR', link: '/product-experience/content/tldr' }
+          ]
+        }
+      ],
+      // This sidebar gets displayed when a user
+      // is on `get-started` directory.
+      '/get-started/': [
+        {
+          text: 'Get Started',
+          items: [
+            { text: 'Get started', link: '/get-started/' },
+            { text: 'Meteor 101', link: '/get-started/meteor-101' },
+            { text: 'Contact us', link: '/get-started/contact-us' },
+            { text: 'License', link: '/get-started/license' }
           ]
         }
       ]
