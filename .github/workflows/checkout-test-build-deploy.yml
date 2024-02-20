@@ -56,7 +56,7 @@ jobs:
     needs: embed-docs
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Prepare
         uses: ./.github/actions/checkout-install
@@ -83,7 +83,7 @@ jobs:
     needs: embed-docs
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Prepare
         uses: ./.github/actions/checkout-install
@@ -137,7 +137,7 @@ jobs:
       - build
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Prepare
         uses: ./.github/actions/checkout-install
@@ -179,7 +179,7 @@ jobs:
 #    if: ${{ github.ref == 'refs/heads/main' || contains(github.event.head_commit.message, 'chromatic') }}
 #    steps:
 #      - name: Checkout repository
-#        uses: actions/checkout@v3
+#        uses: actions/checkout@v4
 #        with:
 #          fetch-depth: 0
 #
@@ -205,7 +205,7 @@ jobs:
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - uses: actions/download-artifact@v4
         with:
