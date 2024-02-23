@@ -9,7 +9,7 @@ import { CssCleanup, baseCleanup } from "../node_modules/@shopware-docs/vitepres
 import Inspect from "vite-plugin-inspect";
 import liveReload from 'vite-plugin-live-reload'
 
-import {copyAdditionalAssets, createSitemap, storeRedirects, addOGImage} from "../node_modules/@shopware-docs/vitepress/src/helpers";
+import {copyAdditionalAssets, createSitemap, storeRedirects, addOGImage, userCentricsHead} from "../node_modules/@shopware-docs/vitepress/src/helpers";
 import navigation from "./navigation";
 
 import {
@@ -38,50 +38,10 @@ export default defineConfigWithTheme<ThemeConfig>({
     // disallow indexing
     //  ['meta', {name: 'robots', content: 'noindex'}],
 
-    // usercentrics
-    [
-      'link',
-      {
-        rel: 'preconnect',
-        href: '//app.usercentrics.eu',
-      }
-    ],
-    [
-      'link',
-      {
-        rel: 'preconnect',
-        href: '//api.usercentrics.eu',
-      }
-    ],
-    [
-      'link',
-      {
-        rel: 'preload',
-        href: '//app.usercentrics.eu/browser-ui/latest/loader.js',
-        as: 'script',
-      }
-    ],
-    [
-      'script',
-      {
-        async: true,
-        src: "https://app.usercentrics.eu/browser-ui/latest/loader.js",
-        'data-settings-id': process.env.USERCENTRICS || '',
-        id: 'usercentrics-cmp'
-      }
-    ],
-
-    // GA4 - G-9JLJ6GGB76
-    [
-      'script',
-      { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-9JLJ6GGB76' }
-    ],
-
-    [
-      'script',
-      {},
-      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-9JLJ6GGB76');"
-    ],
+    ...userCentricsHead({
+      usercentrics: process.env.USERCENTRICS,
+      gtm: 'G-9JLJ6GGB76',
+    }),
   ],
 
   themeConfig: {
