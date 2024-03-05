@@ -100,6 +100,8 @@ jobs:
 
       - name: Collect Workflow Telemetry
         uses: bojanrajh/workflow-telemetry-action@4b4f729b0326fe422292686a20d6c630d05457d4
+        with:
+          comment_on_pr: 'update'
 
       - name: Build project
         run: |
