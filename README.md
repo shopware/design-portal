@@ -1,7 +1,7 @@
 # Shopware Design Portal
 
 An instance of the `shopware/developer-documentation-vitepress`, as is `shopware/developer-portal`, dedicated for
-Designers.
+Designers - [shopware.design](https://shopware.design).
 
 ## See
 
