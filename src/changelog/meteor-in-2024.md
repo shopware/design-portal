@@ -60,7 +60,7 @@ We're also simplifying how developers and designers utilize Meteor by moving eve
 <img class="mt-[16px] mb-[24px]" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/accessibility/foundations-accessibility-intro.png 4x" src="/foundations/accessibility/foundations-accessibility-intro.png" width="100%" height="auto">
 </picture>
 
-Accessibility is a cornerstone of our design principles. With the integration of design tokens and our updated accessibility guidelines, we're doubling down on our commitment to creating experiences that are accessible to everyone, including people with disabilities.</p><p> By adhering to best practices and guidelines outlined in our [Accessibility Foundations](https://design-portal.vercel.app/foundations/accessibility.html), we aim to ensure that our products are not only aesthetically pleasing but also universally usable.
+Accessibility is a cornerstone of our design principles. With the integration of design tokens and our updated accessibility guidelines, we're doubling down on our commitment to creating experiences that are accessible to everyone, including people with disabilities.</p><p> By adhering to best practices and guidelines outlined in our [Accessibility Foundations](/foundations/accessibility), we aim to ensure that our products are not only aesthetically pleasing but also universally usable.
 
 ## shopware.design: Our new home
 
@@ -75,7 +75,7 @@ Get ready for shopware.design to become our home for all things Meteor. Over the
 </picture>
 <figcaption>The image shows a work-in-progress and represents a conceptual phase of development. Details, features, and overall design are subject to change and may not necessarily be included in the final release. This representation is not a guarantee of future product or feature availability.</figcaption>
 
-In the coming months and years ahead, the Shopware administration will recieve several design updates, adopting a fresh new look and moving all components to our [Meteor Vue.js component library](https://github.com/shopware/meteor-component-library). This not only enhances the aesthetic and usability of the administration but also simplifies the development of extensions for Shopware, thanks to the Meteor SDK and other resources published under the Meteor umbrella. 
+In the coming months and years ahead, the Shopware administration will recieve several design updates, adopting a fresh new look and moving all components to our [Meteor Vue.js component library](https://github.com/shopware/meteor). This not only enhances the aesthetic and usability of the administration but also simplifies the development of extensions for Shopware, thanks to the Meteor SDK and other resources published under the Meteor umbrella. 
 
 ## A Glimpse into the Future with Dennis Mader and Julian Preissinger
 
