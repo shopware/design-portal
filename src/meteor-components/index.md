@@ -23,7 +23,7 @@ import Label from "../components/interaction/Label.vue";
 </SwagTokensHero>
 <div class="flex p-0 m-0 mt-5 gap-12 gap-y-4 my-30 md:max-w-3/6">
 <SwagBtn href="https://www.figma.com/community/file/1032569283566168066/meteor-admin-foundations-shopware" class="--contrast" icon="long-arrow-right" icon-at="end"><SwagIcon icon="figma" type="solid"/>Preview in Figma</SwagBtn>
-<SwagBtn href="https://github.com/shopware/meteor-component-library" class="--contrast" icon="long-arrow-right" icon-at="end"><SwagIcon icon="github" type="solid"/>Preview on GitHub</SwagBtn>
+<SwagBtn href="https://github.com/shopware/meteor" class="--contrast" icon="long-arrow-right" icon-at="end"><SwagIcon icon="github" type="solid"/>Preview on GitHub</SwagBtn>
 </div>
 
 <section class="tokens--container md:max-w-12/12 mb-[72px]">

@@ -18,7 +18,7 @@ import Label from "../components/interaction/Label.vue";
 <SwagTokensHero class="mb-[40px] mt-[40px]">
     <template #label>Design Tokens</template>
     <template #title>Refining our design language.</template>
-    <template #content><p>Design Tokens are the heartbeat of our design system. They encapsulate the essential elements of your design language – colors, typography, spacing, and beyond – into a unified, flexible format that speaks directly to both designers and developers. Stay tuned for the unveiling of Design Tokens in Meteor.</p></template>
+    <template #content><p>Design Tokens are the heartbeat of our design system. They encapsulate the essential elements of our design language – colors, typography, spacing, and beyond – into a unified, flexible format that speaks directly to both designers and developers. Stay tuned for the unveiling of Design Tokens in Meteor.</p></template>
     
 </SwagTokensHero>
 
