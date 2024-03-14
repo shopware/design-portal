@@ -46,11 +46,11 @@ First up, we’re thrilled to introduce design tokens to Meteor. These are essen
 
 [Learn more about Design Tokens](/tokens/)
 
-## A New Home on GitHub: Mono Repository <span class="available--soon">Available soon</span>
+## A New Home on GitHub: Mono Repository <span class="available--soon">Available now</span>
 
 We're also simplifying how developers and designers utilize Meteor by moving everything into a mono repository on GitHub. This shift means you'll have one central place to find everything you need to build extensions, features or new products for the Shopware eco-system, enhancing collaboration and making it easier than ever to use Meteor in your projects. 
 
-[Meteor Design System on GitHub](https://github.com/orgs/shopware/repositories)
+[Meteor Design System on GitHub](https://github.com/shopware/meteor)
 
 ## Accessibility: Because Everyone Matters
 
