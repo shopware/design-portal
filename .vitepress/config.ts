@@ -5,11 +5,10 @@ import baseConfig from "vitepress-shopware-docs/config";
 import ViteRequireContext from '@originjs/vite-plugin-require-context'
 import {resolve} from "path";
 
-import { CssCleanup, baseCleanup } from "../node_modules/@shopware-docs/vitepress/src/plugins/cssCleanup";
 import Inspect from "vite-plugin-inspect";
 import liveReload from 'vite-plugin-live-reload'
 
-import {copyAdditionalAssets, createSitemap, storeRedirects, addOGImage, userCentricsHead} from "../node_modules/@shopware-docs/vitepress/src/helpers";
+import {CssCleanup, baseCleanup, copyAdditionalAssets, createSitemap, storeRedirects, addOGImage, userCentricsHead} from "@shopware-docs/vitepress";
 import navigation from "./navigation";
 
 import {
