@@ -39,7 +39,7 @@ export default defineConfigWithTheme<ThemeConfig>({
 
     ...userCentricsHead({
       usercentrics: process.env.USERCENTRICS,
-      gtm: 'G-9JLJ6GGB76',
+      gtm: 'WJKMNPS',
     }),
   ],
 
