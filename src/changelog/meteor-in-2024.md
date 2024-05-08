@@ -79,7 +79,7 @@ In the coming months and years ahead, the Shopware administration will recieve s
 
 ## A Glimpse into the Future with Dennis Mader and Julian Preissinger
 
-Dennis Mader, our Head of UX, will take the stage at this year's Shopware Community Day ([SCD](http://scd.shopware.com)), sharing his vision for the future of our design language and giving you a sneak peak into what we have in store. Julian Preissinger *(UX Architect)* will join Dennis to discuss our unwavering commitment to accessibility, highlighting the steps we're taking to ensure Shopware remains an inclusive platform for all.
+Dennis Mader, our Head of UX, will host an open Q&A session at this year's Shopware Community Day ([SCD](http://scd.shopware.com)), sharing his vision for the future of our design language and giving you a sneak peak into what we have in store. Julian Preissinger *(UX Architect)* will join Dennis to discuss our unwavering commitment to accessibility, highlighting the steps we're taking to ensure Shopware remains an inclusive platform for all.
 
 ### Looking Ahead
 
