@@ -1,9 +1,3 @@
-* {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-feature-settings: "calt";
-}
-
 span.font-setting-ss02 {
     font-feature-settings: "ss02", "cv08";
 }
@@ -109,14 +103,6 @@ span.font-setting-ss02 {
             background: var(--vp-c-bg);
         }
     }
-}
-
-.w-fill-flex {
-    width: -webkit-fill-available;
-}
-
-.h-fit-flex {
-    height: -webkit-fit-content;
 }
 
 /* @todo move to global hub components */
