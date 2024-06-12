@@ -20,8 +20,8 @@ swag:
 Exporting images for our products or platforms like <a href="https://shopware.com">shopware.com</a> requires special attention to detail.
 This guide outlines the process for exporting images and optimizing them to meet Shopware's standards.
 
-<div class="flex gap-8 section-thumbnails mb-[12px]">
-    <div class="section-thumbnails--card  md:max-w-1/2">
+<div class="section-thumbnails">
+    <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/foundations/design/images/foundations-images--export@dark.png 4x">
 
@@ -36,7 +36,7 @@ For TV, video content and slide decks we export assets in <code>8x</code> (8k re
 :::
 
 </div>
-    <div class="section-thumbnails--card  md:max-w-1/2">
+    <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/foundations/design/images/foundations-images--photoshop@dark.png 2x">
 
@@ -48,8 +48,8 @@ For TV, video content and slide decks we export assets in <code>8x</code> (8k re
 </div>
 </div>
 
-<div class="flex gap-8 section-thumbnails mb-[12px]">
-    <div class="section-thumbnails--card  md:max-w-1/2">
+<div class="section-thumbnails">
+    <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/foundations/design/images/foundations-images--smart@dark.png 2x">
 
@@ -60,7 +60,7 @@ For TV, video content and slide decks we export assets in <code>8x</code> (8k re
 <p>Through the Layers panel, convert your asset into a Smart Object. This step is crucial for preserving quality during further modifications.</p>
         
 </div>
-    <div class="section-thumbnails--card  md:max-w-1/2">
+    <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/foundations/design/images/foundations-images--size@dark.png 2x">
 
@@ -76,8 +76,8 @@ If your asset was exported in <code>8x</code>, resize by <code>/4</code> in Phot
 
 </div>
 </div>
-<div class="flex gap-8 section-thumbnails mb-[12px]">
-    <div class="section-thumbnails--card  md:max-w-1/2">
+<div class="section-thumbnails">
+    <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/foundations/design/images/foundations-images--merge@dark.png 2x">
 
@@ -88,7 +88,7 @@ If your asset was exported in <code>8x</code>, resize by <code>/4</code> in Phot
 <p>Duplicate the layer and merge both layers. This enhances the crispness of your asset.</p>
         
 </div>
-    <div class="section-thumbnails--card  md:max-w-1/2">
+    <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/foundations/design/images/foundations-images--grain@dark.png 2x">
 
@@ -104,57 +104,3 @@ Adding noise to assets makes them look sharp and clear and adds a subtle haptic 
 
 </div>
 </div>
-
-<style lang="scss">
-/* Card Thumbnail */
-  .section-thumbnails {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    align-self: stretch;
-    
-    &--card {
-        display: flex;
-        padding: 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        flex: 1 0 0;
-        align-self: stretch;
-        border-radius: 12px;
-        border: 1px solid #F0F3FF;
-        background: #FAFBFE;
-
-        h3 {
-            color: #0A0D0F;
-            font-family: Inter;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            margin-top: 8px;
-        }
-
-        p {
-            color: #64748B;
-            font-family: Inter;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 26px; /* 162.5% */
-            letter-spacing: 0.08px;
-            margin: 0px;
-        }
-        
-        &--image {
-            align-self: stretch;
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-bottom: 16px;
-            z-index: 2;
-        }
-    }
-}
-</style>

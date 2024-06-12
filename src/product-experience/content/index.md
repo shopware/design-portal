@@ -31,8 +31,8 @@ At Shopware, the tone of voice that fosters meaningful connections with our audi
 </picture>
 
 ## 🎯 Writing Goals and Principles
-<div class="flex gap-8 section-thumbnails mb-[12px]">
-    <div class="section-thumbnails--card  md:max-w-1/2">
+<div class="section-thumbnails">
+    <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/product-experience/section-thumbnails-empower@dark.png 4x">
 
@@ -41,7 +41,7 @@ At Shopware, the tone of voice that fosters meaningful connections with our audi
         <h3>Empower</h3>
         <p>Help people understand Shopware by using language that informs them and encourages them to make the most of our products.</p>
 </div>
-    <div class="section-thumbnails--card  md:max-w-1/2">
+    <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/product-experience/section-thumbnails-respect@dark.png 4x">
 
@@ -51,8 +51,8 @@ At Shopware, the tone of voice that fosters meaningful connections with our audi
         <p>Treat readers with the respect they deserve. Put yourself in their shoes, and don’t patronise them. Remember that they have other things to do. Be considerate and inclusive.</p>
 </div>
 </div>
-<div class="flex gap-8 section-thumbnails mb-[12px]">
-        <div class="section-thumbnails--card md:max-w-1/2">
+<div class="section-thumbnails">
+        <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/product-experience/section-thumbnails-educate@dark.png 4x">
 
@@ -61,7 +61,7 @@ At Shopware, the tone of voice that fosters meaningful connections with our audi
         <h3>Educate</h3>
         <p>Tell readers what they need to know, not just what we want to say. Give them the exact information they need, along with opportunities to learn more. Remember that you’re the expert, and readers don’t have access to everything you know.</p>
 </div>
-<div class="section-thumbnails--card md:max-w-1/2">
+<div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/product-experience/section-thumbnails-engage@dark.png 4x">
 
@@ -75,8 +75,8 @@ At Shopware, the tone of voice that fosters meaningful connections with our audi
 ## 💬 Our Approach
 In order to achieve these goals, we make sure our content adheres to these values.
 
-<div class="flex gap-8 section-thumbnails mb-[12px]">
-    <div class="section-thumbnails--card  md:max-w-1/2">
+<div class="section-thumbnails">
+    <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/product-experience/section-thumbnails-clear@dark.png 4x">
 
@@ -85,7 +85,7 @@ In order to achieve these goals, we make sure our content adheres to these value
         <h3>Clear</h3>
         <p>Understand the topic you’re writing about. Use simple words and sentences.</p>
 </div>
-    <div class="section-thumbnails--card  md:max-w-1/2">
+    <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/product-experience/section-thumbnails-useful@dark.png 4x">
 
@@ -95,8 +95,8 @@ In order to achieve these goals, we make sure our content adheres to these value
         <p>Before you start writing, ask yourself: What purpose does this serve? Who is going to read it? What do they need to know?</p>
 </div>
 </div>
-<div class="flex gap-8 section-thumbnails mb-[42px]">
-        <div class="section-thumbnails--card md:max-w-1/2">
+<div class="section-thumbnails mb-[42px]">
+        <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/product-experience/section-thumbnails-friendly@dark.png 4x">
 
@@ -105,7 +105,7 @@ In order to achieve these goals, we make sure our content adheres to these value
         <h3>Friendly</h3>
         <p>Write like a human. Don’t be afraid to break a few rules if it makes your writing more relatable. All of our content, from splashy website copy to system alerts, should be warm and human.</p>
 </div>
-<div class="section-thumbnails--card md:max-w-1/2">
+<div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
 <source media="(prefers-color-scheme: dark)" srcset="/product-experience/section-thumbnails-appropriate@dark.png 4x">
 
@@ -123,56 +123,3 @@ In order to achieve these goals, we make sure our content adheres to these value
     page="https://brand.shopware.com/d/4sqe4JPrMHUU/tone-of-voice-basic#/intro/introduction"
     target="_blank"
 />
-
-<style scoped lang="scss">
-/* Card Thumbnail */
-  .section-thumbnails {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    align-self: stretch;
-    
-    &--card {
-        display: flex;
-        padding: 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        flex: 1 0 0;
-        align-self: stretch;
-        border-radius: 12px;
-        border: 1px solid #F0F3FF;
-        background: #FAFBFE;
-
-        h3 {
-            color: #0A0D0F;
-            font-family: Inter;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-        }
-
-        p {
-            color: #64748B;
-            font-family: Inter;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 26px; /* 162.5% */
-            letter-spacing: 0.08px;
-            margin: 0px;
-        }
-        
-        &--image {
-            align-self: stretch;
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-bottom: 16px;
-            z-index: 2;
-        }
-    }
-}
-</style>

@@ -1,5 +1,5 @@
 import {SWAGTheme} from "vitepress-shopware-docs";
-import './custom.css'
+import './custom.scss'
 
 export default {
     ...SWAGTheme(),
