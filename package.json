@@ -55,7 +55,7 @@
     "@vue/test-utils": "^2.4.4",
     "@vueuse/shared": "^10.7.2",
     "algoliasearch": "^4.22.1",
-    "axios": "^1.6.7",
+    "axios": "^1.7.4",
     "chromatic": "^10.9.6",
     "execa": "^8.0.1",
     "fuse.js": "^7.0.0",
