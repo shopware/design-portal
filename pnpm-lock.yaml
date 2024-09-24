@@ -7851,8 +7851,8 @@ packages:
       '@babel/runtime': 7.23.9
     dev: false
 
-  /dompurify@3.0.8:
-    resolution: {integrity: sha512-b7uwreMYL2eZhrSCRC4ahLTeZcPZxSmYfmcQGXGkXiZSNW1X85v+SDM5KsWcpivIiUBH47Ji7NtyUdpLeF5JZQ==}
+  /dompurify@3.1.6:
+    resolution: {integrity: sha512-cTOAhc36AalkjtBpfG6O8JimdTMWNXjiePT2xQH/ppBGi/4uIpmj8eKyIkMJErXWARyINV/sB38yf8JCLF5pbQ==}
     dev: true
 
   /dotenv-expand@10.0.0:
@@ -10328,7 +10328,7 @@ packages:
       d3-sankey: 0.12.3
       dagre-d3-es: 7.0.10
       dayjs: 1.11.10
-      dompurify: 3.0.8
+      dompurify: 3.1.6
       elkjs: 0.9.1
       khroma: 2.1.0
       lodash-es: 4.17.21
