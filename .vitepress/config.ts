@@ -1,7 +1,7 @@
 import { defineConfigWithTheme } from "vitepress";
 import type { HeadConfig, TransformContext } from 'vitepress'
 import type { Config as ThemeConfig } from "vitepress-shopware-docs";
-import { baseConfig } from "vitepress-shopware-docs/config";
+import { baseConfig } from "@shopware-docs/vitepress";
 import ViteRequireContext from '@originjs/vite-plugin-require-context'
 import {resolve} from "path";
 
@@ -163,6 +163,16 @@ export default defineConfigWithTheme<ThemeConfig>({
             'vue-instantsearch/vue3/es',
             'instantsearch.css/themes/algolia-min.css',
         ]
+      }
+    },
+    resolve: {
+      alias: {
+        '@node_modules': resolve(process.cwd(), 'node_modules'),
+        '../composables/edit-link': resolve(__dirname, '../node_modules/vitepress-shopware-docs/src/shopware/composables/edit-link.ts'),
+        './VPNavBarTitle.vue': resolve(__dirname, '../node_modules/vitepress-shopware-docs/src/shopware/components/override/VPNavBarTitle.vue'),
+        './VPAlgoliaSearchBox.vue': resolve(__dirname, '../node_modules/vitepress-shopware-docs/src/shopware/components/override/VPAlgoliaSearchBox.vue'),
+        '../NotFound.vue': resolve(__dirname, '../node_modules/vitepress-shopware-docs/src/shopware/components/override/NotFound.vue'),
+        '../SwagRelatedArticles.vue': resolve(__dirname, '../node_modules/vitepress-shopware-docs/src/shopware/components/SwagRelatedArticles.vue'),
       }
     }
   },
