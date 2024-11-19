@@ -1,7 +1,7 @@
 import { defineConfigWithTheme } from "vitepress";
 import type { HeadConfig, TransformContext } from 'vitepress'
 import type { Config as ThemeConfig } from "vitepress-shopware-docs";
-import baseConfig from "vitepress-shopware-docs/config";
+import { baseConfig } from "vitepress-shopware-docs/config";
 import ViteRequireContext from '@originjs/vite-plugin-require-context'
 import {resolve} from "path";
 
@@ -20,7 +20,7 @@ import {
 } from "./swag";
 
 export default defineConfigWithTheme<ThemeConfig>({
-  extends: baseConfig,
+  extends: baseConfig.default,
 
   title: "Shopware – Meteor Design System",
   description: "Dive into the heart of Shopware's Design System – a comprehensive guide to our unified approach in crafting seamless commerce experiences.",
