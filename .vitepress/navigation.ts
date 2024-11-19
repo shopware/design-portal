@@ -30,7 +30,7 @@ const navigation = buildSidebarNav('./src/', [
         link: 'https://brand.shopware.com',
         text: 'Brand',
     },
-    resourcesMenu,
+    resourcesMenu({ design: '/', developer: 'https://developer.shopware.com/' }),
 ], [
     '/', // always have root sidebar
 ]);
