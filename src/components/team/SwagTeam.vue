@@ -6,7 +6,7 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 const slides = [
   { id: '1', name: 'Dennis Mader', pronouns: 'he/him', role: 'Head of UX', portrait: '../../careers/team/dennis--mader.png' },
   { id: '2', name: 'Kerstin Ludwig', pronouns: 'she/her', role: 'Head of Brand Design', portrait: '../../careers/team/kerstin--ludwig.png' },
-  { id: '3', name: 'Ramona Samson', pronouns: 'she/her', role: 'UX Designer', portrait: '../../careers/team/ramona--samson.png' },
+  { id: '3', name: 'Miriam Krimpmann', pronouns: 'she/her', role: 'Principal UX Designer', portrait: '../../careers/team/miriam--krimpmann.png' },
   { id: '4', name: 'Fabian Hüske', pronouns: 'he/him', role: 'Principal UX Designer', portrait: '../../careers/team/fabian--hueske.png' },
   { id: '5', name: 'Julian Preissinger', pronouns: 'he/him', role: 'UX Architect', portrait: '../../careers/team/julian--preissinger.png' },
   { id: '6', name: 'Annika Pantring', pronouns: 'she/her', role: 'UX Designer', portrait: '../../careers/team/annika--pantring.png' },
