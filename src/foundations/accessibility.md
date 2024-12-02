@@ -13,6 +13,7 @@ swag:
 
 <script setup>
 import Cutdown from "../components/banner/Cutdown.vue";
+import Resource from "../components/banner/Resource.vue";
 </script>
 
 # {{ $frontmatter.title }} 
@@ -37,6 +38,13 @@ Accessibility is not just a goal; it's a fundamental value that drives us to con
     thumbnailIMG="/foundations/accessibility/foundations-accessibility-intro"
     alt="Video thumbnail showing abstract art – Our commitment to accessibility"
   />-->
+
+<Resource
+    eyebrow="Accessibility in ecommerce"
+    title="Taking the next step towards accessibility: Preparing for the EAA and Shopware's upcoming solutions"
+    URL="https://www.shopware.com/en/news/accessibility-in-ecommerce/"
+    alt="Taking the next step towards accessibility: Preparing for the EAA and Shopware's upcoming solutions"
+  />
 
 ## Our Approach
 To achieve true accessibility, we adhere to the industry-leading guidelines set forth by the Web Content Accessibility Guidelines <code>(WCAG) 2.1 AA</code> and Barrier-Free Information Technology Regulation <code>(BITV 2.0)</code>. These guidelines are paramount in shaping web accessibility standards and will serve as the foundation for the upcoming accessibility law, the "Barrierefreiheitsstärkungsgesetz," which will be effective for online stores in Germany in 2025.
@@ -90,16 +98,23 @@ For more information, see the following resources:
 
 ## Recommended toolkits
 
-**Stark Figma Plugin** – Stark makes it effortless to design accessible products by helping you to meet current accessibility standards.
+  <Resource
+    eyebrow="Stark Figma Plugin"
+    title="Stark makes it effortless to design accessible products by helping you to meet current accessibility standards."
+    URL="https://www.getstark.co/"
+    alt="Stark makes it effortless to design accessible products by helping you to meet current accessibility standards."
+  />
 
-➡ [https://www.getstark.co](https://www.getstark.co)
+  <Resource
+    eyebrow="Contrast Checker"
+    title="Test colour contrast compliance with the Web Content Accessibility Guidelines (WCAG)."
+    URL="https://contrastchecker.com"
+    alt="Test colour contrast compliance with the Web Content Accessibility Guidelines (WCAG)"
+  />
 
----
-**Contrast Checker** – test colour contrast compliance with the Web Content Accessibility Guidelines (WCAG)
-
-➡ [https://contrastchecker.com](https://contrastchecker.com)
-
----
-**Accessibility Cheatsheet**
-
-➡ [https://bitsofco.de/the-accessibility-cheatsheet/](https://bitsofco.de/the-accessibility-cheatsheet/)
+  <Resource
+    eyebrow="Accessibility Cheatsheet"
+    title="The Accessibility Cheatsheet"
+    URL="https://bitsofco.de/the-accessibility-cheatsheet/"
+    alt="The Accessibility Cheatsheet"
+  />

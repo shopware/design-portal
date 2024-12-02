@@ -44,13 +44,13 @@ import NPM from "./components/interaction/NPM.vue";
 
 <SwagLine />
 
-<Announcement
+<!--<Announcement
     title="Meteor in 2024 and beyond – Design Tokens, Vue 3 and more – our road to the future of commerce."
     label="New"
     btnlabel="Read what’s next"
     page="/changelog/meteor-in-2024"
     target=""
-/>
+/>-->
 
 <SwagExposed class="my-30" />
 

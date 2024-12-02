@@ -32,9 +32,9 @@ page="/foundations/contributions"
 
 ## Meteor in numbers
 
-At Shopware, Meteor serves **53 Projects**, providing **130 components**, **830+ Icons**, and **200 styles**.
+At Shopware, Meteor serves **62 Projects**, providing **145 components**, **830+ Icons**, and **200 tokens**.
 The Shopware Administration is the largest project using Meteor Design System. In Figma our team has **Ø 740 component inserts weekly**. Meteor is maintained by a dedicated group of Designers, UX Engineers and QA Specialists.
-Current numbers _(02/2024)_ show Meteor is used by **4.5K** people outside Shopware. _(This number includes downloads on the Figma community, usage on npm and GitHub)_
+Current numbers _(02/2024)_ show Meteor is used by **7.6K** people outside Shopware. _(This number includes downloads on the Figma community, usage on npm and GitHub)_
 
 The Meteor Icon Kit is our best performing resource on the Figma Community. 
   <SwagBtn href="https://www.figma.com/community/file/1032564947404478461/meteor-icon-kit-5-2-1-shopware" target="_blank" class="--contrast --sm" icon="figma" icon-at="start">Meteor Icon Kit on Figma Community</SwagBtn>
