@@ -39,6 +39,13 @@ Accessibility is not just a goal; it's a fundamental value that drives us to con
     alt="Video thumbnail showing abstract art – Our commitment to accessibility"
   />-->
 
+<Resource
+    eyebrow="Accessibility in ecommerce"
+    title="Taking the next step towards accessibility: Preparing for the EAA and Shopware's upcoming solutions"
+    URL="https://www.shopware.com/en/news/accessibility-in-ecommerce/"
+    alt="Taking the next step towards accessibility: Preparing for the EAA and Shopware's upcoming solutions"
+  />
+
 ## Our Approach
 To achieve true accessibility, we adhere to the industry-leading guidelines set forth by the Web Content Accessibility Guidelines <code>(WCAG) 2.1 AA</code> and Barrier-Free Information Technology Regulation <code>(BITV 2.0)</code>. These guidelines are paramount in shaping web accessibility standards and will serve as the foundation for the upcoming accessibility law, the "Barrierefreiheitsstärkungsgesetz," which will be effective for online stores in Germany in 2025.
 
