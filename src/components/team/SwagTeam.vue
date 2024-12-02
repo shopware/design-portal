@@ -12,6 +12,7 @@ const slides = [
   { id: '6', name: 'Annika Pantring', pronouns: 'she/her', role: 'UX Designer', portrait: '../../careers/team/annika--pantring.png' },
   { id: '7', name: 'Nils Haberkamp', pronouns: 'he/him', role: 'UX Engineer', portrait: '../../careers/team/nils--haberkamp.png' },
   { id: '8', name: 'Jessica Homan', pronouns: 'she/her', role: 'Videography & Photography', portrait: '../../careers/team/jessica--homan.png' },
+  { id: '9', name: 'Alastair Fraser', pronouns: 'he/him', role: 'UX Engineer', portrait: '../../careers/team/alastair--fraser.png' },
   { id: '10', name: 'Pauline Feldhaus', pronouns: 'she/her', role: 'Brand Designer', portrait: '../../careers/team/pauline--feldhaus.png' },
   { id: '11', name: 'Anton Toews', pronouns: 'he/him', role: 'Motion Designer', portrait: '../../careers/team/anton--toews.png' },
   { id: '12', name: 'Peter Noorlander', pronouns: 'he/him', role: 'Principal UX Designer', portrait: '../../careers/team/peter--noorlander.png' },
