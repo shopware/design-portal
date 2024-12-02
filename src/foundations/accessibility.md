@@ -13,6 +13,7 @@ swag:
 
 <script setup>
 import Cutdown from "../components/banner/Cutdown.vue";
+import Resource from "../components/banner/Resource.vue";
 </script>
 
 # {{ $frontmatter.title }} 
@@ -90,16 +91,23 @@ For more information, see the following resources:
 
 ## Recommended toolkits
 
-**Stark Figma Plugin** – Stark makes it effortless to design accessible products by helping you to meet current accessibility standards.
+  <Resource
+    eyebrow="Stark Figma Plugin"
+    title="Stark makes it effortless to design accessible products by helping you to meet current accessibility standards."
+    URL="https://www.getstark.co/"
+    alt="Stark makes it effortless to design accessible products by helping you to meet current accessibility standards."
+  />
 
-➡ [https://www.getstark.co](https://www.getstark.co)
+  <Resource
+    eyebrow="Contrast Checker"
+    title="Test colour contrast compliance with the Web Content Accessibility Guidelines (WCAG)."
+    URL="https://contrastchecker.com"
+    alt="Test colour contrast compliance with the Web Content Accessibility Guidelines (WCAG)"
+  />
 
----
-**Contrast Checker** – test colour contrast compliance with the Web Content Accessibility Guidelines (WCAG)
-
-➡ [https://contrastchecker.com](https://contrastchecker.com)
-
----
-**Accessibility Cheatsheet**
-
-➡ [https://bitsofco.de/the-accessibility-cheatsheet/](https://bitsofco.de/the-accessibility-cheatsheet/)
+  <Resource
+    eyebrow="Accessibility Cheatsheet"
+    title="The Accessibility Cheatsheet"
+    URL="https://bitsofco.de/the-accessibility-cheatsheet/"
+    alt="The Accessibility Cheatsheet"
+  />
