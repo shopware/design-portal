@@ -41,7 +41,7 @@ const cursors = ([
   { id: 1, name: 'Dennis', bgcolor: '#A694FF', color: '#1C0049', top: '175px', right: '20%', animation: '30s infinite hovering-1' },
   { id: 2, name: 'Julian', bgcolor: '#0870FF', color: '#fff', top: '335px', right: '8%', animation: '23s infinite hovering-2' },
   { id: 3, name: 'Jessica', bgcolor: '#57D998', color: '#001F0F', top: '469px', right: '382px', animation: '25s infinite hovering-3' },
-  { id: 4, name: 'Thong', bgcolor: '#FBAF18', color: '#001F0F', top: '322px', right: '290px', animation: '18s infinite hovering-4' }
+  { id: 4, name: 'Ida', bgcolor: '#FBAF18', color: '#001F0F', top: '322px', right: '290px', animation: '18s infinite hovering-4' }
 ])
 </script>
 
