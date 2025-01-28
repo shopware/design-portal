@@ -37,7 +37,7 @@
         <p>Learn the tone of voice and the common grammar of our software.</p>
       </a>
 
-      <a href="https://brand.shopware.com/d/4sqe4JPrMHUU/design-guidelines#/basics/logo" class="HomepageCard_item">
+      <a href="https://brand.shopware.com/document/1#/hi/logo" class="HomepageCard_item">
         <span class="HomepageCard_icon --is-blue">
           <SwagIcon icon="shopware" type="solid" />
         </span>
