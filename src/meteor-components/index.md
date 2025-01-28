@@ -1,6 +1,6 @@
 ---
 pageClass: p-tokens
-sidebar: false
+sidebar: true
 aside: false
 page: true
 #footer: false
@@ -19,7 +19,7 @@ import Label from "../components/interaction/Label.vue";
     <template #label>All Components</template>
     <template #title>Meteor UI Components</template>
     <template #content><p>Explore our library of UI components — everything you need to kickstart development for your next project. <span class="soon-a">Available soon.</span></p></template>
-    
+
 </SwagTokensHero>
 <div class="flex p-0 m-0 mt-5 gap-12 gap-y-4 my-30 md:max-w-3/6">
 <SwagBtn href="https://www.figma.com/community/file/1032569283566168066/meteor-admin-foundations-shopware" class="--contrast" icon="long-arrow-right" icon-at="end"><SwagIcon icon="figma" type="solid"/>Preview in Figma</SwagBtn>
@@ -132,7 +132,7 @@ import Label from "../components/interaction/Label.vue";
                     justify-content: center;
                     align-items: center;
                     gap: 10px;
-                    
+
 
                     p {
                     color: #2D2E32;
@@ -142,7 +142,7 @@ import Label from "../components/interaction/Label.vue";
                     font-style: normal;
                     font-weight: 500;
                     line-height: 140%; /* 28px */
-                    
+
 
                         span {
                             color: #808392;
