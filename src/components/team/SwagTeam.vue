@@ -19,12 +19,12 @@ const slides = [
   { id: '13', name: 'Jessica Robering', pronouns: 'she/her', role: 'UX Designer', portrait: '../../careers/team/jessica--robering.png' },
   { id: '14', name: 'Lucas Dietrich', pronouns: 'he/him', role: 'UX Engineer', portrait: '../../careers/team/lucas--dietrich.png' },
   { id: '15', name: 'Leonie Osterhaus', pronouns: 'she/her', role: 'Brand Designer', portrait: '../../careers/team/leonie--osterhaus.png' },
-  { id: '15', name: 'Ida Johannessen', pronouns: 'she/her', role: 'Brand Designer', portrait: '../../careers/team/ida--johannessen.png' },
-  { id: '16', name: 'Nadine Saalmann', pronouns: 'she/her', role: 'Junior UX Designer', portrait: '../../careers/team/nadine--saalmann.png' },
-  { id: '17', name: 'Niklas Kortüm', pronouns: 'he/him', role: 'Brand Architect', portrait: '../../careers/team/niklas--kortuem.png' },
-  { id: '18', name: 'Oskar', role: '-> Dennis', portrait: '../../careers/team/oskar.png', dog: '1' },
-  { id: '19', name: 'Beau Beau', role: '-> Julian', portrait: '../../careers/team/beaubeau.png', dog: '1' },
-  { id: '20', name: 'Ella', role: '-> Peter', portrait: '../../careers/team/ella.png', dog: '1' }
+  { id: '16', name: 'Ida Johannessen', pronouns: 'she/her', role: 'Brand Designer', portrait: '../../careers/team/ida--johannessen.png' },
+  { id: '17', name: 'Nadine Saalmann', pronouns: 'she/her', role: 'Junior UX Designer', portrait: '../../careers/team/nadine--saalmann.png' },
+  { id: '18', name: 'Niklas Kortüm', pronouns: 'he/him', role: 'Brand Architect', portrait: '../../careers/team/niklas--kortuem.png' },
+  { id: '19', name: 'Oskar', role: '-> Dennis', portrait: '../../careers/team/oskar.png', dog: '1' },
+  { id: '20', name: 'Beau Beau', role: '-> Julian', portrait: '../../careers/team/beaubeau.png', dog: '1' },
+  { id: '21', name: 'Ella', role: '-> Peter', portrait: '../../careers/team/ella.png', dog: '1' }
 ]
 
 const breakpoints = {
