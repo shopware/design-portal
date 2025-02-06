@@ -1,6 +1,6 @@
 ---
 pageClass: p-tokens
-sidebar: false
+sidebar: true
 aside: false
 page: true
 #footer: false
@@ -19,7 +19,7 @@ import Label from "../components/interaction/Label.vue";
     <template #label>Design Tokens</template>
     <template #title>Refining our design language.</template>
     <template #content><p>Design Tokens are the heartbeat of our design system. They encapsulate the essential elements of our design language – colors, typography, spacing, and beyond – into a unified, flexible format that speaks directly to both designers and developers. Stay tuned for the unveiling of Design Tokens in Meteor.</p></template>
-    
+
 </SwagTokensHero>
 
 <section class="tokens--container md:max-w-12/12 mb-[72px]">
@@ -130,7 +130,7 @@ import Label from "../components/interaction/Label.vue";
                     justify-content: center;
                     align-items: center;
                     gap: 10px;
-                    
+
 
                     p {
                     color: #2D2E32;
@@ -140,7 +140,7 @@ import Label from "../components/interaction/Label.vue";
                     font-style: normal;
                     font-weight: 500;
                     line-height: 140%; /* 28px */
-                    
+
 
                         span {
                             color: #808392;
