@@ -160,10 +160,6 @@ export default defineConfigWithTheme<ThemeConfig>({
           text: "Components",
           items: [
             {
-              text: "About",
-              link: "/meteor-components/",
-            },
-            {
               text: "Form",
               collapsed: true,
               items: [

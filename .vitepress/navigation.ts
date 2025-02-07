@@ -19,7 +19,7 @@ const navigation = buildSidebarNav('./src/', [
         text: 'Tokens',
     },
     {
-        link: '/meteor-components/',
+        link: '/meteor-components/form/mt-field-label.md',
         text: 'Components',
     },
     {
