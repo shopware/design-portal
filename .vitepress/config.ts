@@ -254,16 +254,6 @@ export default defineConfigWithTheme<ThemeConfig>({
               ],
             },
             {
-              text: "Icons & Media",
-              collapsed: true,
-              items: [
-                {
-                  text: "Icon",
-                  link: "/meteor-components/iconsmedia/mt-icon",
-                },
-              ],
-            },
-            {
               text: "Layout",
               collapsed: true,
               items: [
