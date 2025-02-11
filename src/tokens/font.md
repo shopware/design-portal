@@ -45,11 +45,10 @@ Semantic tokens represent the choices the design system made in regards to when 
 
 <style scoped>
 table {
-  width: 100% !important;
+  width: 100%;
   border-collapse: collapse;
-  table-layout: fixed;
-  margin-bottom: 100px;
   border: white !important;
+  margin-bottom: 100px;
 }
 
 th {
@@ -69,11 +68,11 @@ td {
 }
 
 td:first-child {
-  width: 20% !important;
+  width: 30% !important;
 }
 
 td:nth-child(2) {
-  width: 50% !important;
+  width: 40% !important;
 }
 
 td:last-child {

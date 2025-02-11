@@ -16,11 +16,7 @@ export default {
 </script>
 
 <style scoped>
-.swag-tokens-font-preview {
-    min-height: 40px;
-    width: 100%;
-    text-align: left;
-}
+
 .border-preview {
     width: 50px;
     height: 50px;
