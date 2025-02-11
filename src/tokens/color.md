@@ -20,8 +20,8 @@ import SwagSwatch from '../components/tokens/SwagTokenSwatch.vue'
 
 Semantic tokens represent the choices the design system made in regards to when to use each color value.
 
-| Value                                     | Description                            | Token Name                             |
-| ----------------------------------------- | -------------------------------------- | -------------------------------------- |
+| Value                                     | Description                            | Token Name                               |
+| ----------------------------------------- | -------------------------------------- | ---------------------------------------- |
 | <SwagSwatch value="#0870ff"></SwagSwatch> | Primary interaction color (default)    | `--color-interaction-primary-default`    |
 | <SwagSwatch value="#0042a0"></SwagSwatch> | Primary interaction color (hover)      | `--color-interaction-primary-hover`      |
 | <SwagSwatch value="#76aaff"></SwagSwatch> | Primary interaction color (disabled)   | `--color-interaction-primary-disabled`   |
@@ -88,7 +88,7 @@ Semantic tokens represent the choices the design system made in regards to when 
 | <SwagSwatch value="#90000e"></SwagSwatch> | Text color (critical - hover)          | `--color-text-critical-hover`            |
 | <SwagSwatch value="#ff7f74"></SwagSwatch> | Text color (critical - disabled)       | `--color-text-critical-disabled`         |
 | <SwagSwatch value="#5e0006"></SwagSwatch> | Text color (critical - dark)           | `--color-text-critical-dark`             |
-| <SwagSwatch value="#533600"></SwagSwatch> | Text color (attention - default)       | `--color-text-attention-default`        |
+| <SwagSwatch value="#533600"></SwagSwatch> | Text color (attention - default)       | `--color-text-attention-default`         |
 | <SwagSwatch value="#00470a"></SwagSwatch> | Text color (positive - default)        | `--color-text-positive-default`          |
 | <SwagSwatch value="#633bc6"></SwagSwatch> | Text color (accent - default)          | `--color-text-accent-default`            |
 | <SwagSwatch value="#ffffff"></SwagSwatch> | Text color (static - default)          | `--color-text-static-default`            |

@@ -1,8 +1,8 @@
 <template>
-    <div class="swag-font-preview">
-      <p v-if="lineHeight" class="line-height">{{ lineHeight }}</p>
-      <p v-else :style="fontStyles">Aa</p>
-    </div>
+  <div class="swag-font-preview">
+    <p v-if="lineHeight" class="line-height">{{ lineHeight }}</p>
+    <p v-else :style="fontStyles">Aa</p>
+  </div>
 </template>
 
 <script lang="ts">
@@ -33,11 +33,10 @@ export default {
 </script>
 
 <style scoped>
-
-.swag-font-preview{
-    width: 70px;
-    height: 50px;
-    border: 1px solid white;
+.swag-font-preview {
+  width: 70px;
+  height: 50px;
+  border: 1px solid white;
 }
 
 .line-height {
