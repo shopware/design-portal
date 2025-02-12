@@ -54,7 +54,7 @@ export default defineConfigWithTheme<ThemeConfig>({
 
   themeConfig: {
     ...navigation, // add sidebar and nav config
-      sidebar: {
+    sidebar: {
       // This sidebar gets displayed when a user
       // is on `foundations` directory.
       "/foundations/": [
@@ -118,10 +118,10 @@ export default defineConfigWithTheme<ThemeConfig>({
             {
               text: "Border",
               link: "/tokens/border",
-            }
-          ]
-        }
-        ],
+            },
+          ],
+        },
+      ],
       // This sidebar gets displayed when a user
       // is on `product-experience` directory.
       "/product-experience/": [

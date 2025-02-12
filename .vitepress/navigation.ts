@@ -17,8 +17,8 @@ const navigation = buildSidebarNav(
       text: "Product Experience",
     },
     {
-      link: '/tokens/color',
-      text: 'Tokens',
+      link: "/tokens/color",
+      text: "Tokens",
     },
     {
       link: "/meteor-components/form/mt-field-label.md",
