@@ -54,7 +54,7 @@ export default defineConfigWithTheme<ThemeConfig>({
 
   themeConfig: {
     ...navigation, // add sidebar and nav config
-    sidebar: {
+      sidebar: {
       // This sidebar gets displayed when a user
       // is on `foundations` directory.
       "/foundations/": [
@@ -101,7 +101,27 @@ export default defineConfigWithTheme<ThemeConfig>({
           ],
         },
       ],
-
+      // This sidebar gets displayed when a user
+      // is on `tokens` directory.
+      "/tokens/": [
+        {
+          text: "Tokens",
+          items: [
+            {
+              text: "Color",
+              link: "/tokens/color",
+            },
+            {
+              text: "Font",
+              link: "/tokens/font",
+            },
+            {
+              text: "Border",
+              link: "/tokens/border",
+            }
+          ]
+        }
+        ],
       // This sidebar gets displayed when a user
       // is on `product-experience` directory.
       "/product-experience/": [
@@ -125,27 +145,6 @@ export default defineConfigWithTheme<ThemeConfig>({
               link: "/product-experience/content/abbreviations-and-acronyms",
             },
             { text: "TL;DR", link: "/product-experience/content/tldr" },
-          ],
-        },
-      ],
-      // This sidebar gets displayed when a user
-      // is on `tokens` directory.
-      "/tokens/": [
-        {
-          text: "Tokens",
-          items: [
-            {
-              text: "Color",
-              link: "/tokens/color",
-            },
-            {
-              text: "Font",
-              link: "/tokens/font",
-            },
-            {
-              text: "Border",
-              link: "/tokens/border",
-            }
           ],
         },
       ],
@@ -181,67 +180,63 @@ export default defineConfigWithTheme<ThemeConfig>({
           text: "Components",
           items: [
             {
-              text: "About",
-              link: "/meteor-components/",
-            },
-            {
               text: "Form",
               collapsed: true,
               items: [
                 {
-                  text: "mt-field-label",
+                  text: "Field label",
                   link: "/meteor-components/form/mt-field-label",
                 },
                 {
-                  text: "mt-button",
+                  text: "Button",
                   link: "/meteor-components/form/mt-button",
                 },
                 {
-                  text: "mt-checkbox",
+                  text: "Checkbox",
                   link: "/meteor-components/form/mt-checkbox",
                 },
                 {
-                  text: "mt-colorpicker",
+                  text: "Colorpicker",
                   link: "/meteor-components/form/mt-colorpicker",
                 },
                 {
-                  text: "mt-datepicker",
+                  text: "Datepicker",
                   link: "/meteor-components/form/mt-datepicker",
                 },
                 {
-                  text: "mt-email-field",
+                  text: "Email field",
                   link: "/meteor-components/form/mt-email-field",
                 },
                 {
-                  text: "mt-help-text",
+                  text: "Help text",
                   link: "/meteor-components/form/mt-help-text",
                 },
                 {
-                  text: "mt-number-field",
+                  text: "Number field",
                   link: "/meteor-components/form/mt-number-field",
                 },
                 {
-                  text: "mt-password-field",
+                  text: "Password field",
                   link: "/meteor-components/form/mt-password-field",
                 },
                 {
-                  text: "mt-select",
+                  text: "Select",
                   link: "/meteor-components/form/mt-select",
                 },
                 {
-                  text: "mt-slider",
+                  text: "Slider",
                   link: "/meteor-components/form/mt-slider",
                 },
                 {
-                  text: "mt-switch",
+                  text: "Switch",
                   link: "/meteor-components/form/mt-switch",
                 },
                 {
-                  text: "mt-text-field",
+                  text: "Text field",
                   link: "/meteor-components/form/mt-text-field",
                 },
                 {
-                  text: "mt-textarea",
+                  text: "Textarea",
                   link: "/meteor-components/form/mt-textarea",
                 },
               ],
@@ -251,19 +246,19 @@ export default defineConfigWithTheme<ThemeConfig>({
               collapsed: true,
               items: [
                 {
-                  text: "mt-banner",
+                  text: "Banner",
                   link: "/meteor-components/feedbackindicator/mt-banner",
                 },
                 {
-                  text: "mt-loader",
+                  text: "Loader",
                   link: "/meteor-components/feedbackindicator/mt-loader",
                 },
                 {
-                  text: "mt-progress-bar",
+                  text: "Progress bar",
                   link: "/meteor-components/feedbackindicator/mt-progress-bar",
                 },
                 {
-                  text: "mt-skeleton-bar",
+                  text: "Skeleton bar",
                   link: "/meteor-components/feedbackindicator/mt-skeleton-bar",
                 },
               ],
@@ -273,18 +268,8 @@ export default defineConfigWithTheme<ThemeConfig>({
               collapsed: true,
               items: [
                 {
-                  text: "mt-text",
+                  text: "Text",
                   link: "/meteor-components/content/mt-text",
-                },
-              ],
-            },
-            {
-              text: "Icons & Media",
-              collapsed: true,
-              items: [
-                {
-                  text: "mt-icon",
-                  link: "/meteor-components/iconsmedia/mt-icon",
                 },
               ],
             },
@@ -293,11 +278,11 @@ export default defineConfigWithTheme<ThemeConfig>({
               collapsed: true,
               items: [
                 {
-                  text: "mt-card",
+                  text: "Card",
                   link: "/meteor-components/layout/mt-card",
                 },
                 {
-                  text: "mt-empty-state",
+                  text: "Empty state",
                   link: "/meteor-components/layout/mt-empty-state",
                 },
               ],
@@ -307,19 +292,19 @@ export default defineConfigWithTheme<ThemeConfig>({
               collapsed: true,
               items: [
                 {
-                  text: "mt-link",
+                  text: "Link",
                   link: "/meteor-components/navigation/mt-link",
                 },
                 {
-                  text: "mt-search",
+                  text: "Search",
                   link: "/meteor-components/navigation/mt-search",
                 },
                 {
-                  text: "mt-segmented-control",
+                  text: "Segmented control",
                   link: "/meteor-components/navigation/mt-segmented-control",
                 },
                 {
-                  text: "mt-tabs",
+                  text: "Tabs",
                   link: "/meteor-components/navigation/mt-tabs",
                 },
               ],
@@ -329,15 +314,15 @@ export default defineConfigWithTheme<ThemeConfig>({
               collapsed: true,
               items: [
                 {
-                  text: "mt-modal",
+                  text: "Modal",
                   link: "/meteor-components/overlay/mt-modal",
                 },
                 {
-                  text: "mt-popover",
+                  text: "Popover",
                   link: "/meteor-components/overlay/mt-popover",
                 },
                 {
-                  text: "mt-tooltip",
+                  text: "Tooltip",
                   link: "/meteor-components/overlay/mt-tooltip",
                 },
               ],
@@ -347,7 +332,7 @@ export default defineConfigWithTheme<ThemeConfig>({
               collapsed: true,
               items: [
                 {
-                  text: "mt-pagination",
+                  text: "Pagination",
                   link: "/meteor-components/tablelist/mt-pagination",
                 },
               ],
