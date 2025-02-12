@@ -101,7 +101,27 @@ export default defineConfigWithTheme<ThemeConfig>({
           ],
         },
       ],
-
+      // This sidebar gets displayed when a user
+      // is on `tokens` directory.
+      "/tokens/": [
+        {
+          text: "Tokens",
+          items: [
+            {
+              text: "Color",
+              link: "/tokens/color",
+            },
+            {
+              text: "Font",
+              link: "/tokens/font",
+            },
+            {
+              text: "Border",
+              link: "/tokens/border",
+            },
+          ],
+        },
+      ],
       // This sidebar gets displayed when a user
       // is on `product-experience` directory.
       "/product-experience/": [
