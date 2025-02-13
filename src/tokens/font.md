@@ -53,13 +53,13 @@ table {
 
 th {
   border: white !important;
-  background: white;
-  border-bottom: rgb(224,230,235);
+  background: white !important;
+  border-bottom: rgb(224,230,235) !important;
 }
 
 tr {
   background: white !important;
-  border: 1px solid white;
+  border: 1px solid white !important;
 }
 
 td {
