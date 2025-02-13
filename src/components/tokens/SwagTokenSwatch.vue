@@ -15,7 +15,7 @@ export default {
 
 <style scoped>
 .swag-token-swatch {
-  width: 60%;
+  width: 50%;
   min-height: 50px;
   border-radius: 5px;
 }
