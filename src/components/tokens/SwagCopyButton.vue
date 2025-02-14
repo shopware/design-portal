@@ -41,8 +41,8 @@ const copyToClipboard = async () => {
 
 <style scoped>
 .swag-button {
-  width: 30px !important;
-  height: 30px !important;
+  width: 35px !important;
+  height: 35px !important;
   padding: 1px;
   cursor: pointer;
   border: none;
@@ -51,18 +51,18 @@ const copyToClipboard = async () => {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
 }
 
 .swag-button .icon-check {
-  width: 16px;
+  width: 18px;
 }
 
 .swag-button .icon-copy {
-  width: 16px;
+  width: 20px;
+  height: 20px;
 }
 
 .swag-button:hover {
-  background: rgb(0, 123, 255);
+  background: var(--vp-code-bg);
 }
 </style>
