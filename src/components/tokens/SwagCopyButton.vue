@@ -66,6 +66,7 @@ const copyToClipboard = async () => {
   font-family: var(--vp-font-family-mono);
   cursor: pointer;
   border: none;
+  white-space: nowrap;
 }
 
 .swag-button-tooltip {
