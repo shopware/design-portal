@@ -107,14 +107,14 @@ table, th, td {
   table-layout: auto;
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid var(--c-white-200);
+  border: 1px solid var(--c-white-200) !important;
   margin-bottom: 100px;
   border-radius: 10px;
 }
 
 .vp-doc th {
   border: none !important;
-  background-color: var(--c-white-100);
+  background-color: var(--c-white-100) !important;
   border-bottom: 1px solid var(--c-white-200) !important;
 }
 
@@ -123,12 +123,12 @@ table, th, td {
 }
 
 .vp-doc tr {
-  background: white;
-  border: none;
-  border-bottom: 1px solid var(--c-white-200);
+  background: white !important;
+  border: none !important;
+  border-bottom: 1px solid var(--c-white-200) !important;
 }
 
 .vp-doc tr:last-child {
-  border-bottom: none;
+  border-bottom: none !important;
 }
 </style>
