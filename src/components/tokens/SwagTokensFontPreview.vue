@@ -37,6 +37,9 @@ export default {
   width: 70px;
   height: 50px;
   border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .line-height {
