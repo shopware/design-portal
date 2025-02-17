@@ -36,7 +36,6 @@ export default {
 .swag-font-preview {
   width: 70px;
   height: 50px;
-  border: 1px solid white;
 }
 
 .line-height {
