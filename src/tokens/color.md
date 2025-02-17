@@ -96,38 +96,39 @@ Semantic tokens represent the choices the design system made in regards to when 
 | <SwagSwatch value="#fafbfe"></SwagSwatch> | Text color (inverse - default)         | `--color-text-inverse-default`           |
 
 <style scoped>
-table {
+table, th, td {
+  border: none;
+  margin: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.vp-doc table {
+  table-layout: auto;
   width: 100%;
   border-collapse: collapse;
-  border: white !important;
+  border: 1px solid var(--c-white-200);
   margin-bottom: 100px;
+  border-radius: 10px;
 }
 
-th {
-  border: white !important;
-  background: white !important;
-  border-bottom: rgb(224,230,235) !important;
+.vp-doc th {
+  border: none !important;
+  background-color: var(--c-white-100);
+  border-bottom: 1px solid var(--c-white-200) !important;
 }
 
-tr {
-  background: white !important;
-  border: 1px solid white !important;
+.vp-doc td {
+  width: 1%;
 }
 
-td {
-  border-left: white !important;
-  border-right: white !important;
+.vp-doc tr {
+  background: white;
+  border: none;
+  border-bottom: 1px solid var(--c-white-200);
 }
 
-td:first-child {
-  width: 30% !important;
-}
-
-td:nth-child(2) {
-  width: 30% !important;
-}
-
-td:last-child {
-  width: 30% !important;
+.vp-doc tr:last-child {
+  border-bottom: none;
 }
 </style>
