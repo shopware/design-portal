@@ -2,9 +2,12 @@
   <div class="IconSelection_bg" @click.prevent="$emit('switch', null)" />
   <div class="IconSelection" v-bind="$attrs">
     <div class="IconSelection_sidebar-bg">
-      <!--<a class="IconSelection_close" href="#" @click.prevent="$emit('switch', null)">Close</a>-->
-
-      <!-- <a :href="`${embedPoint}${icon.mode}/${icon.name}.svg`" class="btn --secondary" download>Download .svg</a> -->
+      <a
+        class="IconSelection_close"
+        href="#"
+        @click.prevent="$emit('switch', null)"
+        ><SwagIcon icon="plus" type="regular"
+      /></a>
 
       <div class="flex flex-col gap-4">
         <div class="flex gap-4 items-center">
@@ -30,6 +33,12 @@
 
     <div>
       <textarea class="form-control" v-model="exampleHTML"></textarea>
+      <a
+        :href="`${embedPoint}${icon.mode}/${icon.name}.svg`"
+        class="btn --secondary"
+        download
+        >Download svg</a
+      >
     </div>
 
     <div>
@@ -46,7 +55,6 @@
     </div>
   </div>
 </template>
-
 
 <script setup>
 import { computed } from "vue";
@@ -107,8 +115,9 @@ const embedPoint = "/resources/meteor-icon-kit/public/icons/";
   position: absolute;
   right: 0;
   top: 0;
-  margin-right: 2rem;
-  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  rotate: 45deg;
 }
 
 .IconSelection_list {
@@ -120,6 +129,10 @@ const embedPoint = "/resources/meteor-icon-kit/public/icons/";
 .IconSelection_sidebar-bg {
   padding: 1.5rem;
   background-color: var(--sw-c-gray-50);
+}
+
+.form-control {
+  margin-bottom: 1rem;
 }
 
 .dark .IconSelection_sidebar-bg {
