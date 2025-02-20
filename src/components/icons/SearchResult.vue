@@ -18,6 +18,7 @@
     </div>
   </div>
 </template>
+
 <script setup>
 import IconDisplay from "./IconDisplay.vue";
 import { ref, computed } from "vue";
