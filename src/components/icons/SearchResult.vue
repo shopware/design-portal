@@ -23,7 +23,7 @@ import IconDisplay from "./IconDisplay.vue";
 import { ref, computed } from "vue";
 import Fuse from "fuse.js";
 import IconSelection from "./IconSelection.vue";
-import meta from "../../../node_modules/@shopware-ag/meteor-icon-kit/icons/meta.json";
+import meta from "@shopware-ag/meteor-icon-kit/icons/meta.json";
 
 const icons = ref(meta);
 const selectedIcon = ref(null);
@@ -61,7 +61,7 @@ const switchSelectedIcon = (data) => {
 };
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .SearchResult {
   display: flex;
   gap: 12px;

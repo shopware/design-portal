@@ -54,7 +54,7 @@ const debounceInput = (event) => {
 };
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 @import "@shopware-ag/meteor-icon-kit/icons/meteor-icon-kit.scss";
 
 .search-container {

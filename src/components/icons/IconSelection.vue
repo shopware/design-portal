@@ -92,7 +92,7 @@ const copyIconName = () => {
 const embedPoint = "/resources/meteor-icon-kit/public/icons/";
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .IconSelection {
   display: grid;
   gap: 1.5rem;

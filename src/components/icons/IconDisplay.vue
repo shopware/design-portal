@@ -30,7 +30,7 @@ const id = computed(() => {
 });
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .IconDisplay {
   display: flex;
   width: 100%;
