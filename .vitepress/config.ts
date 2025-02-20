@@ -167,9 +167,13 @@ export default defineConfigWithTheme<ThemeConfig>({
               link: "/get-started/contact-us",
             },
             {
+              text: "System Definitions",
+              link: "/get-started/system-definitions/",
+            },
+            {
               text: "License",
               link: "/get-started/license",
-            },
+            }
           ],
         },
       ],
