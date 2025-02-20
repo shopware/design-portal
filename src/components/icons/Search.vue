@@ -54,8 +54,7 @@ const debounceInput = (event) => {
 };
 </script>
 
-<style lang="scss">
-// @import "../public/icons/meteor-icon-kit.scss";
+<style lang="css">
 @import "@shopware-ag/meteor-icon-kit/icons/meteor-icon-kit.scss";
 
 .search-container {
@@ -77,20 +76,18 @@ const debounceInput = (event) => {
   border-radius: 8px;
   flex-wrap: wrap;
   gap: 48px;
+}
 
-  @media (min-width: 960.5px) {
-    .btn {
-      @apply justify-center;
-      width: 11.5rem;
-    }
+@media (min-width: 960.5px) {
+  .search-bar .btn {
+    justify-content: center;
+    width: 11.5rem;
   }
 }
 
 .search-bar input {
   flex: 1;
-  background: transparent
-    url("/resources/meteor-icon-kit/public/icons/regular/search.svg") no-repeat
-    calc(100% - 15px) center;
+  background: transparent url("/resources/meteor-icon-kit/public/icons/regular/search.svg") no-repeat calc(100% - 15px) center;
   background-size: 1rem;
 }
 </style>

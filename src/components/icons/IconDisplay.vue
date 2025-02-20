@@ -30,7 +30,7 @@ const id = computed(() => {
 });
 </script>
 
-<style lang="scss">
+<style lang="css">
 .IconDisplay {
   display: flex;
   width: 100%;
@@ -39,33 +39,44 @@ const id = computed(() => {
   flex-direction: column;
   gap: 0.5rem;
   color: var(--vp-c-text);
-  &_name,
-  &_icon {
-    color: var(--vp-c-text);
-  }
-  &_name {
-    @apply text-xs font-medium;
-  }
-  &_wrap {
-    @apply bg-[var(--sw-c-gray-50)] flex items-center justify-center;
-    width: 100%;
-    .dark & {
-      @apply bg-[var(--sw-c-gray-dark-700)];
-    }
-  }
-  &.--mode-inline {
-    flex-direction: row;
-    .IconDisplay_wrap {
-      @apply p-4 items-center gap-2;
-      justify-content: flex-start;
-      --icon-size: 1.725rem;
-    }
-  }
-  &:not(.--mode-inline) {
-    .IconDisplay_wrap {
-      aspect-ratio: 1;
-      --icon-size: 1.5rem;
-    }
-  }
+}
+
+.IconDisplay_name,
+.IconDisplay_icon {
+  color: var(--vp-c-text);
+}
+
+.IconDisplay_name {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.IconDisplay_wrap {
+  background-color: var(--sw-c-gray-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+:root[class~="dark"] .IconDisplay_wrap {
+  background-color: var(--sw-c-gray-dark-700);
+}
+
+.IconDisplay.--mode-inline {
+  flex-direction: row;
+}
+
+.IconDisplay.--mode-inline .IconDisplay_wrap {
+  padding: 1rem;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  --icon-size: 1.725rem;
+}
+
+.IconDisplay:not(.--mode-inline) .IconDisplay_wrap {
+  aspect-ratio: 1;
+  --icon-size: 1.5rem;
 }
 </style>

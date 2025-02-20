@@ -18,7 +18,6 @@
     </div>
   </div>
 </template>
-
 <script setup>
 import IconDisplay from "./IconDisplay.vue";
 import { ref, computed } from "vue";
@@ -26,10 +25,7 @@ import Fuse from "fuse.js";
 import IconSelection from "./IconSelection.vue";
 import meta from "../../../node_modules/@shopware-ag/meteor-icon-kit/icons/meta.json";
 
-// console.log(meta);
-
 const icons = ref(meta);
-
 const selectedIcon = ref(null);
 
 const props = defineProps({
@@ -65,30 +61,31 @@ const switchSelectedIcon = (data) => {
 };
 </script>
 
-<style lang="scss">
+<style lang="css">
 .SearchResult {
-  @apply flex gap-12;
+  display: flex;
+  gap: 12px;
   flex-wrap: nowrap;
+}
 
-  &_list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    gap: 24px;
-    row-gap: 2rem;
-    flex-wrap: wrap;
-    flex-grow: 1;
-  }
+.SearchResult_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 24px;
+  row-gap: 2rem;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
 
-  &_sidebar {
-    @media (min-width: 960.5px) {
-      flex-basis: 24rem;
-      flex-grow: 0;
-      flex-shrink: 0;
-      position: relative;
-    }
+@media (min-width: 960.5px) {
+  .SearchResult_sidebar {
+    flex-basis: 24rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
   }
 }
 </style>
