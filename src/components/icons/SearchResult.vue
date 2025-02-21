@@ -1,5 +1,14 @@
 <template>
   <div class="SearchResult">
+    <div v-if="selectedIcon" class="SearchResult_sidebar">
+      <IconSelection
+        :icon="selectedIcon"
+        @switch="switchSelectedIcon"
+        :icons="icons"
+      />
+    </div>
+
+    <h2>Icons list</h2>
     <div class="SearchResult_list">
       <IconDisplay
         v-for="icon in resultIcons"
@@ -9,13 +18,6 @@
       />
     </div>
 
-    <div v-if="selectedIcon" class="SearchResult_sidebar">
-      <IconSelection
-        :icon="selectedIcon"
-        @switch="switchSelectedIcon"
-        :icons="icons"
-      />
-    </div>
   </div>
 </template>
 
@@ -65,7 +67,8 @@ const switchSelectedIcon = (data) => {
 <style lang="css" scoped>
 .SearchResult {
   display: flex;
-  gap: 12px;
+  flex-direction: column;
+  gap: 2rem;
   flex-wrap: nowrap;
 }
 
@@ -75,18 +78,14 @@ const switchSelectedIcon = (data) => {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
-  gap: 24px;
-  row-gap: 2rem;
+  gap: 3rem;
+  row-gap: 3rem;
   flex-wrap: wrap;
   flex-grow: 1;
 }
 
-@media (min-width: 960.5px) {
-  .SearchResult_sidebar {
-    flex-basis: 24rem;
-    flex-grow: 0;
-    flex-shrink: 0;
-    position: relative;
-  }
+.SearchResult h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 </style>

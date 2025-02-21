@@ -1,7 +1,7 @@
 ---
 pageClass: p-icons
 sidebar: true
-aside: false
+aside: true
 page: true
 #footer: false
 editLink: false
@@ -15,6 +15,8 @@ import Search from "../components/icons/Search.vue";
 </script>
 
 # Icons
+
+## Icon explorer
 
 An icon library and toolkit that follows a minimal, yet highly expressive style perfectly aligned with Shopware's product language.
 

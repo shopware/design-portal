@@ -32,12 +32,12 @@ const id = computed(() => {
 
 <style lang="css" scoped>
 .IconDisplay {
+  height: 70px;
   display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   color: var(--vp-c-text);
 }
 
@@ -52,11 +52,11 @@ const id = computed(() => {
 }
 
 .IconDisplay_wrap {
-  background-color: var(--sw-c-gray-50);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 30px;
+  height: 30px;
 }
 
 :root[class~="dark"] .IconDisplay_wrap {

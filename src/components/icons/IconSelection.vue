@@ -1,101 +1,150 @@
 <template>
-  <div class="IconSelection_bg" @click.prevent="$emit('switch', null)" />
-  <div class="IconSelection" v-bind="$attrs">
-    <div class="IconSelection_sidebar-bg">
-      <a
-        class="IconSelection_close"
-        href="#"
-        @click.prevent="$emit('switch', null)"
-        ><SwagIcon icon="plus" type="regular"
-      /></a>
-
-      <div class="flex flex-col gap-4">
-        <div class="flex gap-4 items-center">
-          <SwagIcon class="--medium" :icon="icon.name" :type="icon.mode" />
-          <SwagIcon class="--small" :icon="icon.name" :type="icon.mode" />
+  <div class="IconSelection_wrapper">
+    <div class="IconSelection_headers">
+      <h1 @click.prevent="copyIconName">{{ icon.name }}</h1>
+      <span class="title">5.2.5</span>
+    </div>
+    <div class="IconSelection" v-bind="$attrs">
+      <div class="IconSelection_preview-wrapper">
+        <div class="IconPreview">
+          <SwagIcon
+            :style="{ '--icon-size': `${backgroundSize * 3}rem` }"
+            :icon="icon.name"
+            :type="icon.mode"
+          />
         </div>
 
-        <div class="flex gap-4 justify-center">
-          <SwagIcon class="--large" :icon="icon.name" :type="icon.mode" />
+        <div class="IconPreview-controls">
+          <input
+            type="range"
+            id="grid-size"
+            min="2"
+            max="12"
+            step="0.5"
+            v-model.number="backgroundSize"
+            class="IconPreview_slider"
+          />
+          <ActionButton
+            :visible="true"
+            :actionCompleted="downloaded"
+            icon="download"
+            @action-click="downloadSvg"
+            @reset="downloaded = false"
+          />
         </div>
+
+        <IconBackground :value="backgroundSize" />
       </div>
-    </div>
 
-    <h1 @click.prevent="copyIconName">{{ icon.name }}</h1>
-    <div class="IconSelection_tags" v-if="icon.tags.length">
-      <span
-        v-for="tag in icon.tags"
-        :key="tag"
-        class="IconSelection_tag btn --subtle --xs --with-border"
-        >{{ tag }}</span
-      >
-    </div>
-
-    <div>
-      <textarea class="form-control" v-model="exampleHTML"></textarea>
-      <a
-        :href="`${embedPoint}${icon.mode}/${icon.name}.svg`"
-        class="btn --secondary"
-        download
-        >Download svg</a
-      >
-    </div>
-
-    <div>
-      <h2>Related icons</h2>
-      <div class="IconSelection_list">
-        <IconDisplay
-          v-for="icon in icons.slice(0, 4)"
-          :key="icon"
-          :icon="icon"
-          mode="inline"
-          @select="$emit('switch', icon)"
-        />
-      </div>
+      <h2>Usage</h2>
+      <CodeSnippet :code="selectedIcon" language="js" />
     </div>
   </div>
 </template>
 
 <script setup>
 import { computed } from "vue";
+import { onMounted } from "vue";
+import { ref, watch } from "vue";
 import IconDisplay from "./IconDisplay.vue";
+import CodeSnippet from "../codesnippet/CodeSnippet.vue";
+import IconBackground from "./IconBackground.vue";
+import ActionButton from "../codesnippet/ActionButton.vue";
 
 const props = defineProps({
-  icon: {},
-  icons: {},
+  icon: {
+    type: Object,
+    required: true,
+  },
+  icons: {
+    type: Array,
+    required: false,
+  },
 });
 
-const exampleHTML = computed(() =>
-  props.icon ? `<sw-icon name="${props.icon.mode}-${props.icon.name}" />` : null
-);
-const exampleVue2 = computed(() =>
-  props.icon ? `<sw-icon name="${props.icon.mode}-${props.icon.name}" />` : null
-);
-const exampleVue3 = computed(() =>
-  props.icon ? `<sw-icon name="${props.icon.mode}-${props.icon.name}" />` : null
-);
-const exampleReact = computed(() =>
-  props.icon ? `<sw-icon name="${props.icon.mode}-${props.icon.name}" />` : null
-);
+const backgroundSize = ref(3);
+const downloaded = ref(false);
 
-const copyIconName = () => {
-  const tempTextArea = document.createElement("textarea");
-  tempTextArea.value = `${props.icon.regular ? "regular-" : "solid-"}${
-    props.icon.name
-  }`;
-  document.body.appendChild(tempTextArea);
-  tempTextArea.select();
-  document.execCommand("copy");
-  document.body.removeChild(tempTextArea);
+const selectedIcon = computed(() => {
+  return `import wallet from '@shopware-ag/meteor-icon-kit/icons/${props.icon.mode}/${props.icon.name}.svg'`;
+});
+
+const downloadSvg = () => {
+  const embedPoint = "/resources/meteor-icon-kit/public/icons/";
+  try {
+    const svgUrl = `${embedPoint}${props.icon.mode}/${props.icon.name}.svg`;
+    const link = document.createElement('a');
+    link.href = svgUrl;
+    link.download = `${props.icon.name}.svg`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    downloaded.value = true;
+  } catch (error) {
+    console.error("Failed to download SVG:", error);
+  }
 };
-
-const embedPoint = "/resources/meteor-icon-kit/public/icons/";
 </script>
 
 <style lang="css" scoped>
+.IconSelection_wrapper {
+  /* border: 1px solid orange; */
+  margin-bottom: 3rem;
+}
+
 .IconSelection {
   display: grid;
   gap: 1.5rem;
+}
+
+.IconSelection_headers {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.IconSelection_headers span {
+  font-size: 0.8rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  background-color: var(--sw-c-blue-vivacious-50);
+  color: var(--sw-c-blue-brand);
+}
+
+.IconSelection_preview-wrapper {
+  width: 100%;
+  height: 25rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.IconPreview-controls {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.IconPreview {
+  position: relative;
+  z-index: 2;
+}
+
+.IconSelection h2 {
+  font-size: 1.5rem;
 }
 
 .IconSelection_tags {
@@ -105,19 +154,11 @@ const embedPoint = "/resources/meteor-icon-kit/public/icons/";
 }
 
 .IconSelection_tag {
-  background-color: var(--sw-c-gray-100);
-  color: var(--sw-c-gray-dark-500);
+  background-color: var(--sw-c-blue-vivacious-50);
+  color: var(--sw-c-blue-brand);
   font-size: 0.875rem;
   padding: 0.25rem 0.5rem;
-}
-
-.IconSelection_close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  rotate: 45deg;
+  border: none !important;
 }
 
 .IconSelection_list {
@@ -126,16 +167,11 @@ const embedPoint = "/resources/meteor-icon-kit/public/icons/";
   grid-template-columns: repeat(2, 1fr);
 }
 
-.IconSelection_sidebar-bg {
-  padding: 1.5rem;
-  background-color: var(--sw-c-gray-50);
-}
-
 .form-control {
   margin-bottom: 1rem;
 }
 
-.dark .IconSelection_sidebar-bg {
+.dark .IconSelection_preview-wrapper {
   background-color: var(--sw-c-gray-dark-700);
 }
 
@@ -148,39 +184,6 @@ const embedPoint = "/resources/meteor-icon-kit/public/icons/";
 }
 
 .IconSelection .SwagIcon.--large {
-  --icon-size: 8rem;
-}
-
-@media (max-width: 960.5px) {
-  .IconSelection {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    max-height: 75vh;
-    max-width: 75vw;
-    overflow: auto;
-    z-index: 101;
-  }
-
-  .IconSelection_bg {
-    position: fixed;
-    content: "";
-    display: block;
-    background: rgba(0, 0, 0, 0.333);
-    inset: 0;
-    z-index: 100;
-  }
-}
-
-@media (min-width: 960.5px) {
-  .IconSelection {
-    position: sticky;
-    top: calc(var(--vp-nav-height) + 1rem);
-  }
-
-  .IconSelection_bg {
-    display: none;
-  }
+  --icon-size: 10rem;
 }
 </style>
