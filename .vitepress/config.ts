@@ -123,6 +123,14 @@ export default defineConfigWithTheme<ThemeConfig>({
         },
       ],
       // This sidebar gets displayed when a user
+      // is on `tokens` directory.
+      "/icons/": [
+        {
+          text: "Icons",
+          link: "/icons/",
+        },
+      ],
+      // This sidebar gets displayed when a user
       // is on `product-experience` directory.
       "/product-experience/": [
         {

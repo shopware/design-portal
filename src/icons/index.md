@@ -1,6 +1,6 @@
 ---
 pageClass: p-icons
-sidebar: false
+sidebar: true
 aside: false
 page: true
 #footer: false
