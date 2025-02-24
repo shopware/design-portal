@@ -2,12 +2,12 @@
   <div class="IconSelection_bg" @click.prevent="$emit('switch', null)" />
   <div class="IconSelection" v-bind="$attrs">
     <div class="IconSelection_sidebar-bg">
-      <a
+      <!--<a
         class="IconSelection_close"
         href="#"
         @click.prevent="$emit('switch', null)"
         ><SwagIcon icon="plus" type="regular"
-      /></a>
+      /></a>-->
 
       <div class="flex flex-col gap-4">
         <div class="flex gap-4 items-center">
@@ -32,10 +32,12 @@
     </div>
 
     <div>
-      <textarea class="form-control" v-model="exampleHTML"></textarea>
+      <h2>VUE</h2>
+      <input type="text" class="form-control" v-model="exampleHTML"></input>
+
       <a
         :href="`${embedPoint}${icon.mode}/${icon.name}.svg`"
-        class="btn --secondary"
+        class="btn --secondary download"
         download
         >Download svg</a
       >
@@ -53,12 +55,19 @@
         />
       </div>
     </div>
+    
   </div>
+  <Resource
+        eyebrow="Meteor Icon Kit"
+        title="Available on the Figma Community"
+        URL="https://www.figma.com/community/file/1032564947404478461/meteor-icon-kit-5-2-1-shopware"
+      />
 </template>
 
 <script setup>
 import { computed } from "vue";
 import IconDisplay from "./IconDisplay.vue";
+import Resource from "../banner/Resource.vue";
 
 const props = defineProps({
   icon: {},
@@ -95,7 +104,14 @@ const embedPoint = "/resources/meteor-icon-kit/public/icons/";
 <style lang="css" scoped>
 .IconSelection {
   display: grid;
-  gap: 1.5rem;
+  gap: 16px;
+  padding: 0px 24px 24px;
+  background-color: transparent;
+  border-radius: 12px;
+  border: 1px solid #F0F3FF;
+}
+:root[class~="dark"] .IconSelection {
+  border: 1px solid var(--sw-c-gray-dark-800);
 }
 
 .IconSelection_tags {
@@ -122,13 +138,18 @@ const embedPoint = "/resources/meteor-icon-kit/public/icons/";
 
 .IconSelection_list {
   display: grid;
-  gap: 1.5rem;
+  gap: 12px;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .IconSelection_sidebar-bg {
-  padding: 1.5rem;
-  background-color: var(--sw-c-gray-50);
+  padding: 24px 0px;
+  border-bottom: 1px solid #F0F3FF;
+  margin-bottom: 16px;
+}
+
+:root[class~="dark"] .IconSelection_sidebar-bg {
+  border-bottom: 1px solid var(--sw-c-gray-dark-800);
 }
 
 .form-control {
@@ -140,15 +161,29 @@ const embedPoint = "/resources/meteor-icon-kit/public/icons/";
 }
 
 .IconSelection .SwagIcon.--small {
-  --icon-size: 1rem;
+  --icon-size: 16px;
 }
 
 .IconSelection .SwagIcon.--medium {
-  --icon-size: 1.725rem;
+  --icon-size: 24px;
 }
 
 .IconSelection .SwagIcon.--large {
-  --icon-size: 8rem;
+  --icon-size: 32px;
+}
+
+.btn.download {
+  display: block;
+  text-align: center;
+  background: #36D046;
+  box-shadow: 0px 1px 2px 0px rgba(51, 68, 91, 0.25), 1px 1px 1px 0px rgba(255, 255, 255, 0.32) inset, -1px -1px 1px 0px rgba(255, 255, 255, 0.32) inset;
+  border: 0.5px solid #36D046;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.btn.download:hover {
+  background: #00AB26;
 }
 
 @media (max-width: 960.5px) {
