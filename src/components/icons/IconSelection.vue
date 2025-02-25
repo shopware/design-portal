@@ -55,13 +55,8 @@
         />
       </div>
     </div>
-    
+    <a :href="`https://www.figma.com/community/file/1032564947404478461/meteor-icon-kit-5-2-1-shopware`">Available on the Figma Community</a>
   </div>
-  <Resource
-        eyebrow="Meteor Icon Kit"
-        title="Available on the Figma Community"
-        URL="https://www.figma.com/community/file/1032564947404478461/meteor-icon-kit-5-2-1-shopware"
-      />
 </template>
 
 <script setup>
@@ -75,16 +70,16 @@ const props = defineProps({
 });
 
 const exampleHTML = computed(() =>
-  props.icon ? `<sw-icon name="${props.icon.mode}-${props.icon.name}" />` : null
+  props.icon ? `<mt-icon name="${props.icon.mode}-${props.icon.name}" />` : null
 );
 const exampleVue2 = computed(() =>
-  props.icon ? `<sw-icon name="${props.icon.mode}-${props.icon.name}" />` : null
+  props.icon ? `<mt-icon name="${props.icon.mode}-${props.icon.name}" />` : null
 );
 const exampleVue3 = computed(() =>
-  props.icon ? `<sw-icon name="${props.icon.mode}-${props.icon.name}" />` : null
+  props.icon ? `<mt-icon name="${props.icon.mode}-${props.icon.name}" />` : null
 );
 const exampleReact = computed(() =>
-  props.icon ? `<sw-icon name="${props.icon.mode}-${props.icon.name}" />` : null
+  props.icon ? `<mt-icon name="${props.icon.mode}-${props.icon.name}" />` : null
 );
 
 const copyIconName = () => {
