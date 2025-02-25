@@ -75,7 +75,7 @@ const debounceInput = (event) => {
   border: none;
   border-radius: 8px;
   flex-wrap: wrap;
-  gap: 48px;
+  gap: 16px;
 }
 
 @media (min-width: 960.5px) {

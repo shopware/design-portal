@@ -37,6 +37,14 @@ const props = defineProps({
 
   
 <style scoped lang="scss">
+:root[class~="dark"] .banner--resource {
+  background-color: var(--sw-c-gray-dark-700);
+  border: 1px solid var(--sw-c-gray-dark-800);
+  
+  p {
+    color: #ababab;
+  }
+}
 .banner--resource {
     align-items: center;
     background-color: #FAFBFE;

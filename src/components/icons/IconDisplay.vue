@@ -52,7 +52,9 @@ const id = computed(() => {
 }
 
 .IconDisplay_wrap {
-  background-color: var(--sw-c-gray-50);
+  background-color: #FAFBFE;
+  border-radius: 12px;
+  border: 1px solid #F0F3FF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,6 +63,7 @@ const id = computed(() => {
 
 :root[class~="dark"] .IconDisplay_wrap {
   background-color: var(--sw-c-gray-dark-700);
+  border: 1px solid var(--sw-c-gray-dark-800);
 }
 
 .IconDisplay.--mode-inline {
@@ -72,11 +75,11 @@ const id = computed(() => {
   align-items: center;
   gap: 0.5rem;
   justify-content: flex-start;
-  --icon-size: 1.725rem;
+  --icon-size: 16px;
 }
 
 .IconDisplay:not(.--mode-inline) .IconDisplay_wrap {
   aspect-ratio: 1;
-  --icon-size: 1.5rem;
+  --icon-size: 16px;
 }
 </style>
