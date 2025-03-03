@@ -337,7 +337,7 @@ export default defineConfigWithTheme<ThemeConfig>({
               items: [
                 {
                   text: "Pagination",
-                  link: "/meteor-components/tablelist/mt-pagination",
+                  link: "/meteor-components/table-list/mt-pagination",
                 },
               ],
             },

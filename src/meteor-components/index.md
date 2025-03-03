@@ -115,7 +115,7 @@ Overlay items are temporary components placed on top of main layout components w
 Table and list components are used to present interactive data that can be ordered, searched, and edited if the UI allows it.
 
 <div class="thumb-list">
-    <ComponentThumbnail name="pagination" section="tablelist">
+    <ComponentThumbnail name="pagination" section="table-list">
         <template v-slot:header>Pagination</template>
         <template v-slot:text>Paginations are used to split the listed data into sections for better performance.</template>
     </ComponentThumbnail>
