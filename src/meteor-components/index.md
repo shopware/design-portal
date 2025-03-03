@@ -21,15 +21,15 @@ import ComponentThumbnail from '../components/meteor-components/ComponentThumbna
 These indicators components will help the user understand what's going on in the administration. Elements like banners that will show valuable info or loading indicators that show a process is loading.
 
 <div class="thumb-list">
-    <ComponentThumbnail name="banner" section="feedback">
+    <ComponentThumbnail name="banner" section="feedback-indicator">
         <template v-slot:header>Banner</template>
         <template v-slot:text>Banners provide contextual feedback messages.</template>
     </ComponentThumbnail>
-    <ComponentThumbnail name="loader" section="feedback">
+    <ComponentThumbnail name="loader" section="feedback-indicator">
         <template v-slot:header>Loader</template>
         <template v-slot:text>Loaders indicate ongoing processes.</template>
     </ComponentThumbnail>
-    <ComponentThumbnail name="progress-bar" section="feedback">
+    <ComponentThumbnail name="progress-bar" section="feedback-indicator">
         <template v-slot:header>Progress Bar</template>
         <template v-slot:text>Progress bars show task completion progress.</template>
     </ComponentThumbnail>
@@ -103,9 +103,23 @@ Navigation components such as search and tabs can help users easily locate desir
 
 Overlay items are temporary components placed on top of main layout components with a shadow to enhance visual elevation.
 
+<div class="thumb-list">
+    <ComponentThumbnail name="popover" section="overlay">
+        <template v-slot:header>Popover</template>
+        <template v-slot:text>Popovers allow users to access a list of temporary choices or actions.</template>
+    </ComponentThumbnail>
+</div>
+
 ## Table and list
 
 Table and list components are used to present interactive data that can be ordered, searched, and edited if the UI allows it.
+
+<div class="thumb-list">
+    <ComponentThumbnail name="pagination" section="tablelist">
+        <template v-slot:header>Pagination</template>
+        <template v-slot:text>Paginations are used to split the listed data into sections for better performance.</template>
+    </ComponentThumbnail>
+</div>
 
 <style lang="css">
 .thumb-list {
@@ -114,6 +128,7 @@ Table and list components are used to present interactive data that can be order
     gap: 2rem;
     width: 100%;
     padding-top: 1rem;
+    margin-bottom: 5rem;
 }
 
 @media (max-width: 900px) {

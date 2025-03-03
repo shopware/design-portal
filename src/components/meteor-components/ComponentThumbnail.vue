@@ -5,6 +5,7 @@
       loading="lazy"
       alt="A sketch of a meteor component"
       :src="imgSrc"
+      @click.stop="handleImageClick"
     />
     <span class="header"><slot name="header"></slot></span>
     <span class="text"><slot name="text"></slot></span>
@@ -38,7 +39,12 @@ export default {
       router.go(path);
     };
 
-    return { imgSrc, navigateToPage };
+    const handleImageClick = (event) => {
+      event.preventDefault();
+      navigateToPage();
+    };
+
+    return { imgSrc, navigateToPage, handleImageClick };
   },
 };
 </script>
@@ -55,12 +61,13 @@ export default {
   width: 100%;
   height: auto;
   margin-bottom: 0.6rem;
+  cursor: pointer !important;
+  z-index: 0 !important;
 }
 
 .header {
   font-weight: 700;
   margin: 0;
-  margin-bottom: 0.2rem;
 }
 
 .text {
