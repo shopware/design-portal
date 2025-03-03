@@ -13,6 +13,11 @@ const props = defineProps({
     required: false,
     default: 5,
   },
+  backgroundColor: {
+    type: String,
+    required: false,
+    default: "#f5f7f9",
+  },
 });
 
 const gridRef = ref(null);
@@ -39,10 +44,10 @@ const gridStyle = computed(() => {
   return {
     backgroundSize: `${size}px ${size}px`,
     backgroundImage: `
-    linear-gradient(45deg, #f5f7f9 25%, transparent 25%),
-    linear-gradient(-45deg, #f5f7f9 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #f5f7f9 75%),
-    linear-gradient(-45deg, transparent 75%, #f5f7f9 75%)
+    linear-gradient(45deg, ${props.backgroundColor} 25%, transparent 25%),
+    linear-gradient(-45deg, ${props.backgroundColor} 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, ${props.backgroundColor} 75%),
+    linear-gradient(-45deg, transparent 75%, ${props.backgroundColor} 75%)
   `,
     backgroundPosition: `
     0 0,
