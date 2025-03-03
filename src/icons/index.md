@@ -20,4 +20,19 @@ import Search from "../components/icons/Search.vue";
 
 An icon library and toolkit that follows a minimal, yet highly expressive style perfectly aligned with Shopware's product language.
 
+<a class="fig-link" :href="`https://www.figma.com/community/file/1032564947404478461/meteor-icon-kit-5-2-1-shopware`">
+    <SwagIcon icon="figma" type="regular"></SwagIcon>
+    <span>Available on the Figma Community</span>
+</a>
+
 <Search/>
+
+<style lang="css">
+.fig-link {
+    display: flex;
+    align-items: center;
+    color: var(--vp-c-brand);
+    gap: 5px;
+    margin-bottom: 3rem;
+}
+</style>

@@ -113,7 +113,7 @@ const debounceInput = (event) => {
 }
 
 .search-bar__input input.active-input {
-  border: 1.5px solid var(--sw-c-blue-brand) !important;
+  border: 1.5px solid var(--vp-c-brand) !important;
   outline: none;
   box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.25);
 }
@@ -141,6 +141,6 @@ const debounceInput = (event) => {
 }
 
 .active {
-  border: 5px solid var(--sw-c-blue-brand) !important;
+  border: 5px solid var(--vp-c-brand) !important;
 }
 </style>
