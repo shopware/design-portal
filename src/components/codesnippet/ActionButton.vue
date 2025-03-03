@@ -72,4 +72,8 @@ onUnmounted(() => {
 .actionButton:hover {
   background-color: #ffffff;
 }
+
+:root[class~="dark"] .actionButton span {
+  color: var(--sw-c-gray-dark-500);
+}
 </style>

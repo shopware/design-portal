@@ -59,10 +59,6 @@ const id = computed(() => {
   height: 30px;
 }
 
-:root[class~="dark"] .IconDisplay_wrap {
-  background-color: var(--sw-c-gray-dark-700);
-}
-
 .IconDisplay.--mode-inline {
   flex-direction: row;
 }

@@ -186,4 +186,8 @@ const downloadSvg = () => {
 .IconSelection .SwagIcon.--large {
   --icon-size: 10rem;
 }
+
+:root[class~="dark"] .IconPreview {
+  color: var(--sw-c-gray-dark-700);
+}
 </style>
