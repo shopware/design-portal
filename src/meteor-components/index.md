@@ -11,151 +11,119 @@ next: false
 ---
 
 <script setup>
-import SwagTokensHero from "../components/tokens/SwagTokensHero.vue";
-import Label from "../components/interaction/Label.vue";
+import ComponentThumbnail from '../components/meteor-components/ComponentThumbnail.vue'
 </script>
 
-<SwagTokensHero class="mb-[40px] mt-[40px]">
-    <template #label>All Components</template>
-    <template #title>Meteor UI Components</template>
-    <template #content><p>Explore our library of UI components — everything you need to kickstart development for your next project. <span class="soon-a">Available soon.</span></p></template>
+# Components
 
-</SwagTokensHero>
-<div class="flex p-0 m-0 mt-5 gap-12 gap-y-4 my-30 md:max-w-3/6">
-<SwagBtn href="https://www.figma.com/community/file/1032569283566168066/meteor-admin-foundations-shopware" class="--contrast" icon="long-arrow-right" icon-at="end"><SwagIcon icon="figma" type="solid"/>Preview in Figma</SwagBtn>
-<SwagBtn href="https://github.com/shopware/meteor" class="--contrast" icon="long-arrow-right" icon-at="end"><SwagIcon icon="github" type="solid"/>Preview on GitHub</SwagBtn>
+## Feedback indicator
+
+These indicators components will help the user understand what's going on in the administration. Elements like banners that will show valuable info or loading indicators that show a process is loading.
+
+<div class="thumb-list">
+    <ComponentThumbnail name="banner" section="feedback-indicator">
+        <template v-slot:header>Banner</template>
+        <template v-slot:text>Banners provide contextual feedback messages.</template>
+    </ComponentThumbnail>
+    <ComponentThumbnail name="loader" section="feedback-indicator">
+        <template v-slot:header>Loader</template>
+        <template v-slot:text>Loaders indicate ongoing processes.</template>
+    </ComponentThumbnail>
+    <ComponentThumbnail name="progress-bar" section="feedback-indicator">
+        <template v-slot:header>Progress Bar</template>
+        <template v-slot:text>Progress bars show task completion progress.</template>
+    </ComponentThumbnail>
 </div>
 
-<section class="tokens--container md:max-w-12/12 mb-[72px]">
-    <div class="design-tokens--container md:max-w-6/12">
-        <div class="tokens-content">
-        <Label><template #label>Soon</template></Label />
-            <h2>Component Documentation</h2>
-            <div class="tokens-copy">
-                <p>Dive into comprehensive documentation for each of our ready-to-use UI components. Get ready to boost your projects with our straightforward UI guides covering everything from accessibility to dos and don'ts, and property definitions. <span>Available soon.</span></p>
-            </div>
-        </div>
-    </div>
-    <div class="tokens-pipeline--container md:max-w-6/12">
-        <div class="tokens-content">
-        <Label><template #label>Soon</template></Label />
-            <h2>Copy. Paste. Commit.</h2>
-            <div class="tokens-copy">
-                <p>Meteor offers ready-to-use code snippets for <strong>60+</strong> UI components, designed for easy integration into your projects. From buttons to switches, get everything you need to enhance your extension's interface with a simple copy and paste. <span>Available soon.</span></p>
-            </div>
-            </div>
-    </div>
-</section>
+## Form
 
+Form elements are components within our admin to show and edit data. These elements include text fields, checkboxes, radio buttons, dropdowns, and more.
 
+<div class="thumb-list">
+    <ComponentThumbnail name="button" section="form">
+        <template v-slot:header>Button</template>
+        <template v-slot:text>Buttons trigger actions.</template>
+    </ComponentThumbnail>
+    <ComponentThumbnail name="checkbox" section="form">
+        <template v-slot:header>Checkbox</template>
+        <template v-slot:text>Checkboxes allow multiple selections.</template>
+    </ComponentThumbnail>
+    <ComponentThumbnail name="colorpicker" section="form">
+        <template v-slot:header>Color Picker</template>
+        <template v-slot:text>Select colors easily.</template>
+    </ComponentThumbnail>
+    <ComponentThumbnail name="datepicker" section="form">
+        <template v-slot:header>Date Picker</template>
+        <template v-slot:text>Select dates efficiently.</template>
+    </ComponentThumbnail>
+    <ComponentThumbnail name="text-field" section="form">
+        <template v-slot:header>Text Field</template>
+        <template v-slot:text>Enter text inputs.</template>
+    </ComponentThumbnail>
+</div>
 
+## Layout
 
-<style lang="scss">
-    span.soon-a {
-        color: #808392;
+The layout components are the main elements of the page that provide structure and organization to the content. They are responsible for holding and displaying the different parts of the page in a logical and consistent manner.
 
-        /* Inter/Desktop/Text/l/Medium */
-        font-family: Inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%;
+<div class="thumb-list">
+    <ComponentThumbnail name="card" section="layout">
+        <template v-slot:header>Card</template>
+        <template v-slot:text>Encapsulates content in a structured way.</template>
+    </ComponentThumbnail>
+</div>
+
+## Navigation
+
+Navigation components such as search and tabs can help users easily locate desired content.
+
+<div class="thumb-list">
+    <ComponentThumbnail name="search" section="navigation">
+        <template v-slot:header>Search</template>
+        <template v-slot:text>Allows users to find information quickly.</template>
+    </ComponentThumbnail>
+    <ComponentThumbnail name="tabs" section="navigation">
+        <template v-slot:header>Tabs</template>
+        <template v-slot:text>Organize content into sections.</template>
+    </ComponentThumbnail>
+</div>
+
+## Overlay
+
+Overlay items are temporary components placed on top of main layout components with a shadow to enhance visual elevation.
+
+<div class="thumb-list">
+    <ComponentThumbnail name="popover" section="overlay">
+        <template v-slot:header>Popover</template>
+        <template v-slot:text>Popovers allow users to access a list of temporary choices or actions.</template>
+    </ComponentThumbnail>
+</div>
+
+## Table and list
+
+Table and list components are used to present interactive data that can be ordered, searched, and edited if the UI allows it.
+
+<div class="thumb-list">
+    <ComponentThumbnail name="pagination" section="table-list">
+        <template v-slot:header>Pagination</template>
+        <template v-slot:text>Paginations are used to split the listed data into sections for better performance.</template>
+    </ComponentThumbnail>
+</div>
+
+<style lang="css">
+.thumb-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+    padding-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 900px) {
+    .thumb-list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
     }
-    .tokens--container {
-        display: flex;
-        align-items: flex-start;
-        gap: 24px;
-        align-self: stretch;
-
-        .design-tokens--container {
-            display: flex;
-            padding: 90px 0px 42px 0px;
-            flex-direction: column;
-            align-items: center;
-            gap: 32px;
-            flex: 1 0 0;
-            align-self: stretch;
-            border-radius: 32px;
-            border: 1px solid #E4E1FF;
-            background: linear-gradient(155deg, #FFF 15.93%, rgba(250, 252, 250, 0.00) 84.78%);
-            .dark & {
-            background: linear-gradient(155deg, #1A1F26 15.93%, #1A1F26 84.78%);
-            border: 1px solid #12141E;
-         }
-
-            .tokens-content {
-                padding-bottom: 55px;
-            }
-        }
-        .tokens-pipeline--container {
-            display: flex;
-            padding: 90px 0px 24px 0px;
-            flex-direction: column;
-            align-items: center;
-            gap: 32px;
-            flex: 1 0 0;
-            align-self: stretch;
-            border-radius: 32px;
-            border: 1px solid #E4E1FF;
-            background: linear-gradient(155deg, #FFF 15.93%, rgba(250, 252, 250, 0.00) 84.78%);
-            .dark & {
-            background: linear-gradient(155deg, #1A1F26 15.93%, #1A1F26 84.78%);
-            border: 1px solid #12141E;
-         }
-        }
-
-        .tokens-content {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 4px;
-                align-self: stretch;
-                padding: 0px 32px 8px;
-                .dark & {
-                    filter: invert(1) hue-rotate(-180deg);
-                }
-
-                h2 {
-                color: #1E293B;
-                text-align: center;
-                font-family: Poppins;
-                font-size: 28px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
-                letter-spacing: -0.8px;
-                }
-                .tokens-copy {
-                    display: flex;
-                    padding-top: 32px;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 10px;
-
-
-                    p {
-                    color: #2D2E32;
-                    /* Inter/Desktop/Text/l/Medium */
-                    font-family: Inter;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 140%; /* 28px */
-
-
-                        span {
-                            color: #808392;
-
-                            /* Inter/Desktop/Text/l/Medium */
-                            font-family: Inter;
-                            font-size: 20px;
-                            font-style: normal;
-                            font-weight: 500;
-                            line-height: 140%;
-                        }
-                    }
-                }
-            }
-    }
+}
 </style>
