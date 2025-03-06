@@ -25,7 +25,7 @@ const navigation = buildSidebarNav(
       text: "Icons",
     },
     {
-      link: "/meteor-components/form/mt-field-label.md",
+      link: "/meteor-components/",
       text: "Components",
     },
     {

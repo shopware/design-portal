@@ -180,6 +180,10 @@ export default defineConfigWithTheme<ThemeConfig>({
           text: "Components",
           items: [
             {
+              text: "Overview",
+              link: "/meteor-components/",
+            },
+            {
               text: "Form",
               collapsed: true,
               items: [
@@ -247,19 +251,19 @@ export default defineConfigWithTheme<ThemeConfig>({
               items: [
                 {
                   text: "Banner",
-                  link: "/meteor-components/feedbackindicator/mt-banner",
+                  link: "/meteor-components/feedback-indicator/mt-banner",
                 },
                 {
                   text: "Loader",
-                  link: "/meteor-components/feedbackindicator/mt-loader",
+                  link: "/meteor-components/feedback-indicator/mt-loader",
                 },
                 {
                   text: "Progress bar",
-                  link: "/meteor-components/feedbackindicator/mt-progress-bar",
+                  link: "/meteor-components/feedback-indicator/mt-progress-bar",
                 },
                 {
                   text: "Skeleton bar",
-                  link: "/meteor-components/feedbackindicator/mt-skeleton-bar",
+                  link: "/meteor-components/feedback-indicator/mt-skeleton-bar",
                 },
               ],
             },
@@ -333,7 +337,7 @@ export default defineConfigWithTheme<ThemeConfig>({
               items: [
                 {
                   text: "Pagination",
-                  link: "/meteor-components/tablelist/mt-pagination",
+                  link: "/meteor-components/table-list/mt-pagination",
                 },
               ],
             },
