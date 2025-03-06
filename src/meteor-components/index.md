@@ -62,17 +62,6 @@ Form elements are components within our admin to show and edit data. These eleme
     </ComponentThumbnail>
 </div>
 
-## Icons & Media
-
-Icons and multimedia elements are graphical elements used to visually enhance or support actions and features.
-
-<div class="thumb-list">
-    <ComponentThumbnail name="icon" section="icons">
-        <template v-slot:header>Icon</template>
-        <template v-slot:text>Graphical representations of actions.</template>
-    </ComponentThumbnail>
-</div>
-
 ## Layout
 
 The layout components are the main elements of the page that provide structure and organization to the content. They are responsible for holding and displaying the different parts of the page in a logical and consistent manner.
