@@ -11,7 +11,7 @@ next: false
 ---
 
 <script setup>
-import Search from "../components/icons/Search.vue";
+import IconSearch from "../components/icons/IconSearch.vue";
 </script>
 
 # Icons
@@ -25,7 +25,7 @@ An icon library and toolkit that follows a minimal, yet highly expressive style 
     <span>Available on the Figma Community</span>
 </a>
 
-<Search/>
+<IconSearch/>
 
 <style lang="css">
 .fig-link {
