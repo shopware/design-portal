@@ -36,6 +36,7 @@ const props = defineProps({
   mode: "solid" | "regular",
 });
 
+// Sort items based on search
 const resultIcons = computed(() => {
   const filteredIcons = icons.value.filter((i) => i.mode === props.mode);
   if (props.phrase.length <= 0) {
@@ -51,6 +52,7 @@ const resultIcons = computed(() => {
   return searchResult.map((r) => r.item);
 });
 
+// Switch selected icon
 const switchSelectedIcon = (data) => {
   if (!data) {
     selectedIcon.value = null;
