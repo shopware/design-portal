@@ -1,7 +1,7 @@
 ---
 pageClass: p-icons
 sidebar: true
-aside: true
+aside: false
 page: true
 #footer: false
 editLink: false

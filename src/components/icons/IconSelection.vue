@@ -1,39 +1,40 @@
 <template>
   <div class="IconSelection_wrapper">
-    <div class="IconSelection_headers">
-      <h1 @click.prevent="copyIconName">{{ icon.name }}</h1>
-      <span class="title">5.2.5</span>
-    </div>
     <div class="IconSelection" v-bind="$attrs">
       <div class="IconSelection_preview-wrapper">
         <div class="IconPreview">
           <SwagIcon
-            :style="{ '--icon-size': `${backgroundSize * 3}rem` }"
-            :icon="icon.name"
-            :type="icon.mode"
+          :style="{ '--icon-size': `${backgroundSize * 3}rem` }"
+          :icon="icon.name"
+          :type="icon.mode"
           />
         </div>
 
         <div class="IconPreview-controls">
           <input
-            type="range"
-            id="grid-size"
-            min="2"
-            max="12"
-            step="0.5"
-            v-model.number="backgroundSize"
-            class="IconPreview_slider"
+          type="range"
+          id="grid-size"
+          min="2"
+          max="12"
+          step="0.5"
+          v-model.number="backgroundSize"
+          class="IconPreview_slider"
           />
           <ActionButton
-            :visible="true"
-            :actionCompleted="downloaded"
-            icon="download"
-            @action-click="downloadSvg"
-            @reset="downloaded = false"
+          :visible="true"
+          :actionCompleted="downloaded"
+          icon="download"
+          @action-click="downloadSvg"
+          @reset="downloaded = false"
           />
         </div>
 
-        <IconBackground :value="backgroundSize" />
+        <IconBackground :value="backgroundSize*2" />
+      </div>
+
+      <div class="IconSelection_headers">
+        <h1 @click.prevent="copyIconName">{{ icon.name }}</h1>
+        <span class="title">5.2.5</span>
       </div>
 
       <h2>Usage</h2>
@@ -88,8 +89,9 @@ const downloadSvg = () => {
 
 <style lang="css" scoped>
 .IconSelection_wrapper {
-  /* border: 1px solid orange; */
+  border: 1px solid orange;
   margin-bottom: 3rem;
+  width: 300px;
 }
 
 .IconSelection {

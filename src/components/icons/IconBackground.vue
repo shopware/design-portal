@@ -81,7 +81,7 @@ onUnmounted(() => {
 <style lang="css" scoped>
 .transparency-container {
   width: 100%;
-  height: 25rem;
+  height: 100%;
   position: absolute;
   overflow: hidden;
   border-radius: 10px;
