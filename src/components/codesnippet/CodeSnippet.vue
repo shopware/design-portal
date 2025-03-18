@@ -1,90 +1,111 @@
 <template>
-  <div class="codeBlock">
-    <div class="code" v-html="highlightedCode"></div>
+  <div
+    class="code-snippet-wrapper"
+    @mouseenter="setIsHovered"
+    @mouseleave="setIsHovered"
+  >
+    <button @click="copyToClipboard" class="code-snippet" :class="{ 'wrap-content': props.wrapContent }">
+      {{ buttonText }}
+    </button>
 
-    <ActionButton
-      :actionCompleted="copied"
-      @action-click="copyCode"
-      @reset="copied = false"
-    />
+    <transition
+      name="tooltip-fade"
+    >
+      <span v-if="isHovered" class="code-snippet-tooltip">{{
+        tooltipText
+      }}</span>
+    </transition>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from "vue";
-import ActionButton from "./ActionButton.vue";
-import { codeToHtml } from "shiki";
+import { ref } from "vue";
 
 const props = defineProps({
-  code: {
+  buttonText: {
     type: String,
-    required: false,
+    default: "Copy",
   },
-  language: {
-    type: String,
-    default: "javascript",
+  wrapContent: {
+    type: Boolean,
+    default: true,
   },
 });
 
+const isHovered = ref(false);
 const copied = ref(false);
-const highlightedCode = ref("");
+const tooltipText = ref("Copy to clipboard");
 
-const updateHighlight = async () => {
-  if (props.code && props.language) {
-    try {
-      highlightedCode.value = await codeToHtml(props.code, {
-        lang: props.language,
-        theme: "github-light",
-      });
-    } catch (error) {
-      console.error("Shiki highlighting failed:", error);
-      highlightedCode.value = props.code;
-    }
-  }
+const setIsHovered = () => {
+  isHovered.value = !isHovered.value;
 };
 
-watch([() => props.language, () => props.code], updateHighlight, {
-  immediate: true,
-});
-
-onMounted(() => {
-  updateHighlight();
-
-  const style = document.createElement("style");
-  style.innerHTML = `
-    .code pre {
-      background: #f0f2f5 !important;
-    }
-  `;
-  document.head.appendChild(style);
-});
-
-const copyCode = async () => {
+const copyToClipboard = async () => {
   try {
-    await navigator.clipboard.writeText(props.code);
+    await navigator.clipboard.writeText(props.buttonText);
+    tooltipText.value = "Copied!";
     copied.value = true;
-  } catch (error) {
-    console.error("Failed to copy code:", error);
+    setTimeout(() => {
+      tooltipText.value = "Copy to clipboard";
+      copied.value = false;
+    }, 2000);
+  } catch (err) {
+    console.error("Failed to copy: ", err);
   }
 };
 </script>
 
-<style lang="css" scoped>
-.codeBlock {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--sw-c-gray-100) !important;
-  border-radius: 8px;
-  overflow: auto;
-  padding: 1px 9px;
-  font-family: var(--vp-font-family-mono) !important;
-  font-size: 14px;
+<style scoped lang="css">
+.code-snippet-wrapper {
+  position: relative;
 }
 
-.code {
-  margin-left: 10px;
+.code-snippet {
+  padding: 9px 10px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-family: var(--vp-font-family-mono);
+  line-height: 1.2rem;
+  text-align: left;
+  background-color: var(--vp-code-bg);
+  color: var(--c-heading-sub);
+  cursor: pointer;
+  border: none;
+  transition: color 0.25s;
+}
+
+.code-snippet_content {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.code-snippet-tooltip {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--sw-nav-bg);
+  color: var(--vp-c-bg);
+  font-size: 0.75rem;
+  padding: 0px 6px;
+  border-radius: 5px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.wrap-content {
+  white-space: nowrap;
+}
+
+.tooltip-fade-enter-active,
+.tooltip-fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.tooltip-fade-enter,
+.tooltip-fade-leave-to {
+  opacity: 0;
 }
 </style>

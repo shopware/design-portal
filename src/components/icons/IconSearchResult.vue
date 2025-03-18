@@ -1,7 +1,6 @@
 <template>
   <div class="SearchResult">
 
-    <!-- <h2>Icons list</h2> -->
     <div class="SearchResult_list">
       <IconDisplay
       v-for="icon in resultIcons"
@@ -21,11 +20,11 @@
   </div>
 </template>
 
-<script setup>
-import IconDisplay from "./IconDisplay.vue";
+<script setup lang="ts">
 import { ref, computed } from "vue";
-import Fuse from "fuse.js";
+import IconDisplay from "./IconDisplay.vue";
 import IconSelection from "./IconSelection.vue";
+import Fuse from "fuse.js";
 import meta from "@shopware-ag/meteor-icon-kit/icons/meta.json";
 
 const icons = ref(meta);

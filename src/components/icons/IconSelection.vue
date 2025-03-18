@@ -51,7 +51,7 @@
 
     <div class="IconSelection_code">
       <h4>Usage</h4>
-      <SwagCopyButton :buttonText="selectedIcon" :wrapContent="false" />
+      <CodeSnippet :buttonText="selectedIcon" :wrapContent="false" />
     </div>
 
     <div class="IconSelection_figma">
@@ -66,15 +66,11 @@
   </div>
 </template>
 
-<script setup>
-import { computed } from "vue";
-import { onMounted } from "vue";
-import { ref, watch } from "vue";
-import IconDisplay from "./IconDisplay.vue";
-import CodeSnippet from "../codesnippet/CodeSnippet.vue";
+<script setup lang="ts">
+import { computed, ref } from "vue";
 import IconBackground from "./IconBackground.vue";
 import ActionButton from "../codesnippet/ActionButton.vue";
-import SwagCopyButton from "../tokens/SwagCopyButton.vue";
+import CodeSnippet from "../codesnippet/CodeSnippet.vue";
 
 const props = defineProps({
   icon: {

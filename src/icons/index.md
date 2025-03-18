@@ -11,7 +11,7 @@ next: false
 ---
 
 <script setup>
-import IconSearch from "../components/icons/IconSearch.vue";
+import IconSearchOverview from "../components/icons/IconSearchOverview.vue";
 </script>
 
 # Icons
@@ -20,4 +20,4 @@ import IconSearch from "../components/icons/IconSearch.vue";
 
 An icon library and toolkit that follows a minimal, yet highly expressive style perfectly aligned with Shopware's product language.
 
-<IconSearch/>
+<IconSearchOverview/>
