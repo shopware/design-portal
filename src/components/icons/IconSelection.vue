@@ -232,6 +232,7 @@ const downloadSvg = () => {
 .IconSelection_figma a {
   margin: 0 !important;
   display: flex;
+  flex-direction: row;
   align-items: center;
   color: var(--vp-c-brand);
   gap: 0.2rem;
