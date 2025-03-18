@@ -2,6 +2,9 @@
   <button
     class="actionButton"
     @click="$emit('action-click')"
+    :class="{
+      notVisible: !visible
+     }"
   >
     <span v-if="actionCompleted"
       ><SwagIcon icon="checkmark" type="regular"
@@ -25,6 +28,10 @@ const props = defineProps({
   resetTimeout: {
     type: Number,
     default: 1000,
+  },
+  visible: {
+    type: Boolean,
+    default: true,
   },
 });
 
@@ -51,29 +58,22 @@ onUnmounted(() => {
 
 <style lang="css" scoped>
 .actionButton {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--sw-c-gray-100);
-  border: 1px solid var(--sw-c-gray-400);
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s ease;
+  flex-shrink: 0;
 }
 
 .actionButton span {
   width: 18px;
   height: 18px;
-  opacity: 0.9;
 }
 
-.actionButton:hover {
-  background-color: #ffffff;
+.notVisible {
+  opacity: 0;
 }
 
 :root[class~="dark"] .actionButton span {
-  color: var(--sw-c-gray-dark-500);
+  color: var(--sw-c-gray-dark-500) !important;
 }
 </style>

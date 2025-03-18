@@ -1,17 +1,16 @@
 <template>
-  <div class="IconSelection_wrapper">
-    <div class="IconSelection" v-bind="$attrs">
-      <div class="IconSelection_preview-wrapper">
-        <div class="IconPreview">
-          <SwagIcon
-          :style="{ '--icon-size': `${backgroundSize * 3}rem` }"
+  <div class="IconSelection" v-bind="$attrs">
+    <div class="IconSelection_preview-wrapper">
+      <div class="IconPreview">
+        <SwagIcon
+          :style="{ '--icon-size': `${backgroundSize * 1}rem` }"
           :icon="icon.name"
           :type="icon.mode"
-          />
-        </div>
+        />
+      </div>
 
-        <div class="IconPreview-controls">
-          <input
+      <div class="IconPreview_controls">
+        <input
           type="range"
           id="grid-size"
           min="2"
@@ -19,26 +18,50 @@
           step="0.5"
           v-model.number="backgroundSize"
           class="IconPreview_slider"
-          />
+        />
+        <div class="IconPreview_controls--button">
           <ActionButton
-          :visible="true"
-          :actionCompleted="downloaded"
-          icon="download"
-          @action-click="downloadSvg"
-          @reset="downloaded = false"
+            :visible="true"
+            :actionCompleted="downloaded"
+            icon="download"
+            @action-click="downloadSvg"
+            @reset="downloaded = false"
           />
         </div>
-
-        <IconBackground :value="backgroundSize*2" />
       </div>
 
-      <div class="IconSelection_headers">
-        <h1 @click.prevent="copyIconName">{{ icon.name }}</h1>
+      <IconBackground :value="backgroundSize * 2" />
+    </div>
+
+    <div class="IconSelection_title">
+      <div class="IconSelection_title--title">
+        <h2 @click.prevent="copyIconName">{{ icon.name }}</h2>
         <span class="title">5.2.5</span>
       </div>
+      <p>Part of meteor design system</p>
+      <div class="IconSelection_title--tags" v-if="icon.tags.length">
+        <span
+          v-for="tag in icon.tags"
+          :key="tag"
+          class="tag"
+          >{{ tag }}</span
+        >
+      </div>
+    </div>
 
-      <h2>Usage</h2>
-      <CodeSnippet :code="selectedIcon" language="js" />
+    <div class="IconSelection_code">
+      <h4>Usage</h4>
+      <SwagCopyButton :buttonText="selectedIcon" :wrapContent="false" />
+    </div>
+
+    <div class="IconSelection_figma">
+      <h4>Figma</h4>
+      <a
+        class="IconSelection_figma--link"
+        :href="`https://www.figma.com/community/file/1032564947404478461/meteor-icon-kit-5-2-1-shopware`"
+      >
+        <span>Available on the Figma Community</span>
+      </a>
     </div>
   </div>
 </template>
@@ -51,6 +74,7 @@ import IconDisplay from "./IconDisplay.vue";
 import CodeSnippet from "../codesnippet/CodeSnippet.vue";
 import IconBackground from "./IconBackground.vue";
 import ActionButton from "../codesnippet/ActionButton.vue";
+import SwagCopyButton from "../tokens/SwagCopyButton.vue";
 
 const props = defineProps({
   icon: {
@@ -74,7 +98,7 @@ const downloadSvg = () => {
   const embedPoint = "/resources/meteor-icon-kit/public/icons/";
   try {
     const svgUrl = `${embedPoint}${props.icon.mode}/${props.icon.name}.svg`;
-    const link = document.createElement('a');
+    const link = document.createElement("a");
     link.href = svgUrl;
     link.download = `${props.icon.name}.svg`;
     document.body.appendChild(link);
@@ -88,46 +112,26 @@ const downloadSvg = () => {
 </script>
 
 <style lang="css" scoped>
-.IconSelection_wrapper {
-  border: 1px solid orange;
-  margin-bottom: 3rem;
-  width: 300px;
-}
-
 .IconSelection {
-  display: grid;
-  gap: 1.5rem;
+  width: 320px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid var(--sw-c-gray-300);
 }
 
-.IconSelection_headers {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 0.8rem;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.IconSelection_headers span {
-  font-size: 0.8rem;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-radius: 5px;
-  background-color: var(--sw-c-blue-vivacious-50);
-  color: var(--sw-c-blue-brand);
-}
-
+/* Preview */
 .IconSelection_preview-wrapper {
   width: 100%;
-  height: 25rem;
+  height: 12rem;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  border-bottom: 1px solid var(--sw-c-gray-300);
 }
 
-.IconPreview-controls {
+.IconPreview_controls {
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -137,7 +141,22 @@ const downloadSvg = () => {
   align-items: end;
   left: 0;
   bottom: 0;
-  padding: 1rem;
+  padding: 1.2rem;
+}
+
+.IconPreview_controls--button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: var(--sw-c-gray-100);
+  border: 1px solid var(--sw-c-gray-300);
+  border-radius: 3px;
+}
+
+.IconPreview_controls--button:hover {
+  background: rgb(255, 255, 255);
 }
 
 .IconPreview {
@@ -145,32 +164,78 @@ const downloadSvg = () => {
   z-index: 2;
 }
 
-.IconSelection h2 {
-  font-size: 1.5rem;
+/* Title */
+.IconSelection_title {
+  width: 100%;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--sw-c-gray-300);
 }
 
-.IconSelection_tags {
+.IconSelection_title--title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.IconSelection_title--title h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.IconSelection_title span {
+  padding: 0px 5px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  background-color: var(--sw-c-blue-vivacious-50);
+  color: var(--sw-c-blue-brand);
+}
+
+.IconSelection_title p {
+  margin: 0 !important;
+}
+
+.IconSelection_title--tags {
+  margin-top: 0.6rem;
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
 }
 
-.IconSelection_tag {
-  background-color: var(--sw-c-blue-vivacious-50);
-  color: var(--sw-c-blue-brand);
-  font-size: 0.875rem;
-  padding: 0.25rem 0.5rem;
-  border: none !important;
+.tag {
+ color: var(--c-heading-sub) !important;
+ background-color: var(--sw-c-gray-100) !important;
 }
 
-.IconSelection_list {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
+/* Code */
+.IconSelection_code {
+  padding: 1.2rem;
+  border-bottom: 1px solid var(--sw-c-gray-300);
 }
 
-.form-control {
-  margin-bottom: 1rem;
+.IconSelection_code h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* Figma */
+.IconSelection_figma {
+  padding: 1.2rem;
+}
+
+.IconSelection_figma h4 {
+  margin-bottom: 0.5rem;
+}
+
+.IconSelection_figma a {
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+  color: var(--vp-c-brand);
+  gap: 0.2rem;
+  text-decoration: underline;
 }
 
 .dark .IconSelection_preview-wrapper {

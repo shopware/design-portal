@@ -4,14 +4,12 @@
     @mouseenter="setIsHovered"
     @mouseleave="setIsHovered"
   >
-    <button @click="copyToClipboard" class="swag-button">
+    <button @click="copyToClipboard" class="swag-button" :class="{ 'wrap-content': props.wrapContent }">
       {{ buttonText }}
     </button>
+
     <transition
       name="tooltip-fade"
-      @before-enter="beforeEnter"
-      @enter="enter"
-      @leave="leave"
     >
       <span v-if="isHovered" class="swag-button-tooltip">{{
         tooltipText
@@ -28,9 +26,14 @@ const props = defineProps({
     type: String,
     default: "Copy",
   },
+  wrapContent: {
+    type: Boolean,
+    default: true,
+  },
 });
 
 const isHovered = ref(false);
+const copied = ref(false);
 const tooltipText = ref("Copy to clipboard");
 
 const setIsHovered = () => {
@@ -41,8 +44,10 @@ const copyToClipboard = async () => {
   try {
     await navigator.clipboard.writeText(props.buttonText);
     tooltipText.value = "Copied!";
+    copied.value = true;
     setTimeout(() => {
       tooltipText.value = "Copy to clipboard";
+      copied.value = false;
     }, 2000);
   } catch (err) {
     console.error("Failed to copy: ", err);
@@ -53,25 +58,32 @@ const copyToClipboard = async () => {
 <style scoped>
 .swag-button-wrapper {
   position: relative;
-  display: inline-block;
 }
 
 .swag-button {
-  border-radius: 5px;
-  padding: 0px 8px;
-  background-color: var(--vp-code-bg);
-  transition: color 0.25s;
-  color: var(--vp-code-color);
-  font-size: 0.75rem;
+  padding: 9px 10px;
+  border-radius: 3px;
+  font-size: 0.8rem;
   font-family: var(--vp-font-family-mono);
+  line-height: 1.2rem;
+  text-align: left;
+  background-color: var(--vp-code-bg);
+  color: var(--c-heading-sub);
   cursor: pointer;
   border: none;
-  white-space: nowrap;
+  transition: color 0.25s;
+}
+
+.swag-button_content {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 0.5rem;
 }
 
 .swag-button-tooltip {
   position: absolute;
-  bottom: 120%;
+  bottom: 110%;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--sw-nav-bg);
@@ -81,6 +93,10 @@ const copyToClipboard = async () => {
   border-radius: 5px;
   white-space: nowrap;
   pointer-events: none;
+}
+
+.wrap-content {
+  white-space: nowrap;
 }
 
 .tooltip-fade-enter-active,

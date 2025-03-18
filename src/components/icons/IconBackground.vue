@@ -84,8 +84,8 @@ onUnmounted(() => {
   height: 100%;
   position: absolute;
   overflow: hidden;
-  border-radius: 10px;
-  border: 1px solid #d3dce4;
+  /* border-radius: 10px; */
+  /* border: 1px solid #d3dce4; */
 }
 
 .transparency-grid {
