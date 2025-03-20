@@ -6,6 +6,7 @@
       v-for="icon in resultIcons"
       :icon="icon"
       :key="icon"
+      :active="selectedIcon === icon"
       @select="selectedIcon = icon"
       />
     </div>
@@ -62,6 +63,7 @@ const switchSelectedIcon = (data) => {
     (icon) =>
       icon.basename === basename && icon.size === size && icon.mode === mode
   );
+  console.log(selectedIcon.value);
 };
 </script>
 

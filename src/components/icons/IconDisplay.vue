@@ -2,7 +2,10 @@
   <a
     href="#"
     class="IconDisplay"
-    :class="mode ? `--mode-${mode}` : null"
+    :class="[
+      mode ? `--mode-${mode}` : null,
+      active ? 'IconDisplay--active' : ''
+    ]"
     @click.prevent.stop="$emit('select')"
   >
     <div class="IconDisplay_wrap">
@@ -23,6 +26,7 @@ import { computed } from "vue";
 const props = defineProps({
   icon: Object,
   mode: Object,
+  active: Boolean,
 });
 
 const id = computed(() => {
@@ -32,13 +36,16 @@ const id = computed(() => {
 
 <style lang="css" scoped>
 .IconDisplay {
-  height: 70px;
+  height: 5rem;
+  padding: 0.2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 0.5rem;
   text-align: center;
   color: var(--vp-c-text);
+  border-radius: 4px;
 }
 
 .IconDisplay_name,
@@ -49,6 +56,7 @@ const id = computed(() => {
 .IconDisplay_name {
   font-size: 0.75rem;
   font-weight: 500;
+  line-height: 1rem;
 }
 
 .IconDisplay_wrap {
@@ -74,5 +82,11 @@ const id = computed(() => {
 .IconDisplay:not(.--mode-inline) .IconDisplay_wrap {
   aspect-ratio: 1;
   --icon-size: 1.5rem;
+}
+
+.IconDisplay--active {
+  color: var(--sw-c-blue-brand);
+  background-color: var(--sw-c-blue-vivacious-50);
+  border: 1px solid var(--sw-c-blue-brand);
 }
 </style>
