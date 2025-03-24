@@ -108,6 +108,10 @@ export default defineConfigWithTheme<ThemeConfig>({
           text: "Tokens",
           items: [
             {
+              text: "Overview",
+              link: "/tokens/",
+            },
+            {
               text: "Color",
               link: "/tokens/color",
             },
