@@ -17,7 +17,7 @@ const navigation = buildSidebarNav(
       text: "Product Experience",
     },
     {
-      link: "/tokens/",
+      link: "/tokens/color",
       text: "Tokens",
     },
     {

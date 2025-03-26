@@ -1,7 +1,7 @@
 ---
 pageClass: p-tokens
 sidebar: true
-aside: true
+aside: false
 page: true
 #footer: false
 editLink: false
@@ -10,69 +10,150 @@ prev: false
 next: false
 ---
 
-# Token overview
+<script setup>
+import SwagTokensHero from "../components/tokens/SwagTokensHero.vue";
+import Label from "../components/interaction/Label.vue";
+</script>
 
-<picture>
-  <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/tokens/tokens-overview-intro.png 4x" src="/tokens/tokens-overview-intro.png" width="735px" height="auto">
-</picture>
+<SwagTokensHero class="mb-[40px] mt-[40px]">
+    <template #label>Design Tokens</template>
+    <template #title>Refining our design language.</template>
+    <template #content><p>Design Tokens are the heartbeat of our design system. They encapsulate the essential elements of our design language – colors, typography, spacing, and beyond – into a unified, flexible format that speaks directly to both designers and developers. Stay tuned for the unveiling of Design Tokens in Meteor.</p></template>
 
-## What are tokens
+</SwagTokensHero>
 
-Design tokens are standardized name-value pairs that encapsulate design decisions such as colors, typography, spacing, and motion. They act as a bridge between design and development, ensuring consistency across different platforms and tools. By abstracting raw values into meaningful names, design tokens enable scalable and maintainable UI systems.
+<section class="tokens--container md:max-w-12/12 mb-[72px]">
+    <div class="design-tokens--container md:max-w-6/12">
+        <div class="tokens-content">
+        <Label />
+            <h2>Design Tokens</h2>
+            <div class="tokens-copy">
+                <p>Design Tokens are landing in Meteor soon! These tiny pieces of design DNA encode design decisions like colors, typography, spacing, and more, making them reusable and scalable. <span>Available soon.</span></p>
+            </div>
+        </div>
+        <div class="tokens-image">
+        <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="/tokens/design-tokens-pills@dark.png 2x">
+    <img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/tokens/design-tokens-pills.png 2x" src="/tokens/design-tokens-pills.png" width="100%" height="auto">
+    </picture>
+        </div>
+    </div>
+    <div class="tokens-pipeline--container md:max-w-6/12">
+        <div class="tokens-content">
+        <Label />
+            <h2>Token Pipeline</h2>
+            <div class="tokens-copy">
+                <p>We're going to open-source our token pipeline! Soon, sync Design Tokens from Figma to GitHub effortlessly, making your design decisions available across your Shopware projects. <span>Available soon.</span></p>
+            </div>
+            </div>
+            <div class="tokens-image">
+        <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="/tokens/design-sync-tools@dark.png 2x">
+    <img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/tokens/design-sync-tools.png 2x" src="/tokens/design-sync-tools.png" width="100%" height="auto">
+    </picture>
+        </div>
+    </div>
+</section>
 
-## Token names explained
 
-A design token's name conveys its intended use, with each part specifying a distinct aspect of its function
 
-<div class="image-wrapper">
-<picture>
-  <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green."srcset="/tokens/tokens-overview-names.png 4x" src="/tokens/tokens-overview-names.png" width="280px" height="auto">
-</picture>
-</div>
 
-**1. Type**
+<style scoped lang="scss">
+    .tokens--container {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
 
-This represents the broadest classification of a design token, defining its general purpose, such as color or typography.
+        .design-tokens--container {
+            display: flex;
+            padding: 90px 0px 42px 0px;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            flex: 1 0 0;
+            align-self: stretch;
+            border-radius: 32px;
+            border: 1px solid #E4E1FF;
+            background: linear-gradient(155deg, #FFF 15.93%, rgba(250, 252, 250, 0.00) 84.78%);
+            .dark & {
+            background: linear-gradient(155deg, #1A1F26 15.93%, #1A1F26 84.78%);
+            border: 1px solid #12141E;
+         }
 
-**2. Category**
+            .tokens-content {
+                padding-bottom: 55px;
+            }
+        }
+        .tokens-pipeline--container {
+            display: flex;
+            padding: 90px 0px 24px 0px;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            flex: 1 0 0;
+            align-self: stretch;
+            border-radius: 32px;
+            border: 1px solid #E4E1FF;
+            background: linear-gradient(155deg, #FFF 15.93%, rgba(250, 252, 250, 0.00) 84.78%);
+            .dark & {
+            background: linear-gradient(155deg, #1A1F26 15.93%, #1A1F26 84.78%);
+            border: 1px solid #12141E;
+         }
+        }
 
-A more specific grouping within a type that organizes tokens based on their functional role, such as icon, text, or elevation within a visual design system.
+        .tokens-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 4px;
+                align-self: stretch;
+                padding: 0px 32px 8px;
+                .dark & {
+                    filter: invert(1) hue-rotate(-180deg);
+                }
 
-**3. Instance**
+                h2 {
+                color: #1E293B;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.8px;
+                }
+                .tokens-copy {
+                    display: flex;
+                    padding-top: 32px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
 
-A category that represents distinct usages like primary buttons, background surfaces, or success indicators.
 
-**4. Variant**
+                    p {
+                    color: #2D2E32;
+                    /* Inter/Desktop/Text/l/Medium */
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 140%; /* 28px */
 
-A modification of an instance that adapts it for different contexts, such as hover for an interactive state or bold for an emphasis variation.
 
-## Primitive
+                        span {
+                            color: #808392;
 
-These are foundational design tokens that define raw values, such as colors, spacing, or typography, without being tied to a specific use case. For example, color.green.500 represents a specific shade of green that can be applied across different components and contexts.
-
-<div class="image-wrapper">
-<picture>
-  <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green."srcset="/tokens/tokens-overview-primitive.png 4x" src="/tokens/tokens-overview-primitive.png" width="280px" height="auto">
-</picture>
-</div>
-
-## Semantic
-
-These tokens are context-driven and map to primitive values, providing meaningful names based on their intended usage in the design system. For instance, color.icon.positive.default applies a predefined color to icons that indicate positive actions or statuses, ensuring consistency across the interface.
-
-<div class="image-wrapper">
-<picture>
-  <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green."srcset="/tokens/tokens-overview-semantic.png 4x" src="/tokens/tokens-overview-semantic.png" width="450px" height="auto">
-</picture>
-</div>
-
-<style scoped>
-.image-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
+                            /* Inter/Desktop/Text/l/Medium */
+                            font-family: Inter;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 140%;
+                        }
+                    }
+                }
+            }
+    }
 </style>
-
