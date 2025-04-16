@@ -27,7 +27,7 @@ importers:
         specifier: ^1.3.5
         version: 1.3.5(@babel/core@7.26.0)(@babel/template@7.25.9)(@docsearch/css@3.8.0)(@docsearch/js@3.8.0(@algolia/client-search@5.14.2)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.3))(@stoplight/mosaic-code-viewer@1.53.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(algoliasearch@4.24.0)(instantsearch.css@8.5.1)(instantsearch.js@4.75.5(algoliasearch@4.24.0))(postcss@8.4.49)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.4.18(@types/node@20.17.6)(less@4.2.0)(sass@1.81.0)(terser@5.36.0))(vue-instantsearch@4.19.11(@vue/server-renderer@3.5.13(vue@3.5.13(typescript@5.6.3)))(algoliasearch@4.24.0)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
       vue:
-        specifier: ^3.4.19
+        specifier: ^3.4.27
         version: 3.5.13(typescript@5.6.3)
     devDependencies:
       '@docsearch/css':
@@ -40,14 +40,14 @@ importers:
         specifier: ^1.0.9
         version: 1.0.9
       '@playwright/test':
-        specifier: ^1.41.2
+        specifier: ^1.46.1
         version: 1.49.0
       '@shopware-docs/cli':
         specifier: ^1.3.5
         version: 1.3.5
       '@shopware-docs/storybook':
         specifier: ^1.3.5
-        version: 1.3.5(vurkt6oy3rutmjzuu2ylljnhlq)
+        version: 1.3.5(bq3rs7regmwegjwjmtbo7k7vhm)
       '@shopware-docs/vitepress':
         specifier: ^1.3.5
         version: 1.3.5(postcss@8.4.49)(vite@5.4.18(@types/node@20.17.6)(less@4.2.0)(sass@1.81.0)(terser@5.36.0))(vitepress@1.6.3(@algolia/client-search@5.14.2)(@types/node@20.17.6)(@types/react@18.3.12)(axios@1.7.7)(fuse.js@7.0.0)(less@4.2.0)(postcss@8.4.49)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)(search-insights@2.17.3)(terser@5.36.0)(typescript@5.6.3))(vue@3.5.13(typescript@5.6.3))
@@ -109,8 +109,8 @@ importers:
         specifier: ^2.4.4
         version: 2.4.6
       '@vueuse/shared':
-        specifier: ^10.7.2
-        version: 10.11.1(vue@3.5.13(typescript@5.6.3))
+        specifier: ^12.5.0
+        version: 12.8.2(typescript@5.6.3)
       algoliasearch:
         specifier: ^4.22.1
         version: 4.24.0
@@ -148,7 +148,7 @@ importers:
         specifier: 10.9.3
         version: 10.9.3
       playwright-chromium:
-        specifier: ^1.41.2
+        specifier: ^1.46.1
         version: 1.49.0
       react:
         specifier: ^18.2.0
@@ -187,8 +187,8 @@ importers:
         specifier: ^1.0.1
         version: 1.0.1(node-fetch@2.7.0)
       storybook-addon-pseudo-states:
-        specifier: ^2.1.2
-        version: 2.2.1(@storybook/components@7.6.20(@types/react-dom@17.0.25)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@storybook/core-events@7.6.20)(@storybook/manager-api@7.6.20(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@storybook/preview-api@7.6.20)(@storybook/theming@7.6.20(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^3.1.1
+        version: 3.1.1
       typedoc:
         specifier: ^0.25.8
         version: 0.25.13(typescript@5.6.3)
@@ -3122,9 +3122,6 @@ packages:
 
   '@vueuse/metadata@13.1.0':
     resolution: {integrity: sha512-+TDd7/a78jale5YbHX9KHW3cEDav1lz1JptwDvep2zSG8XjCsVE+9mHIzjTOaPbHUAk5XiE4jXLz51/tS+aKQw==}
-
-  '@vueuse/shared@10.11.1':
-    resolution: {integrity: sha512-LHpC8711VFZlDaYUXEBbFBCQ7GS3dVU9mjOhhMhXP6txTV4EhYQg/KGnQuvt/sPAtoUKq7VVUnL6mVtFoL42sA==}
 
   '@vueuse/shared@12.8.2':
     resolution: {integrity: sha512-dznP38YzxZoNloI0qpEfpkms8knDtaoQ6Y/sfS0L7Yki4zh40LFHEhur0odJC6xTHG5dxWVPiUWBXn+wCG2s5w==}
@@ -6969,21 +6966,8 @@ packages:
       '@storybook/addons':
         optional: true
 
-  storybook-addon-pseudo-states@2.2.1:
-    resolution: {integrity: sha512-4LoaiML0BM9sZcQbXjDhRh9jUUKIRTWEQMl91ihP2wIE10n+rL/5c8IBpNiMZLV1rnm24degEncSMY9ck+bpgg==}
-    peerDependencies:
-      '@storybook/components': ^7.4.6
-      '@storybook/core-events': ^7.4.6
-      '@storybook/manager-api': ^7.4.6
-      '@storybook/preview-api': ^7.4.6
-      '@storybook/theming': ^7.4.6
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-    peerDependenciesMeta:
-      react:
-        optional: true
-      react-dom:
-        optional: true
+  storybook-addon-pseudo-states@3.1.1:
+    resolution: {integrity: sha512-08JNTfsiSfj0GgNV4q6+v6iU+Acp7ib/MdySPDb8p+C8N/e+kf6lnM7kIiE/GnTPXlg3dfV6FMaWgGYVfdTcLw==}
 
   storybook@7.6.20:
     resolution: {integrity: sha512-Wt04pPTO71pwmRmsgkyZhNo4Bvdb/1pBAMsIFb9nQLykEdzzpXjvingxFFvdOG4nIowzwgxD+CLlyRqVJqnATw==}
@@ -7667,17 +7651,6 @@ packages:
 
   vue-component-type-helpers@2.2.8:
     resolution: {integrity: sha512-4bjIsC284coDO9om4HPA62M7wfsTvcmZyzdfR0aUlFXqq4tXxM1APyXpNVxPC8QazKw9OhmZNHBVDA6ODaZsrA==}
-
-  vue-demi@0.14.10:
-    resolution: {integrity: sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==}
-    engines: {node: '>=12'}
-    hasBin: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^3.0.0-0 || ^2.6.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
 
   vue-docgen-api@4.79.2:
     resolution: {integrity: sha512-n9ENAcs+40awPZMsas7STqjkZiVlIjxIKgiJr5rSohDP0/JCrD9VtlzNojafsA1MChm/hz2h3PDtUedx3lbgfA==}
@@ -9993,7 +9966,7 @@ snapshots:
 
   '@shopware-docs/cli@1.3.5': {}
 
-  '@shopware-docs/storybook@1.3.5(vurkt6oy3rutmjzuu2ylljnhlq)':
+  '@shopware-docs/storybook@1.3.5(bq3rs7regmwegjwjmtbo7k7vhm)':
     dependencies:
       '@storybook/addon-essentials': 7.6.20(@types/react-dom@17.0.25)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/addon-interactions': 7.6.20
@@ -10011,7 +9984,7 @@ snapshots:
       seedrandom: 3.0.5
       storybook: 7.6.20
       storybook-addon-fetch-mock: 1.0.1(node-fetch@2.7.0)
-      storybook-addon-pseudo-states: 2.2.1(@storybook/components@7.6.20(@types/react-dom@17.0.25)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@storybook/core-events@7.6.20)(@storybook/manager-api@7.6.20(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@storybook/preview-api@7.6.20)(@storybook/theming@7.6.20(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      storybook-addon-pseudo-states: 3.1.1
       unocss: 66.0.0(postcss@8.4.49)(vite@5.4.18(@types/node@20.17.6)(less@4.2.0)(sass@1.81.0)(terser@5.36.0))(vue@3.5.13(typescript@5.6.3))
       vitepress: 1.6.3(@algolia/client-search@5.14.2)(@types/node@20.17.6)(@types/react@18.3.12)(axios@1.7.7)(fuse.js@7.0.0)(less@4.2.0)(postcss@8.4.49)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)(search-insights@2.17.3)(terser@5.36.0)(typescript@5.6.3)
       vitepress-shopware-docs: link:../..
@@ -11745,7 +11718,7 @@ snapshots:
       '@vue/compiler-ssr': 3.5.13
       '@vue/shared': 3.5.13
       estree-walker: 2.0.2
-      magic-string: 0.30.13
+      magic-string: 0.30.17
       postcss: 8.4.49
       source-map-js: 1.2.1
 
@@ -11832,13 +11805,6 @@ snapshots:
   '@vueuse/metadata@12.8.2': {}
 
   '@vueuse/metadata@13.1.0': {}
-
-  '@vueuse/shared@10.11.1(vue@3.5.13(typescript@5.6.3))':
-    dependencies:
-      vue-demi: 0.14.10(vue@3.5.13(typescript@5.6.3))
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
 
   '@vueuse/shared@12.8.2(typescript@5.6.3)':
     dependencies:
@@ -16078,16 +16044,7 @@ snapshots:
       - node-fetch
       - supports-color
 
-  storybook-addon-pseudo-states@2.2.1(@storybook/components@7.6.20(@types/react-dom@17.0.25)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@storybook/core-events@7.6.20)(@storybook/manager-api@7.6.20(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@storybook/preview-api@7.6.20)(@storybook/theming@7.6.20(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
-    dependencies:
-      '@storybook/components': 7.6.20(@types/react-dom@17.0.25)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@storybook/core-events': 7.6.20
-      '@storybook/manager-api': 7.6.20(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@storybook/preview-api': 7.6.20
-      '@storybook/theming': 7.6.20(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-    optionalDependencies:
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+  storybook-addon-pseudo-states@3.1.1: {}
 
   storybook@7.6.20:
     dependencies:
@@ -16890,10 +16847,6 @@ snapshots:
   vue-component-type-helpers@2.1.10: {}
 
   vue-component-type-helpers@2.2.8: {}
-
-  vue-demi@0.14.10(vue@3.5.13(typescript@5.6.3)):
-    dependencies:
-      vue: 3.5.13(typescript@5.6.3)
 
   vue-docgen-api@4.79.2(vue@3.5.13(typescript@5.6.3)):
     dependencies:
