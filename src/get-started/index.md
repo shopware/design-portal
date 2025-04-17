@@ -70,10 +70,13 @@ We're excited to announce that we have streamlined Meteor Design System's develo
 npm i @shopware-ag/meteor-component-library
 ```
 
-  <p>Import the <code>style.css</code> for general styling like fonts, etc. in the root file of your application or in your root styling file.</p>
+  <p>
+    Import the <code>style.css</code> for general styling and <code>font.css</code> for the Inter font in the root file of your application or in you root styling file.
+  </p>
 
-```sh
-import '@shopware-ag/meteor-component-library/dist/style.css';
+```js
+import "@shopware-ag/meteor-component-library/styles.css";
+import "@shopware-ag/meteor-component-library/font.css";
 ```
 
 <div class="mt-[24px]">
