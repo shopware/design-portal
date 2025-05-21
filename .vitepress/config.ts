@@ -163,6 +163,10 @@ export default defineConfigWithTheme<ThemeConfig>({
               link: "/get-started/",
             },
             {
+              text: "Resources",
+              link: "/get-started/resources",
+            },
+            {
               text: "Meteor 101",
               link: "/get-started/meteor-101",
             },
