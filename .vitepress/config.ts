@@ -197,7 +197,7 @@ export default defineConfigWithTheme<ThemeConfig>({
             {
               text: "License",
               link: "/get-started/license",
-            },
+            }
           ],
         },
       ],
@@ -447,10 +447,10 @@ export default defineConfigWithTheme<ThemeConfig>({
     },
   },
 
-  vue: {
-    // https://github.com/vitejs/vite/issues/7854
-    reactivityTransform: resolve(__dirname, "src"), // true
-  },
+  // vue: {
+  //   // https://github.com/vitejs/vite/issues/7854
+  //   reactivityTransform: resolve(__dirname, "src"), // true
+  // },
 
   async transformHead(context: TransformContext): Promise<HeadConfig[]> {
     return addOGImage([], context);

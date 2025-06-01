@@ -1,6 +1,5 @@
 <template>
   <div class="QuickLinks">
-    <h2 class="h-homepage">Quick Links</h2>
     <p>Get started quickly with these essential resources and guides to help you make the most of Meteor Design System.</p>
     <div class="QuickLinks_grid">
 
@@ -17,7 +16,7 @@
 
       <a href="/get-started/migration" class="HomepageCard_item">
         <span class="HomepageCard_icon --is-purple">
-          <SwagIcon icon="refresh" type="solid" />
+          <SwagIcon icon="box" type="solid" />
         </span>
         <span class="HomepageCard_heading">
           Migration Guide
@@ -28,7 +27,7 @@
 
       <a href="/get-started/faq" class="HomepageCard_item">
         <span class="HomepageCard_icon --is-blue">
-          <SwagIcon icon="help-circle" type="solid" />
+          <SwagIcon icon="question-circle" type="solid" />
         </span>
         <span class="HomepageCard_heading">
           FAQ
