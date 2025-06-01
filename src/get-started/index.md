@@ -16,6 +16,7 @@ swag:
 import SwagResourcesGetStarted from "../components/home/SwagResourcesGetStarted.vue";
 import HowToIntegrateResources from "../components/getstarted/HowToIntegrateResources.vue";
 import HowToIntegrateInter from "../components/getstarted/HowToIntegrateInter.vue";
+import QuickLinks from "../components/getstarted/QuickLinks.vue";
 import Contribute from "../components/banner/Contribute.vue";
 import Cutdown from "../components/banner/Cutdown.vue";
 import NPM from "../components/interaction/NPM.vue";
@@ -96,6 +97,11 @@ npm i @shopware-ag/meteor-icon-kit
 
 </Tabs>
 </div>
+
+## Quick Links
+
+<QuickLinks class="mt-[40px] mb-[40px]" />
+
 <div class="mt-[20px]">
   <h2 class="h-homepage md:max-w-7/12">Meteor’s mission</h2>
   <p>

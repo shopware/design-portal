@@ -163,12 +163,32 @@ export default defineConfigWithTheme<ThemeConfig>({
               link: "/get-started/",
             },
             {
+              text: "Meteor 101",
+              link: "/get-started/meteor-101",
+            },
+            {
+              text: "Installation",
+              link: "/get-started/installation",
+            },
+            {
+              text: "Packages",
+              link: "/get-started/packages",
+            },
+            {
+              text: "Admin SDK",
+              link: "/get-started/admin-sdk",
+            },
+            {
+              text: "Migration Guide",
+              link: "/get-started/migration",
+            },
+            {
               text: "Resources",
               link: "/get-started/resources",
             },
             {
-              text: "Meteor 101",
-              link: "/get-started/meteor-101",
+              text: "FAQ",
+              link: "/get-started/faq",
             },
             {
               text: "Contact us",
