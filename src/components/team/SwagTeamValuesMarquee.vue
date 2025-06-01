@@ -1,178 +1,174 @@
 <template>
-    <div class="values--container">
-        <div class="values--row">
-            <div class="values--pill">
-                <p>Research</p>      
-            </div>
-            <div class="values--pill">
-                <p>Accessibility</p>      
-            </div>
-            <div class="values--pill">
-                <p>Mostly Slaying</p>      
-            </div>
-            <div class="values--pill">
-                <p>Design System</p>      
-            </div>
-            <div class="values--pill">
-                <p>Visual Design</p>      
-            </div>
-        </div>
-        <div class="values--row">
-            <div class="values--pill">
-                <p>UX Writing</p>      
-            </div>
-            <div class="values--pill">
-                <p>Information Architecture (IA)</p>      
-            </div>
-            <div class="values--pill">
-                <p>Prototyping</p>      
-            </div>
-            <div class="values--pill">
-                <p>Motion Design</p>      
-            </div>
-        </div>
-        <div class="values--row">
-            <div class="values--pill">
-                <p>Interaction Design (IxD)</p>      
-            </div>
-            <div class="values--pill">
-                <p>UI Design</p>      
-            </div>
-            <div class="values--pill">
-                <p>Daydreaming</p>      
-            </div>
-            <div class="values--pill">
-                <p>Concepts</p>      
-            </div>
-            <div class="values--pill">
-                <p>Videography</p>      
-            </div>
-        </div>
-        <div class="values--row">
-            <div class="values--pill">
-                <p>Test</p>      
-            </div>
-            <div class="values--pill">
-                <p>Test</p>      
-            </div>
-            <div class="values--pill">
-                <p>Wireframing</p>      
-            </div>
-            <div class="values--pill">
-                <p>Photography</p>      
-            </div>
-            <div class="values--pill">
-                <p>Test</p>      
-            </div>
-        </div>
+  <div class="values-marquee-outer">
+    <div class="values-marquee-track" :style="{ animationDuration: duration + 's' }" @mouseenter="pause" @mouseleave="play" :class="{ paused }">
+      <div v-for="(pill, i) in pills1Doubled" :key="'pill1-' + i" class="values-pill">
+        <span>{{ pill }}</span>
+      </div>
     </div>
-  </template>
+    <div class="values-marquee-track reverse" :style="{ animationDuration: duration + 's' }" @mouseenter="pause" @mouseleave="play" :class="{ paused }">
+      <div v-for="(pill, i) in pills2Doubled" :key="'pill2-' + i" class="values-pill">
+        <span>{{ pill }}</span>
+      </div>
+    </div>
+    <div class="values-marquee-fade left"></div>
+    <div class="values-marquee-fade right"></div>
+  </div>
+</template>
 
-  
+<script setup>
+import { ref, computed } from 'vue'
+const pills1 = [
+  'Research',
+  'Accessibility',
+  'User Flows',
+  'Personas',
+  'Design System',
+  'Visual Design',
+  'UX Writing',
+  'Information Architecture',
+  'Prototyping',
+  'Motion Design',
+  'Usability Testing',
+  'Wireframing',
+  'Journey Mapping',
+  'Interaction Design',
+  'UI Design',
+  'Microcopy',
+  'Content Strategy',
+]
+const pills2 = [
+  'Brand Strategy',
+  'Storytelling',
+  'Logo Design',
+  'Brand Guidelines',
+  'Typography',
+  'Color Systems',
+  'Photography',
+  'Videography',
+  'Illustration',
+  'Iconography',
+  'Design Ops',
+  'Workshop Facilitation',
+  'Concepts',
+  'Daydreaming',
+  'Empathy',
+  'User Research',
+  'Creative Direction',
+]
+const pills1Doubled = computed(() => [...pills1, ...pills1, ...pills1])
+const pills2Doubled = computed(() => [...pills2, ...pills2, ...pills2])
+const duration = 90
+const paused = ref(false)
+function pause() { paused.value = true }
+function play() { paused.value = false }
+</script>
+
 <style lang="scss">
-.values--container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    overflow-x: hidden;
-    position: relative;
+.values-marquee-outer {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
-.values--container:before {
-        background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
-        width: 100px;
-        height: 208px;
-        position: absolute;
-        content: "";
-        left: 0;
-        top: 0;
-        z-index: 10;
+.values-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: max-content;
+  animation: values-marquee 90s linear infinite;
+  will-change: transform;
 }
-.values--container:after {
-        background: linear-gradient(-90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
-        width: 100px;
-        height: 208px;
-        position: absolute;
-        content: "";
-        right: 0;
-        z-index: 10;
+.values-marquee-track.reverse {
+  animation-direction: reverse;
 }
-.values--row {
-    display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 32px;
-    flex-wrap: wrap;
-    animation: marquee 32s linear infinite running;
-    white-space: nowrap;
-    will-change: transform;
-    transform-style: preserve-3d;
+.values-marquee-track.paused {
+  animation-play-state: paused;
 }
-.values--row:hover {
-    animation-play-state: paused;
+.values-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  height: 48px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #f0f4ff 0%, #e0e7ff 100%);
+  border: 2.5px solid #2563eb;
+  box-shadow: 0 2px 12px 0 rgba(37,99,235,0.08);
+  font-family: Inter, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  letter-spacing: 0.02em;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
 }
-.values--pill {
-    display: inline-flex;
-    padding: 0px 32px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 158px;
-    border: 4px solid #094785;
-    background: #FFF;
-    height: 36px;
-    transition: all .2s ease;
-
-    &:hover {
-        border: 4px solid #0080ff;
-        cursor: pointer;
-    }
-
-    p {
-        color: #1E293B;
-        font-family: Inter;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        letter-spacing: 0.08px;
-    }
+.values-pill:hover {
+  border-color: #0ea5e9;
+  background: linear-gradient(90deg, #e0e7ff 0%, #f0f4ff 100%);
+  box-shadow: 0 4px 24px 0 rgba(14,165,233,0.12);
 }
-
-.values__fade--left {
-  width: 100px;
-  height: 208px;
+.values-marquee-fade {
   position: absolute;
-  background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
-  z-index: 10;
-  margin-top: 0px;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
 }
-@media (prefers-color-scheme: dark) { 
-    .values__fade--left {
-    background: linear-gradient(90deg, #1a1f26 0%, rgba(26, 31, 38, 0) 100%);
-    }
-  }
-.values__fade--right {
-  width: 180px;
-  height: 208px;
-  position: absolute;
-  background: linear-gradient(-90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
-  z-index: 10;
+.values-marquee-fade.left {
+  left: 0;
+  background: linear-gradient(90deg, var(--vp-c-bg, #fff) 0%, rgba(255,255,255,0) 100%);
+}
+.values-marquee-fade.right {
   right: 0;
-  margin-top: 0px;
+  background: linear-gradient(-90deg, var(--vp-c-bg, #fff) 0%, rgba(255,255,255,0) 100%);
 }
-  @media (prefers-color-scheme: dark) { 
-    .values__fade--right {
-    background: linear-gradient(-90deg, #1a1f26 0%, rgba(26, 31, 38, 0) 100%);
-    }
+@media (prefers-color-scheme: dark) {
+  .values-marquee-fade.left {
+    background: linear-gradient(90deg, var(--vp-c-bg) 0%, rgba(0,0,0,0) 100%);
+  }
+  .values-marquee-fade.right {
+    background: linear-gradient(-90deg, var(--vp-c-bg) 0%, rgba(0,0,0,0) 100%);
+  }
+  .values-pill {
+    background: linear-gradient(90deg, #232a36 0%, #1a1f26 100%);
+    color: #e0e7ff;
+    border-color: #60a5fa;
+  }
+  .values-pill:hover {
+    border-color: #38bdf8;
+    background: linear-gradient(90deg, #1a1f26 0%, #232a36 100%);
+  }
 }
-
-@keyframes marquee {
-    0% {
+@keyframes values-marquee {
+  0% {
     transform: translateX(0);
-    }
-    100% {
-    transform: translate(-50%);
-    }
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+@media (max-width: 640px) {
+  .values-marquee-outer {
+    height: 80px;
+    gap: 8px;
+  }
+  .values-pill {
+    font-size: 1rem;
+    height: 36px;
+    padding: 0 1.25rem;
+  }
+  .values-marquee-fade {
+    width: 40px;
+  }
 }
 </style>

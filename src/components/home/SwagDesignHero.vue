@@ -67,6 +67,7 @@
     &_label {
     }
     &_title {
+        color: var(--vp-c-text-1);
         font-family: Poppins;
         font-size: 48px;
         font-style: normal;
@@ -84,7 +85,7 @@
         letter-spacing: -0.336px;
     }
     &_content {
-        color: #696A6E;
+        color: var(--vp-c-text-2);
         font-family: Inter;
         font-size: 20px;
         font-style: normal;

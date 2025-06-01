@@ -73,6 +73,11 @@ span.font-setting-ss02 {
         font-style: normal;
         font-weight: 500;
         line-height: 140%; /* 16.8px */
+
+        .dark & {
+            background: var(--vp-c-bg-soft);
+            color: var(--vp-c-text-1);
+        }
     }
 
     .Tabs_button.--active {
@@ -81,6 +86,11 @@ span.font-setting-ss02 {
         border-color: rgb(209 213 219 / var(--un-border-opacity));
         --un-text-opacity: 1;
         color: #474A57;
+
+        .dark & {
+            background-color: var(--vp-c-bg-alt);
+            color: var(--vp-c-text-1);
+        }
     }
 
     .Tabs_buttons {
@@ -90,6 +100,10 @@ span.font-setting-ss02 {
         width: fit-content;
         padding: 4px;
         border-radius: 12px;
+
+        .dark & {
+            border: 1px solid var(--vp-c-border);
+        }
     }
 
     .Tab_slot, .Tabs_slot {
@@ -166,6 +180,12 @@ span.font-setting-ss02 {
     text-align: center;
     font-size: 14px;
     line-height: 1.2;
+
+    .dark & {
+        background-color: var(--vp-c-bg-alt);
+        color: var(--vp-c-text-1);
+        border: 1px solid var(--vp-c-border);
+    }
 }
 
 [data-tooltip]:after {
@@ -180,6 +200,10 @@ span.font-setting-ss02 {
     content: " ";
     font-size: 0;
     line-height: 0;
+
+    .dark & {
+        border-top-color: var(--vp-c-border);
+    }
 }
 
 [data-tooltip]:hover:before,
@@ -199,12 +223,21 @@ span.font-setting-ss02 {
         border-radius: 12px 12px 0px 0px;
         border: 1px solid #F0F3FF;
         border-bottom: 0px;
+
+        .dark & {
+            border: 1px solid var(--vp-c-border);
+            border-bottom: 0px;
+        }
     }
 
     .component-preview_edit {
         background-color: #FAFBFE;
         border-radius: 0px 0px 12px 12px;
         padding: 6px 16px;
+
+        .dark & {
+            background-color: var(--vp-c-bg-soft);
+        }
         align-content: end;
         @apply flex;
         justify-content: flex-end;
@@ -226,6 +259,36 @@ span.font-setting-ss02 {
 
 .VPNavBarImage {
     cursor: pointer;
+}
+
+/* Global table styles for tokens and documentation */
+.vp-doc table {
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--vp-c-border) !important;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.vp-doc th {
+    border: none !important;
+    background-color: var(--vp-c-bg-soft) !important;
+    border-bottom: 1px solid var(--vp-c-border) !important;
+}
+
+.vp-doc td {
+    width: 25% !important;
+}
+
+.vp-doc tr {
+    background: var(--vp-c-bg) !important;
+    border: none !important;
+    border-bottom: 1px solid var(--vp-c-border) !important;
+}
+
+.vp-doc tr:last-child {
+    border-bottom: none !important;
 }
 
 /* Card Thumbnail */
@@ -273,7 +336,7 @@ span.font-setting-ss02 {
         }
     }
 }
-  
+
 
 
 

@@ -15,7 +15,7 @@
 
 <style scoped lang="scss">
 .SwagLine {
-  border: 1px solid var(--sw-c-gray-200);
+  border: 1px solid var(--vp-c-border);
   border-image-slice: 1;
   border-width: 1px 0px;
   display: flex;
