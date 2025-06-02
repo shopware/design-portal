@@ -16,6 +16,8 @@ import Search from "../components/icons/Search.vue";
 
 # Icons
 
-An icon library and toolkit that follows a minimal, yet highly expressive style perfectly aligned with Shopware's product language.
+An icon library and toolkit that follows a minimal, yet highly expressive style perfectly aligned with Shopware's product language. The Meteor Icon Kit includes **850+ icons** designed for consistency, clarity, and accessibility.
+
+## Browse Icons
 
 <Search/>

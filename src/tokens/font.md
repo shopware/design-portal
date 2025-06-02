@@ -65,33 +65,4 @@ table, th, td {
   border-spacing: 0;
   border-collapse: collapse;
 }
-
-.vp-doc table {
-  table-layout: auto;
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid var(--c-white-200) !important;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-.vp-doc th {
-  border: none !important;
-  background-color: var(--c-white-100) !important;
-  border-bottom: 1px solid var(--c-white-200) !important;
-}
-
-.vp-doc td {
-  width: 25% !important;
-}
-
-.vp-doc tr {
-  background: white !important;
-  border: none !important;
-  border-bottom: 1px solid var(--c-white-200) !important;
-}
-
-.vp-doc tr:last-child {
-  border-bottom: none !important;
-}
 </style>

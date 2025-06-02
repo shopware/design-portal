@@ -80,9 +80,17 @@
 .HomepageCard_icon {
   &.--is-orange {
     background: #E89069;
+    
+    .dark & {
+      background: #F88138;
+    }
   }
   &.--is-blue {
     background: #189EFF;
+    
+    .dark & {
+      background: #539BF5;
+    }
   }
 }
 </style>

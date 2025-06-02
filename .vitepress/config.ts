@@ -163,12 +163,32 @@ export default defineConfigWithTheme<ThemeConfig>({
               link: "/get-started/",
             },
             {
+              text: "Meteor 101",
+              link: "/get-started/meteor-101",
+            },
+            {
+              text: "Installation",
+              link: "/get-started/installation",
+            },
+            {
+              text: "Packages",
+              link: "/get-started/packages",
+            },
+            {
+              text: "Admin SDK",
+              link: "/get-started/admin-sdk",
+            },
+            {
+              text: "Migration Guide",
+              link: "/get-started/migration",
+            },
+            {
               text: "Resources",
               link: "/get-started/resources",
             },
             {
-              text: "Meteor 101",
-              link: "/get-started/meteor-101",
+              text: "FAQ",
+              link: "/get-started/faq",
             },
             {
               text: "Contact us",
@@ -177,7 +197,7 @@ export default defineConfigWithTheme<ThemeConfig>({
             {
               text: "License",
               link: "/get-started/license",
-            },
+            }
           ],
         },
       ],
@@ -427,10 +447,10 @@ export default defineConfigWithTheme<ThemeConfig>({
     },
   },
 
-  vue: {
-    // https://github.com/vitejs/vite/issues/7854
-    reactivityTransform: resolve(__dirname, "src"), // true
-  },
+  // vue: {
+  //   // https://github.com/vitejs/vite/issues/7854
+  //   reactivityTransform: resolve(__dirname, "src"), // true
+  // },
 
   async transformHead(context: TransformContext): Promise<HeadConfig[]> {
     return addOGImage([], context);

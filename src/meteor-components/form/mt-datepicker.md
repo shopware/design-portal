@@ -18,7 +18,7 @@ next: false
 
 ## Usage
 
-A button indicates a distinct action and executes a function. Text, icon, or a combination of the two express the action and are supported by the variant and occasionally a tooltip.
+A datepicker allows users to select dates from a calendar interface. It provides an intuitive way to input dates and can include features like date validation, range selection, and localization support.
 
 ## Import
 
