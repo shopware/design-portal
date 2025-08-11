@@ -1,0 +1,30 @@
+<template>
+  <div class="w-176px h-90px flex flex-col items-center gap-2 p-16px" :class="{ 'bg-white': mode === 'light', 'bg-black': mode === 'dark' }">
+    <div class="w-72px h-32px rounded-1" :style="{ backgroundColor: colorValue }"></div>
+    <span class="text-sm" :class="{ 'text-black': mode === 'light', 'text-white': mode === 'dark' }">{{ token }}</span>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    colorValue: {
+      type: String,
+      required: true,
+    },
+    token: {
+      type: String,
+      required: true,
+    },
+    mode: {
+      type: String,
+      required: false,
+      default: 'light',
+      validator: (value) => {
+        return ['light', 'dark'].includes(value);
+      },
+    },
+  },
+};
+</script>
+

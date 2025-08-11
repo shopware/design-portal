@@ -1,10 +1,13 @@
 <template>
   <div
-    class="swag-button-wrapper"
+    class="relative inline-block"
     @mouseenter="setIsHovered"
     @mouseleave="setIsHovered"
   >
-    <button @click="copyToClipboard" class="swag-button">
+    <button
+      @click="copyToClipboard"
+      class="rounded px-10px py-2px bg-[var(--vp-code-bg)] transition-colors duration-250 text-[14px] cursor-pointer border-none whitespace-nowrap color-[#172B4D]"
+    >
       {{ buttonText }}
     </button>
     <transition
@@ -13,9 +16,11 @@
       @enter="enter"
       @leave="leave"
     >
-      <span v-if="isHovered" class="swag-button-tooltip">{{
-        tooltipText
-      }}</span>
+      <span
+        v-if="isHovered"
+        class="absolute bottom-[120%] left-1/2 transform -translate-x-1/2 bg-[var(--sw-nav-bg)] text-xs p-10px rounded whitespace-nowrap pointer-events-none color-white"
+        >{{ tooltipText }}</span
+      >
     </transition>
   </div>
 </template>
@@ -51,38 +56,6 @@ const copyToClipboard = async () => {
 </script>
 
 <style scoped>
-.swag-button-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.swag-button {
-  border-radius: 5px;
-  padding: 0px 8px;
-  background-color: var(--vp-code-bg);
-  transition: color 0.25s;
-  color: var(--vp-code-color);
-  font-size: 0.75rem;
-  font-family: var(--vp-font-family-mono);
-  cursor: pointer;
-  border: none;
-  white-space: nowrap;
-}
-
-.swag-button-tooltip {
-  position: absolute;
-  bottom: 120%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--sw-nav-bg);
-  color: var(--vp-c-bg);
-  font-size: 0.75rem;
-  padding: 0px 6px;
-  border-radius: 5px;
-  white-space: nowrap;
-  pointer-events: none;
-}
-
 .tooltip-fade-enter-active,
 .tooltip-fade-leave-active {
   transition: opacity 0.3s ease;
