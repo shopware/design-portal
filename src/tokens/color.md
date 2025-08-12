@@ -20,19 +20,20 @@ import TokenPreview from '../components/tokens/TokenPreview.vue'
 
 ## Interaction
 
-<ul>
-<TokenPreview>
-  <template #tokenName>
-    <TokenCopy buttonText="color.interaction.primary.default"/>
-  </template>
-  <template #lightToken>
-    <TokenSwatch colorValue="#0870ff" token="color/brand/500"></TokenSwatch>
-  </template>
-  <template #darkToken>
-    <TokenSwatch colorValue="#0870ff" token="color/brand/500" mode="dark"></TokenSwatch>
-  </template>
-</TokenPreview>
-</ul>
+  <TokenPreview>
+    <template #tokenName>
+      <TokenCopy buttonText="color.interaction.primary.default"/>
+    </template>
+    <template #tokenDescription>
+      <span class="text-[var(--color-text-primary-default)]">This is a token description</span>
+    </template>
+    <template #lightToken>
+      <TokenSwatch colorValue="var(--color-interaction-primary-default)" token="color/brand/500"></TokenSwatch>
+    </template>
+    <template #darkToken>
+      <TokenSwatch colorValue="var(--color-interaction-primary-default)" token="color/brand/500" mode="dark"></TokenSwatch>
+    </template>
+  </TokenPreview>
 
 <div class="test"></div>
 
@@ -40,6 +41,6 @@ import TokenPreview from '../components/tokens/TokenPreview.vue'
 .test {
   width: 200px;
   height: 100px;
-  background-color: var(--color-interaction-primary-default);
+  background-color: var(--color-elevation-surface-raised);
 }
 </style>
