@@ -50,12 +50,12 @@ next: false
           <span class="text-[12px] text-[var(--color-text-primary-default)]">{{ token.description }}</span>
         </div>
         <div class="flex flex-row gap-4">
-          <TokenSwatch :colorValue="token.tokenName">
+          <TokenSwatch :colorValue="token.tokenName" :category="category.category">
             <template #tokenValue>
               {{ token.value }}
             </template>
           </TokenSwatch>
-          <TokenSwatch :colorValue="token.tokenName" mode="dark">
+          <TokenSwatch :colorValue="token.tokenName" mode="dark" :category="category.category">
             <template #tokenValue>
               {{ token.value }}
             </template>

@@ -8,9 +8,16 @@
     :data-theme="mode"
   >
     <div
+      v-if="category === 'color'"
       class="w-72px h-32px rounded-1"
       :style="{ backgroundColor: `var(${props.colorValue})` }"
     ></div>
+    <div v-else-if="category === 'font'">
+      i'm a font
+    </div>
+    <div v-else-if="category === 'border-radius'">
+      i'm a border
+    </div>
     <span
       class="text-[12px] font-medium"
       :class="{
@@ -38,6 +45,10 @@ const props = defineProps({
     validator: (value) => {
       return ["light", "dark"].includes(value);
     },
+  },
+  category: {
+    type: String,
+    required: false,
   },
 });
 </script>
