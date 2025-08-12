@@ -1,7 +1,21 @@
 <template>
-  <div class="w-176px h-90px flex flex-col items-center gap-2 p-16px" :class="{ 'bg-white': mode === 'light', 'bg-black': mode === 'dark' }">
-    <div class="w-72px h-32px rounded-1" :style="{ backgroundColor: colorValue }"></div>
-    <span class="text-sm" :class="{ 'text-black': mode === 'light', 'text-white': mode === 'dark' }">{{ token }}</span>
+  <div
+    class="w-176px h-120px flex flex-col items-center justify-center gap-2 p-16px"
+    :class="{ 'bg-white': mode === 'light', 'bg-[var(--color-elevation-surface-raised)]': mode === 'dark' }"
+    :data-theme="mode"
+  >
+    <div
+      class="w-72px h-32px rounded-1"
+      :style="{ backgroundColor: colorValue }"
+    ></div>
+    <span
+      class="text-sm"
+      :class="{
+        'text-[var(--color-text-primary-default)]': mode === 'light',
+        'text-white': mode === 'dark',
+      }"
+      >{{ token }}</span
+    >
   </div>
 </template>
 
@@ -19,12 +33,11 @@ export default {
     mode: {
       type: String,
       required: false,
-      default: 'light',
+      default: "light",
       validator: (value) => {
-        return ['light', 'dark'].includes(value);
+        return ["light", "dark"].includes(value);
       },
     },
   },
 };
 </script>
-
