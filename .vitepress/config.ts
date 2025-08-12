@@ -197,7 +197,7 @@ export default defineConfigWithTheme<ThemeConfig>({
             {
               text: "License",
               link: "/get-started/license",
-            }
+            },
           ],
         },
       ],
@@ -483,6 +483,15 @@ export default defineConfigWithTheme<ThemeConfig>({
       {
         src: "../node_modules/@shopware-ag/meteor-icon-kit/icons/solid",
         dst: "icons/solid",
+      },
+      // meteor-tokens JSON files
+      {
+        src: "../node_modules/@shopware-ag/meteor-tokens/dictionaries/administration/light.tokens.json",
+        dst: "src/tokens/data/light.tokens.json",
+      },
+      {
+        src: "../node_modules/@shopware-ag/meteor-tokens/dictionaries/administration/dark.tokens.json",
+        dst: "src/tokens/data/dark.tokens.json",
       },
     ]);
 
