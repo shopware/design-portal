@@ -37,7 +37,7 @@ function flattenTokens(
   return tokens;
 }
 
-export function transform(data: Record<string, any>): CategoryOutput[] {
+export default function transform(data: Record<string, any>): CategoryOutput[] {
   return Object.keys(data).map((category) => ({
     category,
     tokens: flattenTokens(data[category], [category]),

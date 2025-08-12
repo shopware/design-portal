@@ -16,7 +16,9 @@ import TokenCopy from '../components/tokens/TokenCopy.vue'
 import TokenPreview from '../components/tokens/TokenPreview.vue'
 // import lightTokens from "@shopware-ag/meteor-tokens/dictionaries/administration/light.tokens.json";
 // import darkTokens from "@shopware-ag/meteor-tokens/dictionaries/administration/dark.tokens.json";
-
+import transform from '../utils/tokenUtil.ts'
+// todo: import token files correctly
+// const testTokens = transform(tokens);
 </script>
 
 # Color
@@ -43,13 +45,11 @@ import TokenPreview from '../components/tokens/TokenPreview.vue'
   </TokenPreview>
 
 <div class="test">
-<!-- {{lightTokens}} -->
+<p>{{testTokens ?? "heelo"}}</p>
 </div>
 
 <style scoped>
 .test {
-  width: 200px;
-  height: 100px;
-  background-color: var(--color-elevation-surface-raised);
+  width: 100%;
 }
 </style>
