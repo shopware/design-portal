@@ -5,8 +5,9 @@
     @mouseleave="setIsHovered"
   >
     <button
+      ref="buttonRef"
       @click="copyToClipboard"
-      class="rounded px-10px py-2px bg-[var(--vp-code-bg)] transition-colors duration-250 text-[14px] cursor-pointer border-none whitespace-nowrap color-[#172B4D]"
+      class="token-copy-button rounded px-10px py-2px bg-[var(--vp-code-bg)] transition-colors duration-250 text-[14px] cursor-pointer border-none whitespace-nowrap color-[#172B4D]"
     >
       <slot name="buttonText" />
     </button>
@@ -28,6 +29,7 @@
 <script setup>
 import { ref } from "vue";
 
+const buttonRef = ref(null);
 const isHovered = ref(false);
 const tooltipText = ref("Copy to clipboard");
 
@@ -35,9 +37,26 @@ const setIsHovered = () => {
   isHovered.value = !isHovered.value;
 };
 
+const beforeEnter = (el) => {
+  el.style.opacity = 0;
+};
+
+const enter = (el, done) => {
+  el.style.opacity = 1;
+  done();
+};
+
+const leave = (el, done) => {
+  el.style.opacity = 0;
+  done();
+};
+
 const copyToClipboard = async () => {
   try {
-    await navigator.clipboard.writeText(props.buttonText);
+    // Get the text content from the button slot using Vue ref
+    const textToCopy = buttonRef.value?.textContent?.trim() || "";
+
+    await navigator.clipboard.writeText(textToCopy);
     tooltipText.value = "Copied!";
     setTimeout(() => {
       tooltipText.value = "Copy to clipboard";

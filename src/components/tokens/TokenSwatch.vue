@@ -9,7 +9,7 @@
   >
     <div
       class="w-72px h-32px rounded-1"
-      :style="{ backgroundColor: colorValue }"
+      :style="{ backgroundColor: `var(${props.colorValue})` }"
     ></div>
     <span
       class="text-[12px] font-medium"
@@ -23,21 +23,21 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    colorValue: {
-      type: String,
-      required: true,
-    },
-    mode: {
-      type: String,
-      required: false,
-      default: "light",
-      validator: (value) => {
-        return ["light", "dark"].includes(value);
-      },
+<script setup>
+import { computed } from "vue";
+
+const props = defineProps({
+  colorValue: {
+    type: String,
+    required: true,
+  },
+  mode: {
+    type: String,
+    required: false,
+    default: "light",
+    validator: (value) => {
+      return ["light", "dark"].includes(value);
     },
   },
-};
+});
 </script>
