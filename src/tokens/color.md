@@ -20,16 +20,6 @@ next: false
 
   //TODO: remove when added to theme
   const tokensData = computed(() => transform(lightdata));
-
-  const fullTokens = computed(() => {
-    if (!tokensData.value) return [];
-
-    const colorData = tokensData.value.find(category => category.category === 'color')?.tokens || [];
-    const fontData = tokensData.value.find(category => category.category === 'font')?.tokens || [];
-    const borderData = tokensData.value.find(category => category.category === 'border')?.tokens || [];
-
-    return [...colorData, ...fontData, ...borderData];
-  });
 </script>
 
 # All tokens

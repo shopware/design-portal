@@ -112,16 +112,8 @@ export default defineConfigWithTheme<ThemeConfig>({
               link: "/tokens/",
             },
             {
-              text: "Color",
+              text: "Tokens",
               link: "/tokens/color",
-            },
-            {
-              text: "Font",
-              link: "/tokens/font",
-            },
-            {
-              text: "Border",
-              link: "/tokens/border",
             },
           ],
         },
