@@ -14,6 +14,9 @@ next: false
 import TokenSwatch from '../components/tokens/TokenSwatch.vue'
 import TokenCopy from '../components/tokens/TokenCopy.vue'
 import TokenPreview from '../components/tokens/TokenPreview.vue'
+// import lightTokens from "@shopware-ag/meteor-tokens/dictionaries/administration/light.tokens.json";
+// import darkTokens from "@shopware-ag/meteor-tokens/dictionaries/administration/dark.tokens.json";
+
 </script>
 
 # Color
@@ -39,7 +42,9 @@ import TokenPreview from '../components/tokens/TokenPreview.vue'
     </template>
   </TokenPreview>
 
-<div class="test"></div>
+<div class="test">
+<!-- {{lightTokens}} -->
+</div>
 
 <style scoped>
 .test {
