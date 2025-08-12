@@ -9,7 +9,7 @@
       :style="{ backgroundColor: colorValue }"
     ></div>
     <span
-      class="text-sm"
+      class="text-[12px] font-medium"
       :class="{
         'text-[var(--color-text-primary-default)]': mode === 'light',
         'text-white': mode === 'dark',
