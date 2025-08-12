@@ -8,7 +8,7 @@
       @click="copyToClipboard"
       class="rounded px-10px py-2px bg-[var(--vp-code-bg)] transition-colors duration-250 text-[14px] cursor-pointer border-none whitespace-nowrap color-[#172B4D]"
     >
-      {{ buttonText }}
+      <slot name="buttonText" />
     </button>
     <transition
       name="tooltip-fade"
@@ -27,13 +27,6 @@
 
 <script setup>
 import { ref } from "vue";
-
-const props = defineProps({
-  buttonText: {
-    type: String,
-    default: "Copy",
-  },
-});
 
 const isHovered = ref(false);
 const tooltipText = ref("Copy to clipboard");

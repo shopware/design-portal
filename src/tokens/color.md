@@ -22,7 +22,11 @@ import TokenPreview from '../components/tokens/TokenPreview.vue'
 
   <TokenPreview>
     <template #tokenName>
-      <TokenCopy buttonText="color.interaction.primary.default"/>
+      <TokenCopy>
+        <template #buttonText>
+          <span>color.interaction.primary.default</span>
+        </template>
+      </TokenCopy>
     </template>
     <template #tokenDescription>
       <span class="text-[var(--color-text-primary-default)]">This is a token description</span>
