@@ -20,6 +20,7 @@ import TokenPreview from '../components/tokens/TokenPreview.vue'
 
 ## Interaction
 
+<ul>
 <TokenPreview>
   <template #tokenName>
     <TokenCopy buttonText="color.interaction.primary.default"/>
@@ -31,3 +32,14 @@ import TokenPreview from '../components/tokens/TokenPreview.vue'
     <TokenSwatch colorValue="#0870ff" token="color/brand/500" mode="dark"></TokenSwatch>
   </template>
 </TokenPreview>
+</ul>
+
+<div class="test"></div>
+
+<style scoped>
+.test {
+  width: 200px;
+  height: 100px;
+  background-color: var(--color-interaction-primary-default);
+}
+</style>
