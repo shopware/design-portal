@@ -12,18 +12,14 @@
       class="w-72px h-32px rounded-1"
       :style="{ backgroundColor: `var(${props.colorValue})` }"
     ></div>
-    <div v-else-if="category === 'font'">
-      i'm a font
+    <div v-else-if="category === 'font'" class="flex flex-col items-center justify-center">
+      <p class="text-[var(--color-text-primary-default)]" :style="{ fontSize: `var(${props.colorValue})` }">Aa</p>
     </div>
-    <div v-else-if="category === 'border-radius'">
-      i'm a border
+    <div v-else-if="category === 'border-radius'" class="w-32px h-32px bg-[var(--color-text-primary-default)]" :style="{ borderRadius: `var(${props.colorValue})` }">
     </div>
     <span
       class="text-[12px] font-medium"
-      :class="{
-        'text-[var(--color-text-primary-default)]': mode === 'light',
-        'text-white': mode === 'dark',
-      }"
+      :class="`text-[var(--color-text-primary-default)]`"
     >
       <slot name="tokenValue"></slot>
     </span>
