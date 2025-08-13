@@ -478,12 +478,9 @@ export default defineConfigWithTheme<ThemeConfig>({
       },
       // meteor-tokens JSON files
       {
-        src: "../node_modules/@shopware-ag/meteor-tokens/dictionaries/administration/light.tokens.json",
-        dst: "src/tokens/data/light.tokens.json",
-      },
-      {
-        src: "../node_modules/@shopware-ag/meteor-tokens/dictionaries/administration/dark.tokens.json",
-        dst: "src/tokens/data/dark.tokens.json",
+        src: "../node_modules/@shopware-ag/meteor-tokens/dictionaries/administration",
+        dst: "src/tokens/data",
+        ext: [".json"],
       },
     ]);
 
