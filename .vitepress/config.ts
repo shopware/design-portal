@@ -112,16 +112,8 @@ export default defineConfigWithTheme<ThemeConfig>({
               link: "/tokens/",
             },
             {
-              text: "Color",
+              text: "Tokens",
               link: "/tokens/color",
-            },
-            {
-              text: "Font",
-              link: "/tokens/font",
-            },
-            {
-              text: "Border",
-              link: "/tokens/border",
             },
           ],
         },
@@ -197,7 +189,7 @@ export default defineConfigWithTheme<ThemeConfig>({
             {
               text: "License",
               link: "/get-started/license",
-            }
+            },
           ],
         },
       ],
@@ -483,6 +475,12 @@ export default defineConfigWithTheme<ThemeConfig>({
       {
         src: "../node_modules/@shopware-ag/meteor-icon-kit/icons/solid",
         dst: "icons/solid",
+      },
+      // meteor-tokens JSON files
+      {
+        src: "../node_modules/@shopware-ag/meteor-tokens/dictionaries/administration",
+        dst: "src/tokens/data",
+        ext: [".json"],
       },
     ]);
 
