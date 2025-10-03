@@ -258,6 +258,9 @@ importers:
       vue-instantsearch:
         specifier: ^4.17.0
         version: 4.19.12(@vue/server-renderer@3.5.13(vue@3.5.13(typescript@5.7.2)))(algoliasearch@4.24.0)(vue@3.5.13(typescript@5.7.2))
+      vue3-carousel:
+        specifier: ^0.3.1
+        version: 0.3.4(vue@3.5.13(typescript@5.7.2))
 
 packages:
 
@@ -8045,6 +8048,11 @@ packages:
         optional: true
       vue-server-renderer:
         optional: true
+
+  vue3-carousel@0.3.4:
+    resolution: {integrity: sha512-jImUDbQa/9pELxUQdkflUPXL94V+iQZaOPUxWDBKSffCuxhYcV3sDM40pxoiYxUxXoNCDLUF4u9Ug6Xjdt4nkA==}
+    peerDependencies:
+      vue: ^3.2.0
 
   vue@3.5.13:
     resolution: {integrity: sha512-wmeiSMxkZCSc+PM2w2VRsOYAZC8GdipNFRTsLSfodVqI9mbejKeXEGr8SckuLnrQPGe3oJN5c3K0vpoU9q/wCQ==}
@@ -17501,6 +17509,10 @@ snapshots:
     optionalDependencies:
       '@vue/server-renderer': 3.5.13(vue@3.5.13(typescript@5.7.2))
 
+  vue3-carousel@0.3.4(vue@3.5.13(typescript@5.7.2)):
+    dependencies:
+      vue: 3.5.13(typescript@5.7.2)
+
   vue@3.5.13(typescript@5.7.2):
     dependencies:
       '@vue/compiler-dom': 3.5.13
@@ -17555,7 +17567,7 @@ snapshots:
       browserslist: 4.24.2
       chrome-trace-event: 1.0.4
       enhanced-resolve: 5.17.1
-      es-module-lexer: 1.5.4
+      es-module-lexer: 1.7.0
       eslint-scope: 5.1.1
       events: 3.3.0
       glob-to-regexp: 0.4.1
