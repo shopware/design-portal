@@ -45,7 +45,7 @@ import NPM from "../components/interaction/NPM.vue";
   <p>
   Discover our comprehensive guidelines designed to foster user-centricity and innovation. Our guidelines encapsulate best practices, ensuring seamless collaboration and empowering our team to create inclusive, accessible, and impactful design solutions.
   </p>
-  <SwagBtn href="/foundations/" class="--primary --sm" icon="long-arrow-right" icon-at="end">Learn more</SwagBtn>
+  <SwagBtn href="/meteor/foundations/" class="--primary --sm" icon="long-arrow-right" icon-at="end">Learn more</SwagBtn>
   </div>
 
   <SwagResourcesGetStarted class="mt-[40px] mb-[40px]" />

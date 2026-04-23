@@ -26,7 +26,7 @@
         <p>Meteor requires you to use the Inter font designed by Rasmus Andersson.</p>
       </a>
 
-      <a href="/product-experience/content/basics" class="HomepageCard_item --has-double-height">
+      <a href="/meteor/product-experience/content/basics" class="HomepageCard_item --has-double-height">
         <span class="HomepageCard_icon">
           <SwagIcon icon="comments" type="solid" />
         </span>

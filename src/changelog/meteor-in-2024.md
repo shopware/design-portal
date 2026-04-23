@@ -28,9 +28,9 @@ import Label from "../components/interaction/Label.vue";
     </div>
 
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="/product-experience/inclusive-language-intro@dark.png 4x">
+<source media="(prefers-color-scheme: dark)" srcset="../public/product-experience/inclusive-language-intro@dark.png 4x">
 
-<img class="mt-[16px] mb-[24px]" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/product-experience/inclusive-language-intro.png 4x" src="/product-experience/inclusive-language-intro.png" width="100%" height="auto">
+<img class="mt-[16px] mb-[24px]" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../public/product-experience/inclusive-language-intro.png 4x" src="../public/product-experience/inclusive-language-intro.png" width="100%" height="auto">
 </picture>
 
 
@@ -55,9 +55,9 @@ We're also simplifying how developers and designers utilize Meteor by moving eve
 ## Accessibility: Because Everyone Matters
 
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="/foundations/accessibility/foundations-accessibility-intro@dark.png 4x">
+<source media="(prefers-color-scheme: dark)" srcset="../public/foundations/accessibility/foundations-accessibility-intro@dark.png 4x">
 
-<img class="mt-[16px] mb-[24px]" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/accessibility/foundations-accessibility-intro.png 4x" src="/foundations/accessibility/foundations-accessibility-intro.png" width="100%" height="auto">
+<img class="mt-[16px] mb-[24px]" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../public/foundations/accessibility/foundations-accessibility-intro.png 4x" src="../public/foundations/accessibility/foundations-accessibility-intro.png" width="100%" height="auto">
 </picture>
 
 Accessibility is a cornerstone of our design principles. With the integration of design tokens and our updated accessibility guidelines, we're doubling down on our commitment to creating experiences that are accessible to everyone, including people with disabilities.</p><p> By adhering to best practices and guidelines outlined in our [Accessibility Foundations](/foundations/accessibility), we aim to ensure that our products are not only aesthetically pleasing but also universally usable.
@@ -69,9 +69,9 @@ Get ready for shopware.design to become our home for all things Meteor. Over the
 ## A Fresh Look for the Shopware Administration 
 
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="/changelog/2024-ui-wip@dark.png 4x">
+<source media="(prefers-color-scheme: dark)" srcset="../public/changelog/2024-ui-wip@dark.png 4x">
 
-<img class="mt-[16px] mb-[24px]" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/changelog/2024-ui-wip.png 4x" src="/changelog/2024-ui-wip.png" width="100%" height="auto">
+<img class="mt-[16px] mb-[24px]" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../public/changelog/2024-ui-wip.png 4x" src="../public/changelog/2024-ui-wip.png" width="100%" height="auto">
 </picture>
 <figcaption>The image shows a work-in-progress and represents a conceptual phase of development. Details, features, and overall design are subject to change and may not necessarily be included in the final release. This representation is not a guarantee of future product or feature availability.</figcaption>
 

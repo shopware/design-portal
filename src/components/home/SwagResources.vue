@@ -15,7 +15,7 @@
         <p>Our Figma libraries contains the latest foundations, components, and patterns. You’ll find all of them in our Figma community profile.</p>
       </a>
 
-      <a href="/get-started/" class="HomepageCard_item --has-double-height special">
+      <a href="/meteor/get-started/" class="HomepageCard_item --has-double-height special">
         <span class="HomepageCard_icon">
           <SwagIcon icon="bold" type="solid" />
         </span>
@@ -26,7 +26,7 @@
         <p>Meteor requires you to use the Inter font designed by Rasmus Andersson.</p>
       </a>
 
-      <a href="/product-experience/content/basics" class="HomepageCard_item --has-double-height special">
+      <a href="/meteor/product-experience/content/basics" class="HomepageCard_item --has-double-height special">
         <span class="HomepageCard_icon">
           <SwagIcon icon="comments" type="solid" />
         </span>
