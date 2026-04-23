@@ -18,9 +18,9 @@ swag:
 <div class="flex gap-8 mb-[48px]">
     <div class="md:max-w-1/2">
 <picture class="section-thumbnails--image">
-<source media="(prefers-color-scheme: dark)" srcset="/foundations/design/colors/shopware-ui.png 2x">
+<source media="(prefers-color-scheme: dark)" srcset="../../public/foundations/design/colors/shopware-ui.png 2x">
 
-<img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/design/colors/shopware-ui.png 2x" src="/foundations/design/colors/shopware-ui.png" width="100%" height="auto">
+<img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../../public/foundations/design/colors/shopware-ui.png 2x" src="../../public/foundations/design/colors/shopware-ui.png" width="100%" height="auto">
 </picture>
 </div>
     <div class="md:max-w-1/2">
@@ -35,18 +35,18 @@ swag:
 </div>
     <div class="md:max-w-1/2">
 <picture class="section-thumbnails--image">
-<source media="(prefers-color-scheme: dark)" srcset="/foundations/design/colors/signal-colors.png 2x">
+<source media="(prefers-color-scheme: dark)" srcset="../../public/foundations/design/colors/signal-colors.png 2x">
 
-<img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/design/colors/signal-colors.png 2x" src="/foundations/design/colors/signal-colors.png" width="100%" height="auto">
+<img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../../public/foundations/design/colors/signal-colors.png 2x" src="../../public/foundations/design/colors/signal-colors.png" width="100%" height="auto">
 </picture>
 </div>
 </div>
 <div class="flex gap-8 mb-[48px]">
     <div class="md:max-w-1/2">
 <picture class="section-thumbnails--image">
-<source media="(prefers-color-scheme: dark)" srcset="/foundations/design/colors/primary-color.png 2x">
+<source media="(prefers-color-scheme: dark)" srcset="../../public/foundations/design/colors/primary-color.png 2x">
 
-<img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/design/colors/primary-color.png 2x" src="/foundations/design/colors/primary-color.png" width="100%" height="auto">
+<img class="class" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../../public/foundations/design/colors/primary-color.png 2x" src="../../public/foundations/design/colors/primary-color.png" width="100%" height="auto">
 </picture>
 </div>
     <div class="md:max-w-1/2">

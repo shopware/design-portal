@@ -28,9 +28,9 @@ When we think about inclusivity, we champion <code>people-first language</code>.
 This means that we keep the individual as the most important part of the sentiment and don’t concentrate on characteristics like gender, sexual orientation, religion, racial group, or ability unless it's relevant to the discussion. Some of this is new or can be confusing, so if you aren’t sure, ask. Strive to include language that reflects peoples’ choice and style in how they talk about themselves.
 
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="/product-experience/inclusive-language-intro@dark.png 4x">
+<source media="(prefers-color-scheme: dark)" srcset="../../public/product-experience/inclusive-language-intro@dark.png 4x">
 
-<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/product-experience/inclusive-language-intro.png 4x" src="/product-experience/inclusive-language-intro.png" width="100%" height="auto">
+<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../../public/product-experience/inclusive-language-intro.png 4x" src="../../public/product-experience/inclusive-language-intro.png" width="100%" height="auto">
 </picture>
 
 <!--<Cutdown

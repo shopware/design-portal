@@ -13,7 +13,10 @@
     "preview": "docker run -dit -p 8765:80 -v \"$PWD/.vitepress/dist\":/usr/local/apache2/htdocs/ httpd:2.4",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --exit-zero-on-changes"
+    "chromatic": "npx chromatic --exit-zero-on-changes",
+    "docs:env": "[ -d \"../developer-portal\" ] && ../developer-portal/docs-cli.cjs pull || (git clone git@github.com:shopware/developer-portal.git ../developer-portal && pnpm i -C ../developer-portal)",
+    "docs:link": "../developer-portal/docs-cli.cjs link --src src --dst meteor --symlink",
+    "docs:preview": "../developer-portal/docs-cli.cjs preview"
   },
   "keywords": [],
   "author": "",

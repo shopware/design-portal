@@ -5,10 +5,10 @@
       <h2 class="h-homepage md:max-w-1/2">Check out these practical guides to help you understand how to design for
         Shopware.</h2>
       <ul class="SwagExposed_links">
-        <li><a href="/foundations/">Shopware Design Principles -></a></li>
+        <li><a href="/meteor/foundations/">Shopware Design Principles -></a></li>
         <!--<li><a href="#">Designing extensions for Shopware -></a></li>-->
-        <li><a href="/foundations/accessibility">Accessibility -></a></li>
-        <li><a href="/foundations/human-ai-interation">Human-AI interactions -></a></li>
+        <li><a href="/meteor/foundations/accessibility">Accessibility -></a></li>
+        <li><a href="/meteor/foundations/human-ai-interation">Human-AI interactions -></a></li>
       </ul>
     </div>
     <!--<div>

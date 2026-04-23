@@ -23,9 +23,9 @@ This guide outlines the process for exporting images and optimizing them to meet
 <div class="section-thumbnails">
     <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
-<source media="(prefers-color-scheme: dark)" srcset="/foundations/design/images/foundations-images--export@dark.png 4x">
+<source media="(prefers-color-scheme: dark)" srcset="../../public/foundations/design/images/foundations-images--export@dark.png 4x">
 
-<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/design/images/foundations-images--export.png 4x" src="/foundations/design/images/foundations-images--export.png" width="100%" height="auto">
+<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../../public/foundations/design/images/foundations-images--export.png 4x" src="../../public/foundations/design/images/foundations-images--export.png" width="100%" height="auto">
 </picture>
 
 ### Export settings
@@ -38,9 +38,9 @@ For TV, video content and slide decks we export assets in <code>8x</code> (8k re
 </div>
     <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
-<source media="(prefers-color-scheme: dark)" srcset="/foundations/design/images/foundations-images--photoshop@dark.png 2x">
+<source media="(prefers-color-scheme: dark)" srcset="../../public/foundations/design/images/foundations-images--photoshop@dark.png 2x">
 
-<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/design/images/foundations-images--photoshop.png 2x" src="/foundations/design/images/foundations-images--photoshop.png" width="100%" height="auto">
+<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../../public/foundations/design/images/foundations-images--photoshop.png 2x" src="../../public/foundations/design/images/foundations-images--photoshop.png" width="100%" height="auto">
 </picture>
 
 ### Optimise assets
@@ -51,9 +51,9 @@ For TV, video content and slide decks we export assets in <code>8x</code> (8k re
 <div class="section-thumbnails">
     <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
-<source media="(prefers-color-scheme: dark)" srcset="/foundations/design/images/foundations-images--smart@dark.png 2x">
+<source media="(prefers-color-scheme: dark)" srcset="../../public/foundations/design/images/foundations-images--smart@dark.png 2x">
 
-<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/design/images/foundations-images--smart.png 2x" src="/foundations/design/images/foundations-images--smart.png" width="100%" height="auto">
+<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../../public/foundations/design/images/foundations-images--smart.png 2x" src="../../public/foundations/design/images/foundations-images--smart.png" width="100%" height="auto">
 </picture>
 
 ### Smart object
@@ -62,9 +62,9 @@ For TV, video content and slide decks we export assets in <code>8x</code> (8k re
 </div>
     <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
-<source media="(prefers-color-scheme: dark)" srcset="/foundations/design/images/foundations-images--size@dark.png 2x">
+<source media="(prefers-color-scheme: dark)" srcset="../../public/foundations/design/images/foundations-images--size@dark.png 2x">
 
-<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/design/images/foundations-images--size.png 2x" src="/foundations/design/images/foundations-images--size.png" width="100%" height="auto">
+<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../../public/foundations/design/images/foundations-images--size.png 2x" src="../../public/foundations/design/images/foundations-images--size.png" width="100%" height="auto">
 </picture>
 
 ### Resize
@@ -79,9 +79,9 @@ If your asset was exported in <code>8x</code>, resize by <code>/4</code> in Phot
 <div class="section-thumbnails">
     <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
-<source media="(prefers-color-scheme: dark)" srcset="/foundations/design/images/foundations-images--merge@dark.png 2x">
+<source media="(prefers-color-scheme: dark)" srcset="../../public/foundations/design/images/foundations-images--merge@dark.png 2x">
 
-<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/design/images/foundations-images--merge.png 2x" src="/foundations/design/images/foundations-images--merge.png" width="100%" height="auto">
+<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../../public/foundations/design/images/foundations-images--merge.png 2x" src="../../public/foundations/design/images/foundations-images--merge.png" width="100%" height="auto">
 </picture>
 
 ### Merge
@@ -90,9 +90,9 @@ If your asset was exported in <code>8x</code>, resize by <code>/4</code> in Phot
 </div>
     <div class="section-thumbnails--card info custom-block">
 <picture class="section-thumbnails--image">
-<source media="(prefers-color-scheme: dark)" srcset="/foundations/design/images/foundations-images--grain@dark.png 2x">
+<source media="(prefers-color-scheme: dark)" srcset="../../public/foundations/design/images/foundations-images--grain@dark.png 2x">
 
-<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/foundations/design/images/foundations-images--grain.png 2x" src="/foundations/design/images/foundations-images--grain.png" width="100%" height="auto">
+<img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../../public/foundations/design/images/foundations-images--grain.png 2x" src="../../public/foundations/design/images/foundations-images--grain.png" width="100%" height="auto">
 </picture>
 
 ### Add noise ✨

@@ -13,7 +13,7 @@ next: false
 # Token overview
 
 <picture>
-  <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/tokens/tokens-overview-intro.png 4x" src="/tokens/tokens-overview-intro.png" width="735px" height="auto">
+  <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../public/tokens/tokens-overview-intro.png 4x" src="../public/tokens/tokens-overview-intro.png" width="735px" height="auto">
 </picture>
 
 ## What are tokens
@@ -26,7 +26,7 @@ A design token's name conveys its intended use, with each part specifying a dist
 
 <div class="image-wrapper">
 <picture>
-  <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green."srcset="/tokens/tokens-overview-names.png 4x" src="/tokens/tokens-overview-names.png" width="280px" height="auto">
+  <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green."srcset="../public/tokens/tokens-overview-names.png 4x" src="../public/tokens/tokens-overview-names.png" width="280px" height="auto">
 </picture>
 </div>
 
@@ -52,7 +52,7 @@ These are foundational design tokens that define raw values, such as colors, spa
 
 <div class="image-wrapper">
 <picture>
-  <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green."srcset="/tokens/tokens-overview-primitive.png 4x" src="/tokens/tokens-overview-primitive.png" width="280px" height="auto">
+  <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green."srcset="../public/tokens/tokens-overview-primitive.png 4x" src="../public/tokens/tokens-overview-primitive.png" width="280px" height="auto">
 </picture>
 </div>
 
@@ -62,7 +62,7 @@ These tokens are context-driven and map to primitive values, providing meaningfu
 
 <div class="image-wrapper">
 <picture>
-  <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green."srcset="/tokens/tokens-overview-semantic.png 4x" src="/tokens/tokens-overview-semantic.png" width="450px" height="auto">
+  <img decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green."srcset="../public/tokens/tokens-overview-semantic.png 4x" src="../public/tokens/tokens-overview-semantic.png" width="450px" height="auto">
 </picture>
 </div>
 

@@ -24,8 +24,8 @@ import SwagTeamValuesMarquee from "../components/team/SwagTeamValuesMarquee.vue"
     <template #content><p>At Shopware, we're not just a design team – we're a crew of passionate individuals driven by innovation, rebellion, deep thinking, and creativity. We are united by a common passion for pushing boundaries and redefining the norm of commerce.</p></template>
     <template #image>
     <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="/careers/sticker.png 4x">
-    <img class="sticker w-full max-w-[200px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[410px] h-auto ml-0 sm:ml-[8%] md:ml-[10%] lg:ml-[12%]" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="/careers/sticker.png 4x" src="/careers/sticker.png">
+    <source media="(prefers-color-scheme: dark)" srcset="../public/careers/sticker.png 4x">
+    <img class="sticker w-full max-w-[200px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[410px] h-auto ml-0 sm:ml-[8%] md:ml-[10%] lg:ml-[12%]" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../public/careers/sticker.png 4x" src="../public/careers/sticker.png">
     </picture>
     </template>
 </SwagTeamHero>
@@ -59,7 +59,7 @@ import SwagTeamValuesMarquee from "../components/team/SwagTeamValuesMarquee.vue"
     Our design principles guide every decision we make. From accessibility and inclusivity to ethical design practices – these foundations shape how we build products that put people and the planet first.
     </p>
     <p>
-      <a href="/foundations/">Explore our design principles →</a>
+      <a href="/meteor/foundations/">Explore our design principles →</a>
     </p>
   </div>
 </section>
@@ -87,8 +87,8 @@ import SwagTeamValuesMarquee from "../components/team/SwagTeamValuesMarquee.vue"
   </div>
   <div class="figma--interface hidden lg:block absolute bottom-0 right-0 w-1/2 max-w-[610px] z-10">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="/careers/figma@dark.png">
-      <img class="w-full h-auto rounded-bl-[32px]" decoding="async" loading="lazy" alt="The image shows a sketch of Figma's UI." srcset="/careers/figma.png" src="/careers/figma.png">
+      <source media="(prefers-color-scheme: dark)" srcset="../public/careers/figma@dark.png">
+      <img class="w-full h-auto rounded-bl-[32px]" decoding="async" loading="lazy" alt="The image shows a sketch of Figma's UI." srcset="../public/careers/figma.png" src="../public/careers/figma.png">
     </picture>
   </div>
 </section>
