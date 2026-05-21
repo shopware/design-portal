@@ -24,7 +24,7 @@ In case you want to make a larger change to the code base, open up
 an issue first before writing any code. That way you don't lose your
 valuable time in case we might reject the pull request.
 
-Meteor is available under [MIT license](/get-started/license).
+Meteor is available under [MIT license](../get-started/license).
 Contribute your code under MIT license.
 
 If you've never contributed to a open source project you might

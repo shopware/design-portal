@@ -219,8 +219,8 @@ You can gradually migrate:
 
 ### Resources
 
-- **[Component Documentation](/meteor-components/)**: See all available components
-- **[Design Tokens](/tokens/)**: Browse available design tokens
+- **[Component Documentation](../meteor-components/)**: See all available components
+- **[Design Tokens](../tokens/)**: Browse available design tokens
 - **[Figma Libraries](https://www.figma.com/@shopware)**: Access design resources
 
 ### Community Support
@@ -231,4 +231,4 @@ You can gradually migrate:
 
 ---
 
-**Need help with your migration?** [Contact us](/get-started/contact-us) for personalized support.
+**Need help with your migration?** [Contact us](../get-started/contact-us) for personalized support.

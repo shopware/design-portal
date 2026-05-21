@@ -177,12 +177,12 @@ const variant: MtButtonVariant = "primary";
 
 - Check our [GitHub Issues](https://github.com/shopware/meteor/issues)
 - Join our [Slack Community](https://shopwarecommunity.slack.com/archives/C02BM1MMG2Z)
-- [Contact us](/get-started/contact-us) directly
+- [Contact us](../get-started/contact-us) directly
 - View [Official Shopware Documentation](https://developer.shopware.com/) for comprehensive guides
 
 ## Next Steps
 
-- [Explore Components](/meteor-components/)
-- [Learn about Design Tokens](/tokens/)
-- [Browse Icons](/icons/)
-- [Read Meteor 101](/get-started/meteor-101)
+- [Explore Components](../meteor-components/)
+- [Learn about Design Tokens](../tokens/)
+- [Browse Icons](../icons/)
+- [Read Meteor 101](../get-started/meteor-101)

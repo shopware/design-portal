@@ -35,7 +35,7 @@ Our Product Design Principles reflect how we think about design. They provide a 
 
 Design experiences that are accessible to users of all abilities and backgrounds, fostering inclusivity and equal opportunities for engagement.
 
-[Learn more about our commitment to accessibility](/foundations/accessibility)
+[Learn more about our commitment to accessibility](../foundations/accessibility)
 
 ### ⚖️ Data-Informed Decision Making 
 

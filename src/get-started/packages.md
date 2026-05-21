@@ -249,7 +249,7 @@ npx @shopware-ag/meteor-cli migrate
 
 ### Manual Migration
 
-Follow our [Migration Guide](/get-started/migration) for manual updates.
+Follow our [Migration Guide](../get-started/migration) for manual updates.
 
 ## Support and Maintenance
 
@@ -266,9 +266,9 @@ Follow our [Migration Guide](/get-started/migration) for manual updates.
 
 ## Getting Help
 
-- **[Installation Guide](/get-started/installation)**: Detailed setup instructions
-- **[Migration Guide](/get-started/migration)**: Upgrade between versions
+- **[Installation Guide](../get-started/installation)**: Detailed setup instructions
+- **[Migration Guide](../get-started/migration)**: Upgrade between versions
 - **[Shopware Developer Documentation](https://developer.shopware.com/)**: Official development guides
 - **[Admin SDK Documentation](https://developer.shopware.com/resources/admin-extension-sdk/)**: Admin extension development
 - **[GitHub Issues](https://github.com/shopware/meteor/issues)**: Bug reports and feature requests
-- **[FAQ](/get-started/faq)**: Common questions and troubleshooting
+- **[FAQ](../get-started/faq)**: Common questions and troubleshooting

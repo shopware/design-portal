@@ -42,7 +42,7 @@ For design tokens only:
 npm install @shopware-ag/meteor-tokens
 ```
 
-See our [Installation Guide](/get-started/installation) for detailed instructions.
+See our [Installation Guide](../get-started/installation) for detailed instructions.
 
 ### Do I need to install all packages?
 
@@ -149,7 +149,7 @@ While you can't add icons to the official Meteor icon kit, you can:
 
 ### Can I contribute to Meteor?
 
-Absolutely! We welcome contributions. See our [Contribution Guidelines](/foundations/contributions) to get started.
+Absolutely! We welcome contributions. See our [Contribution Guidelines](../foundations/contributions) to get started.
 
 ### How do I report bugs?
 
@@ -217,7 +217,7 @@ Yes, all Meteor components are responsive and touch-friendly, designed to work w
 
 ### I'm using old Shopware components. How do I migrate?
 
-Check our [Migration Guide](/get-started/migration) for step-by-step instructions on migrating from legacy Shopware components to Meteor.
+Check our [Migration Guide](../get-started/migration) for step-by-step instructions on migrating from legacy Shopware components to Meteor.
 
 ### Can I use Meteor alongside existing components?
 
@@ -231,7 +231,7 @@ Yes, Meteor is designed to work alongside existing components. You can gradually
 - [Slack Community](https://shopwarecommunity.slack.com/archives/C02BM1MMG2Z) for quick questions
 - [Shopware Developer Documentation](https://developer.shopware.com/) for comprehensive guides
 - [Admin SDK Documentation](https://developer.shopware.com/resources/admin-extension-sdk/) for Admin SDK development
-- [Contact us](/get-started/contact-us) for direct support
+- [Contact us](../get-started/contact-us) for direct support
 
 ### Can I book a consultation?
 
@@ -249,4 +249,4 @@ While not required, we appreciate attribution when you use Meteor in your projec
 
 ---
 
-**Didn't find your answer?** [Contact us](/get-started/contact-us) or [join our Slack community](https://shopwarecommunity.slack.com/archives/C02BM1MMG2Z).
+**Didn't find your answer?** [Contact us](../get-started/contact-us) or [join our Slack community](https://shopwarecommunity.slack.com/archives/C02BM1MMG2Z).

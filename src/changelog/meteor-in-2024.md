@@ -44,7 +44,7 @@ First up, we’re thrilled to introduce design tokens to Meteor. These are essen
 - **Streamlined Workflow:** Update once, and you're done. Change a token, and see that change reflected everywhere it’s used. It saves time and simplifies maintenance.
 - **Easier Theming and Customization:** Want to switch themes or adjust styles in the administration? Tokens make it a breeze, allowing for flexible design with less overhead. 🌗
 
-[Learn more about Design Tokens](/tokens/)
+[Learn more about Design Tokens](../tokens/)
 
 ## A New Home on GitHub: Mono Repository <span class="available--soon">Available now</span>
 
@@ -60,7 +60,7 @@ We're also simplifying how developers and designers utilize Meteor by moving eve
 <img class="mt-[16px] mb-[24px]" decoding="async" loading="lazy" alt="A sketch of the Accessibility icon. The image is tinted in shades of green." srcset="../public/foundations/accessibility/foundations-accessibility-intro.png 4x" src="../public/foundations/accessibility/foundations-accessibility-intro.png" width="100%" height="auto">
 </picture>
 
-Accessibility is a cornerstone of our design principles. With the integration of design tokens and our updated accessibility guidelines, we're doubling down on our commitment to creating experiences that are accessible to everyone, including people with disabilities.</p><p> By adhering to best practices and guidelines outlined in our [Accessibility Foundations](/foundations/accessibility), we aim to ensure that our products are not only aesthetically pleasing but also universally usable.
+Accessibility is a cornerstone of our design principles. With the integration of design tokens and our updated accessibility guidelines, we're doubling down on our commitment to creating experiences that are accessible to everyone, including people with disabilities.</p><p> By adhering to best practices and guidelines outlined in our [Accessibility Foundations](../foundations/accessibility), we aim to ensure that our products are not only aesthetically pleasing but also universally usable.
 
 ## shopware.design: Our new home
 

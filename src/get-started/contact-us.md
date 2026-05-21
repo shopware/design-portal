@@ -14,7 +14,7 @@ swag:
 
 # Contact us
 
-Got a question about Meteor? The Shopware design team is ready to assist you. Before you dive in, make sure to explore our [resources](/get-started/) to find out if your question has already been addressed.
+Got a question about Meteor? The Shopware design team is ready to assist you. Before you dive in, make sure to explore our [resources](../get-started/) to find out if your question has already been addressed.
 
 ## Slack Community or book a Community Check-in
 - Ask questions about Meteor Design System on [#ux-design](https://shopwarecommunity.slack.com/archives/C02BM1MMG2Z)
