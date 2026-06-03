@@ -31,7 +31,7 @@ export default {
     const router = useRouter();
 
     const imgSrc = computed(() => {
-      return `/components/overview/components-${props.section}-${props.name}.png`;
+      return `/meteor/components/overview/components-${props.section}-${props.name}.png`;
     });
 
     const navigateToPage = () => {
