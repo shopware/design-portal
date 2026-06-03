@@ -29,9 +29,9 @@ import NPM from "./components/interaction/NPM.vue";
     <template #links>
     <TargetGroup
     btnlabelleft="For designers."
-    pageleft="/get-started/#designers"
+    pageleft="/meteor/get-started/#designers"
     btnlabelright="For developers."
-    pageright="/get-started/#developers"
+    pageright="/meteor/get-started/#developers"
     />
     </template>
     <template #image>
