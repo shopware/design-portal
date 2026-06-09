@@ -28,4 +28,4 @@ import { MtPopover } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="overlay" component="mt-popover"></SwagStorybookIframe>
+<SwagStorybookIframe group="overlay" component="popover"></SwagStorybookIframe>

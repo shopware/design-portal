@@ -28,4 +28,4 @@ import { MtPasswordfield } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="form" component="mt-password-field"></SwagStorybookIframe>
+<SwagStorybookIframe group="form" component="password-field"></SwagStorybookIframe>

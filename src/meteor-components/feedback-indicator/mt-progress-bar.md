@@ -28,4 +28,4 @@ import { MtProgressBar } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="feedback-indicator" component="mt-progress-bar"></SwagStorybookIframe>
+<SwagStorybookIframe group="feedback-indicator" component="progress-bar"></SwagStorybookIframe>

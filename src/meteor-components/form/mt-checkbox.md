@@ -28,4 +28,4 @@ import { MtCheckbox } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="form" component="mt-checkbox"></SwagStorybookIframe>
+<SwagStorybookIframe group="form" component="checkbox"></SwagStorybookIframe>

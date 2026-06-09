@@ -28,4 +28,4 @@ import { MtTabs } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="navigation" component="mt-tabs"></SwagStorybookIframe>
+<SwagStorybookIframe group="navigation" component="tabs"></SwagStorybookIframe>

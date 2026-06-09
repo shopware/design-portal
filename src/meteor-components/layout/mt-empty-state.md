@@ -28,4 +28,4 @@ import { MtEmptyState } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="layout" component="mt-empty-state"></SwagStorybookIframe>
+<SwagStorybookIframe group="layout" component="empty-state"></SwagStorybookIframe>

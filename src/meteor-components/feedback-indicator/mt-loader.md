@@ -28,4 +28,4 @@ import { MtLoader } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="feedback-indicator" component="mt-loader"></SwagStorybookIframe>
+<SwagStorybookIframe group="feedback-indicator" component="loader"></SwagStorybookIframe>

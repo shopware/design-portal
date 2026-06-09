@@ -28,4 +28,4 @@ import { MtSlider } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="form" component="mt-slider"></SwagStorybookIframe>
+<SwagStorybookIframe group="form" component="slider"></SwagStorybookIframe>

@@ -28,4 +28,4 @@ import { MtTextfield } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="form" component="mt-text-field"></SwagStorybookIframe>
+<SwagStorybookIframe group="form" component="text-field"></SwagStorybookIframe>

@@ -28,4 +28,4 @@ import { MtHelptext } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="form" component="mt-help-text"></SwagStorybookIframe>
+<SwagStorybookIframe group="form" component="help-text"></SwagStorybookIframe>
