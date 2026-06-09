@@ -28,4 +28,4 @@ import { MtSwitch } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="form" component="mt-switch"></SwagStorybookIframe>
+<SwagStorybookIframe group="form" component="switch"></SwagStorybookIframe>

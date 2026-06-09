@@ -28,4 +28,4 @@ import { MtButton } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="form" component="mt-button"></SwagStorybookIframe>
+<SwagStorybookIframe group="form" component="button"></SwagStorybookIframe>

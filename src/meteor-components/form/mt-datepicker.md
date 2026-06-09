@@ -28,4 +28,4 @@ import { MtDatepicker } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="form" component="mt-datepicker"></SwagStorybookIframe>
+<SwagStorybookIframe group="form" component="datepicker"></SwagStorybookIframe>

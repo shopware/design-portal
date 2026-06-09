@@ -28,4 +28,4 @@ import { MtModal } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="overlay" component="mt-modal"></SwagStorybookIframe>
+<SwagStorybookIframe group="overlay" component="modal"></SwagStorybookIframe>

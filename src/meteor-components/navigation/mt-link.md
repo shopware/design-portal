@@ -28,4 +28,4 @@ import { MtLink } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="navigation" component="mt-link"></SwagStorybookIframe>
+<SwagStorybookIframe group="navigation" component="link"></SwagStorybookIframe>

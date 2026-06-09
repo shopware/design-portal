@@ -28,4 +28,4 @@ import { MtColorpicker } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="form" component="mt-colorpicker"></SwagStorybookIframe>
+<SwagStorybookIframe group="form" component="colorpicker"></SwagStorybookIframe>

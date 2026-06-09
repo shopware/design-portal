@@ -28,4 +28,4 @@ import { MtPagination } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="table-and-list" component="mt-pagination"></SwagStorybookIframe>
+<SwagStorybookIframe group="table-and-list" component="pagination"></SwagStorybookIframe>

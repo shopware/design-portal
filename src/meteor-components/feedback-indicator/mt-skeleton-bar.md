@@ -28,4 +28,4 @@ import { MtSkeletonBar } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="feedback-indicator" component="mt-skeleton-bar"></SwagStorybookIframe>
+<SwagStorybookIframe group="feedback-indicator" component="skeleton-bar"></SwagStorybookIframe>

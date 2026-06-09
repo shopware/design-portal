@@ -28,4 +28,4 @@ import { MtSearch } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="navigation" component="mt-search"></SwagStorybookIframe>
+<SwagStorybookIframe group="navigation" component="search"></SwagStorybookIframe>
