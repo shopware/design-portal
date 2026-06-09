@@ -28,4 +28,4 @@ import { MtTooltip } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="overlay" component="mt-tooltip"></SwagStorybookIframe>
+<SwagStorybookIframe group="overlay" component="tooltip"></SwagStorybookIframe>

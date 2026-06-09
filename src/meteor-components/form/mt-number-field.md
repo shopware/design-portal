@@ -28,4 +28,4 @@ import { MtNumberField } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="form" component="mt-number-field"></SwagStorybookIframe>
+<SwagStorybookIframe group="form" component="number-field"></SwagStorybookIframe>

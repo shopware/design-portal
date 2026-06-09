@@ -28,4 +28,4 @@ import { MtCard } from "@shopware-ag/meteor-component-library";
 
 ## Example
 
-<SwagStorybookIframe group="layout" component="mt-card"></SwagStorybookIframe>
+<SwagStorybookIframe group="layout" component="card"></SwagStorybookIframe>
