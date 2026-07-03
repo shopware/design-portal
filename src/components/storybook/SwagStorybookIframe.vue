@@ -24,7 +24,7 @@ const props = defineProps({
 });
 const src = computed(
   () =>
-    `https://meteor-component-library.vercel.app/?path=/docs/components-${props.component}--docs&viewMode=docs&shortcuts=false&singleStory=true&toolbar=false`
+    `https://storybook.meteor.shopware.com/?path=/docs/components-${props.component}--docs&viewMode=docs&shortcuts=false&singleStory=true&toolbar=false`
 );
 </script>
 
