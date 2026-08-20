@@ -102,23 +102,6 @@ export default defineConfigWithTheme<ThemeConfig>({
         },
       ],
       // This sidebar gets displayed when a user
-      // is on `tokens` directory.
-      "/tokens/": [
-        {
-          text: "Tokens",
-          items: [
-            {
-              text: "Overview",
-              link: "/tokens/",
-            },
-            {
-              text: "Tokens",
-              link: "/tokens/color",
-            },
-          ],
-        },
-      ],
-      // This sidebar gets displayed when a user
       // is on `product-experience` directory.
       "/product-experience/": [
         {
@@ -304,12 +287,6 @@ export default defineConfigWithTheme<ThemeConfig>({
       {
         src: "../node_modules/@shopware-ag/meteor-icon-kit/icons/solid",
         dst: "icons/solid",
-      },
-      // meteor-tokens JSON files
-      {
-        src: "../node_modules/@shopware-ag/meteor-tokens/dictionaries/administration",
-        dst: "src/tokens/data",
-        ext: [".json"],
       },
     ]);
 

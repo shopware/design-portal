@@ -219,7 +219,6 @@ You can gradually migrate:
 
 ### Resources
 
-- **[Design Tokens](/tokens/)**: Browse available design tokens
 - **[Figma Libraries](https://www.figma.com/@shopware)**: Access design resources
 
 ### Community Support

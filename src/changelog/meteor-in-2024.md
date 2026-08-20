@@ -44,7 +44,6 @@ First up, we’re thrilled to introduce design tokens to Meteor. These are essen
 - **Streamlined Workflow:** Update once, and you're done. Change a token, and see that change reflected everywhere it’s used. It saves time and simplifies maintenance.
 - **Easier Theming and Customization:** Want to switch themes or adjust styles in the administration? Tokens make it a breeze, allowing for flexible design with less overhead. 🌗
 
-[Learn more about Design Tokens](/tokens/)
 
 ## A New Home on GitHub: Mono Repository <span class="available--soon">Available now</span>
 

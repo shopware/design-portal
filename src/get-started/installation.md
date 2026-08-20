@@ -182,6 +182,5 @@ const variant: MtButtonVariant = "primary";
 
 ## Next Steps
 
-- [Learn about Design Tokens](/tokens/)
 - [Browse Icons](/icons/)
 - [Read Meteor 101](/get-started/meteor-101)
