@@ -17,18 +17,6 @@ const navigation = buildSidebarNav(
       text: "Product Experience",
     },
     {
-      link: "/tokens/",
-      text: "Tokens",
-    },
-    {
-      link: "/icons/",
-      text: "Icons",
-    },
-    {
-      link: "/meteor-components/",
-      text: "Components",
-    },
-    {
       link: "/team/",
       text: "Design at Shopware",
     },
