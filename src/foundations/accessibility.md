@@ -118,3 +118,53 @@ For more information, see the following resources:
     URL="https://bitsofco.de/the-accessibility-cheatsheet/"
     alt="The Accessibility Cheatsheet"
   />
+
+  ## Accessibilty Checklist for UX Designers
+
+A comprehensive yet designer-friendly accessibility checklist to help UX designers create inclusive, intuitive, and compliant user experiences from the start. Perfect for integrating accessibility into every stage of your design process.
+
+  ::: details 1. Perceivable
+  - Text Alternatives : Add descriptive alt text to images so screen readers can convey the information.
+  - Time-based Media : Provide captions for videos to assist users who are deaf or hard of hearing.
+  - Adaptable Content : Use proper HTML headings to maintain structure when styles are disabled.
+  - Distinguishable : Ensure sufficient color contrast between text and background.
+  :::
+
+  ::: details 2. Operable
+  - Text Alternatives : Add descriptive alt text to images so screen readers can convey the information.
+  - Enough Time : Allow users to extend session timeout on forms.
+  - Seizures and Physical Reactions : Don’t use flashing content that blinks more than 3 times per second.
+  - Navigable : Use clear headings and skip links for easier navigation.
+  - Input Modalities : Make buttons large enough to tap on a touchscreen.
+  :::
+
+  ::: details 3. Understandable
+  - Readable : Use short sentences and common words.
+  - Predictable : Allow users to extend session timeout on forms.
+  - Input Assistance : Show an error message when a form field is incorrect.
+  :::
+
+  ::: details 4. Constrast Ratios
+  - Contrast (Minimum) – Level AA
+    - Regular text must have a contrast ratio of at least 4.5:1 against the background.
+    - Large text (18pt or 14pt bold) must have a contrast ratio of at least 3:1.
+  - Contrast (Enhanced) – Level AAA
+    - Regular text: contrast ratio of at least 7:1.
+    - Large text: contrast ratio of at least 4.5:1.
+  - Non-text Contrast – Level AA
+    - Visual elements like buttons and icons must have a contrast ratio of at least 3:1 against adjacent colors.
+  :::
+
+  ::: details 5. Text Presentation
+  - Resize Text – Level AA : Text must be resizable up to 200% without loss of content or functionality.
+  - 1.4.12 Text Spacing – Level AA : No loss of content or functionality when users set the following spacing:
+      - Line height (line spacing): at least 1.5 times the font size.
+      - Spacing after paragraphs: at least 2 times the font size.
+      - Letter spacing (tracking): at least 0.12 times the font size.
+      - Word spacing: at least 0.16 times the font size.
+  :::
+
+  ::: details 6. Additional Recommendations
+  - Font sizes : WCAG does not specify minimum font sizes, but at least 16px is commonly recommended for body text.
+  - Touch targets : For interactive elements, use a minimum target size of 24x24 CSS pixels.
+  :::
